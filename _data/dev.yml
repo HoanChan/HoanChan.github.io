@@ -1,0 +1,45 @@
+- title: Giới thiệu
+  posts:
+  - 
+
+- title: SublimeText
+  posts:
+  - sublimetext/
+  - sublimetext/installtion
+  - sublimetext/usage
+
+- title: Pascal
+  posts:
+  - pascal/
+  - pascal/quick_guide
+  - pascal/first_program
+  - pascal/io
+  - pascal/variable_types
+  - pascal/conditions
+  - pascal/loops
+  - pascal/function
+  - pascal/procedure
+  - pascal/variable_scope
+  - pascal/strings
+  - pascal/boolean
+  - pascal/arrays
+  - pascal/records
+  - pascal/files
+
+- title: C / C++
+  posts:
+  - c/
+  - c/installation
+  - c/sample
+
+- title: C#
+  posts:
+  - csharp/
+  - csharp/installation
+  - csharp/sample
+
+- title: Javascript
+  posts:
+  - javascript/
+  - javascript/installation
+  - javascript/sample

@@ -1,0 +1,76 @@
+markdown: kramdown
+highlighter: rouge
+
+# gauges_id: 503c5af6613f5d0f19000027
+google_analytics_id: UA-50247134-3
+# google_site_verification: onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY
+
+repository: https://github.com/HoanChan/HoanChan.github.io
+help_url: https://github.com/HoanChan/HoanChan.github.io
+
+# timezone: Asia/Ho_Chi_Minh
+defaults:
+  -
+    scope:
+      path: "_word"
+      type: "word"
+    values:
+      layout: "word"
+  -
+    scope:
+      path: "_it"
+      type: "it"
+    values:
+      layout: "it"
+  -
+    scope:
+      path: "_dev"
+      type: "dev"
+    values:
+      layout: "dev"
+  -
+    scope:
+      path: "_projects"
+      type: "projects"
+    values:
+      layout: "projects"
+
+collections:
+  word:
+    permalink: /:collection/:path/
+    output: true
+  it:
+    permalink: /:collection/:path/
+    output: true
+  dev:
+    permalink: /:collection/:path/
+    output: true
+  projects:
+    permalink: /:collection/:path/
+    output: true
+
+name: Hoàn Chân • Blog
+description: Hoàn Chân • Blog
+url: HoanChan.github.io
+
+twitter:
+  username: lehoanchan
+
+fb_appid: 1792974517689740
+
+logo: /img/logo-2x.png
+
+gems:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-auto-image
+exclude:
+  - .gitignore
+  - README.md

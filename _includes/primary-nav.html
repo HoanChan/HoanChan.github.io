@@ -1,0 +1,23 @@
+<ul>
+{% for menu in site.data.nav %}
+  {% assign target = menu.target %}
+  {% unless target %} 
+    {% assign target = '_self' %} 
+  {% endunless %}
+
+  {% assign current = '' %}
+  {% if menu.contains %}
+    {% if page.url contains menu.contains %}
+      {% assign current = 'current' %}
+    {% endif %}
+  {% elsif page.url == '/' %}
+    {% assign current = 'current' %}
+  {% endif %}
+  <li class="{{ current }}">
+    <a href="{{ menu.url }}" target="{{ target }}">
+      <i class="fa {{ menu.icon }}"></i> 
+      <span>{{ menu.text }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>

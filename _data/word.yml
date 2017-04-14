@@ -1,0 +1,56 @@
+- title: Giới thiệu
+  posts:
+  - 
+- title: Getting Started
+  posts:
+  - home
+  - quickstart
+  - installation
+  - usage
+  - structure
+  - configuration
+  - windows
+
+- title: Your Content
+  posts:
+  - frontmatter
+  - posts
+  - drafts
+  - pages
+  - static-files
+  - variables
+  - collections
+  - datafiles
+  - assets
+  - migrations
+
+- title: Customization
+  posts:
+  - templates
+  - includes
+  - permalinks
+  - pagination
+  - plugins
+  - themes
+  - extras
+
+- title: Deployment
+  posts:
+  - github-pages
+  - deployment-methods
+  - continuous-integration
+
+- title: Miscellaneous
+  posts:
+  - troubleshooting
+  - sites
+  - resources
+  - upgrading/0-to-2
+  - upgrading/2-to-3
+
+- title: Meta
+  posts:
+  - contributing
+  - maintaining
+  - conduct
+  - history

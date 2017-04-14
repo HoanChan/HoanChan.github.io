@@ -1,0 +1,45 @@
+{% comment %}
+  include.data=site.data.word
+  include.path="/word/"
+{% endcomment %}
+
+{% comment %}
+Map grabs the doc sections, giving us an array of arrays. Join, flattens all
+the items to a comma delimited string. Split turns it into an array again.
+{% endcomment %}
+
+{% assign posts = include.data | map: 'posts' | join: ',' | split: ',' %}
+
+{% comment %}
+Because this is built for every page, lets find where we are in the ordered
+document list by comparing url strings. Then if there's something previous or
+next, lets build a link to it.
+{% endcomment %}
+
+{% for document in posts %}
+  {% assign document_url = document | prepend:include.path | append:"/" | replace: "//", "/" %}
+  {% if document_url == page.url %}
+    <div class="section-nav">
+      <div class="left align-right">
+          {% if forloop.first %}
+            <span class="prev disabled">Trước</span>
+          {% else %}
+            {% assign previous = forloop.index0 | minus: 1 %}
+            {% assign previous_page = posts[previous] | prepend:include.path | append:"/" %}
+            <a href="{{ previous_page }}" class="prev">Trước</a>
+          {% endif %}
+      </div>
+      <div class="right align-left">
+          {% if forloop.last %}
+            <span class="next disabled">Sau</span>
+          {% else %}
+            {% assign next = forloop.index0 | plus: 1 %}
+            {% assign next_page = posts[next] | prepend:include.path | append:"/" %}
+            <a href="{{ next_page }}" class="next">Sau</a>
+          {% endif %}
+      </div>
+    </div>
+    <div class="clear"></div>
+    {% break %}
+  {% endif %}
+{% endfor %}

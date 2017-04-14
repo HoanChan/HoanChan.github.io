@@ -1,0 +1,13 @@
+{% comment %}
+  include.data=site.data.word 
+  include.posts=site.word 
+  include.path="/word/"
+{% endcomment %}
+<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    {% for section in include.data %}
+    <h4>{{ section.title }}</h4>
+    {% include p_ul.html items=section.posts posts=include.posts path=include.path %}
+    {% endfor %}
+  </aside>
+</div>

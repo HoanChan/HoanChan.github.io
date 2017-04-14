@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Lập trình",
+    "url": "/dev/",
+    "contains": "/dev/",
+    "icon": "fa-codepen"
+  },
+  {
+    "text": "Sản phẩm",
+    "url": "/projects/",
+    "contains": "/projects/",
+    "icon": "fa-desktop"
+  },
+  {
+    "text": "Tin học",
+    "url": "/it/",
+    "contains": "/it/",
+    "icon": "fa-cogs"
+  },
+  {
+    "text": "MS-Word",
+    "url": "/word/",
+    "contains": "/word/",
+    "icon": "fa-file-word-o"
+  },
+  {
+    "text": "Github",
+    "contains": "/github.com/",
+    "url": "https://github.com/hoanchan/",
+    "icon": "fa-github"
+  }
+]

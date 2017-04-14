@@ -1,0 +1,15 @@
+{% comment %}
+  include.data=site.data.word 
+  include.posts=site.word 
+  include.path="/word/"
+{% endcomment %}
+<div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the docs…</option>
+    {% for section in include.data %}
+    <optgroup label="{{ section.title }}">
+      {% include p_option.html items=section.posts posts=include.posts path=include.path %}
+    </optgroup>
+    {% endfor %}
+  </select>
+</div>
