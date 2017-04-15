@@ -11,7 +11,7 @@
       {% assign item_url = item | prepend: include.path | append: "/" | replace: "//", "/" %}
       {% assign p = include.posts | where:"url", item_url | first %}
       {% unless item_url == page.url %}
-<article>
+
   <span class="post-category">
     <span class="label">
       {{ p.title }}
@@ -20,7 +20,7 @@
   <div class="post-content">
     {{ p.content }}
   </div>
-</article>
+
       {% endunless %}
     {% endfor %}
     {% break %}
