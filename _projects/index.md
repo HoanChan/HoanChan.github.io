@@ -2,6 +2,7 @@
 title: Xin chào!
 permalink: /projects/
 redirect_from: /projects/index.html
+breadcrumb: Sản phẩm
 ---
 
 Đây là nơi trưng bày cũng như hướng dẫn sử dụng về các sản phẩm phần mềm từ đơn giản đến phức tạp, viết bằng các ngôn ngữ lập trình thông dụng như [Pascal](/dev/pascal), [C#](/dev/csharp), [Javascript](/dev/javascript) kết hợp với [HTML](/dev/html) và [CSS](/dev/css).

@@ -1,5 +1,6 @@
 ---
 title: Đề khác nội dung
+series_index: 5
 ---
 
 Hiện tại một số đề trắc nghiệm ngoài hoán vị các câu hỏi và câu trả lời ra còn yêu cầu tạo nên những bộ đề mà các câu hỏi trong đề không giống nhau về nội dung nữa (Ví dụ như đề thi đại học có tới 80% câu hỏi là khác nhau). Chương trình hỗ trợ soạn thảo các câu hỏi thay thế nhau ở mỗi đề bằng cách xác định các câu con cho câu đó. Câu con thì soạn thảo giống y như câu hỏi, tuy nhiên thay chữ **Bài** hay **Câu** thành chữ **Con** thôi.

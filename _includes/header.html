@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="2">
+<nav class="navbar navbar-inverse"> <!-- data-spy="affix" data-offset-top="2" -->
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -14,9 +14,9 @@
       <ul class="nav navbar-nav">
         {% include primary-nav.html data = site.data.nav%}
       </ul>
-<!--       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> {{ site.name }}</a></li>
+      </ul>
     </div><!-- #myNavbar -->
   </div><!-- .container-fluid -->
 </nav><!-- . navbar -->

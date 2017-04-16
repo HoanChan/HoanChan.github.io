@@ -45,7 +45,7 @@ Ví dụ: `Writeln('Hello, I am Pascal!');` sẽ viết ra `Hello, I am Pascal!`
 
 {::options parse_block_html="true" /}
 <div class="note info">
-#### Lưu ý cách viết chuỗi
+##### Lưu ý cách viết chuỗi
 
 Cặp dấu `'` để bao quanh văn bản chỉ là để đánh dấu đó là 1 chuỗi chữ và sẽ không được in ra.
 </div>
@@ -77,7 +77,7 @@ a := 3; b := 5; c:= 7;
 Writeln('A[', index, '] = ', a + b + c); { A[3] = 8 }
 ```
 <div class="note warning">
-#### Cẩn thận với số thực
+##### Cẩn thận với số thực
 
 Khi giá trị của một biến hoặc một biểu thức là một số thực thì mặc định nó được ghi ra dưới dạng dấu phẩy động, ta cần định dạng lại số thực như sau:
 

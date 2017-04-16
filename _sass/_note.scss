@@ -15,6 +15,7 @@
 }
 
 .note {
+  color: #fff;
   &:before {
     content: "";
     position: absolute;
@@ -29,14 +30,24 @@
 
   h1, h2, h3, h4, h5, p {
     margin: 0 0 5px 0;
-    color: #fff;
   }
   
-  & > p, > ul{
-    font-weight: 400;
-    font-size: .85em;
+  pre {
+    text-shadow: 0 0;
+    font-size: 1em;
+    code{
+      font-size: 0.8em;
+    }
   }
- 
+
+  ul,ol{
+    margin-left: -20px;
+  }
+
+  a{
+    color: #fc0;
+  }
+
   h1, h2, h3, h4, h5 {
     line-height: 1.5em;
     font-weight: 900;
