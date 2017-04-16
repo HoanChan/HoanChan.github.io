@@ -1,18 +1,22 @@
-<header>
-  <nav class="mobile-nav show-on-mobiles">
-    {% include primary-nav.html %}
-  </nav>
-  <div class="grid">
-    <div class="unit w-1-4 center-on-mobiles">
-      <h1>
-        <a href="/">
-          <span class="sr-only">Hoàn Chân</span>
-          <img src="/img/HC.png" width="249" height="115" alt="Hoàn Chân's Logo">
-        </a>
-      </h1>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="2">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/img/HC.png" height="100%" alt="Hoàn Chân's Logo">
+      </a>
     </div>
-    <nav class="main-nav unit w-3-4 hide-on-mobiles">
-      {% include primary-nav.html %}
-    </nav>
-  </div>
-</header>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        {% include primary-nav.html data = site.data.nav%}
+      </ul>
+<!--       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div><!-- #myNavbar -->
+  </div><!-- .container-fluid -->
+</nav><!-- . navbar -->

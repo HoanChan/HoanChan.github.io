@@ -1,23 +1,37 @@
-<ul>
-{% for menu in site.data.nav %}
+
+{% for menu in include.data %}
   {% assign target = menu.target %}
   {% unless target %} 
     {% assign target = '_self' %} 
   {% endunless %}
 
   {% assign current = '' %}
+  {% assign child = '' %}
+  {% assign adrop = '' %}
+
+  {% if menu.child %}
+    {% assign child = ' dropdown' %}
+    {% assign current = ' class= "dropdown"' %}
+    {% assign adrop = ' class="dropdown-toggle" data-toggle="dropdown"' %}
+  {% endif %}
+
   {% if menu.contains %}
     {% if page.url contains menu.contains %}
-      {% assign current = 'current' %}
+      {% assign current = ' class="active'| append: child | append: '"' %}
     {% endif %}
   {% elsif page.url == '/' %}
-    {% assign current = 'current' %}
+    {% assign current = ' class="active' | append: child | append: '"' %}
   {% endif %}
-  <li class="{{ current }}">
-    <a href="{{ menu.url }}" target="{{ target }}">
+  <li{{ current }}>
+    <a{{ adrop }} href="{{ menu.url }}" target="{{ target }}">
       <i class="fa {{ menu.icon }}"></i> 
       <span>{{ menu.text }}</span>
+      {% if menu.child %}<b class="caret"></b>{% endif %}
     </a>
+    {% if menu.child %}
+      <ul class="dropdown-menu">
+        {% include primary-nav.html data=menu.child %}
+      </ul>
+    {% endif %}
   </li>
 {% endfor %}
-</ul>

@@ -2,6 +2,7 @@
 title: Giới thiệu
 permalink: /dev/pascal/
 redirect_from: /dev/pascal/index.html
+breadcrumb: Pascal
 ---
 
 Pascal là một ngôn ngữ lập trình cho máy tính thuộc dạng mệnh lệnh, được giáo sư điện toán trường đại học kỉ thuật Zurich - Thụy Sĩ là [Niklaus Wirth](https://vi.wikipedia.org/wiki/Niklaus_Wirth) phát triển vào năm 1970 là ngôn ngữ đặc biệt thích hợp cho kiểu lập trình có cấu trúc. Pascal dựa trên ngôn ngữ lập trình [ALGOL](https://vi.wikipedia.org/wiki/ALGOL) và được đặt tên theo nhà toán học, triết học [Blaise Pascal](https://vi.wikipedia.org/wiki/Blaise_Pascal), người đã phát minh máy tính cơ khí đơn giản đầu tiên của con người. 

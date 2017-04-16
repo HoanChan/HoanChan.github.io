@@ -1,0 +1,85 @@
+---
+---
+
+@import "mixins";
+@import "highlight";
+@import "note";
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+html, body {
+  font-family: "Palatino Linotype", "Times New Roman",  sans-serif;
+  font-size: 18px;
+  border-top: 2px solid #fc0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+.section-nav {
+  a,
+  span {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px 12px 10px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    @include border-radius(5px);
+  }
+
+  .next,
+  .prev { position: relative; }
+
+  .next:after,
+  .prev:before {
+    font-size: 36px;
+    color: #222;
+    font-weight: 900;
+    text-shadow: 0 1px 0 rgba(255,255,255,.4);
+    position: absolute;
+    top: -10px;
+  }
+
+  .next:after {
+    content: '\203A';
+    right: 10px;
+  }
+
+  .prev:before {
+    content: '\2039';
+    left: 10px;
+  }
+
+  .prev,
+  .prev:hover { padding-left: 30px; }
+
+  .next,
+  .next:hover { padding-right: 30px; }
+
+  .disabled {
+    opacity: .5;
+    cursor: default;
+  }
+}
+
+footer {
+  padding-bottom: 5px;
+  margin-top: 40px;
+}

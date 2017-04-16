@@ -3,7 +3,21 @@
     "text": "Lập trình",
     "url": "/dev/",
     "contains": "/dev/",
-    "icon": "fa-codepen"
+    "icon": "fa-codepen",
+    "child":[
+      {
+        "text": "Pascal",
+        "url": "/dev/pascal",
+        "contains": "/dev/pascal/",
+        "icon": "fa-desktop"
+      },
+      {
+        "text": "C#",
+        "url": "/dev/csharp",
+        "contains": "/dev/csharp/",
+        "icon": "fa-cogs"
+      }
+    ]
   },
   {
     "text": "Sản phẩm",

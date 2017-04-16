@@ -2,6 +2,7 @@
 title: Welcome
 permalink: /dev/
 redirect_from: /dev/index.html
+breadcrumb: Lập trình
 ---
 Chuyên mục này là nơi mình tổng hợp kiến thức về lập trình từ cơ bản như [Pascal](/dev/pascal), [C/C++](/dev/c) đến các ngôn ngữ ứng dụng rộng rãi như [HTML](/dev/html), [CSS](/dev/css) và [Javacript](/dev/js) cũng như các ngôn ngữ chuyên sâu trong xây dựng phần mềm lớn như [C#](/dev/csharp)
 
