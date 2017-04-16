@@ -1,0 +1,33 @@
+{% comment %}
+  include.posts = site.word 
+  include.path = "/word/"
+{% endcomment %}
+{% if page.redirect_from %}
+  {% assign splitted_url_parts = page.redirect_from | append: "/" | split: '/' %}
+{% else %}
+  {% assign splitted_url_parts = page.url | split: '/' %}  
+{% endif %}
+{% assign forLoopMaxInt = splitted_url_parts.size | minus: 2 %}
+{% assign current_url = '' %}
+{% for i in (1..forLoopMaxInt) %}
+    {% capture current_url %}{{current_url}}/{{ splitted_url_parts[i] }}{% endcapture %}
+{% endfor %}
+<h3>Trong series này:</h3>
+<ol class="list-group">
+{% assign datas = include.posts | sort: "series_index" %}
+  {% for post in datas %}
+    {% if post.redirect_from %}
+      {% assign posturl_parts = post.redirect_from | append: "/" | split: '/' %}
+    {% else %}
+      {% assign posturl_parts = post.url | split: '/' %}  
+    {% endif %}
+    {% assign loop = posturl_parts.size | minus: 2 %}
+    {% assign posturl = '' %}
+    {% for i in (1..loop) %}
+        {% capture posturl %}{{posturl}}/{{ posturl_parts[i] }}{% endcapture %}
+    {% endfor %}
+    {% if current_url == posturl %}
+      <a href="{{ post.url }}" class="list-group-item {% if post.url == page.url %}active{% endif %}"><li>{{ post.title }}</li></a>
+    {% endif %}  
+  {% endfor %}
+</ol>

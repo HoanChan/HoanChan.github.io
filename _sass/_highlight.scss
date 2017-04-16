@@ -3,7 +3,7 @@
  */
 .highlight {
     .c     { color: #239500; font-style: italic } // Comment
-    .err   { color: #a61717; background-color: #e3d2d2 } // Error
+    .err   { color: #000; } // Error
     .k     { font-weight: bold; color: #022ED5 } // Keyword
     .o     { font-weight: bold } // Operator
     .cm    { color: #239500; font-style: italic } // Comment.Multiline
@@ -27,9 +27,9 @@
     .kp    { font-weight: bold } // Keyword.Pseudo
     .kr    { font-weight: bold } // Keyword.Reserved
     .kt    { color: #458; font-weight: bold } // Keyword.Type
-    .m     { color: #099 } // Literal.Number
+    .m     { color: #985900; font-weight: bold } // Literal.Number
     .s     { color: #d14 } // Literal.String
-    .n     { color: #A90044 } // Name.Normal
+    .n     { color: #000 } // Name.Normal
     .na    { color: #008080 } // Name.Attribute
     .nb    { color: #0086B3 } // Name.Builtin
     .nc    { color: #458; font-weight: bold } // Name.Class
