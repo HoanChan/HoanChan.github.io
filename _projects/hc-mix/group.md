@@ -1,6 +1,5 @@
 ---
 title: Gom nhóm
-series_index: 3
 ---
 {::options parse_block_html="true" /}
 

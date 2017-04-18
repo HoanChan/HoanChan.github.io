@@ -4,8 +4,8 @@
   include.path="/word/"
 {% endcomment %}
 <aside>
-{% for section in include.data %}
-<h4>{{ section.title }}</h4>
-{% include p_ul.html items=section.posts posts=include.posts path=include.path %}
-{% endfor %}
+	{% for section in include.data %}
+		<h4>{{ section.title }}</h4>
+		{% include p_ul.html items=section.posts posts=include.posts path=include.path %}
+	{% endfor %}
 </aside>

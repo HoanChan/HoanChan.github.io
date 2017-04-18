@@ -3,18 +3,19 @@
   - 
 
 - title: SublimeText
+  url: /dev/sublimetext
   posts:
   - sublimetext/
   - sublimetext/installtion
   - sublimetext/usage
 
 - title: Pascal
+  url: /dev/pascal
   posts:
   - pascal/
-  - pascal/quick_guide
   - pascal/first_program
-  - pascal/io
   - pascal/variable_types
+  - pascal/io
   - pascal/conditions
   - pascal/loops
   - pascal/function
@@ -25,20 +26,24 @@
   - pascal/arrays
   - pascal/records
   - pascal/files
+  - pascal/quick_guide
 
 - title: C / C++
+  url: /dev/c
   posts:
   - c/
   - c/installation
   - c/sample
 
 - title: C#
+  url: /dev/csharp
   posts:
   - csharp/
   - csharp/installation
   - csharp/sample
 
 - title: Javascript
+  url: /dev/javascript
   posts:
   - javascript/
   - javascript/installation

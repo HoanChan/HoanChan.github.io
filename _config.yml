@@ -71,6 +71,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-auto-image
+
 exclude:
   - .gitignore
   - README.md

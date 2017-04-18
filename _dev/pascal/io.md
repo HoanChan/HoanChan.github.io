@@ -1,6 +1,5 @@
 ---
 title: Nhập xuất dữ liệu
-series_index: 2
 ---
 
 Các nội dung chính

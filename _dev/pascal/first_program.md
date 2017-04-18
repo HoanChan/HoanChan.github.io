@@ -1,6 +1,5 @@
 ---
 title: Chương trình đầu tiên
-series_index: 1
 ---
 
 Trước khi nghiên cứu những thành phần cơ bản của ngôn ngữ lập trình Pascal, chúng ta hãy nghiên cứu một  chương trình Pascal đơn giản để có thể xem nó như một chương trình mẫu cho các ví dụ trong các phần tiếp theo.

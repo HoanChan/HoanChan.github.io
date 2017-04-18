@@ -14,7 +14,7 @@
 {% endfor %}
 <h3>Trong series này:</h3>
 <ol class="list-group">
-{% assign datas = include.posts | sort: "series_index" %}
+  {% assign datas = include.posts | sort: "series_index" %}
   {% for post in datas %}
     {% if post.redirect_from %}
       {% assign posturl_parts = post.redirect_from | append: "/" | split: '/' %}

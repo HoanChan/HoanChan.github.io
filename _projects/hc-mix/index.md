@@ -3,7 +3,6 @@ title: Giới thiệu HC-MIX
 permalink: /projects/hc-mix/
 redirect_from: /projects/hc-mix/index.html
 breadcrumb: HC-MIX
-series_index: 0
 ---
 
 Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử dụng **HC-MIX**

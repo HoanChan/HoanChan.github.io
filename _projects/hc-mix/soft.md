@@ -1,6 +1,5 @@
 ---
 title: Sử dụng phần mềm
-series_index: 6
 ---
 
 ### Các lệnh chính của phần mềm

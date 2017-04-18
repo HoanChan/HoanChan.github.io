@@ -1,0 +1,23 @@
+{% comment %}
+  include.data = site.data.word 
+  include.posts = site.word 
+  include.path = "/word/"
+{% endcomment %}
+{% if page.redirect_from %}
+  {% assign splitted_url_parts = page.redirect_from | append: "/" | split: '/' %}
+{% else %}
+  {% assign splitted_url_parts = page.url | split: '/' %}  
+{% endif %}
+{% assign forLoopMaxInt = splitted_url_parts.size | minus: 2 %}
+{% assign current_url = '' %}
+{% for i in (1..forLoopMaxInt) %}
+    {% capture current_url %}{{current_url}}/{{ splitted_url_parts[i] }}{% endcapture %}
+{% endfor %}
+
+{% for section in include.data %}
+  {% if section.url == current_url %}
+    <h3>Trong series này:</h3>
+    {% include p_ul.html items = section.posts posts = include.posts path = include.path %}
+    {% break %}
+  {% endif %}  
+{% endfor %}

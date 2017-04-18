@@ -1,6 +1,5 @@
 ---
 title: Biên soạn câu hỏi
-series_index: 2
 ---
 {::options parse_block_html="true" /}
 
