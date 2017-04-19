@@ -64,7 +64,7 @@ Var weekdays, holidays : days;
 <div class="note info">
 ##### Lưu ý sự khác biệt `Type` và `Var`
 
-Khai báo kiểu cho biết loại dữ liệu như số nguyên, thực, vv, trong khi đó khai báo biến chỉ ra kiểu giá trị mà một biến. Quan trọng nhất, tên biến đề cập đến vị trí bộ nhớ mà giá trị của biến sẽ được lưu trữ còn khai báo kiểu thì không như vậy.
+Khai báo kiểu cho biết loại dữ liệu như số nguyên, thực, vv, trong khi đó khai báo biến chỉ ra kiểu giá trị của một biến. Quan trọng nhất, tên biến đề cập đến vị trí bộ nhớ mà giá trị của biến sẽ được lưu trữ còn khai báo kiểu thì không như vậy.
 </div>
 
 ## Khởi tạo giá trị của biến
@@ -113,10 +113,10 @@ End.
 
 Đoạn chương trình trên sẽ cho chúng ta kết quả như sau khi chạy chương trình:
 
-> Please enter your first name:
-> John
-> Please enter your surname:
-> Smith
+> Please enter your first name:  
+> John  
+> Please enter your surname:  
+> Smith  
 > Welcome to the world of Pascal John Smith
 
 ## Các biến kiểu liệt kê
@@ -154,7 +154,7 @@ End.
 
 Khi đoạn code trên được biên dịch và thực thi, nó tạo ra kết quả như sau:
 
-> Which drink do you want?
+> Which drink do you want?  
 > You can drink limejuice
 
 ## Các biến kiểu miền con
@@ -192,8 +192,8 @@ End.
 {: .sh_pascal }
 Khi đoạn code trên được biên dịch và thực thi, nó tạo ra kết quả như sau:
 
-> Enter your marks(1 - 100): 
-> 100
-> Enter your grade(A - E):
-> A
+> Enter your marks(1 - 100):  
+> 100  
+> Enter your grade(A - E):  
+> A  
 > Marks: 100 Grade: A
