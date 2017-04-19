@@ -16,6 +16,7 @@
   - pascal/first_program
   - pascal/basic_syntax
   - pascal/data_types
+  - pascal/variable_init
   - pascal/io
   - pascal/conditions
   - pascal/loops

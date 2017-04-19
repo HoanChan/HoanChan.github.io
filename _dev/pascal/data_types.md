@@ -8,7 +8,7 @@ Kiểu dữ liệu của một thực thể chỉ ra ý nghĩa của thực th�
 
 Kiểu dữ liệu có thể được phân loại với các dạng sau:
 - Các kiểu vô hướng: 
-	+ Kiểu dữ liệu chuẩn: số nguyên, số thực, đúng sai, kí tự.
+	+ Kiểu dữ liệu chuẩn: số nguyên, số thực, logic, kí tự.
 	+ Do người dùng định nghĩa: miền con, kiệt kê.
 - Các kiểu dữ liệu có cấu trúc được tạo ra từ các kiểu dữ liệu vô hướng: mảng, chuỗi, bản ghi, tập tin và tập hợp.
 - Kiểu dữ liệu con trỏ: *chúng ta sẽ tìm hiểu sau*.
@@ -24,7 +24,7 @@ Type Tên_Kiểu_1, Tên_Kiểu_2 = Kiểu_dữ_liệu;
 
 Ví dụ sau đâu định nghĩa các kiểu dữ liệu mới:
 - Kiểu dữ liệu `dates` và `age` là kiểu số nguyên.
-- Kiểu dữ liệu `yes` và `ok` là kiểu đúng sai.
+- Kiểu dữ liệu `yes` và `ok` là kiểu logic.
 - Kiểu dữ liệu `name` và `city` là kiểu chuỗi.
 - Kiểu dữ liệu `fees`, `expenses` là kiểu số thực.
 
@@ -55,7 +55,7 @@ Danh sách tên các kiểu số nguyên cùng với khoản giá trị của ch
 
 ## Hằng số
 
-Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, đúng sai, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá `Const`.
+Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, logic, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá `Const`.
 
 Cú pháp của khai báo hằng:
 
