@@ -14,7 +14,8 @@
   posts:
   - pascal/
   - pascal/first_program
-  - pascal/variable_types
+  - pascal/basic_syntax
+  - pascal/data_types
   - pascal/io
   - pascal/conditions
   - pascal/loops

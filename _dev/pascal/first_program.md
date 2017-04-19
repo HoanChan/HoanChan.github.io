@@ -8,7 +8,7 @@ Trước khi nghiên cứu những thành phần cơ bản của ngôn ngữ l�
 
 Một chương trình Pascal về cơ bản bao gồm các phần sau đây:
 
-``` pascal
+```
 Program { tên của chương trình }
 Uses { khai báo các thư viện }
 Const { khai báo các hằng toàn cục }
@@ -30,10 +30,11 @@ Begin { bắt đầu khối chương trình chính }
 ...
 End. { kết thúc khối chương trình chính }
 ```
+{: .sh_pascal}
 
 Ví dụ về một chương trình Pascal đơn giản nhất:
 
-``` pascal
+```
 Program Hello_World;
 Uses CRT;
 (* Đây là nơi bắt đầu chương trình chính *)
@@ -42,6 +43,7 @@ Begin
    Readkey;
 End.
 ```
+{: .sh_pascal}
 
 Chúng ta hãy phân tích các thành phần của chương trình trên:
 
