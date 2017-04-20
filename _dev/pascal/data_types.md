@@ -67,11 +67,11 @@ Const Tên_hằng = Giá_Trị;
 Sau đây là một số ví dụ về khai báo hằng:
 
 ```
-VELOCITY_LIGHT = 10;
-PIE = 3.141592;
-NAME = 'Stuart Little';
-CHOICE = true;
-OPERATOR = '+';
+Const VELOCITY_LIGHT = 10;
+      PIE = 3.141592;
+      NAME = 'Stuart Little';
+      CHOICE = true;
+      OPERATOR = '+';
 ```
 {: .sh_pascal }
 
@@ -123,7 +123,7 @@ Type Number = 1 ... 100;
 ```
 {: .sh_pascal }
 
-Các kiểu miền con cũng có thể được tạo ra từ một khoảng của một kiểu liệt kê đã được khai báo từ trước. Ví dụ:
+Các kiểu miền con cũng có thể được tạo ra từ một đoạn của kiểu liệt kê đã được khai báo từ trước. Ví dụ:
 
 ```
 Type months = (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec);

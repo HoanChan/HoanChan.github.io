@@ -6,15 +6,15 @@ Mỗi biến trong chương trình Pascal là tên đại diện cho vùng bộ 
 
 Tên của một biến có thể bao gồm các chữ cái, chữ số, ký tự gạch dưới. Nó phải bắt đầu bằng một ký tự hoặc gạch dưới. Pascal không phân biệt chữ hoa chữ thường, chữ hoa và chữ thường có ý nghĩa tương tự như nhau. Dựa trên các loại cơ bản được trình bày trong chương trước, sẽ có các loại biến cơ bản sau đây:
 
-|   Loại 		|						Mô tả 										|
-|---------------|-------------------------------------------------------------------|
-|   Ký tự 		|	Các kí tự trong bảng mã ASCII. Đây là một kiểu số nguyên. 		|
-|   Số nguyên	|	Các số nguyên. Độ lớn tuỳ loại kiểu số nguyên. 					|
-|   Số thực 	|	Các số thực. Độ lớn tuỳ loại kiểu số thực. 						|
-|   Logic		|	Các giá trị logic `True` hoặc `False`. Đây cũng là một loại số nguyên.|
-|   Liệt kê		|	Chỉ định danh sách các giá trị do người dùng tự định nghĩa. 	|
-|   Miền con 	|	Biểu diễn các biến, có giá trị nằm trong một dải. 				|
-|   Chuỗi 		|	Lưu trữ một mảng các ký tự. 									|
+|   Loại  	  |						Mô tả 									                              	    |
+|-------------|-----------------------------------------------------------------------|
+|   Ký tự 		|	Các kí tự trong bảng mã ASCII. Đây là một kiểu số nguyên. 		        |
+|   Số nguyên	|	Các số nguyên. Độ lớn tuỳ loại kiểu số nguyên. 					              |
+|   Số thực 	|	Các số thực. Độ lớn tuỳ loại kiểu số thực. 						                |
+|   Logic		  |	Các giá trị logic `True` hoặc `False`. Đây cũng là một loại số nguyên.|
+|   Liệt kê		|	Chỉ định danh sách các giá trị do người dùng tự định nghĩa. 	        |
+|   Miền con 	|	Biểu diễn các biến, có giá trị nằm trong một dải. 				            |
+|   Chuỗi 		|	Lưu trữ một mảng các ký tự. 									                        |
 {: .table .table-bordered}
 
 Ngôn ngữ lập trình Pascal cũng cho phép xác định các kiểu biến khác nhau, chúng ta sẽ đề cập đến trong các chương tiếp theo như Pointer, Array, Records, Sets và Files ... Trong chương này, chúng ta hãy nghiên cứu các kiểu biến cơ bản.
@@ -86,10 +86,10 @@ Var Tên_biến : Kiểu_giá_trị = Giá_trị;
 Cụ thể hơn:
 
 ```
-age: integer = 15;
-taxrate: real = 0.5;
-grade: char = 'A';
-name: string = 'John Smith';
+Var age: integer = 15;
+    taxrate: real = 0.5;
+    grade: char = 'A';
+    name: string = 'John Smith';
 ```
 {: .sh_pascal }
 

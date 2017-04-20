@@ -12,14 +12,12 @@
       {% assign p = include.posts | where:"url", item_url | first %}
       {% unless item_url == page.url %}
 
-  <span class="post-category">
-    <span class="label">
-      {{ p.title }}
-    </span>
+<span class="post-category">
+  <span class="label">
+    {{ p.title }}
   </span>
-  <div class="post-content">
-    {{ p.content }}
-  </div>
+</span>
+{{ p.content }}
 
       {% endunless %}
     {% endfor %}

@@ -16,8 +16,9 @@
     font-weight: bold;
   }
   .sh_symbol{ color: #8E005F;}
-  .sh_predef_func, .sh_function {
-    @extend .sh_symbol;
+  .sh_predef_func{ color: #B71A00; }
+  .sh_function, .sh_procedure {
+    color: #7A049C;
     font-weight: bold;
   }
   .sh_comment { color: #9e9e9e; }
