@@ -59,32 +59,36 @@ VD: `A.`, `B:`, `c`
   - Câu trả lời cần cố định vị trí (VD: D. Tất cả các ý trên) thì in nghiêng ở chữ cái `A`, `B`, `C` hoặc `D` ở `<Phần nhận diện>`.
 </div>
 
-**Ví dụ:**
+#### Ví dụ:
+
+```
 Bài 1. Tính 1 + 2 bằng bao nhiêu?  
-a. 1    b. 2    <u>c</u>. 3   d. 4
+a. 1    b. 2    _c_. 3   d. 4
 
 câu 01 Tính 1 + 2 bằng bao nhiêu?  
 A. 1    A. 2  
-<u>B</u>. 3   B. 4
+_B_. 3   B. 4
 
 001: Tính 1 + 2 bằng bao nhiêu?  
 A) 1  
-b) 2    <u>c</u>. 3    d: 4
+b) 2    _c_. 3    d: 4
 
 002) Con người là gì?  
 a. Động vật có vú  
 b. Động vật có xương sống  
 C) Động vật hằng nhiệt  
-**<u>D</u>**: Cả A, B, C đều đúng
+*_D_*: Cả A, B, C đều đúng
 
 Câu 02) Con người là gì?  
 a. Động vật có vú  
 b. Động vật không xương sống  
 C) Động vật biến nhiệt  
-**<u>D</u>**: Cả A, B, C đều đúng
+*_D_*: Cả A, B, C đều đúng
 
 BÀI 2 Con người là gì?  
-a. Động vật có vú  
+_a_. Động vật có vú  
 b. Động vật không xương sống  
 C) Động vật biến nhiệt  
-**<u>D</u>**: Cả A, B, C đều đúng
+*D*: Cả A, B, C đều đúng
+```
+{: .sh_hc-mix}

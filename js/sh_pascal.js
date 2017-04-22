@@ -59,7 +59,7 @@ sh_languages['pascal'] = [
       -1
     ],
     [
-      /(?:(?<=then|else|do|begin|;)\s*)[A-Za-z0-9_]+(?=[ \t]*(?:else|;))/gi,
+      /(?:(?:then|else|do|begin|;)\s*)[A-Za-z0-9_]+(?=[ \t]*(?:else|;))/gi,
       'sh_procedure',
       -1
     ],

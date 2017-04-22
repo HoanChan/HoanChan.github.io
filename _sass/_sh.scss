@@ -7,16 +7,16 @@
     color: #0000FF;
     font-weight: bold;
   }
-  .sh_cbracket{
+  .sh_cbracket {
     color: #000B9B;
     font-weight: bold;
   }
-  .sh_predef_var{
+  .sh_predef_var {
     color: #CC0000;
     font-weight: bold;
   }
-  .sh_symbol{ color: #8E005F;}
-  .sh_predef_func{ color: #B71A00; }
+  .sh_symbol { color: #8E005F;}
+  .sh_predef_func { color: #B71A00; }
   .sh_function, .sh_procedure {
     color: #7A049C;
     font-weight: bold;
@@ -24,4 +24,10 @@
   .sh_comment { color: #9e9e9e; }
   .sh_string { color: #009800; }
   .sh_number { color: #FF7800; }
+  .sh_underline { 
+    text-decoration: underline; 
+  }
+  .sh_italic { 
+    font-style: italic;
+  }
 }

@@ -3,6 +3,7 @@
   - 
 
 - title: HC-MIX
+  url: /projects/hc-mix
   posts:
   - hc-mix/
   - hc-mix/installation
@@ -14,6 +15,7 @@
   - hc-mix/changelog
 
 - title: VietNamKey
+  url: /projects/vietnamkey
   posts:
   - vietnamkey/
   - vietnamkey/installation
@@ -21,17 +23,20 @@
   - vietnamkey/changelog
 
 - title: HC-Slider
+  url: /projects/hc-slider
   posts:
   - hc-slider/
   - hc-slider/installation
   - hc-slider/settings
 
 - title: SortViewer
+  url: /projects/sortviewer
   posts:
   - sortviewer/
   - sortviewer/usage
 
 - title: QType
+  url: /projects/qtype
   posts:
   - qtype/
   - qtype/using
