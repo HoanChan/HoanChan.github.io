@@ -150,12 +150,12 @@ Readln(c, d); { c = 1, d = 2 }
 
 Khi đọc bằng số nguyên, tất cả các khoảng trống được bỏ qua cho đến khi tìm thấy một số. Sau đó, tất cả các số tiếp theo sẽ được đọc, cho đến khi chạm tới một ký tự không phải số.
 
-Ví dụ người dùng nhập: `8352.38`
+> Ví dụ người dùng nhập: `8352.38`
 
 Khi một số nguyên được đọc từ đầu vào ở trên, giá trị của nó sẽ là `8352`. Nếu ngay sau đó, bạn đọc một ký tự, giá trị sẽ là `.` Vì đầu đọc đã dừng lại ở ký tự không phải chữ số.
 
 Giả sử ta cố gắng đọc hai số nguyên. Điều đó sẽ không thực hiện được, bởi vì khi máy tính tìm dữ liệu để lấp đầy biến thứ hai, nó sẽ thấy `.` Và dừng lại vì nó không thể tìm thấy bất kỳ số nào để đọc.
 
-Với các giá trị thực, máy tính cũng bỏ qua các khoảng cách (`cách trắng` hoặc `Tab`) và sau đó đọc vào nhiều nhất có thể. Tuy nhiên, nhiều trình biên dịch Pascal đặt một hạn chế bổ sung: nếu là số N và `0 < N < 1` thì phải có dạng `0.xxx`. Vì vậy, `.678` là không đọc được, nhưng `0.678` là đọc bình thường.
+Với các giá trị thực, máy tính cũng bỏ qua các khoảng cách (`cách trắng` hoặc `Tab`) và sau đó đọc vào nhiều nhất có thể. Tuy nhiên, nhiều trình biên dịch Pascal đặt một hạn chế bổ sung: nếu là số `N` và `0 < N < 1` thì nó phải có dạng `0.xxx`. Vì vậy, `.678` là không đọc được, nhưng `0.678` là đọc bình thường.
 
 Hãy chắc chắn rằng tất cả các định danh trong danh sách đối số phải là các biến! Hằng không thể gán một giá trị.
