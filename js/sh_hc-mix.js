@@ -27,18 +27,23 @@ sh_languages['hc-mix'] = [
       /^\s*(Con\s+[0-9]+)\s*(?:[\.:\)]|\s)\s*/gim,
       'sh_symbol',
       -1
-    ]
-  ],
-  [
+    ],
     [
-      /\}/g,
+      /{/g,
+      'sh_comment',
+      1
+    ],
+  ],
+  [ // Định nghĩa các cặp đóng mở như {...} (...) hay "..." '...'
+    [
+      /}/g,
       'sh_comment',
       -2 // exit
     ],
     [
-      /\{/g,
+      /{/g,
       'sh_comment',
-      2
+      1
     ]
   ]
 ];

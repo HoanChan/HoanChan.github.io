@@ -14,6 +14,7 @@
     }
     $( document ).ready(function() {
     	highlight('pascal');
+        highlight('syntax');
         highlight('hc-mix');
         $('.sh_hc-mix').each(function(index, el) {
             replace(el, /\*_([a-d])_\*/gi, "<span class='sh_keyword sh_italic sh_underline'>$1</span>");

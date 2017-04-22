@@ -6,6 +6,7 @@ title: Biên soạn câu hỏi
 Một câu hỏi bao gồm 2 bộ phận: nội dung câu hỏi và 4 câu trả lời `A`, `B`, `C`, `D`. Để chương trình nhận diện được thì cần soạn câu hỏi theo đúng cú pháp
 
 ### Cú pháp
+
 ```
 <Phần nhận diện câu hỏi> <Nội dung câu hỏi>
 <Phần nhận diện câu trả lời> <Nội dung câu trả lời>
@@ -13,6 +14,8 @@ Một câu hỏi bao gồm 2 bộ phận: nội dung câu hỏi và 4 câu trả
 <Phần nhận diện câu trả lời> <Nội dung câu trả lời>
 <Phần nhận diện câu trả lời> <Nội dung câu trả lời>
 ```
+{: .sh_syntax }
+
 ### Viết phần câu hỏi
 
 Có 2 cách viết `<phần nhận diện câu hỏi>`  như sau:
@@ -20,12 +23,14 @@ Có 2 cách viết `<phần nhận diện câu hỏi>`  như sau:
 ```
 <Bài hoặc Câu> <Số thứ tự> <Dấu hoặc khoảng trống>
 ```
+{: .sh_syntax }
 
 VD: `Bài 1:`, `Câu 05.`, `CÂU 2`, `bài 0005`
 
 ```
 <Số thứ tự> <Dấu ngăn cách>
 ```
+{: .sh_syntax }
 
 VD:  `002)`, `004.`, `5:`
 
@@ -36,6 +41,7 @@ VD:  `002)`, `004.`, `5:`
 ```
 <A hoặc B hoặc C hoặc D> <Dấu>
 ```
+{: .sh_syntax }
 
 VD: `A.`, `B:`, `c`
 
@@ -91,4 +97,4 @@ b. Động vật không xương sống
 C) Động vật biến nhiệt  
 *D*: Cả A, B, C đều đúng
 ```
-{: .sh_hc-mix}
+{: .sh_syntax }

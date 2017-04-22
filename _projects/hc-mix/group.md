@@ -9,6 +9,8 @@ Bài trắc nghiệm có cấu trúc gồm nhiều nhóm, mỗi nhóm có thể 
 ```
 <Nhóm><Số thứ tự><Dấu hoặc khoảng trống>
 ```
+{: .sh_syntax }
+
   VD: `NHÓM 1.`, `nhóm 03:`, `Nhóm 2`
 
 <div class="note">
