@@ -113,7 +113,7 @@ Read(<Danh sách biến>);
 {: .sh_pascal }
 
 Trong đó `Danh sách biến` là danh sách các biến cần được nhập dữ liệu từ bàn phím và được ngăn cách với nhau vởi dấu phẩy     `,` 
-Lệnh `Read` xử lý đầu vào dưới dạng một chuỗi các kí tự với các dòng ngăn cách nhau bởi một kí tự kết thúc dòng. Các biến được đọc bằng `Read` có thể nằm trên 1 hoặc nhiều dòng, miễn sau chúng được ngăn cách nhau bởi dấu cách trắng, dấu Tab hay dấu xuống dòng là được.
+Lệnh `Read` xử lý đầu vào dưới dạng một chuỗi các kí tự với các dòng ngăn cách nhau bởi một kí tự kết thúc dòng. Các biến được đọc bằng `Read` có thể nằm trên 1 hoặc nhiều dòng, miễn sau chúng được ngăn cách nhau bởi dấu `cách trắng`, dấu `Tab` hay dấu `xuống dòng` là được.
 
 Pascal còn có lệnh `Readln` để đọc dữ liệu đầu vào mà mỗi biến nằm riêng trên 1 dòng. Nếu có nhiều giá trị nằm chung 1 dòng thì lệnh `Readln` sẽ chỉ đọc giá trị đầu tiên. `Readln` có cú pháp như sau:
 
@@ -122,10 +122,11 @@ Readln(<Danh sách biến>);
 ```
 {: .sh_pascal }
 
-Giả sử khi chạy chương trình người ta nhập dữ liệu đầu vào như sau:
-45 97 3
-1 2 3
-Ví dụ như a, b, c, d đều là số nguyền thì các lệnh read và Readln sẽ đọc được nội dung như sau:
+> Giả sử khi chạy chương trình người ta nhập dữ liệu đầu vào như sau:
+> 45 97 3
+> 1 2 3
+
+Ví dụ như `a`, `b`, `c`, `d` đều là số nguyên thì các lệnh `Read` và `Readln` sẽ đọc được nội dung như sau:
 
 ``` text
 Read(a); { a = 45 }		
@@ -151,10 +152,10 @@ Khi đọc bằng số nguyên, tất cả các khoảng trống được bỏ q
 
 Ví dụ người dùng nhập: `8352.38`
 
-Khi một số nguyên được đọc từ đầu vào ở trên, giá trị của nó sẽ là 8352. Nếu ngay sau đó, bạn đọc một ký tự, giá trị sẽ là '.' Vì đầu đọc đã dừng lại ở ký tự không phải chữ số.
+Khi một số nguyên được đọc từ đầu vào ở trên, giá trị của nó sẽ là `8352`. Nếu ngay sau đó, bạn đọc một ký tự, giá trị sẽ là `.` Vì đầu đọc đã dừng lại ở ký tự không phải chữ số.
 
-Giả sử ta cố gắng đọc hai số nguyên. Điều đó sẽ không thực hiện được, bởi vì khi máy tính tìm dữ liệu để lấp đầy biến thứ hai, nó sẽ thấy `.` Và dừng lại vì nó không thể tìm thấy bất kỳ dữ liệu để đọc.
+Giả sử ta cố gắng đọc hai số nguyên. Điều đó sẽ không thực hiện được, bởi vì khi máy tính tìm dữ liệu để lấp đầy biến thứ hai, nó sẽ thấy `.` Và dừng lại vì nó không thể tìm thấy bất kỳ số nào để đọc.
 
-Với các giá trị thực, máy tính cũng bỏ qua các khoảng cách (cách trắng hoặc Tab) và sau đó đọc vào nhiều nhất có thể. Tuy nhiên, nhiều trình biên dịch Pascal đặt một hạn chế bổ sung: nếu là 1 số > 0 và < 1 thì phải có dạng 0.xxx. Vì vậy, .678 là không đọc được, nhưng 0.678 là đọc bình thường.
+Với các giá trị thực, máy tính cũng bỏ qua các khoảng cách (`cách trắng` hoặc `Tab`) và sau đó đọc vào nhiều nhất có thể. Tuy nhiên, nhiều trình biên dịch Pascal đặt một hạn chế bổ sung: nếu là số N và `0 < N < 1` thì phải có dạng `0.xxx`. Vì vậy, `.678` là không đọc được, nhưng `0.678` là đọc bình thường.
 
 Hãy chắc chắn rằng tất cả các định danh trong danh sách đối số phải là các biến! Hằng không thể gán một giá trị.
