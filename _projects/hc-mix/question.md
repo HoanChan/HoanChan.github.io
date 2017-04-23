@@ -97,4 +97,4 @@ b. Động vật không xương sống
 C) Động vật biến nhiệt  
 *D*: Cả A, B, C đều đúng
 ```
-{: .sh_syntax }
+{: .sh_hc-mix }
