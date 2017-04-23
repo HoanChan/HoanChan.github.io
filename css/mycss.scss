@@ -24,6 +24,9 @@ html, body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
+
+.gitedit { margin-top: 30px;}
+
 /*
  * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
  * http://ben.balter.com/2014/03/13/pages-anchor-links/
@@ -52,7 +55,7 @@ ol.list-group{
 code {
   color: inherit;
   background-color: #333;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.1);
   font-size: 0.8em;
   font-family: Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 }

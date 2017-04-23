@@ -34,13 +34,20 @@ End.
 ```
 Writeln(<nội dung cần viết>);
 ```
-{: .sh_pascal}
+{: .sh_pascal .sh_syntax }
 
-Với `<nội dung cần viết>` là các giá trị sẽ được in ra màn hình, nếu có nhiều nội dung cần viết thì chúng được ngăn cách với nhau bởi dấu phẩy `,`. Có các loại sau:
+Ngoài ra còn có `Write` cũng cùng chức năng với `Writeln`. `Writeln` viết xong sẽ viết thêm dấu xuống dòng, còn `Write` thì không.
+
+```
+Write(<nội dung cần viết>);
+```
+{: .sh_pascal .sh_syntax }
+
+Với `<nội dung cần viết>`{: .sh_syntax } là các giá trị sẽ được in ra màn hình, nếu có nhiều nội dung cần viết thì chúng được ngăn cách với nhau bởi dấu phẩy `,`. Có các loại sau:
 
 ### Văn bản
 
-Văn bản cần được viết ra giống y như trong câu lệnh. Đây được gọi là các [chuỗi chữ](/dev/pascal/strings) và phải bắt đầu và kết thúc với một dấu trích dẫn đơn (dấu nháy đơn) `'`.
+Văn bản cần được viết ra giống y như trong câu lệnh. Đây được gọi là các [chuỗi kí tự](/dev/pascal/strings) và phải bắt đầu và kết thúc với một dấu trích dẫn đơn (dấu nháy đơn) `'`.
 
 Ví dụ: `Writeln('Hello, I am Pascal!');` sẽ viết ra `Hello, I am Pascal!`.
 
@@ -48,7 +55,7 @@ Ví dụ: `Writeln('Hello, I am Pascal!');` sẽ viết ra `Hello, I am Pascal!`
 <div class="note info">
 #### Lưu ý cách viết chuỗi
 
-Cặp dấu `'` để bao quanh văn bản chỉ là để đánh dấu đó là 1 chuỗi chữ và sẽ không được in ra.
+Cặp dấu `'` để bao quanh văn bản chỉ là để đánh dấu đó là 1 [chuỗi kí tự](/dev/pascal/strings) và sẽ không được in ra.
 </div>
 
 ### Nội dung các biến
@@ -107,28 +114,28 @@ Lệnh `Writeln` có thể được dùng mà không cần chỉ định các gi
 
 Nhập dữ liệu tức là đưa một thông tin nào đó vào chương trình. Cú pháp cơ bản để nhập dữ liệu từ bàn phím vào Pascal như sau:
 
-``` text
+```
 Read(<Danh sách biến>);
 ```
-{: .sh_pascal }
+{: .sh_pascal .sh_syntax }
 
-Trong đó `Danh sách biến` là danh sách các biến cần được nhập dữ liệu từ bàn phím và được ngăn cách với nhau vởi dấu phẩy     `,` 
+Trong đó `<Danh sách biến>`{: .sh_syntax } là danh sách các biến cần được nhập dữ liệu từ bàn phím và được ngăn cách với nhau vởi dấu phẩy `,` 
 Lệnh `Read` xử lý đầu vào dưới dạng một chuỗi các kí tự với các dòng ngăn cách nhau bởi một kí tự kết thúc dòng. Các biến được đọc bằng `Read` có thể nằm trên 1 hoặc nhiều dòng, miễn sau chúng được ngăn cách nhau bởi dấu `cách trắng`, dấu `Tab` hay dấu `xuống dòng` là được.
 
 Pascal còn có lệnh `Readln` để đọc dữ liệu đầu vào mà mỗi biến nằm riêng trên 1 dòng. Nếu có nhiều giá trị nằm chung 1 dòng thì lệnh `Readln` sẽ chỉ đọc giá trị đầu tiên. `Readln` có cú pháp như sau:
 
-``` text
+```
 Readln(<Danh sách biến>);
 ```
-{: .sh_pascal }
+{: .sh_pascal .sh_syntax }
 
-> Giả sử khi chạy chương trình người ta nhập dữ liệu đầu vào như sau:
-> 45 97 3
+> Giả sử khi chạy chương trình người ta nhập dữ liệu đầu vào như sau:  
+> 45 97 3  
 > 1 2 3
 
 Ví dụ như `a`, `b`, `c`, `d` đều là số nguyên thì các lệnh `Read` và `Readln` sẽ đọc được nội dung như sau:
 
-``` text
+```
 Read(a); { a = 45 }		
 Read(b); { b = 97 }
 ```

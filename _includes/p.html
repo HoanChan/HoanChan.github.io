@@ -5,18 +5,16 @@
 {% endcomment %}
 <div class="container-fluid text-justify"><!-- Page Content -->
     <div class="row"><!-- Content Row -->
-
         <div class="col-lg-3 col-sm-4"><!-- Blog Sidebar Widgets Column -->
-            {% if page.url == include.path %}
-                {% include p_contents.html data=include.data posts=include.posts path=include.path %}
-            {% else %}
-                {% include p_series.html data=include.data posts=include.posts path=include.path %}                
-            {% endif %}
+            {% include sidebar.html data=include.data posts=include.posts path=include.path %}
         </div>
-
+        
         <div class="col-lg-9 col-sm-8"><!-- Blog Post Content Column -->
             <div class="panel panel-default">
                 <div class="docs panel-body">
+                    <div class="hidden-xs pull-right gitedit">
+                        <a href="{{ site.repository }}/edit/master/{{ page.path }}"><i class="fa fa-pencil"></i> &nbsp;Sửa trang này</a>
+                    </div>
                     <h1>{{ page.title }}</h1>
                     {% include breadcrumbs.html posts = include.posts %}
                     {{ content }}
