@@ -25,7 +25,7 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 - Không giới hạn số lượng đề.
 - Không giới hạn số lượng câu hỏi.
 
-<div class="embed-responsive embed-responsive-4by3">
+<div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>
 </div>
 

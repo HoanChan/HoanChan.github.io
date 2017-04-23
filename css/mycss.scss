@@ -27,6 +27,16 @@ html, body {
 
 .gitedit { margin-top: 30px;}
 
+.cl-hl{
+  color: #f90000;
+}
+
+.note {
+  .cl-hl{
+    color: #fc0;
+  }
+}
+
 /*
  * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
  * http://ben.balter.com/2014/03/13/pages-anchor-links/
@@ -61,9 +71,6 @@ code {
 }
 
 ul, ol { color: inherit; }
-
-// class use for kramdown
-.cl-dh { color: #fc0; }
 
 blockquote{
   border-left: 4px solid #4CAF50;

@@ -36,18 +36,18 @@ Sau đó chạy file `Setup.exe` và nhấn `Install` là xong!
 <div class="note warning">
   <h5>Lỗi msvcr100.dll</h5>
 
-  Đây là của bộ thư viện hỗ trợ của **Microsoft Visual C++ Redistributable**{: .cl-dh}. Có 2 cách khắc phục lỗi này:
+  Đây là của bộ thư viện hỗ trợ của **Microsoft Visual C++ Redistributable**{: .cl-hl}. Có 2 cách khắc phục lỗi này:
 
-  + **Cách 1:**{: .cl-dh} Download một phiên bản khác từ đường link dưới đây lưu ý lựa chọn phiên bản phù hợp với hệ điều hành của bạn:
+  + **Cách 1:**{: .cl-hl} Download một phiên bản khác từ đường link dưới đây lưu ý lựa chọn phiên bản phù hợp với hệ điều hành của bạn:
     - [Microsoft Visual C++ 2010 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=5555)
     - [Microsoft Visual C++ 2010 Redistributable Package (x64)](http://www.microsoft.com/download/en/details.aspx?id=14632)
-  + **Cách 2:**{: .cl-dh} Gỡ bỏ bản NET Framework 4.0 hiện tại và cài [bản mới](https://www.microsoft.com/en-us/download/details.aspx?id=24872)
+  + **Cách 2:**{: .cl-hl} Gỡ bỏ bản NET Framework 4.0 hiện tại và cài [bản mới](https://www.microsoft.com/en-us/download/details.aspx?id=24872)
 </div>
 
 <div class="note warning">
   <h5>Lỗi Clickone Trusted</h5>
 
-  Khi phát triển, phần mềm sử dụng **ClickOnce**{: .cl-dh} để cài đặt. Khi cài đặt, **Troubleshooting Office Solution**{: .cl-dh} **Security**{: .cl-dh} tiến hành kiểm tra thông tin đăng ký trong tập tin **manifest**{: .cl-dh}. Nếu không mở được tập tin này nó sẽ báo lỗi như trường hợp của bạn. 
+  Khi phát triển, phần mềm sử dụng **ClickOnce**{: .cl-hl} để cài đặt. Khi cài đặt, **Troubleshooting Office Solution**{: .cl-hl} **Security**{: .cl-hl} tiến hành kiểm tra thông tin đăng ký trong tập tin **manifest**{: .cl-hl}. Nếu không mở được tập tin này nó sẽ báo lỗi như trường hợp của bạn. 
 
-  &#8594; chạy file **trust.reg**{: .cl-dh} hoặc **trust64.reg**{: .cl-dh} (chạy 2 cái luôn cũng được) trong thư mục cài đặt rồi chạy lại file cài đặt để khắc phục
+  &#8594; chạy file **trust.reg**{: .cl-hl} hoặc **trust64.reg**{: .cl-hl} (chạy 2 cái luôn cũng được) trong thư mục cài đặt rồi chạy lại file cài đặt để khắc phục
  </div>

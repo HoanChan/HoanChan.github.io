@@ -53,7 +53,7 @@ VD: `A.`, `B:`, `c`
   - Trước, sau hoặc giữa các thành phần có thể để thêm các `<khoảng trống>`.
   - Các câu trả lời trên 1 dòng cách nhau bởi `<khoảng trống>`.
   - Câu hỏi không chỉ ra đâu là câu trả lời đúng thì câu trả lời `đầu tiên` được xem là đúng.
-  - Chương trình không quan tâm `tên` và `thứ tự` của các thành phần, nêu nhiều câu là `câu 1` hay có 3 `đáp án A` cũng không sao! Mỗi câu hỏi _phải có đúng 4 câu trả lời_{: .cl-dh}.
+  - Chương trình không quan tâm `tên` và `thứ tự` của các thành phần, nêu nhiều câu là `câu 1` hay có 3 `đáp án A` cũng không sao! Mỗi câu hỏi _phải có đúng 4 câu trả lời_{: .cl-hl}.
 </div>
 
 <div class="note info">
