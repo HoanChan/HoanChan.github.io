@@ -24,3 +24,9 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 - Hỗ trợ in phiếu bài làm, in phiếu chấm bài thuận tiện.
 - Không giới hạn số lượng đề.
 - Không giới hạn số lượng câu hỏi.
+
+<div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>
+</div>
+
+## [Tải về](/download/hc-mix/app.zip)

@@ -1,6 +1,14 @@
 ---
 title: Lịch sử
 ---
+###### 22/03/2017 - 1.0.0.4
+{: .post-category}
+- Sửa một lỗi khiến cho việc thay thế [<Danh sách câu hỏi>] bị lỗi khi nhóm có quá nhiều câu làm cho in phần đầu của nhóm rồi bị đứng.
+- Sửa cách nhóm được in ra, nếu có nội dung thì in trên cùng 1 hàng với chữ nhóm, không có nội dung thì in chữ nhóm rồi xuống hàng.
+- Thông báo cho người dùng biết lưu tài liệu trước khi cho in đề!
+- Thêm ghi chú số lượng câu trong mỗi nhóm ở TreeView
+- Thêm menu giúp thu gọn TreeView tới mức nhóm hoặc câu
+- Chuyển server lên github
 
 ###### 22/03/2017 - 1.0.0.3
 {: .post-category}

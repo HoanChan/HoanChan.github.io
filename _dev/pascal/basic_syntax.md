@@ -80,4 +80,5 @@ Bộ ký tự Pascal bao gồm:
 
 Các thành phần trong một chương trình Pascal như các biến và các hằng số, các kiểu, các hàm, các thủ tục và các bản ghi ... có một cái tên hoặc một định danh. 
 
-> Một định danh là một dãy chữ cái và chữ số, bắt đầu bằng một chữ cái. Không được sử dụng ký hiệu và dấu cách trắng trong tên của cúng.
+> Một định danh là một dãy chữ cái và chữ số, bắt đầu bằng một chữ cái. Không được sử dụng ký hiệu và dấu cách trắng trong tên của chúng.
+Ví dụ: `menuIndex`, `_index` hay `menu_Index` là đúng nhưng `menu Index` hay `menu#Index` là sai.
