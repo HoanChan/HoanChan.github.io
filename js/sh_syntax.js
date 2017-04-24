@@ -5,7 +5,7 @@ sh_languages['syntax'] = [
   [ // Định nghĩa các thành phần trong ngôn ngữ lập trình như từ khoá hay hàm ...
     [
       /[^<]+?[^>](?:(?=>))/g,
-      'sh_keyword',
+      'sh_syntax',
       -1 // Mấy cái không tham gia vụ đóng mở ngoặc thì chỗ này là -1 donothing 
     ],
     [

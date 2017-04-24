@@ -26,11 +26,11 @@ Procedure Proc_Name(params...);
 
 ## Chú thích
 
-Các bình luận nhiều dòng được viết trong dấu ngoặc nhọn và dấu hoa thị như `{* ... *}`. Pascal cho phép bình luận đơn dòng được bao quanh trong ngoặc nhọn `{...}`.
+Các chú thích nhiều dòng được viết trong dấu ngoặc và dấu hoa thị như `(* ... *)`. Pascal cho phép chú thích đơn dòng được bao quanh trong ngoặc nhọn `{...}`.
 
 ```
-{* This is a multi-line comments
-   and it will span multiple lines. *}
+(* This is a multi-line comments
+   and it will span multiple lines. *)
 { This is a single line comment in pascal }
 ```
 {: .sh_pascal}
@@ -81,4 +81,5 @@ Bộ ký tự Pascal bao gồm:
 Các thành phần trong một chương trình Pascal như các biến và các hằng số, các kiểu, các hàm, các thủ tục và các bản ghi ... có một cái tên hoặc một định danh. 
 
 > Một định danh là một dãy chữ cái và chữ số, bắt đầu bằng một chữ cái. Không được sử dụng ký hiệu và dấu cách trắng trong tên của chúng.
-Ví dụ: `menuIndex`, `_index` hay `menu_Index` là đúng nhưng `menu Index` hay `menu#Index` là sai.
+>
+> Ví dụ: `menuIndex`, `_index` hay `menu_Index` là đúng nhưng `menu Index` hay `menu#Index` là sai.

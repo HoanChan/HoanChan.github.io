@@ -18,8 +18,11 @@
   - pascal/data_types
   - pascal/variable_init
   - pascal/io
-  - pascal/conditions
-  - pascal/loops
+  - pascal/if
+  - pascal/case
+  - pascal/for
+  - pascal/while
+  - pascal/repeat
   - pascal/function
   - pascal/procedure
   - pascal/variable_scope
