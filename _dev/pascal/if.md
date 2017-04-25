@@ -132,5 +132,5 @@ End.
 
 Khi đoạn code trên được biên dịch và thực thi, nó in ra kết quả như sau:
 
-> khong co gia tri nao phu hop
+> khong co gia tri nao phu hop  
 > chinh xac gia tri cua a = 100

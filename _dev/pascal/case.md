@@ -83,7 +83,7 @@ End;
 ```
 {: .sh_pascal .sh_syntax }
 
-Nếu giá trị của biểu thức hoặc biến đó rơi vào trường hợp nào thi công việc tương ứng sẽ được thực hiện rồi kết thúc lệnh **Case - Of**{: .cl-hl }.
+Nếu giá trị của biểu thức hoặc biến đó rơi vào trường hợp nào thì công việc tương ứng sẽ được thực hiện rồi kết thúc lệnh **Case - Of**{: .cl-hl }.
 Nếu giá trị của biểu thức hoặc biến không rơi vào trường hợp nào thì sẽ thực hiện `<Công việc n + 1>`{: .sh_syntax } và kết thúc lệnh **Case - Of**{: .cl-hl }.
 
 ```

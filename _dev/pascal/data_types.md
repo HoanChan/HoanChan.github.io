@@ -18,15 +18,15 @@ Kiểu dữ liệu có thể được phân loại với các dạng sau:
 Khai báo kiểu được sử dụng nhằm xác định kiểu dữ liệu mới dùng khi khai báo biến. Cú pháp khai báo kiểu là
 
 ```
-Type Tên_Kiểu_1, Tên_Kiểu_2 = Kiểu_dữ_liệu;
+Type <Danh sách kiểu> = <Kiểu dữ liệu>;
 ```
-{: .sh_pascal }
+{: .sh_pascal .sh_syntax }
 
 Ví dụ sau đâu định nghĩa các kiểu dữ liệu mới:
-- Kiểu dữ liệu `dates` và `age` là kiểu số nguyên.
-- Kiểu dữ liệu `yes` và `ok` là kiểu logic.
-- Kiểu dữ liệu `name` và `city` là kiểu chuỗi.
-- Kiểu dữ liệu `fees`, `expenses` là kiểu số thực.
+- Kiểu dữ liệu **dates**{: .cl-hl } và **age**{: .cl-hl } là kiểu số nguyên.
+- Kiểu dữ liệu **yes**{: .cl-hl } và **ok**{: .cl-hl } là kiểu logic.
+- Kiểu dữ liệu **name**{: .cl-hl } và **city**{: .cl-hl } là kiểu chuỗi.
+- Kiểu dữ liệu **fees**{: .cl-hl }, **expenses**{: .cl-hl } là kiểu số thực.
 
 ```
 Type days, age = integer;
@@ -40,29 +40,29 @@ Type days, age = integer;
 
 Danh sách tên các kiểu số nguyên cùng với khoản giá trị của chúng trong Pascal:
 
-|   Kiểu	   |  Tối thiểu		|   Tối đa		|   Định dạng		 |
+|   Kiểu       |  Tối thiểu     |   Tối đa      |   Định dạng        |
 |--------------|----------------|---------------|--------------------|
-|   Integer	   |  -2147483648	|   2147483647	|   Có dấu 32-bit	 |
-|   Cardinal   |  0				|   4294967295	|   Không dấu 32-bit |
-|   Shortint   |  -128			|   127			|   Có dấu 8-bit	 |
-|   Smallint   |  -32768		|   32767		|   Có dấu 16-bit	 |
-|   Longint	   |  -2147483648	|   2147483647	|   Có dấu 32-bit	 |
-|   Int64	   |  -2^63			|   2^63 - 1	|   Có dấu 64-bit	 |
-|   Byte	   |  0				|   255			|   Không dấu 8-bit	 |
-|   Word	   |  0				|   65535		|   Không dấu 16-bit |
-|   Longword   |  0				|   4294967295	|   Không dấu 32-bit |
+|   Integer    |  -2147483648   |   2147483647  |   Có dấu 32-bit    |
+|   Cardinal   |  0             |   4294967295  |   Không dấu 32-bit |
+|   Shortint   |  -128          |   127         |   Có dấu 8-bit     |
+|   Smallint   |  -32768        |   32767       |   Có dấu 16-bit    |
+|   Longint    |  -2147483648   |   2147483647  |   Có dấu 32-bit    |
+|   Int64      |  -2^63         |   2^63 - 1    |   Có dấu 64-bit    |
+|   Byte       |  0             |   255         |   Không dấu 8-bit  |
+|   Word       |  0             |   65535       |   Không dấu 16-bit |
+|   Longword   |  0             |   4294967295  |   Không dấu 32-bit |
 {: .table .table-bordered }
 
 ## Hằng số
 
-Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, logic, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá `Const`.
+Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, logic, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá **Const**{: .cl-hl }.
 
 Cú pháp của khai báo hằng:
 
 ```
-Const Tên_hằng = Giá_Trị;
+Const <Tên hằng> = <Giá trị>;
 ```
-{: .sh_pascal }
+{: .sh_pascal .sh_syntax }
 
 Sau đây là một số ví dụ về khai báo hằng:
 
@@ -82,9 +82,9 @@ Tất cả các khai báo hằng phải được để trước khai báo biến
 Kiểu liệt kê là các kiểu dữ liệu do người dùng tự định nghĩa. Chúng cho phép các giá trị được liệt kê trong một danh sách. Chỉ cho phép các toán tử gán và các toán tử quan hệ trên kiểu dữ liệu liệt kê. Các kiểu dữ liệu được khai báo như sau:
 
 ```
-Type Tên_kiểu_liệt_Kê = (giá_trị_1, giá_trị_2, giá_trị_3, ...)
+Type <Tên kiểu liệt kê> = (<Giá trị 1>, <Giá trị 2>, <Giá trị 3>, ...)
 ```
-{: .sh_pascal }
+{: .sh_pascal .sh_syntax}
 
 Sau đây là một số ví dụ về khai báo kiểu liệt kê:
 
@@ -109,9 +109,9 @@ Var age: 18 ... 100;
 Chúng ta cũng có thế tự tạo ra 1 kiểu dữ liệu sử dụng miền con. Cú pháp để khai báo kiểu dữ liệu miền con là:
 
 ```
-Type Tên_kiểu_miền_con = giới_hạn_dưới ... giới_hạn_trên;
+Type <Tên kiểu miền con> = <Giới hạn dưới> ... <Giới hạn trên>;
 ```
-{: .sh_pascal }
+{: .sh_pascal .sh_syntax }
 
 Sau đây là ví dụ về khai báo biến sử dụng kiểu miền con:
 

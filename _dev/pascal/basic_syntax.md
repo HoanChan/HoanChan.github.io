@@ -6,14 +6,14 @@ Chúng ta đã biết cấu trúc cơ bản của chương trình pascal, các k
 
 ## Biến - Variables
 
-Một khai báo biến được bắt đầu bởi từ khóa var, theo sau là các danh sách các biến như sau:
+Một khai báo biến được bắt đầu bởi từ khóa var, theo sau là danh sách các biến như sau:
 
 ```
-Var A_Variable, B_Variable ...: Variable_Type;
+Var <Danh sách biến> : <Kiểu dữ liệu>;
 ```
-{: .sh_pascal}
+{: .sh_pascal .sh_syntax }
 
-Các biến Pascal được khai báo bên ngoài phần mã của hàm có nghĩa là chúng không được khai báo trong cặp `Begin` và `End`, nhưng chúng được khai báo sau `Function` hoặc `Procedure` và trước từ khoá `Begin`. Đối với các biến toàn cục, chúng được khai báo ở phần đầu chương trình.
+Các biến Pascal được khai báo bên ngoài phần mã của hàm có nghĩa là chúng không được khai báo trong cặp **Begin**{: .cl-hl } và **End**{: .cl-hl }, nhưng chúng được khai báo sau **Function**{: .cl-hl } hoặc **Procedure**{: .cl-hl } và trước từ khoá **Begin**{: .cl-hl }. Đối với các biến toàn cục, chúng được khai báo ở phần đầu chương trình.
 
 ## Hàm - Functions / Thủ tục - Procedures
 Trong Pascal, một thủ tục là tập hợp các lệnh để thực hiện một nhiệm vụ nào đó và không trả về một giá trị nào. Hàm là một thủ tục có trả về giá trị nào đó. Khai báo hàm và thủ tục được thực hiện như sau:
@@ -37,7 +37,7 @@ Các chú thích nhiều dòng được viết trong dấu ngoặc và dấu hoa
 
 ## Phân biệt hoa thường
 
-Pascal là một ngôn ngữ lập trình không phân biệt hoa thường, có nghĩa là có thể viết các biến, hàm và thủ tục hoa hay thường gì cũng được. Ví dụ `A_Variable`, `a_variable` và `A_VARIABLE` có cùng ý nghĩa trong Pascal.
+Pascal là một ngôn ngữ lập trình không phân biệt hoa thường, có nghĩa là có thể viết các biến, hàm và thủ tục hoa hay thường gì cũng được. Ví dụ **A_Variable**{: .cl-hl }, **a_variable**{: .cl-hl } và **A_VARIABLE**{: .cl-hl } có cùng ý nghĩa trong Pascal.
 
 ## Các câu lệnh trong Pascal
 
@@ -55,7 +55,7 @@ Writeln (area);
 
 ## Từ khoá
 
-Các câu lệnh của Pascal được thiết kế với một vài từ dành riêng, chúng được gọi là các từ khoá trong Pascal. Ví dụ như các từ: `Program` `Input` `Output` `Var` `Real` `Begin` `Readline` `Writeln` và `End` đều là các từ khoá.
+Các câu lệnh của Pascal được thiết kế với một vài từ dành riêng, chúng được gọi là các từ khoá trong Pascal. Ví dụ như các từ: **Program**{: .cl-hl }, **Input**{: .cl-hl }, **Output**{: .cl-hl }, **Var**{: .cl-hl }, **Real**{: .cl-hl }, **Begin**{: .cl-hl }, **Readline**{: .cl-hl }, **Writeln**{: .cl-hl } và **End**{: .cl-hl } đều là các từ khoá.
 
 Đây là danh sách các từ khoá trong Pascal.
 
@@ -82,4 +82,4 @@ Các thành phần trong một chương trình Pascal như các biến và các 
 
 > Một định danh là một dãy chữ cái và chữ số, bắt đầu bằng một chữ cái. Không được sử dụng ký hiệu và dấu cách trắng trong tên của chúng.
 >
-> Ví dụ: `menuIndex`, `_index` hay `menu_Index` là đúng nhưng `menu Index` hay `menu#Index` là sai.
+> Ví dụ: **menuIndex**{: .cl-hl }, **_index**{: .cl-hl } hay **menu_Index**{: .cl-hl } là đúng nhưng **menu Index**{: .cl-hl } hay **menu#Index**{: .cl-hl } là sai.
