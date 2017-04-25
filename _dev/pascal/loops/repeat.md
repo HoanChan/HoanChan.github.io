@@ -2,7 +2,7 @@
 title: Repeat - Until
 ---
 
-Ngoài vòng lặp **While**{: .cl-hl } lặp lại công việc trong khi điều kiện còn đúng, Pascal còn cung cấp vòng lặp cho phép lặp lại công việc cho đến khi điều kiện bị sai.
+Ngoài vòng lặp **While**{: .cl-hl } lặp lại công việc trong khi điều kiện còn đúng, Pascal còn cung cấp vòng lặp cho phép lặp lại công việc cho đến khi điều kiện đang sai.
 
 
 ## Vòng lặp repeat
