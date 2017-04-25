@@ -2,25 +2,36 @@
 title: Vòng lặp Repeat - Until
 ---
 
-3. Vòng lặp repeat 
+Ngoài vòng lặp **While**{: .cl-hl } lặp lại công việc trong khi điều kiện còn đúng, Pascal còn cung cấp vòng lặp cho phép lặp lại công việc cho đến khi điều kiện bị sai.
 
-- Cú pháp:
 
-repeat 
-<câu lệnh>;
-until <điều kiện>;
+## Vòng lặp repeat
 
-- Câu lệnh giữa repeat và until sẽ được lặp lại nhiều lần khi nào điều kiện sai, nếu điều kiện đúng thì ngưng (ngược với vòng lặp while). Đối với lệnh này điều kiện sẽ được kiểm tra sau khi thực hiện các lệnh giữa repeat và until nên ít nhất các lệnh sẽ được thực hiện trước 1 lần rồi mới kiểm tra điều kiện đúng hay sai (nếu sai thì thực hiện tiếp vòng lặp, đúng thì ngưng).
+Cú pháp:
 
-vd: Tính tổng các số liên tiếp từ 1 đến 100
+```
+Repeat 
+    <Công việc>;
+Until <Điều kiện>;
+```
+{: .sh_pascal .sh_syntax }
 
-var i,n: integer;
-    S: real;
-begin    
-    S:=0; i:=1;
-    repeat 
-    S:=S+i; i:=i+1;
-    until i>100;
-    writeln('Tong = ',S);
-    readln;
-end.
+`<Công việc>`{: .sh_syntax} sẽ được thực hiện cho đến khi `<Điều kiện>`{: .sh_syntax} đúng thì ngưng (ngược với vòng lặp **While**{: .cl-hl }). `<Điều kiện>`{: .sh_syntax} sẽ được kiểm tra sau khi thực hiện `<Công việc>`{: .sh_syntax} cho nên ít nhất `<Công việc>`{: .sh_syntax} sẽ được thực hiện 1 lần rồi mới kiểm tra `<Điều kiện>`{: .sh_syntax} đúng hay sai (nếu sai thì thực hiện tiếp vòng lặp, đúng thì ngưng).
+
+Ví dụ tính tổng các số chẵn từ 0 đến 100:
+
+```
+Program evenSum;
+Var number : Byte;
+    sum : Integer;
+Begin
+    sum := 0;
+    number := 100;
+    Repeat
+       sum := sum + number;
+       number := number - 2;
+    Until number = 0;
+    Writeln('Sum = ', sum);
+End.
+```
+{: .sh_pascal }
