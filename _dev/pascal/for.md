@@ -31,7 +31,7 @@ Vòng lặp For - To - Do được thực hiện như sau:
 - Bước 2: Kiểm tra giá trị của `<Biến điều khiển>`{: .sh_syntax }
     + Nếu `<Biến điều khiển>`{: .sh_syntax } ≤ `<Giá trị cuối>`{: .sh_syntax } thì thực hiện `<Công việc>`{: .sh_syntax}
     + Nếu `<Biến điều khiển>`{: .sh_syntax } > `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp.
-- Bước 3: Nếu `<Biến điều khiển>`{: .sh_syntax } < `<Giá trị cuối>`{: .sh_syntax } thì tăng giá trị của `<Biến điều khiển>`{: .sh_syntax } lên 1 đơn vị rồi quay lại bước 2.
+- Bước 3: Nếu `<Biến điều khiển>`{: .sh_syntax } = `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp, còn không thì tăng giá trị của `<Biến điều khiển>`{: .sh_syntax } lên 1 đơn vị rồi quay lại bước 2.
 
 Ví dụ một chương trình cụ thể:
 
@@ -83,7 +83,7 @@ Vòng lặp For - DownTo - Do được thực hiện như sau:
 - Bước 2: Kiểm tra giá trị của `<Biến điều khiển>`{: .sh_syntax }
     + Nếu `<Biến điều khiển>`{: .sh_syntax } ≥ `<Giá trị cuối>`{: .sh_syntax } thì thực hiện `<Công việc>`{: .sh_syntax}
     + Nếu `<Biến điều khiển>`{: .sh_syntax } < `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp.
-- Bước 3: Nếu `<Biến điều khiển>`{: .sh_syntax } > `<Giá trị cuối>`{: .sh_syntax } thì giảm giá trị của `<Biến điều khiển>`{: .sh_syntax } xuống 1 đơn vị rồi quay lại bước 2.
+- Bước 3: Nếu `<Biến điều khiển>`{: .sh_syntax } = `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp, còn không thì thì giảm giá trị của `<Biến điều khiển>`{: .sh_syntax } xuống 1 đơn vị rồi quay lại bước 2.
 
 Ví dụ một chương trình cụ thể:
 
