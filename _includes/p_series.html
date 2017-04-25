@@ -14,10 +14,22 @@
     {% capture current_url %}{{current_url}}/{{ splitted_url_parts[i] }}{% endcapture %}
 {% endfor %}
 
+
 {% for section in include.data %}
-  {% if section.url == current_url %}
+  {% assign path = include.path | append: "/" | append: section.url | replace: "//", "/"%}
+  {% if path == current_url %}
     <h3>Trong series này:</h3>
-    {% include p_ul.html items = section.posts posts = include.posts path = include.path %}
+    {% include p_ul.html items = section.posts posts = include.posts path = path %}
     {% break %}
-  {% endif %}  
+  {% else %}
+    {% for item in section.posts %}
+      {% assign itemurl = item.url | prepend: "/" | prepend: path  | replace: "//", "/"%}
+      {% assign itempath = path | append: "/" | append: item.url  | replace: "//", "/"%}
+      {% if itemurl == current_url %}
+        <h3>Trong series này:</h3>
+        {% include p_ul.html items = item.posts posts = include.posts path = itempath %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}

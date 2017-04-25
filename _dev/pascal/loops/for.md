@@ -1,12 +1,8 @@
 ---
-title: Vòng lặp For - To - Do
+title: For - To - Do
 ---
 
-- Chép phạt 100 lần
-- Chạy 10 vòng quanh sân
-- Hôn nhau 3 cái khi chia tay
-
-Trong cuộc sống, những hành động trên được gọi là được lặp lại và số lần lặp lại là đếm được. Trong Pascal, để mô phỏng thao tác lặp lại một hành động nào đó, Pascal cung cấp vòng lặp For với 2 dạng nhau sau:
+Trong Pascal, để mô phỏng thao tác lặp lại một hành động nào đó, Pascal cung cấp vòng lặp For với 2 dạng như sau:
 
 ## Vòng lặp For - To - Do
 

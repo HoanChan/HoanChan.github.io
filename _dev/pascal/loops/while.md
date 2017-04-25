@@ -1,5 +1,5 @@
 ---
-title: Vòng lặp While - Do
+title: While - Do
 ---
 
 Ngoài vòng lặp **For**{: .cl-hl } với số lần lặp xác định thì Pascal còn cung cấp thêm loại vòng lặp để thực hiện một công việc nào đó mà không xác định trước số lượt lặp lại.

@@ -1,55 +1,67 @@
 - title: Giới thiệu
   posts:
-  - 
+  - url: 
 
 - title: SublimeText
-  url: /dev/sublimetext
+  url: sublimetext
   posts:
-  - sublimetext/
-  - sublimetext/installtion
-  - sublimetext/usage
+  - url: 
+  - url: installtion
+  - url: usage
 
 - title: Pascal
-  url: /dev/pascal
+  url: pascal
   posts:
-  - pascal/
-  - pascal/first_program
-  - pascal/basic_syntax
-  - pascal/data_types
-  - pascal/variable_init
-  - pascal/io
-  - pascal/if
-  - pascal/case
-  - pascal/for
-  - pascal/while
-  - pascal/repeat
-  - pascal/function
-  - pascal/procedure
-  - pascal/variable_scope
-  - pascal/strings
-  - pascal/boolean
-  - pascal/arrays
-  - pascal/records
-  - pascal/files
-  - pascal/quick_guide
+  - url: 
+  - url: first_program
+  - url: basic_syntax
+  - url: data_types
+  - url: variable_init
+  - url: io
+  - url: conditions
+    posts:
+    - url: 
+    - url: if
+    - url: case
+  - url: loops
+    posts:
+    - url: 
+    - url: for
+    - url: while
+    - url: repeat
+  - url: subprogram
+    posts:
+    - url: 
+    - url: function
+    - url: procedure
+    - url: variable_scope
+  - url: data_structures
+    posts:
+    - url: 
+    - url: strings
+    - url: boolean
+    - url: arrays
+    - url: records
+  - url: files
+  - url: quick_guide
 
 - title: C / C++
-  url: /dev/c
+  url: c
   posts:
-  - c/
-  - c/installation
-  - c/sample
+  - url: 
+  - url: installation
+  - url: sample
 
 - title: C#
-  url: /dev/csharp
+  url: csharp
   posts:
-  - csharp/
-  - csharp/installation
-  - csharp/sample
+  - url: 
+  - url: installation
+  - url: sample
 
 - title: Javascript
-  url: /dev/javascript
+  url: javascript
   posts:
-  - javascript/
-  - javascript/installation
-  - javascript/sample
+  - url: 
+  - url: installation
+  - url: sample

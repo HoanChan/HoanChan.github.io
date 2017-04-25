@@ -4,9 +4,10 @@
 @import "mixins";
 
 html, body {
-  font-family: "Palatino Linotype", "Times New Roman",  sans-serif;
+  font-family: "Palatino Linotype", "Times New Roman", sans-serif;
   border-top: 2px solid #fc0;
   font-size: 14px;
+
   @include tablet {
     font-size: 16px;
   }
@@ -14,25 +15,36 @@ html, body {
     font-size: 18px;
   }
 }
-.h1, h1{ font-size: 1.8em; }
-.h2, h2{ font-size: 1.6em; }
-.h3, h3{ font-size: 1.4em; }
-.h4, h4{ font-size: 1.2em; }
-.h5, h5{ font-size: 1.1em; }
-.h6, h6{ font-size: 1em; font-style: italic; }
-
+.h1, h1 {
+  font-size: 1.8em;
+}
+.h2, h2 {
+  font-size: 1.6em;
+}
+.h3, h3 {
+  font-size: 1.4em;
+}
+.h4, h4 {
+  font-size: 1.2em;
+}
+.h5, h5 {
+  font-size: 1.1em;
+}
+.h6, h6 {
+  font-size: 1em;
+  font-style: italic;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
-
-.gitedit { margin-top: 30px;}
-
-.cl-hl{
+.gitedit {
+  margin-top: 30px;
+}
+.cl-hl {
   color: #f90000;
 }
-
 .note {
-  .cl-hl{
+  .cl-hl {
     color: #fc0;
   }
 }
@@ -48,42 +60,60 @@ html, body {
   font-size: 0.8em;
   @include transition(opacity 0.2s ease-in-out 0.1s);
 }
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link {
+h2:hover .header-link, h3:hover .header-link, h4:hover .header-link, h5:hover .header-link, h6:hover .header-link {
   opacity: 1;
 }
-
-ol.list-group{
-  & > a{ & > li{
-    margin-left: 25px;
-  }}
+ol.list-group {
+  & > a {
+    & > li {
+      margin-left: 25px;
+    }
+  }
 }
-
 code {
   color: inherit;
   background-color: #333;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   font-size: 0.8em;
   font-family: Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 }
-
-ul, ol { color: inherit; }
-
-blockquote{
+ul, ol {
+  color: inherit;
+}
+blockquote {
   border-left: 4px solid #4CAF50;
 }
-
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .main-nav ul {
     text-align: right;
   }
 }
-@media (max-width: 830px) {
+@media (max-width:830px) {
   .main-nav {
-    .show-on-mobiles { display: inline; }
-    .hide-on-mobiles { display: none; }
+    .show-on-mobiles {
+      display: inline;
+    }
+    .hide-on-mobiles {
+      display: none;
+    }
+  }
+}
+// List Group CSS for sidebar
+.just-padding {
+  padding: 15px;
+}
+.list-group.list-group-root {
+  padding: 0;
+  overflow: hidden;
+
+  .list-group {
+    margin-bottom: 0;
+    .list-group-item {
+      border-radius: 0;
+      padding-left: 30px;
+    }
+    & :last-child {
+      border-bottom-width: 0;
+    }
   }
 }
