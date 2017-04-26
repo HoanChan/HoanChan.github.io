@@ -22,7 +22,8 @@ Các phép so sánh có vai trò rất quan trọng trong việc mô tả thuậ
 
 > Tìm số lớn nhất: Nếu a > b, thì a là số lớn nhất; ngược lại b là số lớn nhất.
 
-Cụ thể hơn, Pascal hỗ trợ các loại phép so sánh như sau:  
+Cụ thể hơn, Pascal hỗ trợ các loại phép so sánh như sau:
+
 |   Phép toán       |  Toán tử  | Ví dụ a = 2 và b = 3  |
 |-------------------|-----------|-----------------------|
 |    Lớn hơn        |    `>`    |    a > b ⇒ False     |
@@ -31,6 +32,7 @@ Cụ thể hơn, Pascal hỗ trợ các loại phép so sánh như sau:
 | Bé hơn hoặc bằng  |    `<=`   |   a <= b ⇒ True      |
 | Bằng              |    `=`    |    a = b ⇒ False     |
 | Khác              |    `<>`   |   x <> y ⇒ True      |
+{: .table .table-bordered }
 
 Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boolean][/dev/pascal/data_types]
 
@@ -41,3 +43,5 @@ Ngoài các phép so sánh, Pascal còn hỗ trợ các phép toán logic như s
 |    Và         |    `AND`  | True AND False ⇒ False  | True AND True ⇒ True  | False AND False ⇒ False      |
 |    Hoặc       |    `OR`   | True OR False ⇒ True    | True OR True ⇒ True   | False OR False ⇒ False       |
 |    Phủ định   |    `NOT`  | NOT(True) ⇒ False       | NOT(False) ⇒ True     | Not(False And False) ⇒ True  |
+{: .table .table-bordered }
+
