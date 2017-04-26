@@ -3,23 +3,12 @@
 	include.path = "/word/" 
 	include.posts = site.word
 {% endcomment %}
-<div class="list-group list-group-root">
+<div class="list-group">
 {% for item in include.items %}
-  {% assign item_url = item.url | prepend: "/" | prepend: include.path | append: "/" | replace: "//", "/" %}
+  {% assign item_url = item.url | prepend: "/" | prepend: include.path | append: "/" | replace: "///", "/" | replace: "//", "/" %}
   {% assign p = include.posts | where:"url", item_url | first %}
   {% if p %}
-  	<a href="{{ p.url }}" class="list-group-item {% if item_url == page.url %}active{% endif %}">{{ p.title }}</a>
-    {% if item.posts %}
-        <div class="list-group">
-        {% for childitem in item.posts %}
-          {% assign childitem_url = childitem.url | prepend: "/" | prepend: item_url | append: "/" | replace: "//", "/" %}
-          {% assign cp = include.posts | where:"url", childitem_url | first %}
-          {% if cp %}
-            <a href="{{ cp.url }}" class="list-group-item {% if childitem_url == page.url %}active{% endif %}">{{ cp.title }}</a>
-          {% endif %}
-        {% endfor %}
-        </div>
-    {% endif %}
+  	<a href="{{ p.url }}" class="list-group-item {% if item_url == page.url %}active{% endif %} {% if item.posts %}have-child{% endif %}">{% if item.title %} {{ item.title }} {% else %}  {{ p.title }} {% endif %}</a>
   {% endif %}
 {% endfor %}
 </div>

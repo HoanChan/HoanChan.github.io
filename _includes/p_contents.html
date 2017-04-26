@@ -3,9 +3,5 @@
   include.posts=site.word 
   include.path="/word/"
 {% endcomment %}
-<aside>
-	{% for section in include.data %}
-		<h4>{{ section.title }}</h4>
-		{% include p_ul.html items=section.posts posts=include.posts path=include.path %}
-	{% endfor %}
-</aside>
+<h3>Trong series này:</h3>
+{% include p_ul.html items=include.data posts=include.posts path=include.path %}

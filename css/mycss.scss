@@ -102,18 +102,28 @@ blockquote {
 .just-padding {
   padding: 15px;
 }
-.list-group.list-group-root {
-  padding: 0;
-  overflow: hidden;
-
-  .list-group {
-    margin-bottom: 0;
-    .list-group-item {
-      border-radius: 0;
-      padding-left: 30px;
-    }
-    & :last-child {
-      border-bottom-width: 0;
-    }
+.list-group {
+  // .list-group {
+  //   margin-bottom: 0;
+  //   .list-group-item {
+  //     border-radius: 0;
+  //     padding-left: 30px;
+  //   }
+  //   & :last-child {
+  //     border-bottom-width: 0;
+  //   }
+  // }
+  .list-group-item.have-child{
+    &:before {
+    content: "\e080";
+    position: absolute;
+    right: 8px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   }
 }

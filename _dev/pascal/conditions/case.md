@@ -4,11 +4,9 @@ title: Câu lệnh Case - Of
 
 Chúng ta có thể thấy câu lệnh [If - Then - Else](/dev/pascal/if) cho phép chúng ta kiểm tra và thực hiện nhiều quyết định trong chương trình. Tuy nhiên khi có quá nhiều giá trị cần phải kiểm tra thì Pascal cung cấp thêm câu lệnh **Case - Of**{: .cl-hl } để thực hiện điều này dễ dàng hơn.
 
-## Câu lệnh Case - Of
-
 Giống như [If - Then - Else](/dev/pascal/if), **Case - Of**{: .cl-hl } cũng có 2 dạng như sau:
 
-### Dạng thiếu
+## Dạng thiếu
 
 Cú pháp:
 
@@ -68,7 +66,7 @@ Khi đoạn code trên được biên dịch và thực thi, nó in ra kết qu�
 
 > X la: ki tu viet hoa (A-Z)
 
-### Dạng đầy đủ
+## Dạng đầy đủ
 
 Cú pháp:
 
