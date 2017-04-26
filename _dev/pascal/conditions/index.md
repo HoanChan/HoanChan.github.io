@@ -34,11 +34,11 @@ Cụ thể hơn, Pascal hỗ trợ các loại phép so sánh như sau:
 | Khác              |    `<>`   |   x <> y ⇒ True      |
 {: .table .table-bordered }
 
-Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boolean][/dev/pascal/data_types]
+Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boolean](/dev/pascal/data_types)
 
 Ngoài các phép so sánh, Pascal còn hỗ trợ các phép toán logic như sau:
 
-|   Phép toán   |  Toán tử  | Ví dụ                                                                           |
+|   Phép toán   |  Toán tử  |                                         Ví dụ                                    |
 |---------------|-----------|----------------------------------------------------------------------------------|
 |    Và         |    `AND`  | True AND False ⇒ False  | True AND True ⇒ True  | False AND False ⇒ False      |
 |    Hoặc       |    `OR`   | True OR False ⇒ True    | True OR True ⇒ True   | False OR False ⇒ False       |
