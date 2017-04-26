@@ -38,7 +38,7 @@ Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boo
 
 Ngoài các phép so sánh, Pascal còn hỗ trợ các phép toán logic như sau:
 
-|   Phép toán   |  Toán tử  |                                        <td colspan=3> Ví dụ                             
+|   Phép toán   |  Toán tử  |                                         Ví dụ                                    |
 |---------------|-----------|----------------------------------------------------------------------------------|
 |    Và         |    `AND`  | True AND False ⇒ False  | True AND True ⇒ True  | False AND False ⇒ False      |
 |    Hoặc       |    `OR`   | True OR False ⇒ True    | True OR True ⇒ True   | False OR False ⇒ False       |
