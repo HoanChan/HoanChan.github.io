@@ -7,8 +7,7 @@
     <div class="row"><!-- Content Row -->
         <div class="col-lg-3 col-sm-4"><!-- Blog Sidebar Widgets Column -->
             {% include p_sidebar.html data=include.data posts=include.posts path=include.path %}
-        </div>
-        
+        </div><!-- /sidebar -->
         <div class="col-lg-9 col-sm-8"><!-- Blog Post Content Column -->
             <div class="panel panel-default">
                 <div class="docs panel-body">
@@ -21,9 +20,9 @@
                 </div>
                 <div class="panel-footer">
                     {% include section_nav.html data=include.data path=include.path %}
+                    {% include social.html %}
                 </div>
             </div>
-        </div>
-        
+        </div> <!-- / blog -->      
     </div><!-- /.row -->    
 </div><!-- /.container -->
