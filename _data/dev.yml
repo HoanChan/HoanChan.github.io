@@ -40,7 +40,7 @@
     - url: strings
     - url: arrays
     - url: records
-  - url: files
+    - url: files
   - url: quick_guide
 
 - title: C / C++
