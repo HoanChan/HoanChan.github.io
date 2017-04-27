@@ -76,6 +76,9 @@ Tất cả các kiểu chữ đều có thể lưu được các ký tự trong 
 
 ## Kiểu logic
 
+Trong Pascal kiểu logic có tên là Boolean là một đại lượng chỉ có thể nhận hai giá trị TRUE (đúng) hoặc FALSE (sai).
+Các phép toán trên kiểu Boolean: and, or, not.
+
 ## Kiểu liệt kê
 
 Kiểu liệt kê là các kiểu dữ liệu do người dùng tự định nghĩa. Chúng cho phép các giá trị được liệt kê trong một danh sách. Chỉ cho phép các toán tử gán và các toán tử quan hệ trên kiểu dữ liệu liệt kê. Các kiểu dữ liệu được khai báo như sau:
