@@ -38,8 +38,6 @@ Type days, age = integer;
 
 ## Kiểu số nguyên
 
-Danh sách tên các kiểu số nguyên cùng với khoản giá trị của chúng trong Pascal:
-
 |   Kiểu       |  Tối thiểu     |   Tối đa      |   Định dạng        |
 |--------------|----------------|---------------|--------------------|
 |   Integer    |  -2147483648   |   2147483647  |   Có dấu 32-bit    |
@@ -53,29 +51,30 @@ Danh sách tên các kiểu số nguyên cùng với khoản giá trị của ch
 |   Longword   |  0             |   4294967295  |   Không dấu 32-bit |
 {: .table .table-bordered }
 
-## Hằng số
+## Kiểu số thực
 
-Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, logic, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá **Const**{: .cl-hl }.
+| Tên kiểu | Khoảng cách | Số chữ số có nghĩa | Dung lượng theo bytes |
+|----------|-------------|--------------------|-----------------------|
+| Real | phụ thuộc vào nền tảng | Không rõ | 4 đến 8|
+| Single | 1.5E-45.. 3.4E38 | 7-8 | 4
+| Double | 5.0E-324.. 1.7E308   | 15-16 |8  |
+| Extended | 1.9E-4932.. 1.1E4932 | 19-20 | 10 |
+|Comp | -2E64+1.. 2E63-1 | 19-20 | 8 |
+|Currency  | -922337203685477.5808.. 922337203685477.5807 | 19-20 | 8 |
+{: .table .table-bordered }
 
-Cú pháp của khai báo hằng:
+## Kiểu chữ
 
-```
-Const <Tên hằng> = <Giá trị>;
-```
-{: .sh_pascal .sh_syntax }
+Tất cả các kiểu chữ đều có thể lưu được các ký tự trong bảng mã [ASCII](https://vi.wikipedia.org/wiki/ASCII)
+| Tên | Số ký tự lưu được | Dung lượng theo bytes |
+| Char | 1|| 1|
+| Widechar | ? | 2|
+| String | 255 | ?|
+| Shortstring | Tương tự String (255) | ? |
+| Ansistring | Tùy thuộc vào bộ nhớ | ? |
+{: .table .table-bordered }
 
-Sau đây là một số ví dụ về khai báo hằng:
-
-```
-Const VELOCITY_LIGHT = 10;
-      PIE = 3.141592;
-      NAME = 'Stuart Little';
-      CHOICE = true;
-      OPERATOR = '+';
-```
-{: .sh_pascal }
-
-Tất cả các khai báo hằng phải được để trước khai báo biến.
+## Kiểu logic
 
 ## Kiểu liệt kê
 
@@ -131,3 +130,27 @@ Type months = (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec);
      winter = Oct ... Dec;
 ```
 {: .sh_pascal }
+
+## Hằng số
+
+Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, logic, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá **Const**{: .cl-hl }.
+
+Cú pháp của khai báo hằng:
+
+```
+Const <Tên hằng> = <Giá trị>;
+```
+{: .sh_pascal .sh_syntax }
+
+Sau đây là một số ví dụ về khai báo hằng:
+
+```
+Const VELOCITY_LIGHT = 10;
+      PIE = 3.141592;
+      NAME = 'Stuart Little';
+      CHOICE = true;
+      OPERATOR = '+';
+```
+{: .sh_pascal }
+
+Tất cả các khai báo hằng phải được để trước khai báo biến.
