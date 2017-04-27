@@ -15,16 +15,12 @@
     {% assign adrop = ' class="dropdown-toggle" data-toggle="dropdown"' %}
   {% endif %}
 
-  {% if menu.contains %}
-    {% if page.url contains menu.contains %}
-      {% assign current = ' class="active'| append: child | append: '"' %}
-    {% endif %}
-  {% elsif page.url == '/' %}
-    {% assign current = ' class="active' | append: child | append: '"' %}
+  {% if page.url contains menu.url %}
+    {% assign current = ' class="active'| append: child | append: '"' %}
   {% endif %}
   <li{{ current }}>
     <a{{ adrop }} href="{{ menu.url }}" target="{{ target }}">
-      <i class="fa {{ menu.icon }}"></i> 
+      <i class="{{ menu.icon }}"></i> 
       <span>{{ menu.text }}</span>
       {% if menu.child %}<b class="caret"></b>{% endif %}
     </a>

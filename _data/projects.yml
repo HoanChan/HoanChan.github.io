@@ -1,42 +1,41 @@
 - title: Giới thiệu
-  posts:
-  - 
+  url: 
 
 - title: HC-MIX
-  url: /projects/hc-mix
+  url: hc-mix
   posts:
-  - hc-mix/
-  - hc-mix/installation
-  - hc-mix/question
-  - hc-mix/group
-  - hc-mix/headerfooter
-  - hc-mix/advanced
-  - hc-mix/soft
-  - hc-mix/changelog
+  - url: 
+  - url: installation
+  - url: question
+  - url: group
+  - url: headerfooter
+  - url: advanced
+  - url: soft
+  - url: changelog
 
 - title: VietNamKey
-  url: /projects/vietnamkey
+  url: vietnamkey
   posts:
-  - vietnamkey/
-  - vietnamkey/installation
-  - vietnamkey/settings
-  - vietnamkey/changelog
-
-- title: HC-Slider
-  url: /projects/hc-slider
-  posts:
-  - hc-slider/
-  - hc-slider/installation
-  - hc-slider/settings
+  - url: 
+  - url: installation
+  - url: settings
+  - url: changelog
 
 - title: SortViewer
-  url: /projects/sortviewer
+  url: sortviewer
   posts:
-  - sortviewer/
-  - sortviewer/usage
+  - url: 
+  - url: usage
+
+- title: HC-Slider
+  url: hc-slider
+  posts:
+  - url: 
+  - url: installation
+  - url: settings
 
 - title: QType
-  url: /projects/qtype
+  url: qtype
   posts:
-  - qtype/
-  - qtype/using
+  - url: 
+  - url: using

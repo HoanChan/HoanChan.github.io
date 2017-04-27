@@ -1,0 +1,39 @@
+- text: Lập trình
+  url: "/dev/"
+  icon: fa fa-codepen
+  child:
+  - text: Pascal
+    url: "/dev/pascal/"
+    icon: fa fa-window-maximize
+  - text: C#
+    url: "/dev/csharp/"
+    icon: fa fa-cogs
+- text: Sản phẩm
+  url: "/projects/"
+  icon: fa fa-desktop
+  child:
+  - text: HC-MIX
+    url: "/projects/hc-mix"
+    icon: fa fa-puzzle-piece
+  - text: VietNamKey
+    url: "/projects/vietnamkey"
+    icon: fa fa-vimeo-square
+  - text: SortViewer
+    url: "/projects/sortviewer"
+    icon: fa fa-sort-amount-asc
+  - text: HC-Slider
+    url: "/projects/hc-slider"
+    icon: fa fa-picture-o
+  - text: qType
+    url: "/projects/qtype"
+    icon: fa fa-keyboard-o
+
+- text: Tin học
+  url: "/it/"
+  icon: fa fa-cogs
+- text: MS-Word
+  url: "/word/"
+  icon: fa fa-file-word-o
+- text: Github
+  url: "https://github.com/hoanchan/"
+  icon: fa fa-github

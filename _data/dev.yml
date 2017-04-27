@@ -38,7 +38,6 @@
     posts:
     - url: 
     - url: strings
-    - url: boolean
     - url: arrays
     - url: records
   - url: files
