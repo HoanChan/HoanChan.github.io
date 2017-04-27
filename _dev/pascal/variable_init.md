@@ -197,3 +197,94 @@ Khi đoạn code trên được biên dịch và thực thi, nó tạo ra kết 
 > Enter your grade(A - E):  
 > A  
 > Marks: 100 Grade: A
+
+### Phương pháp khai báo biến
+
+Đây là một số khai báo kiểu của Pascal:
+
+``` pascal
+type (* Khai báo kiểu*)
+KieuSoNguyen = integer;
+KieuSoNguyenDuong = QWord;
+MangSoNguyen = array[1..239] of KieuSoNguyen;
+
+DiaChi = record
+  xa, huyen, tinh: string;
+  SoNha: integer;
+end;
+
+{ hướng đối tượng }
+ConVat = object
+  Ten: string;
+  Lop: string;
+end;
+  
+ConGa = object(ConVat)
+  TiengGay: string;
+end;
+
+{ Kiểu đoạn con, kiểu tự định nghĩa }
+SoDem = (mot, hai, ba, bon, nam);
+SoNho = 0..10;
+SoDemNho = mot.. ba;
+```
+
+Từ đó, ta có thể khai báo các biến và sử dụng chúng:
+
+``` pascal
+var
+  x: integer; y: KieuSonguyenduong;
+  A: mangsonguyen;
+  GaTrong: ConGa;
+  z: SoDemNho;
+Begin {thân chương trình }
+  x:= 5;
+  y:= x+10;
+  y:= y-1;
+  GaTrong.TiengGay:= 'O O O...';
+  writeln(GaTrong.TiengGay);
+End.
+```
+
+Các kiểu phức có thể được xây dựng từ các kiểu đơn:
+
+``` pascal
+type
+    a = array [1..10] of integer;
+    b = record
+            a: integer;
+            b: char
+        end;
+    c = file of a;
+```
+
+Kiểu chuỗi ký tự (string) là kiểu dữ liệu rất mạnh.
+
+Pascal cũng hỗ trợ dùng [con trỏ]:
+
+``` pascal
+type
+     a = ^b;
+     b = record
+            a: integer;
+            b: char;
+            c: a
+         end;
+var
+     pb: a
+```
+
+Ở đây biến `pb` là một con trỏ đến kiểu dữ liệu `b`, là một `record`. Để tạo record mới và gán các giá trị `10` và `A` vào các trường `a` và `b` trong record, có thể dùng các câu lệnh sau:
+
+``` pascal
+new(pb);
+pb^.a:= 10;
+pb^.b:= 'A';
+pb^.c:= nil;
+...
+```
+
+[Danh sách liên kết] cũng có thể được tạo ra bằng cách cho một trường *kiểu con trỏ* (`c`) vào trong record.
+
+  [con trỏ]: con_trỏ "wikilink"
+  [Danh sách liên kết]: Danh_sách_liên_kết "wikilink"
