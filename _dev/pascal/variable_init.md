@@ -3,6 +3,8 @@ title: Khai báo biến
 ---
 
 Mỗi biến trong chương trình Pascal là tên đại diện cho vùng bộ nhớ trên RAM mà Pascal sẽ thao tác để lưu trữ cũng như xử lý dữ liệu. Mỗi biến trong Pascal có một kiểu dữ liệu cụ thể xác định kích thước và cách bố trí của nó trong bộ nhớ.
+## Phân loại
+{: #classify}
 
 Tên của một biến có thể bao gồm các chữ cái, chữ số, ký tự gạch dưới. Nó phải bắt đầu bằng một ký tự hoặc gạch dưới. Pascal không phân biệt chữ hoa chữ thường, chữ hoa và chữ thường có ý nghĩa tương tự như nhau. Dựa trên các loại cơ bản được trình bày trong chương trước, sẽ có các loại biến cơ bản sau đây:
 
@@ -17,9 +19,10 @@ Tên của một biến có thể bao gồm các chữ cái, chữ số, ký t�
 |   Chuỗi 		|	Lưu trữ một mảng các ký tự. 									                        |
 {: .table .table-bordered}
 
-Ngôn ngữ lập trình Pascal cũng cho phép xác định các kiểu biến khác nhau, chúng ta sẽ đề cập đến trong các chương tiếp theo như Pointer, Array, Records, Sets và Files ... Trong chương này, chúng ta hãy nghiên cứu các kiểu biến cơ bản.
+Ngôn ngữ lập trình Pascal cũng cho phép xác định các kiểu biến khác nhau, chúng ta sẽ đề cập đến trong các chương tiếp theo như `Pointer`, `Array`, Records, Sets và Files ... Trong chương này, chúng ta hãy nghiên cứu các kiểu biến cơ bản.
 
 ## Khai báo biến
+{: #init}
 
 Tất cả các biến phải được khai báo trước khi chúng ta sử dụng chúng trong chương trình Pascal. Tất cả các khai báo biến đều nằm sau từ khóa **Var**{: .cl-hl }. Một khai báo chỉ định một danh sách các biến, tiếp theo là dấu hai chấm `:` và kiểu dữ liệu của biến đó. Cú pháp khai báo biến là:
 
@@ -68,6 +71,7 @@ Khai báo kiểu cho biết loại dữ liệu như số nguyên, thực, vv, tr
 </div>
 
 ## Khởi tạo giá trị của biến
+{: #value}
 
 Các biến được gán giá trị với dấu hai chấm và dấu bằng `:=`, tiếp theo là một biểu thức hay hằng. Cấu trúc chung của thao tác gán giá trị là:
 
@@ -120,6 +124,7 @@ End.
 > Welcome to the world of Pascal John Smith
 
 ## Các biến kiểu liệt kê
+{: #list}
 
 Bạn đã thấy cách sử dụng các kiểu biến đơn giản như **Integer**{: .cl-hl }, **Real**{: .cl-hl } và **Boolean**{: .cl-hl }. Bây giờ, hãy xem các biến của kiểu liệt kê, có thể được khai báo như sau:
 
@@ -158,6 +163,7 @@ Khi đoạn code trên được biên dịch và thực thi, nó tạo ra kết 
 > You can drink limejuice
 
 ## Các biến kiểu miền con
+{: #subrange}
 
 Có thể khai báo trực tiếp kiểu miền con như sau:
 
@@ -197,94 +203,3 @@ Khi đoạn code trên được biên dịch và thực thi, nó tạo ra kết 
 > Enter your grade(A - E):  
 > A  
 > Marks: 100 Grade: A
-
-### Phương pháp khai báo biến
-
-Đây là một số khai báo kiểu của Pascal:
-
-``` pascal
-type (* Khai báo kiểu*)
-KieuSoNguyen = integer;
-KieuSoNguyenDuong = QWord;
-MangSoNguyen = array[1..239] of KieuSoNguyen;
-
-DiaChi = record
-  xa, huyen, tinh: string;
-  SoNha: integer;
-end;
-
-{ hướng đối tượng }
-ConVat = object
-  Ten: string;
-  Lop: string;
-end;
-  
-ConGa = object(ConVat)
-  TiengGay: string;
-end;
-
-{ Kiểu đoạn con, kiểu tự định nghĩa }
-SoDem = (mot, hai, ba, bon, nam);
-SoNho = 0..10;
-SoDemNho = mot.. ba;
-```
-
-Từ đó, ta có thể khai báo các biến và sử dụng chúng:
-
-``` pascal
-var
-  x: integer; y: KieuSonguyenduong;
-  A: mangsonguyen;
-  GaTrong: ConGa;
-  z: SoDemNho;
-Begin {thân chương trình }
-  x:= 5;
-  y:= x+10;
-  y:= y-1;
-  GaTrong.TiengGay:= 'O O O...';
-  writeln(GaTrong.TiengGay);
-End.
-```
-
-Các kiểu phức có thể được xây dựng từ các kiểu đơn:
-
-``` pascal
-type
-    a = array [1..10] of integer;
-    b = record
-            a: integer;
-            b: char
-        end;
-    c = file of a;
-```
-
-Kiểu chuỗi ký tự (string) là kiểu dữ liệu rất mạnh.
-
-Pascal cũng hỗ trợ dùng [con trỏ]:
-
-``` pascal
-type
-     a = ^b;
-     b = record
-            a: integer;
-            b: char;
-            c: a
-         end;
-var
-     pb: a
-```
-
-Ở đây biến `pb` là một con trỏ đến kiểu dữ liệu `b`, là một `record`. Để tạo record mới và gán các giá trị `10` và `A` vào các trường `a` và `b` trong record, có thể dùng các câu lệnh sau:
-
-``` pascal
-new(pb);
-pb^.a:= 10;
-pb^.b:= 'A';
-pb^.c:= nil;
-...
-```
-
-[Danh sách liên kết] cũng có thể được tạo ra bằng cách cho một trường *kiểu con trỏ* (`c`) vào trong record.
-
-  [con trỏ]: con_trỏ "wikilink"
-  [Danh sách liên kết]: Danh_sách_liên_kết "wikilink"

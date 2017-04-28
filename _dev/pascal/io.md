@@ -16,6 +16,7 @@ Việc nhập xuất dữ liệu là đều luôn phải làm ở bất cứ ch�
 Ở phần này, chúng ta cùng tìm hiểu các nhập xuất dữ liệu thông qua 2 thành phần cơ bản của máy tính là bàn phím và màn hình. Phần nhập xuất qua tập tin các bạn có thể xem [tại đây](/dev/pascal/files)
 
 ## Xuất dữ liệu
+{: #output}
 
 Các bạn còn nhớ chương trình sau đây chứ?
 
@@ -111,6 +112,7 @@ Lệnh **Writeln**{: .cl-hl } có thể được dùng mà không cần chỉ đ
 </div>
 
 ## Nhập dữ liệu
+{: #output}
 
 Nhập dữ liệu tức là đưa một thông tin nào đó vào chương trình. Cú pháp cơ bản để nhập dữ liệu từ bàn phím vào Pascal như sau:
 

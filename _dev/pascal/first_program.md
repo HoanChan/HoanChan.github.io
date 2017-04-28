@@ -5,6 +5,7 @@ title: Chương trình đầu tiên
 Trước khi nghiên cứu những thành phần cơ bản của ngôn ngữ lập trình Pascal, chúng ta hãy nghiên cứu một  chương trình Pascal đơn giản để có thể xem nó như một chương trình mẫu cho các ví dụ trong các phần tiếp theo.
 
 ## Cấu trúc chương trình Pascal
+{: #structure}
 
 Một chương trình Pascal về cơ bản bao gồm các phần sau đây:
 
@@ -32,7 +33,8 @@ End. { kết thúc khối chương trình chính }
 ```
 {: .sh_pascal}
 
-Ví dụ về một chương trình Pascal đơn giản nhất:
+# Ví dụ chương trình Pascal:
+{: #helloword}
 
 ```
 Program Hello_World;
@@ -57,6 +59,7 @@ Chúng ta hãy phân tích các thành phần của chương trình trên:
 - Lệnh **End**{: .cl-hl } cuối cùng chính là nơi chương trình kết thúc.
 
 ## Biên dịch và thực thi chương trình Pascal
+{: #run}
 
 Mở Borland Pascal hoặc Sublime Text và viết mã lệnh của chương trình phía trên vào.
 

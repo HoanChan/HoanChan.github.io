@@ -5,6 +5,7 @@ title: Các kiểu dữ liệu
 Kiểu dữ liệu của một thực thể chỉ ra ý nghĩa của thực thể đó kèm theo các ràng buộc, giá trị, cách thức lưu trữ và các lệnh xử lý đi kèm với nó.
 
 ## Phân loại
+{: #classify}
 
 Kiểu dữ liệu có thể được phân loại với các dạng sau:
 - Các kiểu vô hướng: 
@@ -14,6 +15,7 @@ Kiểu dữ liệu có thể được phân loại với các dạng sau:
 - Kiểu dữ liệu con trỏ: *chúng ta sẽ tìm hiểu sau*.
 
 ## Khai báo kiểu dữ liệu
+{: #type}
 
 Khai báo kiểu được sử dụng nhằm xác định kiểu dữ liệu mới dùng khi khai báo biến. Cú pháp khai báo kiểu là
 
@@ -37,6 +39,7 @@ Type days, age = integer;
 {: .sh_pascal }
 
 ## Kiểu số nguyên
+{: #int}
 
 |   Kiểu       |  Tối thiểu     |   Tối đa      |   Định dạng        |
 |--------------|----------------|---------------|--------------------|
@@ -52,34 +55,40 @@ Type days, age = integer;
 {: .table .table-bordered }
 
 ## Kiểu số thực
+{: #real}
 
-| Tên kiểu | Khoảng cách | Số chữ số có nghĩa | Dung lượng theo bytes |
-|----------|-------------|--------------------|-----------------------|
-| Real | phụ thuộc vào nền tảng | Không rõ | 4 đến 8|
-| Single | 1.5E-45.. 3.4E38 | 7-8 | 4
-| Double | 5.0E-324.. 1.7E308   | 15-16 |8  |
-| Extended | 1.9E-4932.. 1.1E4932 | 19-20 | 10 |
-|Comp | -2E64+1.. 2E63-1 | 19-20 | 8 |
-|Currency  | -922337203685477.5808.. 922337203685477.5807 | 19-20 | 8 |
+| Tên kiểu | Khoảng cách            | Số chữ số có nghĩa | Dung lượng theo bytes |
+|----------|------------------------|--------------------|-----------------------|
+| Real     | phụ thuộc vào nền tảng | Không rõ           | 4 đến 8               |
+| Single   | 1.5E-45.. 3.4E38       | 7-8                | 4                     |
+| Double   | 5.0E-324.. 1.7E308     | 15-16              | 8                     |
+| Extended | 1.9E-4932.. 1.1E4932   | 19-20              | 10                    |
+| Comp     | -2E64+1.. 2E63-1       | 19-20              | 8                     |
+| Currency | -922337203685477.5808.. 922337203685477.5807 | 19-20 | 8            |
 {: .table .table-bordered }
 
 ## Kiểu chữ
+{: #text}
 
 Tất cả các kiểu chữ đều có thể lưu được các ký tự trong bảng mã [ASCII](https://vi.wikipedia.org/wiki/ASCII)
-| Tên | Số ký tự lưu được | Dung lượng theo bytes |
-| Char | 1|| 1|
-| Widechar | ? | 2|
-| String | 255 | ?|
-| Shortstring | Tương tự String (255) | ? |
-| Ansistring | Tùy thuộc vào bộ nhớ | ? |
+
+| Tên         | Số ký tự lưu được     | Dung lượng theo bytes |
+|-------------|-----------------------|-----------------------|
+| Char        | 1                     | 1                     |
+| Widechar    | ?                     | 2                     |
+| String      | 255                   | ?                     |
+| Shortstring | Tương tự String (255) | ?                     |
+| Ansistring  | Tùy thuộc vào bộ nhớ  | ?                     |
 {: .table .table-bordered }
 
 ## Kiểu logic
+{: #logic}
 
-Trong Pascal kiểu logic có tên là Boolean là một đại lượng chỉ có thể nhận hai giá trị TRUE (đúng) hoặc FALSE (sai).
-Các phép toán trên kiểu Boolean: and, or, not.
+Trong Pascal kiểu logic có tên là **Boolean**{: .cl-hl } là một đại lượng chỉ có thể nhận hai giá trị TRUE (đúng) hoặc FALSE (sai).
+Các phép toán trên kiểu Boolean: **AND**{: .cl-hl }, **OR**{: .cl-hl }, **NOT**{: .cl-hl }.
 
 ## Kiểu liệt kê
+{: #list}
 
 Kiểu liệt kê là các kiểu dữ liệu do người dùng tự định nghĩa. Chúng cho phép các giá trị được liệt kê trong một danh sách. Chỉ cho phép các toán tử gán và các toán tử quan hệ trên kiểu dữ liệu liệt kê. Các kiểu dữ liệu được khai báo như sau:
 
@@ -97,9 +106,10 @@ Type SUMMER = (April, May, June, July, September);
 ```
 {: .sh_pascal }
 
-Các giá trị trong danh sách liệt kê có thứ thự đúng như thứ tự chúng được khai báo. Kiểu liệt kê không hỗ trợ dạng số hoặc chuỗi kí tự.
+Các giá trị trong danh sách liệt kê có thứ tự đúng như thứ tự chúng được khai báo. Kiểu liệt kê không hỗ trợ dạng số hoặc chuỗi kí tự.
 
 ## Kiểu miền con
+{: #subrange}
 
 Các kiểu miền con dùng để khai báo các biến có giá trị nằm trong một dải nhất định. Ví dụ, nếu là tuổi thì nên nằm giữa 18 đến 100 năm, một biến tuổi (age) có thể được khai báo là:
 
@@ -135,6 +145,7 @@ Type months = (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec);
 {: .sh_pascal }
 
 ## Hằng số
+{: #const}
 
 Sử dụng hằng số làm cho một chương trình dễ đọc, dễ sửa đổi hơn. Pascal hỗ trợ các hằng số thuộc kiểu số, logic, chuỗi và các ký tự. Hằng số có thể được khai báo trong phần khai báo của chương trình bằng từ khoá **Const**{: .cl-hl }.
 

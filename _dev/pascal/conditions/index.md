@@ -24,8 +24,8 @@ Các phép so sánh có vai trò rất quan trọng trong việc mô tả thuậ
 
 Cụ thể hơn, Pascal hỗ trợ các loại phép so sánh như sau:
 
-|   Phép toán       |  Toán tử  | Ví dụ a = 2 và b = 3  |
-|-------------------|-----------|-----------------------|
+|   Phép toán       |  Toán tử  | Ví dụ a = 2 và b = 3 |
+|-------------------|-----------|----------------------|
 |    Lớn hơn        |    `>`    |    a > b ⇒ False     |
 |    Bé hơn         |    `<`    |    a < b ⇒ True      |
 | Lớn hơn khoặc bằng|    `>=`   |   a >= b ⇒ False     |
@@ -36,11 +36,11 @@ Cụ thể hơn, Pascal hỗ trợ các loại phép so sánh như sau:
 
 Ngoài các phép so sánh, Pascal còn hỗ trợ các phép toán logic như sau:
 
-|   Phép toán   |  Toán tử  |                                         Ví dụ                                    |
-|---------------|-----------|----------------------------------------------------------------------------------|
-|    Và         |    `AND`  | True AND False ⇒ False  | True AND True ⇒ True  | False AND False ⇒ False      |
-|    Hoặc       |    `OR`   | True OR False ⇒ True    | True OR True ⇒ True   | False OR False ⇒ False       |
-|    Phủ định   |    `NOT`  | NOT(True) ⇒ False       | NOT(False) ⇒ True     | Not(False And False) ⇒ True  |
+| Phép toán | Toán tử |                                  Ví dụ                                      |
+|-----------|---------|-----------------------------------------------------------------------------|
+| Và        |   `AND` | True AND False ⇒ False | True AND True ⇒ True | False AND False ⇒ False     |
+| Hoặc      |   `OR`  | True OR False ⇒ True   | True OR True ⇒ True  | False OR False ⇒ False      |
+| Phủ định  |   `NOT` | NOT(True) ⇒ False      | NOT(False) ⇒ True    | Not(False And False) ⇒ True |
 {: .table .table-bordered }
 
 Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boolean](/dev/pascal/data_types) và đương nhiên là có thể lưu trữ vào các biến thuộc kiểu [Boolean](/dev/pascal/data_types) để tiện thao tác.
