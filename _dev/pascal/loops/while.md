@@ -1,8 +1,8 @@
 ---
-title: While - Do
+title: Vòng lặp While
 ---
 
-Ngoài vòng lặp **For**{: .cl-hl } với số lần lặp xác định thì Pascal còn cung cấp thêm loại vòng lặp để thực hiện một công việc nào đó mà không xác định trước số lượt lặp lại.
+Ngoài vòng lặp [For](/dev/pascal/loops/for) với số lần lặp xác định thì Pascal còn cung cấp thêm loại vòng lặp để thực hiện một công việc nào đó mà không xác định trước số lượt lặp lại.
 
 ## Vòng lặp while
 
@@ -13,7 +13,7 @@ While <Điều kiện> Do <Công việc>
 ```
 {: .sh_pascal .sh_syntax}
 
-Trong khi `<Điều kiện>`{: .sh_syntax} còn đúng thì `<Công việc>`{: .sh_syntax} sẽ được thực hiện. Như vậy để vòng lặp **While**{: .cl-hl } không bị lặp lại mãi mãi thì bản thân `<Công việc>`{: .sh_syntax} phải chứa lệnh nào đó làm cho `<Điều kiện>`{: .sh_syntax} không còn đúng nữa hoặc bắt buộc thoát ra khỏi vòng lặp **While**{: .cl-hl }. 
+Trong khi [`<Điều kiện>`{: .sh_syntax}](/dev/pascal/conditions) còn đúng thì `<Công việc>`{: .sh_syntax} sẽ được thực hiện. Như vậy để vòng lặp **While**{: .cl-hl } không bị lặp lại mãi mãi thì bản thân `<Công việc>`{: .sh_syntax} phải chứa lệnh nào đó làm cho [`<Điều kiện>`{: .sh_syntax}](/dev/pascal/conditions) không còn đúng nữa hoặc bắt buộc thoát ra khỏi vòng lặp **While**{: .cl-hl }. 
 
 Ví dụ tính tổng các số chẵn từ 0 đến 100:
 
@@ -34,7 +34,7 @@ End.
 ```
 {: .sh_pascal }
 
-Về bản chất thì có thể thay thế vòng lặp **For - To - Do**{: .cl-hl } bằng vòng lặp **While**{: .cl-hl } như sau:
+Về bản chất thì có thể thay thế vòng lặp [For - To - Do](/dev/pascal/loops/for/#fortodo) bằng vòng lặp **While**{: .cl-hl } như sau:
 
 ```
 <Biến điều khiển> := <Giá trị đầu>

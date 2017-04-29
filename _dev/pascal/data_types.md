@@ -84,8 +84,9 @@ Tất cả các kiểu chữ đều có thể lưu được các ký tự trong 
 ## Kiểu logic
 {: #logic}
 
-Trong Pascal kiểu logic có tên là **Boolean**{: .cl-hl } là một đại lượng chỉ có thể nhận hai giá trị TRUE (đúng) hoặc FALSE (sai).
-Các phép toán trên kiểu Boolean: **AND**{: .cl-hl }, **OR**{: .cl-hl }, **NOT**{: .cl-hl }.
+Trong Pascal kiểu logic có tên là **Boolean**{: .cl-hl } là một đại lượng chỉ có thể nhận hai giá trị **True**{: .cl-hl } (đúng) hoặc **False**{: .cl-hl } (sai). Pascal giả định bất kỳ giá trị khác `0` và không phải là `nil` là **True**{: .cl-hl }, và nếu nó là `0` hoặc `nil`, thì nó được giả định là giá trị **False**{: .cl-hl }.
+
+Nhìn chung kiểu **Boolean**{: .cl-hl } dùng để thể hiện kết quả của các [điều kiện và phép so sánh](/dev/pascal/conditions/#logic) thường được dùng để đưa ra một [lựa chọn](/dev/pascal/conditions) nào đó trong chương trình.
 
 ## Kiểu liệt kê
 {: #list}

@@ -1,10 +1,11 @@
 ---
-title: For - To - Do
+title: Vòng lặp For
 ---
 
 Trong Pascal, để mô phỏng thao tác lặp lại một hành động nào đó, Pascal cung cấp vòng lặp For với 2 dạng như sau:
 
 ## Vòng lặp For - To - Do
+{: #fortodo}
 
 Cấu trúc:
 
@@ -23,11 +24,11 @@ For i:= 1 To 10 Do Writeln(i);
 {: .sh_pascal }
 
 Vòng lặp For - To - Do được thực hiện như sau:
-- Bước 1: Gán giá trị đầu cho `<Biến điều khiển>`{: .sh_syntax }
-- Bước 2: Kiểm tra giá trị của `<Biến điều khiển>`{: .sh_syntax }
+- **Bước 1:** Gán giá trị đầu cho `<Biến điều khiển>`{: .sh_syntax }
+- **Bước 2:** Kiểm tra giá trị của `<Biến điều khiển>`{: .sh_syntax }
     + Nếu `<Biến điều khiển>`{: .sh_syntax } ≤ `<Giá trị cuối>`{: .sh_syntax } thì thực hiện `<Công việc>`{: .sh_syntax}
     + Nếu `<Biến điều khiển>`{: .sh_syntax } > `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp.
-- Bước 3: Nếu `<Biến điều khiển>`{: .sh_syntax } = `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp, còn không thì tăng giá trị của `<Biến điều khiển>`{: .sh_syntax } lên 1 đơn vị rồi quay lại bước 2.
+- **Bước 3:** Nếu `<Biến điều khiển>`{: .sh_syntax } = `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp, còn không thì tăng giá trị của `<Biến điều khiển>`{: .sh_syntax } lên 1 đơn vị rồi quay lại bước 2.
 
 Ví dụ một chương trình cụ thể:
 
@@ -66,6 +67,7 @@ End.
 {: .sh_pascal }
 
 ## Vòng lặp For - DownTo - Do
+{: #fordowntodo}
 
 Cấu trúc:
 
@@ -75,11 +77,11 @@ For <Biến điều khiển> := <Giá trị đầu> DownTo <Giá trị cuối> D
 {: .sh_pascal .sh_syntax }
 
 Vòng lặp For - DownTo - Do được thực hiện như sau:
-- Bước 1: Gán giá trị đầu cho `<Biến điều khiển>`{: .sh_syntax }
-- Bước 2: Kiểm tra giá trị của `<Biến điều khiển>`{: .sh_syntax }
+- **Bước 1:** Gán giá trị đầu cho `<Biến điều khiển>`{: .sh_syntax }
+- **Bước 2:** Kiểm tra giá trị của `<Biến điều khiển>`{: .sh_syntax }
     + Nếu `<Biến điều khiển>`{: .sh_syntax } ≥ `<Giá trị cuối>`{: .sh_syntax } thì thực hiện `<Công việc>`{: .sh_syntax}
     + Nếu `<Biến điều khiển>`{: .sh_syntax } < `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp.
-- Bước 3: Nếu `<Biến điều khiển>`{: .sh_syntax } = `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp, còn không thì thì giảm giá trị của `<Biến điều khiển>`{: .sh_syntax } xuống 1 đơn vị rồi quay lại bước 2.
+- **Bước 3:** Nếu `<Biến điều khiển>`{: .sh_syntax } = `<Giá trị cuối>`{: .sh_syntax } thì kết thúc vòng lặp, còn không thì thì giảm giá trị của `<Biến điều khiển>`{: .sh_syntax } xuống 1 đơn vị rồi quay lại bước 2.
 
 Ví dụ một chương trình cụ thể:
 

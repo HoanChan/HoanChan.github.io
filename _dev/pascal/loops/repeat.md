@@ -2,7 +2,7 @@
 title: Repeat - Until
 ---
 
-Ngoài vòng lặp **While**{: .cl-hl } lặp lại công việc trong khi điều kiện còn đúng, Pascal còn cung cấp vòng lặp cho phép lặp lại công việc cho đến khi điều kiện đang sai.
+Ngoài vòng lặp [While](/dev/pascal/loops/while) lặp lại công việc trong khi điều kiện còn đúng, Pascal còn cung cấp vòng lặp cho phép lặp lại công việc cho đến khi điều kiện đang sai.
 
 
 ## Vòng lặp repeat
@@ -16,7 +16,7 @@ Until <Điều kiện>;
 ```
 {: .sh_pascal .sh_syntax }
 
-`<Công việc>`{: .sh_syntax} sẽ được thực hiện cho đến khi `<Điều kiện>`{: .sh_syntax} đúng thì ngưng (ngược với vòng lặp **While**{: .cl-hl }). `<Điều kiện>`{: .sh_syntax} sẽ được kiểm tra sau khi thực hiện `<Công việc>`{: .sh_syntax} cho nên ít nhất `<Công việc>`{: .sh_syntax} sẽ được thực hiện 1 lần rồi mới kiểm tra `<Điều kiện>`{: .sh_syntax} đúng hay sai (nếu sai thì thực hiện tiếp vòng lặp, đúng thì ngưng).
+`<Công việc>`{: .sh_syntax} sẽ được thực hiện cho đến khi [`<Điều kiện>`{: .sh_syntax}](/dev/pascal/conditions) đúng thì ngưng (ngược với vòng lặp **While**{: .cl-hl }). [`<Điều kiện>`{: .sh_syntax}](/dev/pascal/conditions) sẽ được kiểm tra sau khi thực hiện `<Công việc>`{: .sh_syntax} cho nên ít nhất `<Công việc>`{: .sh_syntax} sẽ được thực hiện 1 lần rồi mới kiểm tra [`<Điều kiện>`{: .sh_syntax}](/dev/pascal/conditions) đúng hay sai (nếu sai thì thực hiện tiếp vòng lặp, đúng thì ngưng).
 
 Ví dụ tính tổng các số chẵn từ 0 đến 100:
 

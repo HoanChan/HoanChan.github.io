@@ -1,5 +1,5 @@
 ---
-title: Kiểu tập tin
+title: Kiểu File
 ---
 
 {% include notdone.html %}

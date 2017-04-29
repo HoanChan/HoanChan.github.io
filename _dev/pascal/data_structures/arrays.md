@@ -12,14 +12,14 @@ Khai báo
 Cách 1:
 
 ```
-TYPE <Tên kiểu mảng> = Array[chỉ số] Of <Kiểu phần tử>;
+Type <Tên kiểu mảng> = Array[Chỉ số] Of <Kiểu phần tử>;
 Var <Tên biến mảng> : <Tên kiểu mảng>;
 ```
 {: .sh_pascal .sh_syntax }
 
 Cách 2:
 ```
-Var <Tên biến mảng> : Array[chỉ số] Of <Kiểu phần tử>;
+Var <Tên biến mảng> : Array[Chỉ số] Of <Kiểu phần tử>;
 ```
 {: .sh_pascal .sh_syntax }
 
@@ -28,18 +28,18 @@ Trong đó chỉ số phải là một kiểu miền con, kiểu vô hướng li
 Ví dụ:
 
 ```
-TYPE Mangnguyen = Array[1..5] Of Integer;
+Type Mangnguyen = Array[1..5] Of Integer;
     MangKytu = Array[Byte] Of Char;
-Var     A: Mangnguyen;
-        C: MangKytu;
+Var A : Mangnguyen;
+    C : MangKytu;
 ```
 {: .sh_pascal }
 
 hoặc:
 
 ```
-Var     A: Array[1..5] Of Integer;
-        C: Array[Byte] Of Char;
+Var A : Array[1..5] Of Integer;
+    C : Array[Byte] Of Char;
 ```
 {: .sh_pascal }
 
@@ -47,9 +47,12 @@ Cách khai báo trực tiếp có vẻ đơn giản và ngắn gọn hơn so v�
 
 ## Truy xuất
 
-{việc truy xuất đến từng phần tử của mảng đế xử lý dữ liệu cũng như việc ta gọi đến tên các lớp học của ta}
+Mỗi phần tử của mảng được truy xuất thông qua cú pháp:
 
-Mỗi phần tử của mảng được truy xuất thông qua tên biến mảng cùng với chỉ số của mảng trong cặp dấu [].
+```
+<Tên biến mảng>[<Chỉ số>]
+```
+{: .sh_syntax }
 
 Ví dụ: A[1], A[2],…
 
@@ -63,7 +66,7 @@ Khai báo
 Cách 1:
 
 ```
-TYPE <Tên kiêu mảng> = Array[chỉ số 1, chỉ số 2] Of <Kiểu phàn tử>;
+Type <Tên kiêu mảng> = Array[Chỉ số 1, Chỉ số 2] Of <Kiểu phần tử>;
 Var <Tên biến mảng> : <Tên kiểu mảng>;
 ```
 {: .sh_pascal .sh_syntax }
@@ -80,8 +83,8 @@ Chỉ số 1 và chỉ số 2 là các chỉ số của hàng và cột, chúng 
 Ví dụ:
 
 ```
-TYPE Mangnguyen = Array[1..5,1..3] Of Integer;
-Var A: Mangnguyen;
+Type Mangnguyen = Array[1..5,1..3] Of Integer;
+Var A : Mangnguyen;
 ```
 {: .sh_pascal }
 

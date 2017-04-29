@@ -7,11 +7,11 @@ Trong Pascal, câu lệnh điều kiện được viết như sau:
 ## Dạng thiếu:
 
 ```
-If <điều kiện> Then <câu lệnh>; 
+If <Điều kiện> Then <Công việc>; 
 ```
 {: .sh_pascal .sh_syntax }
 
-Trong đó `<Điều kiện>`{: .sh_syntax} là biểu thức hoặc biến có kiểu dữ liệu là **Boolean**{: .cl-hl } (chỉ nhận 1 trong 2 giá trị là **True**{: .cl-hl } hoặc **False**{: .cl-hl }). Pascal giả định bất kỳ giá trị khác không và không phải là **nil**{: .cl-hl } là **True**{: .cl-hl }, và nếu nó là **0**{: .cl-hl } hoặc **nil**{: .cl-hl }, thì nó được giả định là giá trị **False**{: .cl-hl }. Ví dụ:
+Trong đó `<Điều kiện>`{: .sh_syntax} là biểu thức hoặc biến có kiểu dữ liệu là [Boolean](/dev/pascal/data_types/#logic). Khi `<Điều kiện>`{: .sh_syntax} nhận giá trị là **True**{: .cl-hl } thì `<Công việc>`{: .sh_syntax} sẽ được thực hiện. Khi `<Điều kiện>`{: .sh_syntax} nhận giá trị là **False**{: .cl-hl } thì không làm gì cả. Ví dụ:
 
 ```
 If (x mod 2) = 0 Then Writeln(x,' la so chan');
@@ -40,14 +40,14 @@ Khi đoạn code trên được biên dịch và thực thi, nó in ra kết qu�
 ## Dạng đầy đủ:
 
 ```
-If <điều kiện> Then 
-    <câu lệnh 1> 
+If <Điều kiện> Then 
+    <Công việc 1> 
 Else 
-    <câu lệnh 2>; 
+    <Công việc 2>; 
 ```
 {: .sh_pascal .sh_syntax }
 
-Tương tự như dạng thiếu tuy nhiên khi điều kiện nhận giá trị là **False**{: .cl-hl } thì `<câu lệnh 2>`{: .sh_syntax } sẽ được thực thi thay vì không làm gì cả như dạng thiếu.
+Tương tự như dạng thiếu tuy nhiên khi `<Điều kiện>`{: .sh_syntax} nhận giá trị là **False**{: .cl-hl } thì `<Công việc 2>`{: .sh_syntax } sẽ được thực thi thay vì không làm gì cả như dạng thiếu.
 
 Ví dụ:
 
@@ -61,9 +61,9 @@ Else
 
 {::options parse_block_html="true" /}
 <div class="note info">
-##### Lưu ý dấu **;**{: .cl-hl } và từ khoá **Else**{: .cl-hl }
+##### Lưu ý dấu `;` và từ khoá **Else**{: .cl-hl }
 
-Câu lệnh đứng trước **Else**{: .cl-hl } thì không được có dấu chấm phẩy **;**{: .cl-hl } vì Pascal hiểu là gặp dấu chấm phẩy **;**{: .cl-hl } thì kết thúc luôn câu lệnh **If**{: .cl-hl }.
+Câu lệnh đứng trước **Else**{: .cl-hl } thì không được có dấu chấm phẩy `;` vì Pascal hiểu là gặp dấu chấm phẩy `;` thì kết thúc luôn câu lệnh **If**{: .cl-hl }.
 </div>
 
 Chúng ta hãy thử xem một ví dụ hoàn chỉnh:

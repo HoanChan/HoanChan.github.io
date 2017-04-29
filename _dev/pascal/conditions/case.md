@@ -12,15 +12,15 @@ Cú pháp:
 
 ```
 Case <Giá trị> Of
-    <Trường hợp 1>: <Công việc 1>;
-    <Trường hợp 2>: <Công việc 2>;
+    <Trường hợp 1> : <Công việc 1>;
+    <Trường hợp 2> : <Công việc 2>;
     ...
-    <Trường hợp n>: <Công việc n>;
+    <Trường hợp n> : <Công việc n>;
 End;
 ```
 {: .sh_pascal .sh_syntax }
 
-Trong đó `<Giá trị>`{: .sh_syntax } là một biến hoặc biểu thức là kiểu đếm được (số nguyên, liệt kê hoặc kiểu miền con). Nếu giá trị của biểu thức hoặc biến đó rơi vào trường hợp nào thi công việc tương ứng sẽ được thực hiện rồi kết thúc lệnh **Case - Of**{: .cl-hl }.
+Trong đó `<Giá trị>`{: .sh_syntax } là một biến hoặc biểu thức là kiểu đếm được ([kiểu số nguyên](/dev/pascal/data_types/#int), [kiểu liệt kê](/dev/pascal/data_types/#list) hoặc [kiểu miền con](/dev/pascal/data_types/#subrange)). Nếu giá trị của biểu thức hoặc biến đó rơi vào trường hợp nào thì công việc tương ứng sẽ được thực hiện rồi kết thúc lệnh **Case - Of**{: .cl-hl }.
 Nếu giá trị của biểu thức hoặc biến không rơi vào trường hợp nào thì sẽ kết thúc lệnh **Case - Of**{: .cl-hl } mà không làm gì.
 
 ```
@@ -44,18 +44,19 @@ Khi đoạn code trên được biên dịch và thực thi, nó in ra kết qu�
 > Excellent!  
 > Your grade is A
 
-Ví dụ về sử dụng kiểu miền con trong việc kiểm tra giá trị
+Ví dụ về sử dụng [kiểu miền con](/dev/pascal/data_types/#subrange) trong việc kiểm tra giá trị:
+
 ```
 Program charChecking;
 Var c : char;
 Begin
     c := 'X';
-    Write(c,' la: ')
+    Write(c,' là: ')
     Case c Of
-     '0' .. '9' : Writeln('chu so (0-9)');
-     'a' .. 'z' : Writeln('ki tu viet thuong (a-z)');
-     'A' .. 'Z' : Writeln('ki tu viet hoa (A-Z)');
-     '+' , '-'  : Writeln('dau (+ hoac -)');
+     '0' .. '9' : Writeln('chữ số (0-9)');
+     'a' .. 'z' : Writeln('chữ viết thường (a-z)');
+     'A' .. 'Z' : Writeln('chữ viết hoa (A-Z)');
+     '+' , '-'  : Writeln('dấu (+ hoặc -)');
     end;
     result := s;
 End.
@@ -64,7 +65,7 @@ End.
 
 Khi đoạn code trên được biên dịch và thực thi, nó in ra kết quả như sau:
 
-> X la: ki tu viet hoa (A-Z)
+> X là: chữ viết hoa (A-Z)
 
 ## Dạng đầy đủ
 

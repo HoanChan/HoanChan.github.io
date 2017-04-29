@@ -17,7 +17,7 @@ Khi kết quả kiểm tra là đúng, ta nói điều kiện được thỏa m�
 > Nếu nhấn phím Enter, thì sẽ đưa con trỏ soạn thảo xuống dòng.
 
 ## Điều kiện và phép so sánh
-
+{: #logic }
 Các phép so sánh có vai trò rất quan trọng trong việc mô tả thuật toán và lập trình. Chúng thường được sử dụng để biểu diễn các điều kiện. Ví dụ:
 
 > Tìm số lớn nhất: Nếu a > b, thì a là số lớn nhất; ngược lại b là số lớn nhất.
@@ -43,4 +43,4 @@ Ngoài các phép so sánh, Pascal còn hỗ trợ các phép toán logic như s
 | Phủ định  |   `NOT` | NOT(True) ⇒ False      | NOT(False) ⇒ True    | Not(False And False) ⇒ True |
 {: .table .table-bordered }
 
-Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boolean](/dev/pascal/data_types) và đương nhiên là có thể lưu trữ vào các biến thuộc kiểu [Boolean](/dev/pascal/data_types) để tiện thao tác.
+Kết quả của các phép so sánh đều thuộc kiểu dữ liệu là [Boolean](/dev/pascal/data_types/#logic) và đương nhiên là có thể lưu trữ vào các biến thuộc kiểu [Boolean](/dev/pascal/data_types/#logic) để tiện thao tác.
