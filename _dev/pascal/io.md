@@ -112,7 +112,7 @@ Lệnh **Writeln**{: .cl-hl } có thể được dùng mà không cần chỉ đ
 </div>
 
 ## Nhập dữ liệu
-{: #output}
+{: #input}
 
 Nhập dữ liệu tức là đưa một thông tin nào đó vào chương trình. Cú pháp cơ bản để nhập dữ liệu từ bàn phím vào Pascal như sau:
 
