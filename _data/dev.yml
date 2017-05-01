@@ -28,19 +28,21 @@
     - url: for
     - url: while
     - url: repeat
-  - url: subprogram
-    posts:
-    - url: 
-    - url: function
-    - url: procedure
-    - url: variable_scope
   - url: data_structures
     posts:
     - url: 
-    - url: strings
     - url: arrays
+    - url: strings
     - url: records
     - url: files
+    - url: point
+  - url: subprogram
+    posts:
+    - url: 
+    - url: procedure
+    - url: function
+    - url: variable_scope
+  - url: unit
   - url: quick_guide
 
 - title: C / C++

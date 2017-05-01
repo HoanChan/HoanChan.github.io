@@ -4,6 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="favicon.ico" />
+        {% if page.image %}
+          <link rel="image_src" href="{{ site.url }}/{{ page.image }}" />
+        {% else %}
+          <link rel="image_src" href="{{ site.url }}/static/img/logo-high-resolution.png" />
+        {% endif %}
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
         <meta name="author" content="{{ site.author }}" />
         <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />

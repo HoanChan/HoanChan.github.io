@@ -68,7 +68,7 @@ Xâu kí tự có thể được xem như mảng 1 chiều các phần tử có 
 Ví dụ: 
 
 ```
-St := 'Le Hoàn Chân';
+St := 'Lê Hoàn Chân';
 Write(st[4]);
 ```
 {: .sh_pascal }
@@ -107,7 +107,9 @@ Các quy tắc so sánh:
 + Hai xâu bằng nhau nếu giống nhau hoàn toàn. 
 + Xâu A lớn hơn xâu B nếu ký tự đầu tiên khác nhau của xâu A có mã ASCII lớn hơn. 
 + Nếu A và B là 2 xâu có độ dài khác nhau và xâu A là đoạn đầu của xâu B thì xâu A < xâu B 
+
 Ví dụ có các xâu như sau: 
+
 ```
 a := 'Asus U80V';
 b := 'Asus U85V';
@@ -125,17 +127,97 @@ Thì ta có:
 
 ### Các thủ tục và hàm chuẩn xử lý xâu ký tự
 
-|Loại|Cú pháp|Ý nghĩa|Ví dụ|
-|Hàm |length(st)|cho độ dài thực của xâu ký tự|st:=’le thanh’ thì LENGTH(st) cho bằng 8.|
-|Thủ tục | DELETE(st, pos, num)| xóa num ký tự trong xâu st kể từ vị trí pos| st:= ‘FILENAME’; Delete(st,5,4); lúc đó st = 'FILE'|
-Thủ tục|INSERT(obj, st, pos)|Thủ tục cho kết quả bằng cách chèn xâu ký tự có tên là Obj vào xâu st tại vị trí pos, những ký tự đứng sau pos sẽ được dời về phía sau của xâu ký tự obj |obj:= 'Thanh '; st:= 'Le Lam'; INSERT(obj,st,4); lúc đó st=’Le Thanh Lam’;|
-|Thủ tục | STR(value, st)| Chuyển đối giá trị kiểu số(value) sang dạng xâu ký tự và gán cho biến st.| Ví dụ: n là một só nguyên có giá trị: n:=150; STR(n:5,st) sẽ cho kết quả xâu st là: st=’ 150’;|
-|Thủ tục | VAL(st, value,code) | đối một xâu ký tự st sang dạng số và gán cho biến value, nếu biến đối thành công thì code sẽ nhận giá trị bằng 0. ngược lại thì cho giá trị khác không | VAL(‘123’,value,code) lúc này code sẽ nhận giá trị bằng 0 và value=123|
-|Hàm | COPY(st, pos, num) | sao chép trong xâu st, num ký tự tại vị trí pos | st=’Le Thanh Lam’ COPY(st,4,5) = ‘Thanh’;|
-|Hàm | CONCAT(s1,s2,…,sn) | hàm cho ra 1 xâu mới bằng cách nối đuôi các xâu s1,s2,…,sn lại với nhau.| CONCAT(‘Le ’,’Thanh ‘, ‘Lam’) = ‘Le Thanh Lam’; |
-| Hàm | POS(st1,st2) | hàm cho tavị trí tìm thấy đầu tiên của xâu s1 trong xâu s2.| POS(‘Lam’,‘Le Thanh Lam’) = 10;|
-| Hàm | Length(st) | cho kết quả là một số nguyên chỉ chiều dài của chuỗi st.| length('PASCAL') --> 6 |
-| Hàm | UPCASE(Ký tự) | Đổi Ký tự thành "KÝ TỰ" in hoa | |
+> #### Hàm Length(st)
+**Ý nghĩa:** Cho độ dài thực của xâu ký tự  
+**Ví dụ:**
+```
+st:='Hoàn Chân';
+Writeln(Length(st));
+```
+Kết quả: `9`
+{: .sh_pascal }
+
+> #### Thủ tục Delete(st, pos, num)
+**Ý nghĩa:** Xóa `num` ký tự trong xâu `st` kể từ vị trí `pos`  
+**Ví dụ:**
+```
+st:= 'FILENAME'; 
+Delete(st,5,4);
+Writeln(st);
+```
+Kết quả: `FILE`
+{: .sh_pascal }
+
+> #### Thủ tục Insert(obj, st, pos)
+**Ý nghĩa:** Thủ tục cho kết quả bằng cách chèn xâu ký tự có tên là Obj vào xâu st tại vị trí pos, những ký tự đứng sau pos sẽ được dời về phía sau của xâu ký tự obj  
+**Ví dụ:**
+```
+obj:= 'Hoàn ';
+st:= 'Lê Chân';
+Insert(obj, st, 4);
+Writeln(st);
+```
+Kết quả: `Lê Hoàn Chân`
+{: .sh_pascal }
+
+> #### Thủ tục Str(value, st)
+**Ý nghĩa:** Chuyển đối giá trị kiểu số(value) sang dạng xâu ký tự và gán cho biến st.  
+**Ví dụ:**
+```
+n := 150; 
+Str(n:5, st);
+Writeln(st);
+```
+Kết quả: `  150`
+{: .sh_pascal }
+
+
+> #### Thủ tục Val(st, value, code) 
+**Ý nghĩa:** Đối một xâu ký tự st sang dạng số và gán cho biến value, nếu biến đối thành công thì code sẽ nhận giá trị bằng 0. ngược lại thì cho giá trị khác không  
+**Ví dụ:**
+```
+Val('123', value, code);
+Writeln(value, ' - ', code);
+```
+Kết quả: `123 - 0`
+{: .sh_pascal }
+
+
+> #### Hàm Copy(st, pos, num) 
+**Ý nghĩa:** Sao chép trong xâu st, num ký tự tại vị trí pos  
+**Ví dụ:**
+```
+st := 'Lê Hoàn Chân';
+Writeln('Result =', Copy(st, 3, 4));
+```
+Kết quả: `Result = Hoàn`
+{: .sh_pascal }
+
+
+> #### Hàm Concat(s1, s2, …, sn) 
+**Ý nghĩa:** Hàm cho ra 1 xâu mới bằng cách nối đuôi các xâu s1,s2,…,sn lại với nhau.  
+**Ví dụ:**
+```
+a := 'Lê';
+b := ' Hoàn ';
+Writeln(Concat(a, b, 'Chân')); 
+```
+Kết quả: `Lê Hoàn Chân`
+{: .sh_pascal }
+
+> #### Hàm Pos(st1, st2) 
+**Ý nghĩa:** Hàm cho ta vị trí tìm thấy đầu tiên của xâu s1 trong xâu s2.  
+**Ví dụ:**
+```
+a := Pos('Chân', 'Lê Hoàn Chân');
+Writeln('Position = ', a);
+```
+Kết quả: `Position = 8`
+{: .sh_pascal }
+
+> #### Hàm UPCASE(Ký tự) 
+**Ý nghĩa:** Đổi Ký tự thành "KÝ TỰ" in hoa
+{: .sh_pascal }
 
 ## Truy xuất từng ký tự trong chuỗi
 
