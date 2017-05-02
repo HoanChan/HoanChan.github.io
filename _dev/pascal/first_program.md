@@ -13,19 +13,9 @@ Một chương trình Pascal về cơ bản bao gồm các phần sau đây:
 Program { tên của chương trình }
 Uses { khai báo các thư viện }
 Const { khai báo các hằng toàn cục }
-var { khai báo các biến toàn cục }
+Var { khai báo các biến toàn cục }
 
-Function { khai báo hàm (nếu cần) }
-{ các biến cục bộ }
-Begin
-...
-End;
-
-Procedure { khai báo thủ tục (nếu cần) }
-{ các biến cục bộ }
-Begin
-...
-End;
+{ khai báo hàm / thủ tục (nếu cần) }
 
 Begin { bắt đầu khối chương trình chính }
 ...

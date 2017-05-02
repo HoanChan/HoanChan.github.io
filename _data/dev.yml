@@ -40,8 +40,8 @@
   - url: subprogram
     posts:
     - url: 
-    - url: procedure
-    - url: function
+    - url: procedures
+    - url: functions
     - url: variable_scope
   - url: unit
   - url: quick_guide
