@@ -1,8 +1,8 @@
 ---
-title: Mảng
+title: Mảng - Array
 ---
 
-Mảng (Array) là một tập hợp các phần tử cố định có cùng kiểu dữ liệu.
+Mảng (Array) là một tập hợp các phần tử cố định có cùng kiểu dữ liệu. Số phần tử của mảng được xác định ngay từ khi định nghĩa ra mảng.
 
 ## Mảng 1 chiều
 {: #1d}

@@ -1,5 +1,5 @@
 ---
-title: Tập tin
+title: Tập tin - File
 ---
 
 Nhập và xuất dữ liệu là hai công việc rất phổ biến khi thực hiện một chương trình. Cho đến nay, ta mới chỉ nhập dữ liệu từ bàn phím và xuất dữ liệu ra màn hình. Các dữ liệu này được tổ chức trong bộ nhớ của máy, chúng tồn tại khi chương trình đang chạy và bị xóa khi chương trình kết thúc. Muốn lưu trữ các dữ liệu lâu dài để sử dụng nhiều lần thì phải ghi chúng lên đĩa thành các tập tin.
