@@ -1,5 +1,5 @@
 ---
-title: Kiểu Con trỏ
+title: Con trỏ
 ---
 
 http://nguyenvanquan7826.com/2013/12/01/pascal-tut-bai-11-con-tro-trong-pascal/

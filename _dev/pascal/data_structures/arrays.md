@@ -1,5 +1,5 @@
 ---
-title: Kiểu mảng
+title: Mảng
 ---
 
 Mảng (Array) là một tập hợp các phần tử cố định có cùng kiểu dữ liệu.

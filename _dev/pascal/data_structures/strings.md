@@ -1,5 +1,5 @@
 ---
-title: Kiểu String
+title: Xâu - String
 ---
 
 Để xử lý văn bản, Pascal đưa ra một kiểu dữ liệu mới gọi là chuỗi hoặc xâu ký tự và được định nghĩa bằng từ khóa **String**{: .cl-hl }. Xâu ký tự là dữ liệu bao gồm một dãy các ký tự trong bảng mã [ASCII](https://vi.wikipedia.org/wiki/ASCII).

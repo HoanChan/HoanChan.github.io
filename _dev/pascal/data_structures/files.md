@@ -1,257 +1,258 @@
 ---
-title: Kiểu File
+title: Tập tin
 ---
-http://nguyenvanquan7826.com/2013/11/19/pascal-tep-trong-pascal/
- Khái niệm về tệp:
-Tệp là một dãy các phần tử cùng kiểu được sắp xếp một cách tuần tự. Tệp dữ liệu được lưu trữ ở bộ nhớ ngoài dưới một tên nào đó.
-Tệp tập hợp trong nó một số phần tử dữ liệu có cùng cấu trúc giống như mảng nhưng khác mảng là số phần tử của tệp chưa được xác định.
-[qads]
 
-Trong Pascal có 3 loại tệp được sử dụng là:
-1. Tệp văn bản:Dùng để lưu trữ dữ liệu dưới dạng các ký tự của bảng mã ASCII, các ký tự này được lưu thành từng dòng, độ dài các dòng có thể khác nhau. Ví dụ 2008 (kiểu word) khi ghi vào tệp văn bản cần 4 Byte (không phải 2 Byte).
-2. Tệp có kiểu: Tệp có kiểu là tệp mà các phần tử của nó có cùng độ dài và cùng kiểu dữ liệu.
-3. Tệp không kiểu: Tệp không kiểu là một loại tệp không cần quan tâm đến kiểu dữ liệu ghi trên tệp. Dữ liệu ghi vào tệp không cần chuyển đổi.
- Tác dụng lớn nhất của kiểu dữ liệu tệp là ta có thể lưu trữ các dữ liệu nhập vào từ bàn phím và các kết quả xử lý trong bộ nhớ RAM ra tệp để dùng nhiều lần.
-* Khai báo:
-– Định nghĩa kiểu tệp với từ khóa FILE OF trong phần mô tả kiểu sau từ TYPE, tiếp theo là khai báo biến tệp trong phần khai báo biến.
+Nhập và xuất dữ liệu là hai công việc rất phổ biến khi thực hiện một chương trình. Cho đến nay, ta mới chỉ nhập dữ liệu từ bàn phím và xuất dữ liệu ra màn hình. Các dữ liệu này được tổ chức trong bộ nhớ của máy, chúng tồn tại khi chương trình đang chạy và bị xóa khi chương trình kết thúc. Muốn lưu trữ các dữ liệu lâu dài để sử dụng nhiều lần thì phải ghi chúng lên đĩa thành các tập tin.
+
+> Tập tin (file) trong Pascal là một kiểu dữ liệu có cấu trúc. Mỗi tập tin là một tập hợp các phần tử có cùng chung một kiểu dữ liệu được nhóm lại thành một dãy và được ghi trên đĩa dưới một cái tên chung.
+
+Khái niệm tập tin và mảng có những điểm rất gần nhau. Song tập tin khác mảng ở những điểm sau đây:
+- Mảng được tổ chức trong bộ nhớ còn tập tin chủ yếu được tổ chức trên đĩa.
+- Số phần tử của mảng được xác định ngay khi khai báo, còn số phần tử của tập tin thì không. Các tập tin được kết thúc bằng một dấu hiệu đặc biệt gọi là EOF ( End Of File).
+- Các phần tử của mảng được truy xuất thông qua chỉ số. Các phần tử của tập tin được truy xuất nhờ một biến trung gian chỉ điểm vào vị trí của chúng trên đĩa, gọi là con trỏ tệp. Tại mỗi thời điểm, con trỏ sẽ chỉ vào một vị trí nào đó trong tập tin, gọi là vị trí hiện thời.
+
+Dưới đây sẽ trình bày hai loại tập tin thường gặp là tập tin có định kiểu và tập tin văn bản.
+
+## Tập tin văn bản
+
+Để thao tác trên tập tin trong Pascal thì cần khai báo biến đại diện cho tập tin đó. Các biến kiểu tập tin là một loại biến đặc biệt, không dùng để gán giá trị như các biến nguyên, thực hay chuỗi. Mỗi biến này đại diện cho một tập tin mà thông qua các biến đó ta có thể thực hiện các thao tác trên tập tin như: tạo mới, mở, đóng, xóa, ghi dữ liệu hay đọc dữ liệu từ tập tin, ... Ta có thể khai báo biến kiểu tập tin văn bản như sau:
+
+```
+Var <Biến tập tin> : Text;
+```
+{: .sh_pascal .sh_syntax }
+
+Các phần tử của tập tin văn bản là các ký tự được ghi thành từng dòng có độ dài khác nhau. Các dòng được phân cách nhờ các dấu kết thúc dòng (End of line). Ðó là hai ký tự điều khiển CR (Carriage return : nhảy về đầu dòng) và LF (Line feed: xuống dòng dưới). Ví dụ, đoạn văn bản sau:
+
+``` text
+Tap tin van ban Text
+12345
+Het
+```
+
+Được chứa trong tập tin văn bản thành một dãy :
+
+``` text
+Tap tin van ban Text    CR LF    12345    CR LF    Het    EOF
+```
+
+Trước khi thao tác với tập tin chúng ta cần sử dụng thủ tục:
+
+```
+Assign(<Biến tập tin>, <Tập tin>);
+```
+{: .sh_pascal .sh_syntax }
+
+Thủ tục này là để gán một `<Tập tin>`{: .sh_syntax } trên đĩa cho `<Biến tập tin>`{: .sh_syntax } trong RAM. sau lệnh này, `<Biến tập tin>`{: .sh_syntax } sẽ được dùng để thực hiện tất cả thao tác cần thiết lên `<Tập tin>`{: .sh_syntax } được chỉ định.
+
+### Mở tập tin mới để ghi:
+
+```
+Assign(<Biến tập tin>, <Tập tin>);
+Rewrite(<Biến tập tin>);
+```
+{: .sh_pascal .sh_syntax }
+
+Thủ tục `Rewrite` tạo một tập tin trên đĩa có tên đã gán cho `<Biến tập tin>`{: .sh_syntax } bằng lệnh gán `Assign` đồng thời mở tập tin đó ra để ghi dữ liệu. Khi mở tập tin bằng lệnh `Rewrite` nếu trên đĩa đã có tập tin trùng với tên bạn đặt thì tập tin trên đĩa sẽ bị xoá thay vào đó là một tập tin trống. Nên bạn cần cẩn thận khi mở tập tin bằng lệnh `Rewrite`.
+
+### Mở tập tin đã có để ghi thêm:
+
+```
+Assign(<Biến tập tin>, <Tập tin>);
+Append(<Biến tập tin>);
+```
+{: .sh_pascal .sh_syntax }
+
+### Mở tập tin để đọc dữ liệu:
+
+```
+Assign(<Biến tập tin>, <Tập tin>);
+Reset(<Biến tập tin>);
+```
+{: .sh_pascal .sh_syntax }
+
+Chú ý: Khi mở một tập tin bằng lệnh Reset nếu tập tin không có trên đĩa sẽ gây lỗi.
+
+### Đóng tập tin
+
+Cuối cùng, ta phải đóng tập tin bằng thủ tục:
+
+```
+Close(<Biến tập tin>);
+```
+{: .sh_pascal .sh_syntax }
+
+Thủ tục này chuyển nội dung trong bộ nhớ vào tập tin trên đĩa đồng thời đóng tập tin lại giải toả bộ nhớ dành cho biến tập tin. Các tập tin khi đã mở nếu không đóng lại sẽ mất các dữ liệu truy xuất trên Tên biến File.
+
+Việc xuất nhập dữ liệu trên biến File có kiểu chỉ được thực hiện như sau:
+– Ðọc dữ liệu từ tập tin dùng thủ tục 
+
+```
+Readln(<Tên biến tập tin>, <Danh sách biến>);
+```
+{: .sh_pascal .sh_syntax }
+
+– Ghi dữ liệu vào đĩa: dùng thủ tục
+
+```
+Writeln(<Tên biến tập tin>, <Danh sách biến>);
+```
+{: .sh_pascal .sh_syntax }
+
 Ví dụ:
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-11
-12
-13
+
+```
+Var t : Text;
+    str : String;
+Begin
+    Assign(t, 'inputText.txt'); {Gắn inputText.txt và biến t}
+    Rewrite(t); {Tạo mới tập tin để ghi dữ liệu}
+    Writeln(t, 'Lê Hoàn Chân');
+    Writeln(t, '============');
+    Reset(t); {Mở tập tin để đọc dữ liệu}
+    Writeln('Dữ liệu trong file inputText.txt:');
+    While Not EOF(t) Do {Đọc dữ liệu tới hết tập tin}
+    Begin
+        Readln(t, str);
+        Writeln(str);
+    End;
+    Append(t); {Mở tập tin để ghi thêm dữ liệu}
+    Writeln(t, 'Kiểm tra thử xem sao');
+    Close(t); {Đóng tập tin lại}
+    Reset(t);
+    Writeln;
+    Writeln('Dữ liệu trong file inputText.txt sau khi thay đổi:');
+    While Not EOF(t) Do {Đọc dữ liệu tới hết tập tin}
+    Begin
+        Readln(t, str);
+        Writeln(str);
+    End;
+    Close(t); {Đóng tập tin lại}
+End.
+```
+{: .sh_pascal }
+
+## Tập tin có định kiểu
+
+Tập tin mà các phần tử của nó có cùng một kiểu dữ liệu gọi là tập tin có định kiểu. Kiểu dữ liệu của các phần tử của tập tin có thể là kiểu đơn giản (nguyên, thực, ký tự , logic, chuỗi ký tự…) hoặc kiểu có cấu trúc (mảng, bản ghi, ...). 
+
+### Khai báo
+
+```
 Type
-    Arr = array[1..100] of integer; {dinh nghia mang Arr}
-    TArr = FILE of Arr; {dinh nghia tep TArr co cac phan tu la mang Arr}
-    TStr = FILE of String[50]; {tep TStr co cac phan tu la chuoi co do dai 50 ky tu}
+    <Tên kiểu tập tin> = File Of <Kiểu phần tử>;
+Var
+    <Biến tập tin> : <Tên kiểu tập tin>;
+```
+{: .sh_pascal .sh_syntax }
+
+Cụ thể:
+
+```
+Type
+    Arr = Array[1..100] Of Integer; {Kiểu mảng Arr}
+    TArr = File of Arr; {Kiểu tập tin TArr có các phần tử là mảng Arr}
+    TStr = File of String[50]; {Tập tin TStr có các phần tử là chuỗi có độ dài tối đa 50 ký tự}
     SinhVien = Record
         Msv, Hoten : String[50];
-        Diem : real;
+        Diem : Real;
     end;
-    TSv = FILE of SinhVien; {tep TSv gom cac phan tu la kieu SinhVien}
+    TSv = File Of SinhVien; {Tập tin TSv có các phần tử có kiểu là SinhVien}
 Var
     T1 : TArr;
     T2 : TStr;
     T3 : TSv;
-Định nghĩa trực tiếp biến kiểu tệp trong phần khai báo biến
-1
-2
-3
+```
+{: .sh_pascal }
+
+Định nghĩa trực tiếp biến kiểu tập tin trong phần khai báo biến:
+
+```
+Var <Biến tập tin> : File Of <Kiểu phần tử>;
+```
+{: .sh_pascal .sh_syntax }
+
+Cụ thể:
+
+```
 Var
-    T4 : FILE of array[1..100] of real;
-    T5 : FILE of SinhVien;
-1. Nhập xuất với tệp văn bản
-Truy nhập vào tệp được hiểu là nhập dữ liệu vào tệp, ghi lại dữ liệu trên thiết bị nhớ ngoài, đọc dữ liệu đó ra màn hình hoặc máy in và xử lý nó.
+    T4 : File of array[1..100] of Real;
+    T5 : File of SinhVien;
+```
+{: .sh_pascal }
 
-Trước khi thao tác với tệp chúng ta cần sử dụng thủ tục assign(bientep, tentep). Thủ tục này nhằm mục đích gán một tập tin trên đĩa (tentep) cho Tên biến tệp trong RAM (bientep).
+### Đọc và ghi
 
-Mở tệp mới để ghi:
-1
-2
-Assign(bientep, tentep);
-Rewrite(bientep);
-Thủ tục Rewrite tạo một tập tin trên đĩa có tên đã gán cho Tên biến File bằng lệnh gán Assign đồng thời mở tập tin đó ra để truy xuất dữ liệu.Khi mở tập tin bằng lệnh Rewrite nếu trên đĩa đã có tập tin trùng với tên bạn đặt thì tập tin trên đĩa sẽ bị xoá thay vào đó là một tập tin trống mà bạn đã gán tên cho Tên biến File. Nên bạn cần cẩn thận khi mở tập tin bằng lệnh Rewrite.
+Như chúng ta đã biết khi nhập xuất file có kiểu text gây ra nhiều khó khăn khi phải ghi dữ liệu như khi đọc, ghi dữ liệu của 1 sinh viên phải làm rất phức tạp. Chúng ta có thể xử lý đơn giản hơn với tập tin có kiểu.
 
-Mở tệp đã có để ghi thêm:
-1
-2
-Assign(bientep, tentep);
-Append(bientep);
-Mở tệp để đọc dữ liệu:
-1
-2
-Assign(bientep, tentep);
-Reset(bientep);
-Chú ý: Khi mở một tập tin bằng lệnh Reset nếu tập tin không có trên đĩa sẽ gây lỗi.
+– Ghi lên tập tin:
 
-Cuối cùng, ta phải đóng tệp bằng thủ tục:
-1
-CLOSE(bientep);
-Thủ tục này chuyển nội dung trong bộ nhớ vào tập tin trên đĩa đồng thời đóng tập tin lại giải toả bộ nhớ dành cho biến tập tin. Các tập tin khi đã mở nếu không đóng lại sẽ mất các dữ liệu truy xuất trên Tên biến File.
-Việc xuất nhập dữ liệu trên biến File có kiểu chỉ được thực hiện như sau:
-– Ðọc dữ liệu từ tập tin dùng thủ tục Readln(bientep,bien);
-– Ghi dữ liệu vào đĩa: dùng thủ tục Writeln(bientep,bien);
-Ví dụ:
+```
+Write(<Biến tập tin>, <Danh sách giá trị>); 
+```
+{: .sh_pascal .sh_syntax }
 
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-uses crt;
-var
-        t : Text;
-        str : string;
-BEGIN
-        clrscr;
-        assign(t, 'inputText.txt'); {gan ten bien tep cho tep}
-        rewrite(t); {mo tep de ghi du lieu}
-        writeln(t, 'nguyenvanquan');
-        writeln(t, '7826');
- 
-        reset(t);   {mo tep de doc du lieu}
-        writeln('Data of file inputText.txt:');
-        {trong khi con tro tep chua den cuoi tep thi cu doc}
-        while not eof(t) do
-        begin
-                readln(t, str);
-                writeln(str);
-        end;
- 
-        append(t);  {mo tep de ghi them du lieu}
-        writeln(t, 'test');
- 
-        close(t);
- 
-        reset(t);
-        writeln;
-        writeln('Data of file inputText.txt after change:');
-        {trong khi con tro tep chua den cuoi tep thi cu doc}
-        while not eof(t) do
-        begin
-                readln(t, str);
-                writeln(str);
-        end;
- 
-        close(t);   {dong tep}
-        readln;
-END.
-file trong pascal
+Với các giá trị trong `<Danh sách giá trị>`{: .sh_syntax } phải cùng kiểu với `<Biến tập tin>`{: .sh_syntax }.
 
-2. Tệp có kiểu
-Như chúng ta đã biết khi nhập xuất file có kiểu text gây ra nhiều khó khăn khi phải ghi dữ liệu như khi đọc, ghi dữ liệu của 1 sinh viên phải làm rất phức tạp. Chúng ta có thể xử lý đơn giản hơn với tệp có kiểu.
-Đọc và ghi :
-– Ghi lên tệp: Write(bientep,bien1,bien2,…); với bien1,bien2,…là các biến cùng kiểu với biến tệp.
-– Đọc tệp: Read(bientep,bien1,bien2,…);
-Chú ý:
-Khác với tệp văn bản, việc ghi và đọc tệp có kiểu không sử dụng các lệnh Writeln hoặc readln nghĩa là tệp có kiểu không ghi dữ liệu thành các dòng. Các phần tử của tệp có kiểu được ghi liên tục trong các ô nhớ và chỉ có ký hiệu kết thúc tệp EOF. Khi chúng ta đọc hoặc ghi xong một phần tử thì con trỏ tệp sẽ tự động chuyển đến vị trí kế tiếp.
+– Đọc tập tin: 
 
-Truy nhập vào phần tử thứ i của tệp: Seek(bientep,i); i=0,1,2,…
-Thủ tục seek sẽ định vị con trỏ tại vị trí thứ i của tệp.
-Các hàm xử lý tệp:
-* Filesize(bientep) cho biết số phần tử có trong tệp
-* FilePos(bientep) cho biết vị trí hiện thời của con trỏ tệp
-* Eof(Bientep) cho giá trị là True nếu con trỏ tệp ở vị trí cuối tệp, ngược lại cho giá trị False
+```
+Read(<Biến tập tin>, <Danh sách biến>);
+```
+{: .sh_pascal .sh_syntax }
+
+**Chú ý:**
+
+Khác với tập tin văn bản, việc ghi và đọc tập tin có kiểu không sử dụng các lệnh Writeln hoặc readln nghĩa là tập tin có kiểu không ghi dữ liệu thành các dòng. Các phần tử của tập tin có kiểu được ghi liên tục trong các ô nhớ và chỉ có ký hiệu kết thúc tập tin `EOF`. Khi chúng ta đọc hoặc ghi xong một phần tử thì con trỏ tập tin sẽ tự động chuyển đến vị trí kế tiếp.
+
+Truy nhập vào phần tử thứ i của tập tin: Seek(<Biến tập tin>, i); i=0,1,2,…
+
+Thủ tục seek sẽ định vị con trỏ tại vị trí thứ i của tập tin.
+
+Các hàm xử lý tập tin:
+* Filesize(<Biến tập tin>) cho biết số phần tử có trong tập tin
+* FilePos(<Biến tập tin>) cho biết vị trí hiện thời của con trỏ tập tin
+* Eof(<Biến tập tin>) cho giá trị là True nếu con trỏ tập tin ở vị trí cuối tập tin, ngược lại cho giá trị False
 
 Ví dụ:
-
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-uses crt;
+```
 Type
-        SinhVien = Record
-                MSv, Hoten : String;
-                Diem : real;
-        end;
+    SinhVien = Record
+        MSV, Hoten : String;
+        Diem : Real;
+    End;
 Var
-        TSv : FILE of SinhVien;
-        sv : SinhVien;
-        i : integer;
-BEGIN
-        clrscr;
-        assign(TSv, 'SV.dat');
-        rewrite(TSv);
-        for i:= 1 to 3 do {ghi du lieu 3 sinh vien vao tep}
-        begin
-                {nhap du lieu}
-                write('Nhap ma sinh vien thu ', i, ' : ');
-                readln(sv.MSv);
-                write('   Nhap ten sinh vien: ');
-                readln(sv.Hoten);
-                write('   Nhap diem cua sinh vien: ');
-                readln(sv.diem);
- 
-                {ghi du lieu vao tep}
-                write(TSv, sv);
-        end;
-        close(TSv);
-        reset(TSv); {mo tep de doc}
-        writeln;
-        writeln('Thong tin sinh vien thu 2 trong tep:');
-        seek(TSv, 2);
-        read(TSv, sv);
-        writeln('MSV: ', sv.MSv);
-        writeln('Ho ten: ', sv.Hoten);
-        writeln('Diem: ', sv.diem:3:2);
-        close(TSv);
-        readln;
-END.
-Khi các bạn mở tệp SV.dat ra thì sẽ không thể thấy thông tin như mong muốn vì nó được ghi dưới dạng nhị phân chứ không phải text nhưng thông tin của nó chứ thì vẫn chính xác.
+    TSv : FILE of SinhVien;
+    sv : SinhVien;
+    i : integer;
+Begin
+    Assign(TSv, 'SV.dat');
+    Rewrite(TSv);
+    For i:= 1 To 3 Do {Ghi dữ liệu của 3 sinh viên vào tập tin}
+    Begin
+        {Nhập dữ liệu}
+        Write('Nhập mã của sinh viên thứ ', i, ' : ');
+        Readln(sv.MSV);
+        Write('Nhập tên: ');
+        Readln(sv.Hoten);
+        Write('Nhập điểm: ');
+        Readln(sv.Diem);
+        {Ghi vào tập tin}
+        Write(TSv, sv);
+    End;
+    Close(TSv);
+    Reset(TSv); {Mở tập tin để đọc}
+    Writeln;
+    Writeln('Thông tin của sinh viên thứ 2 trong tệp:');
+    Seek(TSv, 2);
+    Read(TSv, sv);
+    Writeln('Mã số: ', sv.MSV);
+    Writeln('Học tên: ', sv.Hoten);
+    Writeln('Điểm: ', sv.Diem:0:2);
+    Close(TSv);
+    Readln;
+End.
+```
+{: .sh_pascal }
+
+Khi các bạn mở tập tin `SV.dat` ra thì sẽ không thể thấy thông tin như mong muốn vì nó được ghi dưới dạng mã nhị phân chứ không phải Text nhưng thông tin của nó chứa thì vẫn chính xác.

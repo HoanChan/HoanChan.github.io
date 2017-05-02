@@ -34,8 +34,9 @@
     - url: arrays
     - url: strings
     - url: records
+    - url: sets
     - url: files
-    - url: point
+    - url: pointers
   - url: subprogram
     posts:
     - url: 
