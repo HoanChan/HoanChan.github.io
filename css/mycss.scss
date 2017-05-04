@@ -57,12 +57,19 @@ ol.list-group {
     }
   }
 }
+pre{
+  font-size: inherit;
+  code{
+    font-size: 0.8em;
+    font-family: Consolas, "Courier New", serif-monospace, monospace;
+  }
+}
 code {
   color: inherit;
   background-color: #333;
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 0.8em;
-  font-family: Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+  font-family: Consolas, "Courier New", serif-monospace, monospace;
 }
 ul, ol {
   color: inherit;
