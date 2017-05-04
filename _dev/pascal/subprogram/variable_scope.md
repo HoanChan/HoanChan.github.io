@@ -19,13 +19,14 @@ Các tham số của chương trình con chính là các dữ liệu cần thi�
 Ví dụ:
 
 ```
-Procedure inso(a:integer; ch:char);
-begin
+Procedure inso(a : Integer; ch : Char);
+Begin
     {các lệnh của chương trình con}
-end;
+End;
+
 {gọi}
 inso(13,’a’); {lời gọi đúng}
-inso(‘a’,13); {loi goi sai}
+inso(‘a’,13); {lời gọi sai}
 inso(13);{lời gọi sai}
 ```
 {: .sh_pascal }
@@ -38,12 +39,10 @@ inso(13);{lời gọi sai}
 
 - Tham trị: là các tham số được khia báo mà không đứng sau từ khóa var. Các tham số thực có thể là các giá trị, hằng, biến. Tham trị có thể thay đổi trong chương trình con nhưng sau khi kết thúc chương trình con giá trị của nó trở về như ban đầu.
 
-- Các tham số trong hàm luôn là các tham trị, các tham số trong thủ tục có thể là tham trị hoặc tham biến.
-
-
 ## Biến toàn cục và biến cục bộ
 
 - Biến toàn cục là biến được khai báo trong chương trình chính. Các biến này có thể được dùng ở mọi nơi trong chương trình và tồn tại trong suốt thời gian làm việc của chương trình.
 
 - Biến cục bộ (biến địa phương) là các biến được khai báo trong chương trình con. Các biến này chỉ được sử dụng trong phạm vi chương trình con mà nó được khai báo. Sau khi kết thức chương trình con các biến này sẽ không còn tồn tại.
-- Trong trường họp biến cục bộ trùng tên với biến toàn cục thì máy không bị nhầm lẫn mà sẽ thực hiện trên biến cục bộ. Biến toàn cục không bị ảnh hưởng.
+
+- Trong trường hợp biến cục bộ trùng tên với biến toàn cục thì máy không bị nhầm lẫn mà sẽ thực hiện trên biến cục bộ. Biến toàn cục không bị ảnh hưởng.

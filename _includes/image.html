@@ -1,0 +1,4 @@
+{% capture url %}{% if site.url %}{{ site.url }}/{% endif %}assets{{ page.url | replace: ".html" ""}}/{{ include.url }}{% endcapture %}
+<img {% if include.class %}class = "{{ include.class }}"{% endif %} 
+{% if include.style %}style = "{{ include.style }}"{% endif %}
+src="{{ url }}" alt="{{ include.alt }}">

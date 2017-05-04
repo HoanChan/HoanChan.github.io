@@ -91,8 +91,12 @@
 }
 
 footer {
+  padding-top: 15px;
   padding-bottom: 5px;
-  padding-top: 40px;
-  background: #333;
+  background-color: #008cba;
+  border: 1px solid #345578;
   color: #ddd;
+  a{
+    color: #EBA600;
+  }
 }

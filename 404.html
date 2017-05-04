@@ -1,24 +1,32 @@
 ---
-layout: error
 permalink: /404.html
 sitemap: false
 ---
 
-<section class="intro">
-  <div class="grid">
-    <div class="unit whole align-center">
-      <p class="first">Èo. Trang <br/>không tồn tại...</p>
-    </div>
-  </div>
+{% include top.html %}
+
+<body class="wrap">
+  <section class="intro container text-center">
+    <svg viewBox="0 0 960 120">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="75%">Opp ... 404</text>
+        </symbol>
+
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+    <p>Trang bạn yêu cầu không tồn tại.</p>
 </section>
 
-<section class="error">
-  <div class="grid">
-    <div class="unit whole align-center">
-      <p>Trang bạn yêu cầu không tồn tại. Hãy thử dùng các đường dẫn sau đây để tìm trang bạn cần:</p>
-      <nav class="main-nav">
-        {% include primary-nav.html %}
-      </nav>
-    </div>
-  </div>
-</section>
+  {{ content }}
+
+  {% include anchor_links.html %}
+  {% include analytics.html %}
+
+</body>
+</html>

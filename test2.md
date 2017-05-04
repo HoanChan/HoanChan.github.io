@@ -46,7 +46,7 @@ layout: default
                 {% include image.html url="knowledge.png" alt="Tri thức" style="height: 200px" %}
                 <div class="caption">
                     <h3>Kiến thức</h3>
-                    <p>Cung cấp những kiến thức cơ bản về chương trình tin học THPT.</p>
+                    <p>Cung cấp các kiến thức đơn giản và cơ bản về chương trình tin học THPT.</p>
                     <p> <a href="/it/" class="btn btn-primary">Tìm hiểu ngay!</a> </p>
                 </div>
             </div>

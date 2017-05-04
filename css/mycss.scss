@@ -5,9 +5,8 @@
 
 html, body {
   font-family: "Palatino Linotype", "Times New Roman", sans-serif;
-  border-top: 2px solid #fc0;
   font-size: 14px;
-
+  height: 100%;
   @include tablet {
     font-size: 16px;
   }
@@ -15,25 +14,13 @@ html, body {
     font-size: 18px;
   }
 }
-.h1, h1 {
-  font-size: 1.8em;
-}
-.h2, h2 {
-  font-size: 1.6em;
-}
-.h3, h3 {
-  font-size: 1.4em;
-}
-.h4, h4 {
-  font-size: 1.2em;
-}
-.h5, h5 {
-  font-size: 1.1em;
-}
-.h6, h6 {
-  font-size: 1em;
-  font-style: italic;
-}
+.h1, h1 { font-size: 1.6em; }
+.h2, h2 { font-size: 1.4em; }
+.h3, h3 { font-size: 1.2em; }
+.h4, h4 { font-size: 1.1em; }
+.h5, h5 { font-size: 1.1em; font-style: italic; }
+.h6, h6 { font-size: 1em; font-style: italic; }
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
@@ -83,25 +70,7 @@ ul, ol {
 blockquote {
   border-left: 4px solid #4CAF50;
 }
-@media (max-width:768px) {
-  .main-nav ul {
-    text-align: right;
-  }
-}
-@media (max-width:830px) {
-  .main-nav {
-    .show-on-mobiles {
-      display: inline;
-    }
-    .hide-on-mobiles {
-      display: none;
-    }
-  }
-}
-// List Group CSS for sidebar
-.just-padding {
-  padding: 15px;
-}
+
 .list-group {
   // .list-group {
   //   margin-bottom: 0;
@@ -126,4 +95,18 @@ blockquote {
     -moz-osx-font-smoothing: grayscale;
   }
   }
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -80px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 80px; 
 }

@@ -32,11 +32,7 @@
 - text: Tin học
   url: "/it/"
   icon: fa fa-cogs
-
-- text: MS-Word
-  url: "/word/"
-  icon: fa fa-file-word-o
-
-- text: Github
-  url: "https://github.com/hoanchan/"
-  icon: fa fa-github
+  child:
+  - text: MS-Word
+    url: "/word/"
+    icon: fa fa-file-word-o

@@ -14,4 +14,17 @@
         highlight('hc-mix');
         
     });
+
+    $("a[href='#']").click(function(e) {
+        e.preventDefault();
+    });
+
+    // $(window).scroll(function () {
+    //     var top = $(document).scrollTop();
+    //     $('.splash').css({'background-position': '0px -'+(top/3).toFixed(2)+'px'});
+    //     if(top > 50)
+    //         $('body > .navbar').removeClass('navbar-transparent');
+    //     else
+    //         $('body > .navbar').addClass('navbar-transparent');
+    // });
 })(jQuery); // End of use strict
