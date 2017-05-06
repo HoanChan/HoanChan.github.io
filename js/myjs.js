@@ -19,6 +19,20 @@
         e.preventDefault();
     });
 
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop || st == 0){
+            // downscroll code
+            $('.navbar').removeClass('navbar-transparent navbar-fixed-top');
+            $('body').css('padding-top', '0px');
+        } else {
+            // upscroll code
+            $('.navbar').addClass('navbar-transparent navbar-fixed-top');
+            $('body').css('padding-top', '50px');
+        }
+        lastScrollTop = st;
+    });
     // $(window).scroll(function () {
     //     var top = $(document).scrollTop();
     //     $('.splash').css({'background-position': '0px -'+(top/3).toFixed(2)+'px'});

@@ -118,3 +118,56 @@ blockquote {
   /* .push must be the same height as footer */
   height: 80px; 
 }
+
+// Cho navbar
+$nav-trans: 0.5;
+body {
+  .navbar {
+    -webkit-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+    -webkit-transition: background-image .3s ease-in;
+    transition: background-image .3s ease-in;
+    // -webkit-transition: position .3s ease-in;
+    // transition: position .3s ease-in;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  @include notphone {
+    .navbar-transparent {
+      background-color: rgba(47, 164, 231, $nav-trans);
+      background-image: -webkit-linear-gradient(rgba(84, 180, 235, $nav-trans), rgba(47, 164, 231, $nav-trans) 60%, rgba(29, 156, 229, $nav-trans));
+      background-image: -o-linear-gradient(rgba(84, 180, 235, $nav-trans), rgba(47, 164, 231, $nav-trans) 60%, rgba(29, 156, 229, $nav-trans));
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 180, 235, $nav-trans)), color-stop(60%, rgba(47, 164, 231, $nav-trans)), to(rgba(29, 156, 229, $nav-trans)));
+      background-image: linear-gradient(rgba(84, 180, 235, $nav-trans), rgba(47, 164, 231, $nav-trans) 60%, rgba(29, 156, 229, $nav-trans));
+          
+      top: -50px; transform:
+      translate3d(0px, 50px, 0px);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-transition: -moz-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+      -o-transition: -o-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+      -o-transition: transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+      -webkit-transition: -webkit-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+      transition: -webkit-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+      transition: transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+
+      .navbar-right{
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+//Selection
+
+::selection{ /* Safari and Opera */ 
+    background: #00A000;
+    color: #FFF;   
+}
+
+::-moz-selection{ /* Firefox */ 
+    background: #00A000; 
+    color: #FFF;  
+}
