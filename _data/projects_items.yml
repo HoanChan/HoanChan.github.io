@@ -43,7 +43,7 @@
       text: Xem ngay!
       class: btn btn-default
 - title: qType
-  image: qType.png
+  image: qtype.png
   style: "height: 200px"
   content: Phần mềm hướng dẫn và hỗ trợ học gõ văn bản bằng 10 ngón tay, viết bằng Pascal cơ bản.
   links:
