@@ -50,19 +50,100 @@
   }
 
 }
-
+// Cho navbar
+$nav-trans: 0.7;
+$nav-height: 50px;
 body {
-  padding-top: 0px;
-  > .navbar {
-    -webkit-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in;
-  }
-  .navbar-brand {
-    padding: 13.5px 15px 12.5px;
-    > img {
-      display: inline;
-      margin: 0 10px;
-      height: 100%;
+  .navbar {
+    -webkit-transition: background-color .4s cubic-bezier(0.4, 0, 1, 1);
+    transition: background-color .4s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    
+    padding: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    .navbar-brand {
+      padding: 13.5px 15px 12.5px;
+      &>img {
+        display: inline;
+        margin: 0 10px;
+        height: 100%
+      }
     }
   }
+  @include notphone {
+    .navbar-transparent {
+      background-color: #5B9756;
+      background-color: rgba(10, 140, 0, $nav-trans);
+      top: -$nav-height; transform:
+      translate3d(0px, $nav-height, 0px);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: -webkit-transform .3s cubic-bezier(0.22, 0.61, 0.36, 1);
+      transition: -webkit-transform .3s cubic-bezier(0.22, 0.61, 0.36, 1);
+      transition: transform .3s cubic-bezier(0.22, 0.61, 0.36, 1);
+      .navbar-right{
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+
+.list-group {
+  .list-group-item.have-child{
+    &:before {
+    content: "\f054";
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  }
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -80px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 80px; 
+}
+
+//Selection
+
+::selection{ /* Safari and Opera */ 
+    background: #00A000;
+    color: #FFF;   
+}
+
+::-moz-selection{ /* Firefox */ 
+    background: #00A000; 
+    color: #FFF;  
+}
+
+/*
+ * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
+ * http://ben.balter.com/2014/03/13/pages-anchor-links/
+ */
+.header-link {
+  position: relative;
+  left: 0.5em;
+  opacity: 0;
+  font-size: 0.8em;
+  @include transition(opacity 0.2s ease-in-out 0.1s);
+}
+h2:hover .header-link, h3:hover .header-link, h4:hover .header-link, h5:hover .header-link, h6:hover .header-link {
+  opacity: 1;
 }

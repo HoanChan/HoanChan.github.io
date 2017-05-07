@@ -55,13 +55,11 @@ fb_appid: 1792974517689740
 logo: /img/logo-2x.png
 
 gems:
-  - jekyll-avatar
+  # - jekyll-avatar
   - jekyll-feed
-  - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jemoji
   - jekyll-paginate
   - jekyll-gist
   - jekyll-auto-image
@@ -69,6 +67,7 @@ gems:
 exclude:
   - .gitignore
   - README.md
+  - backup
   # - _dev
   # - _it
   # - _projects

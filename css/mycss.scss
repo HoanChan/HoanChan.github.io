@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 html, body {
-  font-family: "Palatino Linotype", "Times New Roman", sans-serif;
   font-size: 14px;
   height: 100%;
   @include tablet {
@@ -15,18 +14,12 @@ html, body {
     font-size: 18px;
   }
 }
-.h1, h1 { font-size: 1.6em; }
-.h2, h2 { font-size: 1.4em; }
-.h3, h3 { font-size: 1.2em; }
-.h4, h4 { font-size: 1.1em; }
-.h5, h5 { font-size: 1.1em; font-style: italic; }
-.h6, h6 { font-size: 1em; font-style: italic; }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
 .gitedit {
-  margin-top: 30px;
+  margin-top: 15px;
+}
+.breadcrumb {
+  text-align: left;
 }
 .cl-hl {
   color: #f90000;
@@ -37,20 +30,6 @@ html, body {
   }
 }
 
-/*
- * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
- * http://ben.balter.com/2014/03/13/pages-anchor-links/
- */
-.header-link {
-  position: relative;
-  left: 0.5em;
-  opacity: 0;
-  font-size: 0.8em;
-  @include transition(opacity 0.2s ease-in-out 0.1s);
-}
-h2:hover .header-link, h3:hover .header-link, h4:hover .header-link, h5:hover .header-link, h6:hover .header-link {
-  opacity: 1;
-}
 ol.list-group {
   & > a {
     & > li {
@@ -77,97 +56,4 @@ ul, ol {
 }
 blockquote {
   border-left: 4px solid #4CAF50;
-}
-
-.list-group {
-  // .list-group {
-  //   margin-bottom: 0;
-  //   .list-group-item {
-  //     border-radius: 0;
-  //     padding-left: 30px;
-  //   }
-  //   & :last-child {
-  //     border-bottom-width: 0;
-  //   }
-  // }
-  .list-group-item.have-child{
-    &:before {
-    content: "\e080";
-    position: absolute;
-    right: 8px;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  }
-}
-
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -80px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.page-wrap:after {
-  /* .push must be the same height as footer */
-  height: 80px; 
-}
-
-// Cho navbar
-$nav-trans: 0.5;
-body {
-  .navbar {
-    -webkit-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in;
-    -webkit-transition: background-image .3s ease-in;
-    transition: background-image .3s ease-in;
-    // -webkit-transition: position .3s ease-in;
-    // transition: position .3s ease-in;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  @include notphone {
-    .navbar-transparent {
-      background-color: rgba(47, 164, 231, $nav-trans);
-      background-image: -webkit-linear-gradient(rgba(84, 180, 235, $nav-trans), rgba(47, 164, 231, $nav-trans) 60%, rgba(29, 156, 229, $nav-trans));
-      background-image: -o-linear-gradient(rgba(84, 180, 235, $nav-trans), rgba(47, 164, 231, $nav-trans) 60%, rgba(29, 156, 229, $nav-trans));
-      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 180, 235, $nav-trans)), color-stop(60%, rgba(47, 164, 231, $nav-trans)), to(rgba(29, 156, 229, $nav-trans)));
-      background-image: linear-gradient(rgba(84, 180, 235, $nav-trans), rgba(47, 164, 231, $nav-trans) 60%, rgba(29, 156, 229, $nav-trans));
-          
-      top: -50px; transform:
-      translate3d(0px, 50px, 0px);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -moz-transition: -moz-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-      -o-transition: -o-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-      -o-transition: transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-      -webkit-transition: -webkit-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-      transition: -webkit-transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-      transition: transform .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-
-
-      .navbar-right{
-        margin-right: 0px;
-      }
-    }
-  }
-}
-
-//Selection
-
-::selection{ /* Safari and Opera */ 
-    background: #00A000;
-    color: #FFF;   
-}
-
-::-moz-selection{ /* Firefox */ 
-    background: #00A000; 
-    color: #FFF;  
 }
