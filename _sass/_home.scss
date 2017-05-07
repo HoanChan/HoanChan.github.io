@@ -63,7 +63,8 @@ body {
     padding: 0px;
     border-left: 0px;
     border-right: 0px;
-
+    z-index: 1000;
+    
     .navbar-brand {
       padding: 13.5px 15px 12.5px;
       &>img {
