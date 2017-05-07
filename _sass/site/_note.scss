@@ -1,0 +1,43 @@
+.note {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid $brand-primary;
+  border-color: $brand-primary;
+  border-left-width: 5px;
+  border-radius: 3px;
+  
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: $brand-primary; 
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    border-radius: 3px;
+  }
+}
+
+/* Tighten up space between multiple callouts */
+.note + .note {
+  margin-top: -5px;
+}
+
+/* Variations */
+.success {
+  border-color: $brand-success;
+  h4 { color: $brand-success; }
+}
+.info {
+  border-color: $brand-info;
+  h4 { color: $brand-info; }
+}
+.warning {
+  border-color: $brand-warning;
+  h4 { color: $brand-warning; }
+}
+.danger {
+  border-color: $brand-danger;
+  h4 { color: $brand-danger; }
+}

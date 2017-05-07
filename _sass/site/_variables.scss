@@ -1,0 +1,12 @@
+$gray-base: rgb(0, 0, 0);
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 60%);
+$gray-lighter: lighten($gray-base, 93.5%);
+$brand-primary: rgb(10, 140, 0);
+$brand-success: rgb(11, 30, 156);
+$brand-info: rgb(51, 153, 243);
+$brand-warning: rgb(212, 117, 0);
+$brand-danger: rgb(205, 2, 0);
+$body-bg: rgb(255, 255, 255);

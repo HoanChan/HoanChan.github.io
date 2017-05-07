@@ -1,9 +1,11 @@
 ---
 ---
 
-@import "mixins";
+@import "site/variables";
+@import "site/mixins";
 // @import "highlight";
-@import "note";
-@import "home";
-@import "headerfooter";
-@import "sh";
+@import "site/note";
+@import "site/home";
+@import "site/headerfooter";
+@import "site/style";
+@import "site/sh";
