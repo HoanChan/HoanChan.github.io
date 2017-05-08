@@ -112,6 +112,7 @@ $nav-trans: 0.7;
 $nav-height: 50px;
 body {
   .navbar {
+    z-index: 1000;
     -webkit-transition: background-color .4s cubic-bezier(0.4, 0, 1, 1);
     transition: background-color .4s cubic-bezier(0.4, 0, 1, 1);
     -webkit-transform: translate3d(0, 0, 0);

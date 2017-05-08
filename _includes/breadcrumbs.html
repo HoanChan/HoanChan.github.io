@@ -1,5 +1,5 @@
-<nav class="breadcrumb hidden-xs">
-<a href="{{ site.baseurl }}/">Home</a>
+<nav class="breadcrumb hidden-md-down">
+<a class="breadcrumb-item" href="{{ site.baseurl }}/">Home</a>
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
 {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
@@ -10,7 +10,7 @@
     {% for breadcrumb_page in include.posts %}
         {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
         {% assign j = forLoopMaxInt | plus: 0 %}
-            {% if i = j %} 
+            {% if i == j %} 
                 <span class="breadcrumb-item active">
             {% else %} 
                 <a class="breadcrumb-item"
@@ -23,7 +23,7 @@
             {% else %}
                 {{ breadcrumb_page.title }}
             {% endif %}
-            {% if i = j %} </span> {% else %} </a> {% endif %}
+            {% if i == j %} </span> {% else %} </a> {% endif %}
         {% endif %}
     {% endfor %}
 {% endfor %}
