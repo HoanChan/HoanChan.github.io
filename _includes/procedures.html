@@ -1,25 +1,24 @@
-
 {% comment %}
-    style = col-md-4 col-sm-6 
     data = site.data.home_items
 {% endcomment %}
-<section class="container text-justify">
-    <div class="row text-center">
-    {% for item in include.data %}
-        <div class="{{ include.style }}">
-            <div class="thumbnail">
-                {% include image.html url = item.image alt = item.title style = item.style %}
-                <div class="caption">
-                    <h3>{{ item.title }}</h3>
-                    <p>{{ item.content }}</p>
-                    <p>
+
+<div class="container" style="top: -15px;">
+    <div class="row">
+        {% for item in include.data %}
+        <div class="col-md-6 col-lg-4 mt-4">
+            <div class="card text-center">
+                {% include image.html url = item.image alt = item.title style = item.style class="card-img-top align-self-center" %}
+                <div class="card-block">
+                    <h4 class="card-title">{{ item.title }}</h4>
+                    <p class="card-text">{{ item.content }}</p>
+                </div>
+                <div class="card-footer">
                     {% for link in item.links %}
                         <a href="{{ link.url }}" class="{{ link.class }}">{{ link.text }}</a>
                     {% endfor %}
-                    </p>                    
                 </div>
             </div>
         </div>
-    {% endfor %}
+        {% endfor %}
     </div>
-</section>
+</div>

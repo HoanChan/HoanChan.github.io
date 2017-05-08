@@ -1,3 +1,7 @@
+{% comment %}
+  data = site.data.nav
+  child = true
+{% endcomment %}
 
 {% for menu in include.data %}
   {% assign target = menu.target %}
@@ -5,29 +9,39 @@
     {% assign target = '_self' %} 
   {% endunless %}
 
-  {% assign current = '' %}
-  {% assign child = '' %}
-  {% assign adrop = '' %}
-
-  {% if menu.child %}
-    {% assign child = ' dropdown' %}
-    {% assign current = ' class= "dropdown"' %}
-    {% assign adrop = ' class="dropdown-toggle" data-toggle="dropdown"' %}
-  {% endif %}
+  {% assign active = '' %}
 
   {% if page.url contains menu.url %}
-    {% assign current = ' class="active'| append: child | append: '"' %}
+    {% assign active = 'active' %}
   {% endif %}
-  <li{{ current }}>
-    <a{{ adrop }} href="{{ menu.url }}" target="{{ target }}">
+
+  {% if menu.child %}
+    {% assign active = active | append: ' dropdown' %}
+  {% endif %}
+  {% if include.child %}
+    <a class="dropdown-item" href="{{ menu.url }}" target="{{ target }}">
       <i class="{{ menu.icon }}"></i> 
       <span>{{ menu.text }}</span>
-      {% if menu.child %}<b class="caret"></b>{% endif %}
     </a>
-    {% if menu.child %}
-      <ul class="dropdown-menu">
-        {% include primary-nav.html data=menu.child %}
-      </ul>
-    {% endif %}
-  </li>
+  {% else %}
+    <li class="nav-item {{ active }}">
+      {% if menu.child %}
+        <a class="nav-link dropdown-toggle" href="{{ menu.url }}" id="nav{{ menu.text | replace: ' ' '' }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="{{ menu.icon }}"></i> 
+          <span>{{ menu.text }}</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="nav{{ menu.text | replace: ' ' '' }}">
+          {% include primary-nav.html data = menu.child child = true %}
+        </div>
+      {% else %}
+        <a class="nav-link" href="{{ menu.url }}" target="{{ target }}">
+          <i class="{{ menu.icon }}"></i> 
+          <span>{{ menu.text }}</span>
+        </a>      
+      {% endif %}
+    </li>    
+  {% endif %}
+
+
+
 {% endfor %}

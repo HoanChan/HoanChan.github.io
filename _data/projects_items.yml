@@ -1,6 +1,6 @@
 - title: SortViewer
   image: sortviewer.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Phầm mềm mô phỏng các thuật toán sắp xếp, chạy trên nền Web, viết bằng HTML, Javascript và CSS.
   links:
     - url: /download/sortviewer.zip
@@ -11,7 +11,7 @@
       class: btn btn-default
 - title: HC-Mix
   image: hc-mix.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Add-in của Word được viết bằng C# hỗ trợ nhận dạng và trộn đề trắc nghiệm chuyên nghiệp.
   links:
     - url: /download/hc-mix/app.zip
@@ -22,7 +22,7 @@
       class: btn btn-default
 - title: VietNamKey
   image: vietnamkey.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Bộ gõ tiếng Việt được viết bằng C#, hỗ trợ Unicode và Telex, đơn giản nhưng rất hiệu quả.
   links:
     - url: /download/vietnamkey/app.zip
@@ -33,7 +33,7 @@
       class: btn btn-default
 - title: HC-Slider
   image: hc-slider.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Add-in của jQuery dùng để thiết kế side show ảnh trên web, viết bằng HTML, Javascript và CSS.
   links:
     - url: /download/hc-slider.zip
@@ -44,7 +44,7 @@
       class: btn btn-default
 - title: qType
   image: qtype.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Phần mềm hướng dẫn và hỗ trợ học gõ văn bản bằng 10 ngón tay, viết bằng Pascal cơ bản.
   links:
     - url: /download/qtype.zip

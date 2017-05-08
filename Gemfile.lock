@@ -10,6 +10,8 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
+    cssminify2 (2.0.1)
+    execjs (2.7.0)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18-x64-mingw32)
@@ -18,6 +20,7 @@ GEM
     html-pipeline (2.5.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    htmlcompressor (0.3.1)
     i18n (0.8.1)
     jekyll (3.4.3)
       addressable (~> 2.4)
@@ -32,16 +35,15 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-auto-image (1.1.3)
       jekyll
-    jekyll-avatar (0.4.2)
-      jekyll (~> 3.0)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
-    jekyll-mentions (1.2.0)
-      activesupport (~> 4.0)
-      html-pipeline (~> 2.3)
+    jekyll-minifier (0.1.1)
+      cssminify2 (~> 2.0)
+      htmlcompressor (~> 0.3)
       jekyll (~> 3.0)
+      uglifier (~> 2.7)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.12.1)
       jekyll (~> 3.3)
@@ -87,6 +89,9 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    uglifier (2.7.2)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   x64-mingw32
@@ -94,15 +99,13 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-auto-image
-  jekyll-avatar
   jekyll-feed
   jekyll-gist
-  jekyll-mentions
+  jekyll-minifier
   jekyll-paginate
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-watch
   jemoji
   kramdown
   rouge

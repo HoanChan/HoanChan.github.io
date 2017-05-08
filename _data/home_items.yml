@@ -1,6 +1,6 @@
 - title: Lập trình
   image: dev.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Chia sẻ các kiến thức, kĩ năng về lập trình từ cơ bản đến nâng cao.
   links:
     - url: /dev/
@@ -8,7 +8,7 @@
       class: btn btn-primary
 - title: Sản phẩm
   image: projects.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Một số sản phẩm nổi bật được lập trình từ C#, Pascal, Javascript ...
   links:
     - url: /projects/
@@ -16,7 +16,7 @@
       class: btn btn-primary
 - title: Kiến thức
   image: knowledge.png
-  style: "height: 200px"
+  style: "height: 150px"
   content: Cung cấp các kiến thức đơn giản và cơ bản về chương trình tin học THPT.
   links:
     - url: /it/

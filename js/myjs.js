@@ -24,21 +24,13 @@
         var st = $(this).scrollTop();
         if (st > lastScrollTop || st == 0){
             // downscroll code
-            $('.navbar').removeClass('navbar-transparent navbar-fixed-top');
-            $('body').css('padding-top', '0px');
+            $('.navbar').removeClass('fixed-top bg-nav').addClass('bg-inverse');
+            $('body').css("padding-top","0px");
         } else {
             // upscroll code
-            $('.navbar').addClass('navbar-transparent navbar-fixed-top');
-            $('body').css('padding-top', '50px');
+            $('.navbar').addClass('fixed-top bg-nav').removeClass('bg-inverse');
+            $('body').css("padding-top","60px");
         }
         lastScrollTop = st;
     });
-    // $(window).scroll(function () {
-    //     var top = $(document).scrollTop();
-    //     $('.splash').css({'background-position': '0px -'+(top/3).toFixed(2)+'px'});
-    //     if(top > 50)
-    //         $('body > .navbar').removeClass('navbar-transparent');
-    //     else
-    //         $('body > .navbar').addClass('navbar-transparent');
-    // });
 })(jQuery); // End of use strict

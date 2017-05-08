@@ -1,22 +1,14 @@
-<nav class="navbar navbar-default"> <!-- data-spy="affix" data-offset-top="2" -->
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="/">
-        <img src="/img/HC.png" alt="Hoàn Chân's Logo"> {{ site.name }}
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        {% include primary-nav.html data = site.data.nav%}
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ site.repository }}"><span class="fa fa-github"></span> Github</a></li>
-      </ul>
-    </div><!-- #myNavbar -->
-  </div><!-- .container-fluid -->
-</nav><!-- . navbar -->
+<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm">
+   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">{{ site.name }}</a>
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav mr-auto">
+      {% include primary-nav.html data = site.data.nav%}
+    </ul>
+    <a href="{{ site.repository }}" class="nav-link text-warning"><span class="fa fa-github"></span> Github</a>
+  </div>
+  <!-- #myNavbar -->
+</nav>
+<!-- . navbar -->
