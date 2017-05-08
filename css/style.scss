@@ -1,10 +1,10 @@
 ---
 ---
 
-@import "bootstrap";
-@import "site/mixins";
+@import "mixins";
 // @import "highlight";
-@import "site/note";
-@import "site/home";
-@import "site/style";
-@import "site/sh";
+@import "sh";
+@import "home";
+@import "style";
+@import "note";
+@import "breadcrumb";

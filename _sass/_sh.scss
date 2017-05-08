@@ -1,0 +1,64 @@
+.sh_sourceCode {
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+
+    .sh_keyword, .sh_type {
+        color: #0000FF;
+        font-weight: bold;
+    }
+    .sh_cbracket {
+        color: #000B9B;
+        font-weight: bold;
+    }
+    .sh_predef_var {
+        color: #CC0000;
+        font-weight: bold;
+    }
+    .sh_symbol { color: #8E005F;}
+    .sh_predef_func { color: #B71A00; }
+    .sh_function, .sh_procedure {
+        color: #7A049C;
+        font-weight: bold;
+    }
+    .sh_comment { color: #9e9e9e; }
+    .sh_string { color: #009800; }
+    .sh_number { color: #FF7800; }
+
+    .sh_hc-mix_answer, .sh_hc-mix_question, .sh_hc-mix_group, .sh_hc-mix_child{
+        color: blue;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .sh_hc-mix_content_group {
+        @extend .sh_hc-mix_group;
+        text-decoration: underline;
+    }
+
+    .sh_hc-mix_static { 
+        @extend .sh_hc-mix_answer;
+        color: #7D007D;
+        font-style: italic;
+    }
+
+    .sh_hc-mix_correct_sign {
+        @extend .sh_hc-mix_answer;
+        color: red;
+    }
+    .sh_hc-mix_correct {
+        @extend .sh_hc-mix_correct_sign;
+        text-decoration: underline;
+    }
+
+    .sh_big {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .sh_syntax{
+        color: #FF0000;
+        font-weight: bold;
+        font-style: italic;
+        white-space: nowrap;
+    }
+}

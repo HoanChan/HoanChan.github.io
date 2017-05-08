@@ -1,57 +1,97 @@
-// Toggles
-//
-// Used in conjunction with global variables to enable certain theme features.
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
-@mixin box-shadow($shadow...) {
-  @if $enable-shadows {
-    box-shadow: $shadow;
-  }
+@mixin notphone {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin bg-variant($parent, $color) {
+    #{$parent} {
+        background-color: $color !important;
+    }
+    a#{$parent} {
+        &:focus, &:hover {
+            background-color: darken($color, 10%) !important;
+        }
+    }
 }
 
 @mixin transition($transition...) {
-  @if $enable-transitions {
-    @if length($transition) == 0 {
-      transition: $transition-base;
-    } @else {
-      transition: $transition;
-    }
-  }
+    -webkit-transition: $transition;
+         -moz-transition: $transition;
+             -o-transition: $transition;
+                    transition: $transition;
+}
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+                    box-shadow: $shadow;
 }
 
-// Utilities
-@import "mixins/breakpoints";
-@import "mixins/hover";
-@import "mixins/image";
-@import "mixins/badge";
-@import "mixins/resize";
-@import "mixins/screen-reader";
-@import "mixins/size";
-@import "mixins/reset-text";
-@import "mixins/text-emphasis";
-@import "mixins/text-hide";
-@import "mixins/text-truncate";
-@import "mixins/transforms";
-@import "mixins/visibility";
+@mixin border-radius($radius...) {
+    -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+                    border-radius: $radius;
+}
 
-// // Components
-@import "mixins/alert";
-@import "mixins/buttons";
-@import "mixins/cards";
-@import "mixins/pagination";
-@import "mixins/lists";
-@import "mixins/list-group";
-@import "mixins/nav-divider";
-@import "mixins/forms";
-@import "mixins/table-row";
+// bootrap variable
+// 
+// 
+$white:    #fff !default;
+$black:    #000 !default;
+$red:        #d9534f !default;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green:    #5cb85c !default;
+$blue:     #0275d8 !default;
+$teal:     #5bc0de !default;
+$pink:     #ff5b77 !default;
+$purple: #613d7c !default;
 
-// // Skins
-@import "mixins/background-variant";
-@import "mixins/border-radius";
-@import "mixins/gradients";
+// Create grayscale
+$gray-dark:                                 #292b2c !default;
+$gray:                                            #464a4c !default;
+$gray-light:                                #636c72 !default;
+$gray-lighter:                            #eceeef !default;
+$gray-lightest:                         #f7f7f9 !default;
 
-// // Layout
-@import "mixins/clearfix";
-// @import "mixins/navbar-align";
-@import "mixins/grid-framework";
-@import "mixins/grid";
-@import "mixins/float";
+// Reassign color vars to semantic color scheme
+$brand-primary:                         $blue !default;
+$brand-success:                         $green !default;
+$brand-info:                                $teal !default;
+$brand-warning:                         $orange !default;
+$brand-danger:                            $red !default;
+$brand-inverse:                         $gray-dark !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:             $white !default;
+$body-color:        $gray-dark !default;
+$inverse-bg:        $gray-dark !default;
+$inverse-color: $gray-lighter !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                        $brand-primary !default;
+$link-decoration:             none !default;
+$link-hover-color:            darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;

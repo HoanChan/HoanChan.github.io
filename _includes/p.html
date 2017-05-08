@@ -3,21 +3,19 @@
   include.posts=site.word 
   include.path="/word/"
 {% endcomment %}
-<div class="container-fluid text-justify"><!-- Page Content -->
+<div class="container-fluid text-justify mt-3"><!-- Page Content -->
     <div class="row"><!-- Content Row -->
         <div class="col-lg-3 col-sm-4"><!-- Blog Sidebar Widgets Column -->
             {% include p_sidebar.html data=include.data posts=include.posts path=include.path %}
         </div><!-- /sidebar -->
         <div class="col-lg-9 col-sm-8"><!-- Blog Post Content Column -->
-            <div class="docs">
-                <div class="hidden-xs pull-right gitedit">
-                    <a href="{{ site.repository }}/edit/master/{{ page.path }}"><i class="fa fa-pencil"></i> &nbsp;Sửa trang này</a>
-                </div>
-                <h1>{{ page.title }}</h1>
-                {% include breadcrumbs.html posts = include.posts %}
-                {{ content }}
-                {% include social.html %}
+            <div class="pull-right gitedit">
+                <a href="{{ site.repository }}/edit/master/{{ page.path }}"><i class="fa fa-pencil"></i> Sửa<span class="hidden-xs-down">&nbsp;trang này</span></a>
             </div>
+            <h1>{{ page.title }}</h1>
+            {% include breadcrumbs.html posts = include.posts %}
+            {{ content }}
+            {% include social.html %}
         </div> <!-- / blog -->      
     </div><!-- /.row -->    
 </div><!-- /.container -->
