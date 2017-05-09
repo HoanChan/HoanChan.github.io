@@ -1,0 +1,5 @@
+{% comment %}
+  href = cs.css
+{% endcomment %}
+<link rel="stylesheet" href="{{ include.href }}" media="none" onload="if(media!='all')media='all'">
+<noscript><link rel="stylesheet" href="{{ include.href }}"></noscript>
