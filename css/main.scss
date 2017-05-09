@@ -4,9 +4,6 @@
 @import "mixins";
 
 /* Intro */
-
-@import url('https://fonts.googleapis.com/css?family=Sriracha');
-
 .intro {
     .main{
         font-size: 5.6rem;
@@ -16,3 +13,5 @@
       @include threedee(#6d879d); //Change only this color and apply the class in your HTML
     }
 }
+
+@import "style";

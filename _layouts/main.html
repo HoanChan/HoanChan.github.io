@@ -1,22 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="vi-VN">
     <head>
-      <!-- {% feed_meta %} -->
-        {% include meta.html %}
-        {% include async.html href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %}
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-        <script async src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-        <script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-        <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        {% seo %}
-        <!--[if lt IE 9]>
-        <script async src="/js/html5shiv.min.js"></script>
-        <script async src="/js/respond.min.js"></script>
-        <![endif]-->
-        {% include async.html href="/css/style.css" %}
-        {% include async.html href="/css/main.css" %}
-        <script async src="/js/myjs.js"></script>
+        {% include i_meta.html %}
+        {% include i_css.html  main = true %}
     </head>
     <body>
         <div class="page-wrap">
@@ -24,6 +10,7 @@
             {{ content }}
         </div>
         {% include footer.html %}
+        {% include i_js.html  main = true %}
         {% include anchor_links.html %}
         {% include analytics.html %}
     </body>
