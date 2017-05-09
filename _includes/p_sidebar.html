@@ -5,7 +5,7 @@
 {% endcomment %}
 <div class="hidden-sm-up">                
     <button class="btn btn-success btn-sm btn-block mb-2 collapsed" data-toggle="collapse" data-target="#sidebar">Mục lục</button>
-    <div id="sidebar" class="collapse">                
+    <div id="sidebar" class="collapse mb-3">                
         {% if page.url == include.path %}
             {% include p_contents.html data=include.data posts=include.posts path=include.path %}
         {% else %}

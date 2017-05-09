@@ -6,3 +6,5 @@ test/
 .sass-cache
 test.md
 _config.yml
+GemFile
+GemFile.lock
