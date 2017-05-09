@@ -29,4 +29,4 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
     <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>
 </div>
 
-## [Tải về](/download/hc-mix/app.zip)
+## [Tải về](/download/hc-mix.zip)

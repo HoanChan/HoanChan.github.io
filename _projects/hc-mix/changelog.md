@@ -1,6 +1,12 @@
 ---
 title: Lịch sử
 ---
+
+###### 09/05/2017 - 1.0.0.5
+{: .post-category}
+- Thay tính năng xoá khoảng cách bằng tính năng chuyển đánh số đầu dòng sang văn bản thuần. 
+- Thay link [download](/download/hc-mix.zip) và kiểm tra [phiên bản](/download/hc-mix.xml).
+
 ###### 22/03/2017 - 1.0.0.4
 {: .post-category}
 - Sửa một lỗi khiến cho việc thay thế [<Danh sách câu hỏi>] bị lỗi khi nhóm có quá nhiều câu làm cho in phần đầu của nhóm rồi bị đứng.

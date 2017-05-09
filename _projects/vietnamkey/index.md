@@ -30,4 +30,4 @@ Tuy không phải lập trình ra để so với "ông già" **Unikey**, tuy nhi
 
 ## Tải về
 ---------
-Nhấn vào [ĐÂY](/download/vietnamkey/app.zip) để tải về
+Nhấn vào [ĐÂY](/download/vietnamkey.zip) để tải về

@@ -14,7 +14,7 @@
   style: "height: 150px"
   content: Add-in của Word được viết bằng C# hỗ trợ nhận dạng và trộn đề trắc nghiệm chuyên nghiệp.
   links:
-    - url: /download/hc-mix/app.zip
+    - url: /download/hc-mix.zip
       text: Tải về
       class: btn btn-primary
     - url: /projects/hc-mix
@@ -25,7 +25,7 @@
   style: "height: 150px"
   content: Bộ gõ tiếng Việt được viết bằng C#, hỗ trợ Unicode và Telex, đơn giản nhưng rất hiệu quả.
   links:
-    - url: /download/vietnamkey/app.zip
+    - url: /download/vietnamkey.zip
       text: Tải về
       class: btn btn-primary
     - url: /projects/vietnamkey
