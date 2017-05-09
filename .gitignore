@@ -5,6 +5,5 @@ test/
 .idea/
 .sass-cache
 test.md
-_config.yml
-GemFile
+test2.md
 GemFile.lock
