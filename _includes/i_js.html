@@ -5,13 +5,14 @@
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> 
 {% if include.main %}
+{% else %}
     <script async type="text/javascript" src="/js/sh_main.js"></script>
     <script async type="text/javascript" src="/js/sh_pascal.js"></script>
     <script async type="text/javascript" src="/js/sh_hc-mix.js"></script>
     <script async type="text/javascript" src="/js/sh_syntax.js"></script>
     <script async src="/js/sh.js"></script>    
 {% endif %}
-<!--[if lt IE 9]>
+<!-[if lt IE 9]>
 <script async src="/js/html5shiv.min.js"></script>
 <script async src="/js/respond.min.js"></script>
 <![endif]-->
