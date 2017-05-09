@@ -8,7 +8,7 @@
       class: btn btn-primary
     - url: /projects/sortviewer
       text: Xem ngay!
-      class: btn btn-default
+      class: btn btn-secondary
 - title: HC-Mix
   image: hc-mix.png
   style: "height: 150px"
@@ -19,7 +19,7 @@
       class: btn btn-primary
     - url: /projects/hc-mix
       text: Xem ngay!
-      class: btn btn-default
+      class: btn btn-secondary
 - title: VietNamKey
   image: vietnamkey.png
   style: "height: 150px"
@@ -30,7 +30,7 @@
       class: btn btn-primary
     - url: /projects/vietnamkey
       text: Xem ngay!
-      class: btn btn-default
+      class: btn btn-secondary
 - title: HC-Slider
   image: hc-slider.png
   style: "height: 150px"
@@ -41,7 +41,7 @@
       class: btn btn-primary
     - url: /projects/hc-slider
       text: Xem ngay!
-      class: btn btn-default
+      class: btn btn-secondary
 - title: qType
   image: qtype.png
   style: "height: 150px"
@@ -52,4 +52,4 @@
       class: btn btn-primary
     - url: /projects/qtype
       text: Xem ngay!
-      class: btn btn-default
+      class: btn btn-secondary
