@@ -1,0 +1,106 @@
+﻿html {
+	height: 100%;
+}
+
+body {
+	margin: 0 10px;
+	font-size: 16px;
+	font-family: 'Signika Negative', sans-serif;
+	height: 100%;
+}
+
+#container {
+	margin-left: 10px;
+}
+
+/*=============================================================================================*/
+#controler {
+	width: 100%;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#controler>button {
+	margin: 5px 10px;
+}
+#bottom-bar>button{
+	margin: 0px 2px;
+}
+
+#itemCount {
+	width: 25px;
+}
+
+#slSortType {
+	width: 135px;
+}
+
+.box {
+	position: absolute;
+	bottom: 0px;
+	background: #333333;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: 'vernada', sans-serif;
+}
+
+.box span {
+	text-align: center;
+	position: absolute;
+	font-weight: bold;
+	bottom: -25px;
+	width: 100%;
+}
+
+#boxPanel {
+	height: 220px;
+	width: 100%;
+	position: relative;
+}
+
+#textPanel {
+	width: 100%;
+	position: fixed;
+	bottom: 40px;
+	left: 0px;
+	text-align: center;
+}
+
+#bottom-bar {
+	position: fixed;
+	bottom: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#timeScale {
+	width: 50px;
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#timeScaleSlider {
+	width: 20%;
+	margin-right: 20px;
+}
+
+#progressSlider {
+	width: 50%;
+	margin: 0px 20px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+}

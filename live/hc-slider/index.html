@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <link href="css/page.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/HCSlider.js"></script>
+    <script>
+        $(document).ready(function () {
+            new fx.HC('#slider', {
+                controls: true,
+                pagination: true,
+                autoplay: true,
+                captions: true,
+                barTimer: true,
+                circleTimer: true,
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Hoàn Chân Slider<span>Hardware animation. <a href="demo.html">Effects Demo Page</a></span></h1>
+    <section id="container">
+        <div id="slider">
+            <img src="img/1.jpg" alt="" title="A powerful javascript slider" />
+            <img src="img/2.jpg" alt="" title="Developed by Lê Hoàn Chân" />
+            <img src="img/3.jpg" alt="" title="Base on JQuery and TweenMax library with CSS3" />
+            <img src="img/4.jpg" alt="" title="With 59 wonderful animation effects" />
+            <img src="img/5.jpg" alt="" title="Support control the slider" />
+            <img src="img/6.jpg" alt="" title="Can view other image as thumb" />
+            <img src="img/7.jpg" alt="" title="Open code for everyone" />
+            <img src="img/8.jpg" alt="" title="Contact me at Le.Hoan.Chan@gmail.com" />
+        </div>
+        <footer>
+            <p class="info" style="text-align:center;"><strong>Hoàn Chân Slider</strong> &copy; Copyright 2013 Hoàn Chân. All Rights Reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>

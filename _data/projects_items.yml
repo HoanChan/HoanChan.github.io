@@ -6,8 +6,11 @@
     - url: /download/sortviewer.zip
       text: Tải về
       class: btn btn-primary
+    - url: /live/sortviewer
+      text: Demo
+      class: btn btn-success
     - url: /projects/sortviewer
-      text: Xem ngay!
+      text: Xem!
       class: btn btn-secondary
 - title: HC-Mix
   image: hc-mix.png
@@ -39,8 +42,11 @@
     - url: /download/hc-slider.zip
       text: Tải về
       class: btn btn-primary
+    - url: /live/hc-slider
+      text: Demo
+      class: btn btn-success
     - url: /projects/hc-slider
-      text: Xem ngay!
+      text: Xem!
       class: btn btn-secondary
 - title: qType
   image: qtype.png

@@ -1,0 +1,203 @@
+
+/*=============================================================================================*/
+div#HCSlider {
+    position: relative;
+}
+
+    div#HCSlider div#images.loading {
+        background: url("loading.gif") no-repeat center;
+    }
+
+    div#HCSlider div#surface {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        -ms-box-sizing: content-box;
+        box-sizing: content-box;
+        position: relative;
+        top: 0px;
+    }
+
+    div#HCSlider div#shadow {
+        background: transparent url(shadow.png) no-repeat bottom center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        z-index: -1;
+        left: -0.67%;
+        top: -1%;
+        width: 101.33%;
+        height: 108.8%;
+    }
+    /*===================================[ Pagination ]=================================*/
+    div#HCSlider ul#pagination {
+        overflow: hidden;
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        top: -25px;
+        right: 0px;
+        z-index: 1000;
+    }
+        /*div#HCSlider ul#pagination li {
+        text-indent: 10000px;
+        width: 16px;
+        height: 17px;
+        background: url(bullet.png) left top;
+        text-indent: -4000px;
+        position: relative;
+        margin: 15px 7px;
+        color: transparent;
+    }
+        div#HCSlider ul#pagination li:hover {
+            background-position: 0 50%;
+        }
+        div#HCSlider ul#pagination li.current {
+            background-position: 0 100%;
+        }*/
+        div#HCSlider ul#pagination li {
+            text-indent: 10000px;
+            display: block;
+            position: relative;
+            margin: 2px;
+            float: left;
+            width: 14px;
+            height: 15px;
+            background: url("light-controls.png") -113px -14px;
+        }
+
+            div#HCSlider ul#pagination li.current {
+                background-position: -92px -14px;
+            }
+
+            div#HCSlider ul#pagination li:hover {
+                background-position: -134px -14px;
+            }
+    /*====================================[ Caption ]===================================*/
+    div#HCSlider .hc-obj {
+        position: absolute;
+        z-index: 1000;
+        color: rgb(255, 255, 255); 
+	    background-color: rgb(250, 107, 75); 
+	    border-radius: 4px; 
+    }
+
+    div#HCSlider #caption {
+        padding: 20px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        z-index: 1000;
+        position: absolute;
+        background: #CBBFAE;
+        background: rgba(190,176,155, 0.4);
+        border-left: 4px solid rgba(255,255,255,0.7);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0;
+        color: #fff;
+        font-size: 20px;
+        font-family: helvetica, arial, sans-serif;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    }
+    /*===================================[ Bar Timer ]==================================*/
+    div#HCSlider #barTimer {
+        width: 100%;
+        overflow: hidden;
+        height: 6px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1000;
+    }
+
+        div#HCSlider #barTimer #timerGlow {
+            height: 7px;
+            background: url("timerGlow.png");
+            width: 104px;
+            left: -104px;
+            position: relative;
+        }
+
+        div#HCSlider #barTimer #timerBar {
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            top: 4px;
+        }
+    /*=================================[ Circle Timer ]=================================*/
+    div#HCSlider #circleTimer {
+        position: absolute;
+        top: -28px;
+        width: 28px;
+        height: 28px;
+        z-index: 1000;
+    }
+
+        div#HCSlider #circleTimer #timerStroke {
+            position: absolute;
+        }
+
+        div#HCSlider #circleTimer #timerDot {
+            position: relative;
+            left: 9px;
+            top: 8px;
+            width: 11px;
+            height: 13px;
+            background: url("light-controls.png") -134px -15px;
+        }
+    /*==================================[ Controler ]==================================*/
+    div#HCSlider a#next,
+    div#HCSlider a#prev {
+        position: absolute;
+        display: block;
+        top: 50%;
+        margin-top: -28px;
+        z-index: 60;
+        height: 56px;
+        width: 29px;
+        background-image: url(arrows.png);
+    }
+
+    div#HCSlider a#next {
+        background-position: 100% 0;
+        right: -29px;
+    }
+
+    div#HCSlider a#prev {
+        left: -29px;
+        background-position: 0 0;
+    }
+
+    div#HCSlider .clickable:hover {
+        cursor: pointer;
+        cursor: hand;
+    }
+    /*====================================[ Thumb ]====================================*/
+    div#HCSlider #thumb {
+        position: absolute;
+        z-index: 1000;
+        /*top: 0px;*/
+    }
+
+        div#HCSlider #thumb.bottom #thumbFrame {
+            background: url("thumb-frame.png") -0px -7px;
+            width: 92px;
+            height: 95px;
+        }
+
+        div#HCSlider #thumb.up #thumbFrame {
+            background: url("thumb-frame.png") -89px 1px;
+            width: 92px;
+            height: 95px;
+        }
+
+        div#HCSlider #thumb.bottom #thumbImage, #thumb.up #thumbImage {
+            position: absolute;
+            top: 17px;
+            left: 15px;
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }

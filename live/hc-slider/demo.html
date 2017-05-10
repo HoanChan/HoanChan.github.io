@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Hoàn Chân Slider &#0187; Hardware animation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="js/HCSlider.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+        <link href="css/page.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/DemoStyle.css" rel="stylesheet" />
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function () {
+                $('#transitions').accordion();
+                var playing = false;
+				window.f = new fx.HC('#slider', {
+				    controls: false,
+				    pagination: false,
+				    autoplay: false,
+				    captions: true,
+				    onTransitionEnd: function () { playing = false; }
+				});
+
+				$('#transitions a').button().click(function (event) {
+				    event.preventDefault();
+				    if (!playing) {
+				        var id = $(this).attr('href');
+				        if (id.length > 0) {
+				            var tran = id.split('#')[1];
+				            if (tran.length > 0) {
+				                playing = true;
+				                window.f.next(tran);
+				            }
+				        }
+				    }
+				});
+			});
+		</script>
+	</head>
+	<body id="transitiongallery">
+        <h1>Hoàn Chân Slider<span>Hardware animation. <a href="index.html">AutoPlay Slider Page</a></span></h1>
+		<section class="container">
+			<div id="slidercontainer">
+				<div id="slider">
+                    <img src="img/1.jpg" alt="" title="A powerful javascript slider" />
+                    <img src="img/2.jpg" alt="" title="Developed by Lê Hoàn Chân" />
+                    <img src="img/3.jpg" alt="" title="Base on JQuery and TweenMax library with CSS3" />
+                    <img src="img/4.jpg" alt="" title="With 59 wonderful animation effects" />
+                    <img src="img/5.jpg" alt="" title="Support control the slider" />
+                    <img src="img/6.jpg" alt="" title="Can view other image as thumb" />
+                    <img src="img/7.jpg" alt="" title="Open code for everyone" />
+                    <img src="img/8.jpg" alt="" title="Contact me at Le.Hoan.Chan@gmail.com" />
+				</div>
+                <div id="transitions">
+                    <h3>Tiles 3D</h3>
+                    <div>
+                        <h3>Tiles 3D Left</h3>
+                            <a href="#Tiles3DLeftTopLeft">Tiles 3D Left from Top-Left</a>
+                            <a href="#Tiles3DLeftBotRight">Tiles 3D Left from Bot-Right</a>
+                            <a href="#Tiles3DLeftMidMid">Tiles 3D Left from Mid-Mid</a>
+                        <h3>Tiles 3D Right</h3>
+                            <a href="#Tiles3DRightTopLeft">Tiles 3D Right from Top-Left</a>
+                            <a href="#Tiles3DRightBotRight">Tiles 3D Right from Bot-Right</a>
+                            <a href="#Tiles3DRightMidMid">Tiles 3D Right from Mid-Mid</a>
+                        <h3>Tiles 3D Up</h3>
+                            <a href="#Tiles3DUpTopLeft">Tiles 3D Up from Top-Left</a>
+                            <a href="#Tiles3DUpBotRight">Tiles 3D Up from Bot-Right</a>
+                            <a href="#Tiles3DUpMidMid">Tiles 3D Up from Mid-Mid</a>
+                        <h3>Tiles 3D Down</h3>
+                            <a href="#Tiles3DDownTopLeft">Tiles 3D Down from Top-Left</a>
+                            <a href="#Tiles3DDownBotRight">Tiles 3D Down from Bot-Right</a>
+                            <a href="#Tiles3DDownMidMid">Tiles 3D Down from Mid-Mid</a>
+                    </div>
+                    <h3>Bars 3D</h3>
+                    <div>
+                        <h3>Bars 3D Left</h3>
+                            <a href="#Bars3DLeftTop">Bars3D Left from Top</a>
+                            <a href="#Bars3DLeftBot">Bars3D Left from Bot</a>
+                            <a href="#Bars3DLeftMid">Bars3D Left from Mid</a>
+                        <h3>Bars 3D Right</h3>
+                            <a href="#Bars3DRightTop">Bars3D Right from Top</a>
+                            <a href="#Bars3DRightBot">Bars3D Right from Bot</a>
+                            <a href="#Bars3DRightMid">Bars3D Right from Mid</a>
+                        <h3>Bars 3D Up</h3>
+                            <a href="#Bars3DUpLeft">Bars3D Up from Left</a>
+                            <a href="#Bars3DUpRight">Bars3D Up from Right</a>
+                            <a href="#Bars3DUpMid">Bars3D Up from Mid</a>
+                        <h3>Bars 3D Down</h3>
+                            <a href="#Bars3DDownLeft">Bars3D Down from Left</a>
+                            <a href="#Bars3DDownRight">Bars3D Down from Right</a>
+                            <a href="#Bars3DDownMid">Bars3D Down from Mid</a>
+                        <h3>Bars 3D Mix</h3>
+                            <a href="#Bars3DMixHLeft">Bars3D Mix Horizontal Left</a>
+                            <a href="#Bars3DMixHRight">Bars3D Mix Horizontal Right</a>
+                            <a href="#Bars3DMixHMid">Bars3D Mix Horizontal Mid</a>
+                            <a href="#Bars3DMixVUp">Bars3D Mix Vertical Up</a>
+                            <a href="#Bars3DMixVDown">Bars3D Mix Vertical Down</a>
+                            <a href="#Bars3DMixVMid">Bars3D Mix Vertical Mid</a>
+                    </div>
+                    <h3>Cube</h3>
+                    <div>
+                        <a href="#CubeLeft">Cube Left</a>
+                        <a href="#CubeRight">Cube Right</a>
+                        <a href="#CubeUp">Cube Up</a>
+                        <a href="#CubeDown">Cube Down</a>
+                    </div>
+                    <h3>Blinds 3D</h3>
+                    <div>
+                        <h3>Blinds 3D Left</h3>
+                            <a href="#Blinds3DLeftLeft">Blinds 3D Left from Left</a>
+                            <a href="#Blinds3DLeftRight">Blinds 3D Left from Right</a>
+                            <a href="#Blinds3DLeftMid">Blinds 3D Left from Mid</a>
+                        <h3>Blinds 3D Right</h3>
+                            <a href="#Blinds3DRightLeft">Blinds 3D Right from Left</a>
+                            <a href="#Blinds3DRightRight">Blinds 3D Right from Right</a>
+                            <a href="#Blinds3DRightMid">Blinds 3D Right from Mid</a>
+                        <h3>Blinds 3D Up</h3>
+                            <a href="#Blinds3DUpTop">Blinds 3D Up from Top</a>
+                            <a href="#Blinds3DUpBot">Blinds 3D Up from Bot</a>
+                            <a href="#Blinds3DUpMid">Blinds 3D Up from Mid</a>
+                        <h3>Blinds 3D Down</h3>
+                            <a href="#Blinds3DDownTop">Blinds 3D Down from Top</a>
+                            <a href="#Blinds3DDownBot">Blinds 3D Down from Bot</a>
+                            <a href="#Blinds3DDownMid">Blinds 3D Down from Mid</a>
+                    </div>
+                    <h3>Book</h3>
+                    <div>
+                        <a href="#BookLeft">Book Left</a>
+                        <a href="#BookRight">Book Right</a>
+                    </div>
+                    <h3>2D Effects</h3>
+                    <div>
+                        <h3>Concentric</h3>
+                            <a href="#Concentric">Concentric</a>
+                            <a href="#Concentric2">Concentric 2</a>
+                        <h3>Swipe</h3>
+                            <a href="#SwipeLeft">Swipe Left</a>
+                            <a href="#SwipeRight">Swipe Right</a>
+                            <a href="#SwipeUp">Swipe Up</a>
+                            <a href="#SwipeDown">Swipe Down</a>
+                        <h3>Dissolve</h3>
+                            <a href="#Dissolve">Dissolve</a>
+                        <h3>Blocks</h3>
+                            <a href="#BlocksRandom">Blocks Random</a>
+                            <a href="#BlocksTopLeft">Blocks from Top-Left</a>
+                            <a href="#BlocksBotRight">Blocks from Bot-Right</a>
+                            <a href="#BlocksMidMid">Blocks from Mid-Mid</a>
+                        <h3>Zip</h3>
+                            <a href="#ZipLeft">Zip Left</a>
+                            <a href="#ZipRight">Zip Right</a>
+                            <a href="#ZipTop">Zip Top</a>
+                            <a href="#ZipBot">Zip Bot</a>
+                            <a href="#ZipMidV">Zip Mid Vertical</a>
+                            <a href="#ZipMidH">Zip Mid Horizontal</a>
+                        <h3>Spiral</h3>
+                            <a href="#SpiralIn">Spiral In</a>
+                            <a href="#SpiralOut">Spiral Out</a>
+                    </div>
+                </div>
+			</div>
+            <footer>
+                <p class="info" style="text-align:center;"><strong>Hoàn Chân Slider</strong> &copy; Copyright 2013 Hoàn Chân. All Rights Reserved.</p>
+            </footer>
+		</section>
+	</body>
+</html>
