@@ -55,7 +55,6 @@ fb_appid: 1792974517689740
 logo: /img/logo-2x.png
 
 gems:
-  # - jekyll-avatar
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
