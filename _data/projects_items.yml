@@ -3,7 +3,7 @@
   style: "height: 150px"
   content: Phầm mềm mô phỏng các thuật toán sắp xếp, chạy trên nền Web, viết bằng HTML, Javascript và CSS.
   links:
-    - url: /download/sortviewer.zip
+    - url: /download/sortviewer.7z
       text: Tải về
       class: btn btn-primary
     - url: /live/sortviewer
@@ -39,7 +39,7 @@
   style: "height: 150px"
   content: Add-in của jQuery dùng để thiết kế side show ảnh trên web, viết bằng HTML, Javascript và CSS.
   links:
-    - url: /download/hc-slider.zip
+    - url: /download/hc-slider.7z
       text: Tải về
       class: btn btn-primary
     - url: /live/hc-slider
