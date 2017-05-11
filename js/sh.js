@@ -1,3 +1,10 @@
+---
+---
+{% include_relative sh_main.js %}
+{% include_relative sh_pascal.js %}
+{% include_relative sh_hc-mix.js %}
+{% include_relative sh_syntax.js %}
+
 (function($) {
 	function highlight(lang) {
         var nodeList = document.getElementsByClassName('sh_'+lang);

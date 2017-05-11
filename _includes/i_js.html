@@ -1,16 +1,12 @@
 {% comment %}
   main = true
 {% endcomment %}
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script async src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> 
 {% if include.main == true %}
 
 {% else %}
-    <script async type="text/javascript" src="/js/sh_main.js"></script>
-    <script async type="text/javascript" src="/js/sh_pascal.js"></script>
-    <script async type="text/javascript" src="/js/sh_hc-mix.js"></script>
-    <script async type="text/javascript" src="/js/sh_syntax.js"></script>
     <script async src="/js/sh.js"></script>    
 {% endif %}
 <script async src="/js/myjs.js"></script>
