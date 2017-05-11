@@ -62,11 +62,11 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-auto-image
-  - jekyll-minifier
+  # - jekyll-minifier
   
 exclude:
   - .gitignore
   - README.md
-  # - _dev
-  # - _it
-  # - _projects
+  - _dev
+  - _it
+  - _projects

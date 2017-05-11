@@ -1,16 +1,15 @@
 source 'https://rubygems.org'
 
 group :jekyll_plugins do
-  gem 'jekyll-auto-image'
   gem 'jekyll'
-  gem 'jekyll-paginate'
+  gem 'kramdown'
+  gem 'rouge'
   gem 'jekyll-feed'
   gem 'jekyll-redirect-from'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
-  gem 'jemoji'
+  gem 'jekyll-paginate'
   gem 'jekyll-gist'
-  gem 'kramdown'
-  gem 'rouge'
-  gem 'jekyll-minifier'
+  gem 'jekyll-auto-image'
+  # gem 'jekyll-minifier'
 end
