@@ -83,6 +83,14 @@ $link-hover-decoration: underline !default;
              -o-transition: $transition;
                     transition: $transition;
 }
+
+@mixin transform($trans...) {
+    -webkit-transform: $trans;
+         -moz-transform: $trans;
+             -o-transform: $trans;
+                    transform: $trans;
+}
+
 @mixin box-shadow($shadow...) {
     -webkit-box-shadow: $shadow;
          -moz-box-shadow: $shadow;

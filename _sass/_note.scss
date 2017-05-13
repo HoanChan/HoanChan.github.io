@@ -5,8 +5,9 @@
     border-color: $brand-primary;
     border-left-width: 5px;
     border-radius: 3px;
+    overflow: hidden;
     
-    h4 {
+    h5 {
         margin-top: 0;
         margin-bottom: 5px;
         color: $brand-primary; 
@@ -27,17 +28,17 @@
 /* Variations */
 .success {
     border-color: $brand-success;
-    h4 { color: $brand-success; }
+    h5 { color: $brand-success; }
 }
 .info {
     border-color: $brand-info;
-    h4 { color: $brand-info; }
+    h5 { color: $brand-info; }
 }
 .warning {
     border-color: $brand-warning;
-    h4 { color: $brand-warning; }
+    h5 { color: $brand-warning; }
 }
 .danger {
     border-color: $brand-danger;
-    h4 { color: $brand-danger; }
+    h5 { color: $brand-danger; }
 }

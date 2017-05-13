@@ -147,3 +147,17 @@ blockquote {
     padding: 10px 20px;
     margin: 10px 0px;
 }
+
+// @for $i from 1 through 9 {
+//   .s-#{$i} { @include transform(scale($i / 10)); }
+// }
+
+
+.img-fluid.float-left {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.img-fluid.float-right {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
