@@ -2,6 +2,11 @@
 title: Định dạng đoạn văn
 ---
 
+## Nội dung chính:
+{:.no_toc}
+* Menu
+{:toc}
+
 Để định dạng đoạn văn bản, cần xác định đâu là đoạn văn cần định dạng bằng cách đặt con trỏ soạn thảo và đoạn văn đó hoặc có thể bôi đen một phần văn bản của nó. Có thể định dạng nhiều đoạn văn cùng một lúc bằng cách chọn một phần hoặc tất cả văn bản trong các đoạn văn đó.
 
 ## 1. Căn lề cho đoạn văn

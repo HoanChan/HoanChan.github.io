@@ -2,21 +2,30 @@
 title: Định dạng ký tự
 ---
 
+## Nội dung chính:
+{:.no_toc}
+* Menu
+{:toc}
+
 Định dạng văn bản là trình bày các phần văn bản nhằm mục đích cho văn bản được rõ ràng và đẹp, nhấn mạnh những phần quan trọng, giúp người đọc nắm bắt dễ hơn các nội dung chủ yếu của văn bản.
 
 ## 1. In đậm, nghiêng và gạch chân văn bản.
 
 **<u>Bước 1:</u>** Chọn văn bản muốn thực hiện định dạng.
 
-{% include image.html url="biu.png" class="float-right" %}
-
-**<u>Bước 2:</u>** Gọi lệnh định dạng:
+**<u>Bước 2:</u>** Gọi lệnh định dạng: <span>{% include image.html url="biu.png" %}</span>
 
 - **Bold – In đậm**: nhấn biểu tượng **B** trên thanh công cụ. (<kbd>Ctrl</kbd> + <kbd>B</kbd>).
 - _Italic – In nghiêng_: nhấn biểu tượng **_I_** trên thanh công cụ. (<kbd>Ctrl</kbd> + <kbd>I</kbd>).
 - <u>Underline – Gạch chân</u>: nhấn biểu tượng **<u>U</u>** trên thanh công cụ. (<kbd>Ctrl</kbd> + <kbd>U</kbd>).
 
-Lưu ý: Nếu văn bản đã có định dạng, gọi lại lệnh định dạng lần nữa để huỷ định dạng đó. Ví dụ văn bản đang vừa in đậm vừa in nghiêng ➔ chọn và nhấn nút `Bold` ➔ văn bản sẽ chỉ còn in nghiêng.
+<div class="note primary" markdown="1">
+##### Xoá định dạng
+
+Nếu văn bản đã có định dạng, gọi lại lệnh định dạng lần nữa để xoá định dạng đó. 
+
+**Ví dụ:** văn bản đang vừa **_in đậm vừa in nghiêng_** ➔ chọn và nhấn nút `Bold` trên thanh công cụ ➔ văn bản sẽ chỉ còn _in nghiêng_.
+</div>
 
 ## 2. Thay đổi kiểu chữ, cỡ chữ.
 

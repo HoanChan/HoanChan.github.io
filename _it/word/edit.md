@@ -2,6 +2,11 @@
 title: Các thao tác cơ bản
 ---
 
+## Nội dung chính:
+{:.no_toc}
+* Menu
+{:toc}
+
 ## I. Chọn văn bản
 
 Trong Word, các thành phần trong văn bản (văn bản, hình ảnh, bảng, …) được coi là các đối tượng độc lập. Có thể thao tác lên từng đối tượng bằng cách chọn (Selection) nó hoặc chọn hàng loạt đối tượng để thực hiện cùng một thao tác cho chúng. Ở phần này chỉ giới thiệu cách chọn văn bản, các đối tượng khác có thể thực hiện thao tác tương tự. Có thể dùng chuột hoặc bàn phím để chọn.

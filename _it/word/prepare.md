@@ -2,6 +2,11 @@
 title: Chuẩn bị
 ---
 
+## Nội dung chính:
+{:.no_toc}
+* Menu
+{:toc}
+
 ## I.  Khởi động và thoát khỏi Microsoft Word
 {: #start }
 

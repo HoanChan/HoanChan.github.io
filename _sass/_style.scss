@@ -152,36 +152,60 @@ blockquote {
 //   .s-#{$i} { @include transform(scale($i / 10)); }
 // }
 
+.main-content {
 
-.img-fluid.float-left {
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-.img-fluid.float-right {
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
+    .float-mid {
+        display: block!important;
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
 
-.float-mid {
-    display: block!important;
-    margin-right: auto!important;
-    margin-left: auto!important;
-}
+    .img-fluid.float-left {
+        padding-right: 10px;
+        padding-bottom: 10px;
+        @include notdesktop {           
+            float: none !important; 
+            display: block!important;
+            margin-right: auto!important;
+            margin-left: auto!important;
+        }
+    }
+    .img-fluid.float-right {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        @include notdesktop {       
+            float: none !important;     
+            display: block!important;
+            margin-right: auto!important;
+            margin-left: auto!important;
+        }
+    }
 
-kbd
-{
-    -moz-border-radius: 3px;
-    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-    -webkit-border-radius: 3px;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-    color: #333;
-    margin: 0 .1rem;
-    padding: .1rem .6rem;
-    font-size: .8rem;
-    font-family: inherit;
-    text-shadow: 0 1px 0 #fff;
+    $kbd-color: #16a085;//#1abc9c;
+    kbd
+    {
+        color: #fff;
+        margin: 0 .1rem;
+        padding: .1rem .6rem;
+        font-size: .75rem;
+        font-family: inherit;
+
+        @include box-shadow(inset 0px 1px 1px 0px lighten($kbd-color, 30%));
+        @include linearGradient($kbd-color, darken($kbd-color, 10%));
+        @include border-radius(3px);
+        border:1px solid darken($kbd-color, 30%);
+        display:inline-block;
+        cursor:pointer;
+        text-decoration:none;
+        text-shadow:0px 1px 0px lighten($kbd-color, 10%);
+
+        &:hover {
+            @include linearGradient(darken($kbd-color, 10%), $kbd-color);
+        }
+        &:active {
+            @include linearGradient(darken($kbd-color, 15%), darken($kbd-color, 5%));
+        }
+
+    }
+    
 }
