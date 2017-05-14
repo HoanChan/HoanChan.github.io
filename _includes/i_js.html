@@ -1,15 +1,15 @@
 {% comment %}
   main = true
 {% endcomment %}
-<script async src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> 
 {% if include.main == true %}
 
 {% else %}
-    <script defer src="/js/sh.js"></script>    
+    <script async src="/js/sh.js"></script>    
 {% endif %}
-<script defer src="/js/myjs.js"></script>
+<script async src="/js/myjs.js"></script>
 <!--[if lt IE 9]>
 <script async src="/js/html5shiv.min.js"></script>
 <script async src="/js/respond.min.js"></script>

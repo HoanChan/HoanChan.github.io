@@ -1,1 +1,1 @@
-e:\ruby\bin\gem uninstall --all
+rem e:\ruby\bin\gem uninstall --all

@@ -8,3 +8,7 @@
   - url: 
   - url: steps
   - url: prepare
+  - url: write
+  - url: edit
+  - url: format-fonts
+  - url: format-paragraphs

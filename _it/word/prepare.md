@@ -10,7 +10,7 @@ title: Chuẩn bị
 **<u>Cách 1:</u>** Nhấn nút `Start`, Chọn `Programs`, chọn `Microsoft Office`, chọn `Microsoft Office Word 2003`.
 
 **<u>Cách 2:</u>** Nhấn chuột 2 lần vào biểu tượng `Microsoft Office Word 2003`
-<span>{% include image.html url="word.png" style="height:2rem"%}<span>
+<span>{% include image.html url="word.png" %}<span>
 trên màn hình `Desktop`
 ### 2. Tạo mới văn bản – mở văn bản sẵn có
 {: #new }
@@ -18,35 +18,35 @@ trên màn hình `Desktop`
 
 Mặc định thì Word sẽ tạo sẵn văn bản mới cho người dùng khi mở chương trình lên. Tuy nhiên nếu cần phải tạo thêm văn bản mới thì có thể thực hiện một trong các cách sau:
 
-**<u>Cách 1:</u>** Vào menu `File` ⇒ `New` (Ctrl + N)
+**<u>Cách 1:</u>** Vào menu `File` ➔ `New` (<kbd>Ctrl</kbd> + <kbd>N</kbd>)
 
 **<u>Cách 2:</u>** Nhấn nút `New` trên thanh công cụ chuẩn
 
 Để mở tập tin văn bản sẵn có:
 
-**<u>Cách 1:</u>**  Chọn `File` ⇒ `Open` (Ctrl + O)
+**<u>Cách 1:</u>**  Chọn `File` ➔ `Open` (<kbd>Ctrl</kbd> + <kbd>O</kbd>)
 
 **<u>Cách 2:</u>**  Click nút `Open` trên thanh công cụ chuẩn
 
-⇒ Xuất hiện cửa sổ `Open` để truy cập đến tập tin văn bản cần mở
+➽ Xuất hiện cửa sổ `Open` để truy cập đến tập tin văn bản cần mở
 
 ### 3. Lưu văn bản
 
 Việc lưu văn bản nên được thực hiện ngay khi tạo mới văn bản và thường xuyên thực hiện trong quá trình soạn thảo văn bản để đảm bảo nội dung soạn thảo được lưu trữ tránh trường hợp bị mất khi máy tính gặp sự cố ngoài ý muốn. Có thể thực hiện thao tác lưu văn bản bằng các cách sau:
 
-**<u>Cách 1:</u>**  Chọn `File` ⇒ `Save` (Ctrl + S)
+**<u>Cách 1:</u>**  Chọn `File` ➔ `Save` (<kbd>Ctrl</kbd> + <kbd>S</kbd>)
 
 **<u>Cách 2:</u>** Nhấn nút `Save` trên thanh công cụ chuẩn
 
-Nếu file lưu lần đầu ⇒ xuất hiện cửa sổ `Save As` để nhập tên tập tin vào.
+Nếu file lưu lần đầu ➔ xuất hiện cửa sổ `Save As` để nhập tên tập tin vào.
 
 ### 4. Thoát khỏi Word – đóng văn bản hiện tại
 
 {% include image.html url="close.png" class="float-right" %}
 
-Đóng văn bản hiện tại thì ta vào menu `File` ⇒ `Close` hoặc có thể thoát luôn Word bằng các cách sau:
+Đóng văn bản hiện tại thì ta vào menu `File` ➔ `Close` hoặc có thể thoát luôn Word bằng các cách sau:
 
-**<u>Cách 1:</u>** Vào menu `File` ⇒ chọn lệnh `Exit`
+**<u>Cách 1:</u>** Vào menu `File` ➔ chọn lệnh `Exit`
 
 **<u>Cách 2:</u>** Chọn biểu tượng `Close` trên góc phải màn hình
 
@@ -56,7 +56,7 @@ Nếu file lưu lần đầu ⇒ xuất hiện cửa sổ `Save As` để nhập
 
 `Yes` – Có lưu lại những thay đổi của tập tin
 
-`No` – Không lưu lại ⇒ tất cả thay đổi sẽ mất
+`No` – Không lưu lại ➔ tất cả thay đổi sẽ mất
 
 `Cancel` – Bỏ qua quay lại tiếp tục soạn thảo.
 
@@ -66,7 +66,7 @@ Nếu file lưu lần đầu ⇒ xuất hiện cửa sổ `Save As` để nhập
 
 {% include image.html url="psm.png" class="float-right" %}
 
-**<u>Cách 1:</u>** Vào menu **File** ⇒ **Page Setup**
+**<u>Cách 1:</u>** Vào menu **File** ➔ **Page Setup**
 
 **<u>Cách 2:</u>** Nhấn đúp vào thanh thước dọc hoặc ngang.
 
@@ -80,7 +80,7 @@ Nếu file lưu lần đầu ⇒ xuất hiện cửa sổ `Save As` để nhập
     + **Gutter**: Gáy của trang – Phần để đóng tập.
     + **Gutter position**: Vị trí gáy `Left` (trái) hay `Top` (trên).
 
-{% include image.html url="page1.png" %}{: .text-center }
+{% include image.html url="page1.png" class="float-mid" %}
 
 - Hướng trang văn bản – phần **Orientation**:
     + **Portrait:** Khổ giấy dọc.
@@ -90,7 +90,7 @@ Nếu file lưu lần đầu ⇒ xuất hiện cửa sổ `Save As` để nhập
     + **Normal:** Kiểu thông thường, thường áp dụng đối với các văn bản chỉ cần in trên 1 mặt giấy.
     + **Mirror margin:** Kiểu lề đối xứng, thường áp dụng đối với văn bản in trên 2 mặt trên 1 tờ giấy. Mục `Left` và `Right` sẽ biến thành `Inside` và `Outside`.
 
-{% include image.html url="page2.png" %}{: .text-center }
+{% include image.html url="page2.png" class="float-mid" %}
 
 ### 2. Kích cỡ trang giấy – thẻ Paper
 
@@ -123,10 +123,9 @@ Nếu file lưu lần đầu ⇒ xuất hiện cửa sổ `Save As` để nhập
         - **Header**: Kích thước tiêu đề.
         - **Footer**: Kích thước chân trang.
 
-{% include image.html url="hdfd.png" %}{: .text-center }
+{% include image.html url="hdfd.png" class="float-mid" %}
 
-{::options parse_block_html="true" /}
-<div class="note primary">
+<div class="note primary" markdown="1">
 ##### Chú ý kích thước
 
 Kích thước **Header** nên bé hơn hoặc bằng lề trên của trang. Kích thước **Footer** nên bé hơn hoặc bằng lề dưới của trang.
@@ -147,21 +146,21 @@ Kích thước **Header** nên bé hơn hoặc bằng lề trên của trang. K�
 - **This section**: Phần văn bản hiện tại.
 - **This point forward**: Từ hiện tại về sau.
 
-<div class="note success">
+<div class="note success" markdown="1">
 ##### Thủ thuật
 
 Muốn các thiết lập được tự động áp dụng cho các văn bản sau này ta nhấn nút `Default.`
 </div>
 
-<div class="note danger">
+<div class="note danger" markdown="1">
 ##### Cẩn thận với đơn vị đo
 
 Có thể lúc mở hộp thoại `Page Setup` đơn vị trong các ô nhập giá trị không phải là `cm`, như vậy khi ta nhập giá trị vào sẽ bị sai. Chúng ta giải quyết như sau:
 
-**<u>Bước 1:</u>** Thiết lập đơn vị đo cho toàn bộ chương trình như sau: Vào menu `Tools` ⇒ `Options` ⇒ chọn thẻ `General.` Mục `Measurement Units`: đơn vị đo được sử dụng trong toàn bộ chương trình ⇒ chọn đơn vị đo là `Centimeters.` ⇒ Nhấn `OK.`
+**<u>Bước 1:</u>** Thiết lập đơn vị đo cho toàn bộ chương trình như sau: Vào menu `Tools` ➔ `Options` ➔ chọn thẻ `General.` Mục `Measurement Units`: đơn vị đo được sử dụng trong toàn bộ chương trình ➔ chọn đơn vị đo là `Centimeters.` ➔ Nhấn `OK.`
 
-**<u>Bước 2:</u>** Vào menu `File` ⇒ `Page Setup` thiết lập các thông số như hướng dẫn ở phần trên.
+**<u>Bước 2:</u>** Vào menu `File` ➔ `Page Setup` thiết lập các thông số như hướng dẫn ở phần trên.
 
-{% include image.html url="unit.png" %}{: .text-center }
+{% include image.html url="unit.png" class="float-mid" %}
 
 </div>

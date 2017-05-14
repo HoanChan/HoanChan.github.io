@@ -52,7 +52,7 @@ Type days, age = integer;
 |   Byte       |  0             |   255         |   Không dấu 8-bit  |
 |   Word       |  0             |   65535       |   Không dấu 16-bit |
 |   Longword   |  0             |   4294967295  |   Không dấu 32-bit |
-{: .table .table-bordered }
+{: .table .table-bordered .table-responsive }
 
 ## Kiểu số thực
 {: #real}
@@ -65,7 +65,7 @@ Type days, age = integer;
 | Extended | 1.9E-4932.. 1.1E4932   | 19-20              | 10                    |
 | Comp     | -2E64+1.. 2E63-1       | 19-20              | 8                     |
 | Currency | -922337203685477.5808.. 922337203685477.5807 | 19-20 | 8            |
-{: .table .table-bordered }
+{: .table .table-bordered .table-responsive }
 
 ## Kiểu chữ
 {: #text}
@@ -79,7 +79,7 @@ Tất cả các kiểu chữ đều có thể lưu được các ký tự trong 
 | String      | 255                   | ?                     |
 | Shortstring | Tương tự String (255) | ?                     |
 | Ansistring  | Tùy thuộc vào bộ nhớ  | ?                     |
-{: .table .table-bordered }
+{: .table .table-bordered .table-responsive }
 
 ## Kiểu logic
 {: #logic}
