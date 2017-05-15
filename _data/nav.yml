@@ -33,6 +33,12 @@
   url: "/it/"
   icon: fa fa-cogs
   child:
-  - text: MS-Word
+  - text: Word 2003
+    url: "/it/word2003/"
+    icon: fa fa-file-word-o
+  - text: Word 2016
     url: "/it/word/"
     icon: fa fa-file-word-o
+  - text: Powerpoint
+    url: "/it/powerpoint/"
+    icon: fa fa-file-powerpoint-o
