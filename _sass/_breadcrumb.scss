@@ -4,8 +4,10 @@ $blue: #3498db;
 $blue-darken: #2980b9;
 $green: #1abc9c;
 $green-darken: #16a085;
+$b-size: 30px;
 
 .breadcrumb {
+    font-size: .8rem;
     list-style: none;
     padding: 0px;
     background: #FFF;
@@ -19,10 +21,10 @@ $green-darken: #16a085;
         background: $blue;
         text-decoration: none;
         position: relative;
-        height: 40px;
-        line-height: 40px;
+        height: $b-size;
+        line-height: $b-size;
         padding: 0 10px 0 5px;
-        margin-right: 23px;
+        margin-right: $b-size/ 2 + 3;
 
         &:nth-child(even) {
             background-color: $blue-darken;
@@ -36,7 +38,7 @@ $green-darken: #16a085;
             }
         }
         &:first-child {
-            padding-left: 15px;
+            padding-left: $b-size / 8 * 3;
             @include border-radius(4px 0 0 4px);
 
             &:before {
@@ -57,12 +59,12 @@ $green-darken: #16a085;
             position: absolute;
             top: 0;
             border: 0 solid $blue;
-            border-width: 20px 10px;
+            border-width: $b-size/2 $b-size/4;
             width: 0;
             height: 0;
         }
         &:before {
-            left: -20px;
+            left: -$b-size / 2;
             border-left-color: transparent;
             padding: 0px;
         }
@@ -71,27 +73,29 @@ $green-darken: #16a085;
             border-color: transparent;
             border-left-color: $blue;
         }
-        &:hover {
-            background-color: $green;
+        &:not(:last-child){
+            &:hover {
+                background-color: $green;
 
-            &:before {
-                border-color: $green;
-                border-left-color: transparent;
+                &:before {
+                    border-color: $green;
+                    border-left-color: transparent;
+                }
+                &:after {
+                    border-left-color: $green;
+                }
             }
-            &:after {
-                border-left-color: $green;
-            }
-        }
-        &:active {
-            background-color: $green-darken;
+            &:active {
+                background-color: $green-darken;
 
-            &:before {
-                border-color: $green-darken;
-                border-left-color: transparent;
-            }
-            &:after {
-                border-left-color: $green-darken;
-            }
-        }        
+                &:before {
+                    border-color: $green-darken;
+                    border-left-color: transparent;
+                }
+                &:after {
+                    border-left-color: $green-darken;
+                }
+            }     
+        }   
     }
 }

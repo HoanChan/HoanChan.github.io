@@ -16,14 +16,14 @@ Trên vùng soạn thảo, phần văn bản được chọn sẽ đảo ngượ
 ### Các cách để chọn văn bản (đánh dấu khối) bằng chuột:
 
 - **<u>Chọn một từ                :</u>** Nhấn chuột nhanh liên tiếp 2 lần (**DoubleClick**)
-- **<u>Chọn một dòng              :</u>** Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}<span> ) và nhấn chuột.
-- **<u>Chọn nhiều dòng            :</u>** Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}<span> ) nhấn giữ chuột trái và kéo lên, xuống.
+- **<u>Chọn một dòng              :</u>** Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}</span> ) và nhấn chuột.
+- **<u>Chọn nhiều dòng            :</u>** Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}</span> ) nhấn giữ chuột trái và kéo lên, xuống.
 - **<u>Chọn câu                   :</u>** Nhấn giữ phím **Ctrl** và nhấn chuột vào bất cứ đâu trong câu.
-- **<u>Chọn một đoạn              :</u>** Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}<span> ) và **DoubleClick**. Hoặc nhấn chuột nhanh liên tiếp 3 lần (**TripleClick**) tại vị trí bất kỳ trong đoạn.
-- **<u>Chọn nhiều đoạn            :</u>** Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}<span> ) và **DoubleClick** và kéo lên trên hoặc xuống dưới.
+- **<u>Chọn một đoạn              :</u>** Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **DoubleClick**. Hoặc nhấn chuột nhanh liên tiếp 3 lần (**TripleClick**) tại vị trí bất kỳ trong đoạn.
+- **<u>Chọn nhiều đoạn            :</u>** Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **DoubleClick** và kéo lên trên hoặc xuống dưới.
 - **<u>Chọn khối chữ              :</u>** Nhấn chuột vào vị trí đầu của khối cần chọn, cuộn văn bản đến vị trí cuối của khối, giữ **Shift** và nhấn chuột.
 - **<u>Chọn khối chữ hình chữ nhật:</u>** Nhấn giữ phím **Alt** trong khi nhấn giữ và kéo chuột từ góc thứ nhất đến góc đối của hình chữ nhật cần chọn.
-- **<u>Chọn toàn bộ văn bản       :</u>** Di chuyển con trỏ chuột ra bên ngoài lề trái của văn bản cho đến khi con trỏ chuột biến thành hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}<span> ) và **TripleClick**. Hoặc nhấn tổ hợp phím **<kbd>Ctrl</kbd> + <kbd>A</kbd>**.
+- **<u>Chọn toàn bộ văn bản       :</u>** Di chuyển con trỏ chuột ra bên ngoài lề trái của văn bản cho đến khi con trỏ chuột biến thành hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **TripleClick**. Hoặc nhấn tổ hợp phím **<kbd>Ctrl</kbd> + <kbd>A</kbd>**.
 - **<u>Chọn bất kỳ                :</u>** Kéo trong khi nhấn giữ phím trái chuột qua văn bản cần chọn (quét chọn).
 
 <div class="note primary" markdown="1">

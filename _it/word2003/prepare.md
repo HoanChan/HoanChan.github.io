@@ -15,7 +15,7 @@ title: Chuẩn bị
 **<u>Cách 1:</u>** Nhấn nút `Start`, Chọn `Programs`, chọn `Microsoft Office`, chọn `Microsoft Office Word 2003`.
 
 **<u>Cách 2:</u>** Nhấn chuột 2 lần vào biểu tượng `Microsoft Office Word 2003`
-<span>{% include image.html url="word.png" %}<span>
+<span>{% include image.html url="word.png" %}</span>
 trên màn hình `Desktop`
 ### 2. Tạo mới văn bản – mở văn bản sẵn có
 {: #new }

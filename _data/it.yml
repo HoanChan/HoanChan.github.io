@@ -3,7 +3,7 @@
   - 
 
 - title: MS-Word 2003
-  url: word
+  url: word2003
   posts:
   - url: 
   - url: steps
@@ -12,3 +12,5 @@
   - url: edit
   - url: format-fonts
   - url: format-paragraphs
+  - url: tables-create
+  - url: tables-format

@@ -11,10 +11,10 @@ title: Định dạng đoạn văn
 
 ## 1. Căn lề cho đoạn văn
 
-- <span>{% include image.html url="al.png"%}<span> **Align Left** (<kbd>Ctrl</kbd> + <kbd>L</kbd>): Căn trái - Căn nội dung với lề trái. Thường được dùng cho phần thân và giúp dễ đọc tài liệu hơn. Đây là kiểu căn lề mặc định của Word
-- <span>{% include image.html url="ac.png"%}<span> **Center** (<kbd>Ctrl</kbd> + <kbd>E</kbd>): Căn giữa - Căn giữa nội dung văn bản so với 2 lề trái và phải. Thường được dùng cho trang bìa, chú thích, trích dẫn và một số đầu đề.
-- <span>{% include image.html url="ar.png"%}<span> **Align Right** (<kbd>Ctrl</kbd> + <kbd>R</kbd>): Căn phải - Căn nội dung với lề phải. Thường được dùng cho các phần nhỏ của nội dung như đầu trang, chân trang, ngày tháng năm.
-- <span>{% include image.html url="aj.png"%}<span> **Justify** (<kbd>Ctrl</kbd> + <kbd>J</kbd>): Căn đều - Phân bố văn bản đều nhau ở cả 2 lề. Thường áp dụng cho đoạn văn nhiều dòng, giúp cho đoạn văn trông bắt mắt hơn.
+- <span>{% include image.html url="al.png"%}</span> **Align Left** (<kbd>Ctrl</kbd> + <kbd>L</kbd>): Căn trái - Căn nội dung với lề trái. Thường được dùng cho phần thân và giúp dễ đọc tài liệu hơn. Đây là kiểu căn lề mặc định của Word
+- <span>{% include image.html url="ac.png"%}</span> **Center** (<kbd>Ctrl</kbd> + <kbd>E</kbd>): Căn giữa - Căn giữa nội dung văn bản so với 2 lề trái và phải. Thường được dùng cho trang bìa, chú thích, trích dẫn và một số đầu đề.
+- <span>{% include image.html url="ar.png"%}</span> **Align Right** (<kbd>Ctrl</kbd> + <kbd>R</kbd>): Căn phải - Căn nội dung với lề phải. Thường được dùng cho các phần nhỏ của nội dung như đầu trang, chân trang, ngày tháng năm.
+- <span>{% include image.html url="aj.png"%}</span> **Justify** (<kbd>Ctrl</kbd> + <kbd>J</kbd>): Căn đều - Phân bố văn bản đều nhau ở cả 2 lề. Thường áp dụng cho đoạn văn nhiều dòng, giúp cho đoạn văn trông bắt mắt hơn.
 
 ## 2. Chỉnh lề cho đoạn văn
 
@@ -101,11 +101,11 @@ Sau đây là hình ảnh của một cách bố trí điểm dừng trên thư�
 
 Có 5 loại điểm dừng cơ bản sau:
 
-- <span>{% include image.html url="lt.png"%}<span> **Left Tab** – Điểm dừng căn trái: Văn bản sẽ căn thẳng hàng trái tại vị trí hiện thời.
-- <span>{% include image.html url="ct.png"%}<span> **Center Tab**– Điểm dừng căn giữa: Văn bản sẽ căn thẳng hàng giữa tại vị trí hiện thời.
-- <span>{% include image.html url="rt.png"%}<span> **Right Tab** – Điểm dừng căn phải: Văn bản sẽ căn thẳng hàng phải tại vị trí hiện thời.
-- <span>{% include image.html url="dt.png"%}<span> **Decimal Tab** – Điểm dừng thập phân: Căn thẳng hàng theo vị trí dấu chấm thập phân của số.
-- <span>{% include image.html url="bt.png"%}<span> **Bar Tab** – Điểm dừng phân cách: Tự động tạo các nét thẳng `|` trên dòng của văn bản.
+- <span>{% include image.html url="lt.png"%}</span> **Left Tab** – Điểm dừng căn trái: Văn bản sẽ căn thẳng hàng trái tại vị trí hiện thời.
+- <span>{% include image.html url="ct.png"%}</span> **Center Tab**– Điểm dừng căn giữa: Văn bản sẽ căn thẳng hàng giữa tại vị trí hiện thời.
+- <span>{% include image.html url="rt.png"%}</span> **Right Tab** – Điểm dừng căn phải: Văn bản sẽ căn thẳng hàng phải tại vị trí hiện thời.
+- <span>{% include image.html url="dt.png"%}</span> **Decimal Tab** – Điểm dừng thập phân: Căn thẳng hàng theo vị trí dấu chấm thập phân của số.
+- <span>{% include image.html url="bt.png"%}</span> **Bar Tab** – Điểm dừng phân cách: Tự động tạo các nét thẳng `|` trên dòng của văn bản.
 
 Sau đây là mô tả các thao tác cơ bản với điểm dừng:
 
@@ -137,11 +137,11 @@ Có thể gọi hộp thoại **Tabs** bằng các cách:
 Khi lựa chọn điểm dừng trong danh sách, ta có thể điều chỉnh các thông số sau:
 
 - Kiểu điểm dừng – mục **Alignment**
-    + <span>{% include image.html url="lt.png"%}<span> **Left** – Điểm dừng căn trái
-    + <span>{% include image.html url="ct.png"%}<span> **Center** – Điểm dừng căn giữa
-    + <span>{% include image.html url="rt.png"%}<span> **Right** – Điểm dừng căn phải
-    + <span>{% include image.html url="dt.png"%}<span> **Decimal** – Điểm dừng thập phân
-    + <span>{% include image.html url="bt.png"%}<span> **Bar** – Điểm dừng phân cách
+    + <span>{% include image.html url="lt.png"%}</span> **Left** – Điểm dừng căn trái
+    + <span>{% include image.html url="ct.png"%}</span> **Center** – Điểm dừng căn giữa
+    + <span>{% include image.html url="rt.png"%}</span> **Right** – Điểm dừng căn phải
+    + <span>{% include image.html url="dt.png"%}</span> **Decimal** – Điểm dừng thập phân
+    + <span>{% include image.html url="bt.png"%}</span> **Bar** – Điểm dừng phân cách
 - Kiểu thể hiện của tab – mục **Leader**: Mặc định kí tự **Tab** chỉ có tác dụng giãn cách văn bản, tức là nó chỉ là một khoảng trống. Tuy nhiên ta có thể thay đổi điều này bằng cách chọn các kiểu sau:
     + **1 None**: Kiểu mặc định – Là một khoảng trống.
     + **2 .......**: Sử dụng cách dấu chấm thay cho khoảng trống.

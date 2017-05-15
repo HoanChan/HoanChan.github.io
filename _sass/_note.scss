@@ -1,6 +1,6 @@
 .note {
-    padding: 20px;
-    margin: 20px 0;
+    padding: .5rem;
+    margin: .5rem 0;
     border: 1px solid $brand-primary;
     border-color: $brand-primary;
     border-left-width: 5px;
@@ -9,7 +9,7 @@
     
     h5 {
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
         color: $brand-primary; 
     }
     p:last-child {
@@ -22,7 +22,7 @@
 
 /* Tighten up space between multiple callouts */
 .note + .note {
-    margin-top: -5px;
+    margin-top: -.5rem;
 }
 
 /* Variations */

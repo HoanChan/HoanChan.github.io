@@ -1,7 +1,7 @@
 ---
 title: Giới thiệu
-permalink: /it/word/
-redirect_from: /it/word/index.html
+permalink: /it/word2003/
+redirect_from: /it/word2003/index.html
 breadcrumb: Word
 ---
 
