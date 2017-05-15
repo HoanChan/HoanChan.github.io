@@ -1,22 +1,22 @@
 - title: Word 2003
-  image: word2003.png
-  style: "height: 150px"
-  content: Tổng hợp kiến thức về cách sử dụng Microsoft Word 2003.
+  image: word2003/logo.png
+  style: "height: 150px; margin-top: 1rem;"
+  content: Tổng hợp kiến thức về cách sử dụng Microsoft Word 2003 phiên bản tiếng Anh.
   links:
     - url: /it/word2003
       text: Xem ngay!
       class: btn btn-primary
 - title: Word 2016
-  image: word2016.png
-  style: "height: 150px"
+  image: word/logo.png
+  style: "height: 150px; margin-top: 1rem;"
   content: Tổng hợp kiến thức về cách sử dụng Microsoft Word 2016 phiên bản tiếng Việt.
   links:
     - url: /it/word
       text: Thử ngay!
       class: btn btn-primary
 - title: Powerpoint 2016
-  image: pp2016.png
-  style: "height: 150px"
+  image: powerpoint/logo.png
+  style: "height: 150px; margin-top: 1rem;"
   content: Tổng hợp kiến thức về cách sử dụng Microsoft Powerpoint 2016 phiên bản tiếng Việt.
   links:
     - url: /it/powerpoint

@@ -29,4 +29,4 @@ Các phiên bản của Word thường lưu tên tập tin với đuôi là .doc
 Tiếng Việt đơn giản bằng Word 2003**
 {: .text-center }
 
-{% include image.html url="word2003.png" class="float-mid" %}
+{% include image.html url="logo.png" class="float-mid" %}
