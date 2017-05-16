@@ -2,9 +2,7 @@
     data = site.data.home_items
 {% endcomment %}
 
-{::options parse_block_html="false" /}
-
-<div class="container">
+<div class="container" markdown="0">
     <div class="row">
         {% for item in include.data %}
         <div class="col-md-6 col-lg-4 mt-4">
@@ -24,5 +22,3 @@
         {% endfor %}
     </div>
 </div>
-
-{::options parse_block_html="true" /}
