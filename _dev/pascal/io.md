@@ -52,7 +52,6 @@ Văn bản cần được viết ra giống y như trong câu lệnh. Đây đư
 
 Ví dụ: **Writeln('Hello, I am Pascal!');**{: .cl-hl } sẽ viết ra **Hello, I am Pascal!**{: .cl-hl }.
 
-{::options parse_block_html="true" /}
 <div class="note info">
 #### Lưu ý cách viết chuỗi
 

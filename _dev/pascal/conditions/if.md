@@ -59,7 +59,6 @@ Else
 ```
 {: .sh_pascal }
 
-{::options parse_block_html="true" /}
 <div class="note info">
 ##### Lưu ý dấu `;` và từ khoá **Else**{: .cl-hl }
 

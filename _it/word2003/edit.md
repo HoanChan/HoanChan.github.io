@@ -15,18 +15,18 @@ Trên vùng soạn thảo, phần văn bản được chọn sẽ đảo ngượ
 
 ### Các cách để chọn văn bản (đánh dấu khối) bằng chuột:
 
-- **<u>Chọn một từ                :</u>** Nhấn chuột nhanh liên tiếp 2 lần (**DoubleClick**)
-- **<u>Chọn một dòng              :</u>** Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}</span> ) và nhấn chuột.
-- **<u>Chọn nhiều dòng            :</u>** Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}</span> ) nhấn giữ chuột trái và kéo lên, xuống.
-- **<u>Chọn câu                   :</u>** Nhấn giữ phím **Ctrl** và nhấn chuột vào bất cứ đâu trong câu.
-- **<u>Chọn một đoạn              :</u>** Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **DoubleClick**. Hoặc nhấn chuột nhanh liên tiếp 3 lần (**TripleClick**) tại vị trí bất kỳ trong đoạn.
-- **<u>Chọn nhiều đoạn            :</u>** Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **DoubleClick** và kéo lên trên hoặc xuống dưới.
-- **<u>Chọn khối chữ              :</u>** Nhấn chuột vào vị trí đầu của khối cần chọn, cuộn văn bản đến vị trí cuối của khối, giữ **Shift** và nhấn chuột.
-- **<u>Chọn khối chữ hình chữ nhật:</u>** Nhấn giữ phím **Alt** trong khi nhấn giữ và kéo chuột từ góc thứ nhất đến góc đối của hình chữ nhật cần chọn.
-- **<u>Chọn toàn bộ văn bản       :</u>** Di chuyển con trỏ chuột ra bên ngoài lề trái của văn bản cho đến khi con trỏ chuột biến thành hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **TripleClick**. Hoặc nhấn tổ hợp phím **<kbd>Ctrl</kbd> + <kbd>A</kbd>**.
-- **<u>Chọn bất kỳ                :</u>** Kéo trong khi nhấn giữ phím trái chuột qua văn bản cần chọn (quét chọn).
+- **<u>Chọn một từ</u>**: Nhấn chuột nhanh liên tiếp 2 lần (**DoubleClick**)
+- **<u>Chọn một dòng</u>**: Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}</span> ) và nhấn chuột.
+- **<u>Chọn nhiều dòng</u>**: Di chuyển con trỏ chuột ra cạnh ngoài lề trái của dòng cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang bên phải ( <span>{% include image.html url="rc.png"%}</span> ) nhấn giữ chuột trái và kéo lên, xuống.
+- **<u>Chọn câu</u>**: Nhấn giữ phím **Ctrl** và nhấn chuột vào bất cứ đâu trong câu.
+- **<u>Chọn một đoạn</u>**: Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **DoubleClick**. Hoặc nhấn chuột nhanh liên tiếp 3 lần (**TripleClick**) tại vị trí bất kỳ trong đoạn.
+- **<u>Chọn nhiều đoạn</u>**: Di chuyển con trỏ chuột ra cạnh lề trái của đoạn cho đến khi con trỏ chuột đổi sang hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **DoubleClick** và kéo lên trên hoặc xuống dưới.
+- **<u>Chọn khối chữ</u>**: Nhấn chuột vào vị trí đầu của khối cần chọn, cuộn văn bản đến vị trí cuối của khối, giữ **Shift** và nhấn chuột.
+- **<u>Chọn khối chữ hình chữ nhật</u>**: Nhấn giữ phím **Alt** trong khi nhấn giữ và kéo chuột từ góc thứ nhất đến góc đối của hình chữ nhật cần chọn.
+- **<u>Chọn toàn bộ văn bản</u>**: Di chuyển con trỏ chuột ra bên ngoài lề trái của văn bản cho đến khi con trỏ chuột biến thành hình mũi tên hướng sang phải ( <span>{% include image.html url="rc.png"%}</span> ) và **TripleClick**. Hoặc nhấn tổ hợp phím **<kbd>Ctrl</kbd> + <kbd>A</kbd>**.
+- **<u>Chọn bất kỳ</u>**: Kéo trong khi nhấn giữ phím trái chuột qua văn bản cần chọn (quét chọn).
 
-<div class="note primary" markdown="1">
+<div class="note primary">
 ##### Bạn cần chọn nhiều nơi?
 
 Chọn các phần văn bản không liên tục thì có thể đè phím <kbd>Ctrl</kbd> trên bàn phím để chọn từng phần.
@@ -42,10 +42,10 @@ Chọn các phần văn bản không liên tục thì có thể đè phím <kbd>
 |<kbd>Shift</kbd> + <kbd>Home</kbd>       |Chọn đến đầu dòng           |
 |<kbd>Shift</kbd> + <kbd>↓</kbd>          |Chọn sang dòng tiếp theo    |
 |<kbd>Shift</kbd> + <kbd>↑</kbd>          |Chọn sang dòng bên trên     |
-|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd>   |Chọn đến hết đoạn           |
-|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>   |Chọn đến đầu đoạn           |
-|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd>|Chọn đến đầu văn bản        |
-|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> |Chọn đến cuối văn bản       |
+|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd>   |Chọn đến hết đoạn    |
+|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>   |Chọn đến đầu đoạn    |
+|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd>|Chọn đến đầu văn bản |
+|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> |Chọn đến cuối văn bản|
 |<kbd>Ctrl</kbd> + <kbd>A</kbd>           |Chọn toàn bộ văn bản        |
 {: .table .table-bordered .table-striped }
 
@@ -97,7 +97,7 @@ Sau khi văn bản đã được chọn, các thao tác tiếp theo của việc
 
 <u>Cách 3:</u> Nhấn chuột phải tại vị trí con trỏ soạn thảo ➔ `Paste`
 
-<div class="note primary" markdown="1">
+<div class="note primary">
 ##### Sử dụng chuột sẽ nhanh hơn
 
 - Có thể dùng chuột để kéo thả phần văn bản đã chọn để di chuyển tới nơi mong muốn.
@@ -111,4 +111,4 @@ Sau khi văn bản đã được chọn, các thao tác tiếp theo của việc
 
 Ngoài ra sau khi gọi lệnh `Undo` mà kết quả lại không như ý, lại muốn trở lại như trước khi gọi lệnh `Undo` thì có thể gọi lệnh `Redo` (<kbd>Ctrl</kbd> + <kbd>Y</kbd>) – Thực hiện lại thao tác hoặc lệnh vừa xoá bỏ.
 
-{% include image.html url="undo.png" class="float-mid" %}
+{% include image.html url="undo.png" class="img-m" %}

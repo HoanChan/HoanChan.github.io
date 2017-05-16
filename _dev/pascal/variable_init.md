@@ -63,7 +63,6 @@ Var weekdays, holidays : days;
 ```
 {: .sh_pascal }
 
-{::options parse_block_html="true" /}
 <div class="note info">
 ##### Lưu ý sự khác biệt **Type**{: .cl-hl } và **Var**{: .cl-hl }
 

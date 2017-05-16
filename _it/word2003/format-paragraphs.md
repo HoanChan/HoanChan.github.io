@@ -17,24 +17,25 @@ title: Định dạng đoạn văn
 - <span>{% include image.html url="aj.png"%}</span> **Justify** (<kbd>Ctrl</kbd> + <kbd>J</kbd>): Căn đều - Phân bố văn bản đều nhau ở cả 2 lề. Thường áp dụng cho đoạn văn nhiều dòng, giúp cho đoạn văn trông bắt mắt hơn.
 
 ## 2. Chỉnh lề cho đoạn văn
-
+<div>
 Ta có thể dùng chuột kéo các nút chỉnh lề trên thước ngang để chỉnh lề cho đoạn văn bất kì:
 
-{% include image.html url="ruler.png" class="float-mid" %}
+{% include image.html url="ruler.png" class="img" %}
 
 <div class="note primary" markdown="1">
 ##### Lưu ý
 
 Dòng treo là các dòng từ dòng thứ 2 trở đi trong đoạn văn. Trong khi kéo các nút chỉnh lề có thể đè nút **Alt** để hiển thị các số đo chính xác hơn.
 </div>
-
+</div>
 ## 3. Định dạng tổng hợp bằng hộp thoại Paragraph
-
-{% include image.html url="pis.png" class="float-right" %}
 
 Chúng ta có thể định dạng tất cả các kiểu ở các mục trên cũng như định dạng thêm các kiểu nâng cao bằng cách hộp thoại **Paragraph**: Vào menu **Format** ➔ **Paragraph**.
 
 ### a. Căn chỉnh đoạn văn – thẻ **Indents and Spacing**
+
+<div>
+{% include image.html url="pis.png" class="img" %}
 
 Mục **General**: định dạng cơ bản
 
@@ -54,7 +55,7 @@ Mục **Indentation**: Thụt lề – Khoảng cách trái phải
 - **First line**: Thụt dòng đầu vào.
 - **Handing**: Thụt các dòng sau.
 - **By**: Giá trị cho phần thụt lề đặc biệt nếu không phải là **(none)**
-
+</div>
 Mục **Spacing**: Giãn dòng – Khoảng cách trên dưới
 
 - **Before**: Khoảng cách phía trên
@@ -77,8 +78,8 @@ Sau khi định dạng khoảng cách này, Word sẽ tự thêm vào danh sách
 </div>
 
 ### b. Dòng và ngắt trang – thẻ **Line and Page Break**
-
-{% include image.html url="plp.png" class="float-right" %}
+<div>
+{% include image.html url="plp.png" class="img" %}
 
 Thẻ này chứa các lựa chọn điều khiển điều gì xảy ra nếu dòng hoặc đoạn văn bản bị ngắt qua một trang. Bao gồm các lựa chọn:
 
@@ -90,15 +91,15 @@ Thẻ này chứa các lựa chọn điều khiển điều gì xảy ra nếu d
 - **Don’t hyphenate**: Không gạch nối từ khi xuống dòng.
 
 ➽ Nhấn **OK** để áp dụng các định dạng vừa thiết lập.
-
+</div>
 ## 4. Định dạng điểm dừng – Tab Stop
-
+<div>
 **Tab Stop** là các vị trí xác định trên các dòng của đoạn văn bản có tác dụng định vị, tạo các cột văn bản của đoạn. Khi ta nhấn **phím Tab**, con trỏ soạn thảo sẽ được tự động chuyển đến vị trí điểm dừng bên phải gần nhất. Khi gõ văn bản tại vị trí điểm dừng, văn bản sẽ được căn chỉnh thẳng hàng tại vị trí hiện thời theo kiểu của điểm dừng này.
 
 Sau đây là hình ảnh của một cách bố trí điểm dừng trên thước ngang.
 
-{% include image.html url="tabstops.png" class="float-mid" %}
-
+{% include image.html url="tabstops.png" class="img" %}
+</div>
 Có 5 loại điểm dừng cơ bản sau:
 
 - <span>{% include image.html url="lt.png"%}</span> **Left Tab** – Điểm dừng căn trái: Văn bản sẽ căn thẳng hàng trái tại vị trí hiện thời.

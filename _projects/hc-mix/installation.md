@@ -25,7 +25,6 @@ Sau đó chạy file `Setup.exe` và nhấn `Install` là xong!
 
 ## Một số lỗi thường gặp
 
-{::options parse_block_html="true" /}
 <div class="note warning">
   <h5>Lỗi không nâng cấp được (Đã cài phiên bản cũ)</h5>
   Đơn giản là vào `Control Panel` &#8594; `Programs and Features`.

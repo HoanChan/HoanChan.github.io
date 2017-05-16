@@ -155,35 +155,31 @@ blockquote {
 
 // @for $i from 1 through 9 {
 //   .s-#{$i} { @include transform(scale($i / 10)); }
-// }
+// 
+#main-content {
+    & > div {
+        position: relative;
 
-// .main-content {
-
-    .float-mid {
-        display: block!important;
-        margin-right: auto!important;
-        margin-left: auto!important;
-    }
-
-    .img-fluid.float-left {
-        padding-right: 10px;
-        padding-bottom: 10px;
-        @include notdesktop {           
-            float: none !important; 
-            display: block!important;
-            margin-right: auto!important;
-            margin-left: auto!important;
+        .img-r {
+            // float: right !important;
+            position: absolute;
+            top: 10px;
+            right: 0px;
         }
+
+        & > p, & > div { & > img {
+            float: none !important;
+            display: block !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }}
     }
-    .img-fluid.float-right {
-        padding-left: 10px;
-        padding-bottom: 10px;
-        @include notdesktop {       
-            float: none !important;     
-            display: block!important;
-            margin-right: auto!important;
-            margin-left: auto!important;
-        }
+    
+    .img-m {
+        float: none !important;
+        display: block !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
 
     $kbd-color: #4DA016;//#1abc9c;
@@ -212,5 +208,4 @@ blockquote {
         }
 
     }
-    
-// }
+}

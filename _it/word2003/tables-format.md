@@ -14,12 +14,12 @@ title: Định dạng bảng
 <u>Bước 1:</u> Đánh dấu bảng hoặc ô cần định dạng bằng cách đặt con trỏ văn bản vào hoặc bôi đen chúng.
 
 <u>Bước 2:</u> Gọi hộp thoại **Border and Shading** bằng cách vào menu **Format** ➔ **Borders and Shading**.
-
+<div>
 <u>Bước 3:</u> Thiết lập các định dạng:
 
 **Thẻ Borders:** Định dạng viền cho bảng, ô hoặc đoạn văn đang được đánh dấu.
 
-{% include image.html url="bsb.png" class="float-right" %}
+{% include image.html url="bsb.png" class="img" %}
 
 - **Setting**: Thiết lập kiểu kẻ viền.
     + **None**: Không có viền.
@@ -36,11 +36,12 @@ title: Định dạng bảng
     + **Table**: Bảng đang được đánh dấu.
     + **Cell**: Ô đang được đánh dấu.
 
+</div><div>
 **Thẻ Page Border:** Định dạng viền cho toàn bộ trang giấy, thực hiện tương tự như bên thẻ **Borders**.
 
 **Thẻ Shading:** Tô nền cho bảng, ô hoặc đoạn văn đang được đánh dấu.
 
-{% include image.html url="bss.png" class="float-right" %}
+{% include image.html url="bss.png" class="img" %}
 
 - **Fill**: Chọn màu để tô nền
     + **No Fill**: Không tô màu – Nền trong suốt
@@ -55,12 +56,14 @@ title: Định dạng bảng
     + **Cell**: Ô đang được đánh dấu.
 
 **<u>Lưu ý:</u>** Có thể mở thanh công cụ Borders and Shading bằng cách nhấn vào nút **Show Toolbar** (Nếu nút này không nhấn vào được thì thanh công cụ đã được hiển thị rồi).
+</div>
 
 ### b. Thanh công cụ Borders and Shading
-
-{% include image.html url="tb.png" class="float-right" %}
-
+<div>
 Thanh công cụ **Borders and Shading** là nơi tập trung tất cả các lệnh liên quan đến bảng mà ta thường dùng. Ta có thể gọi thanh công cụ này từ hộp thoại **Borders and Shading** hoặc vào menu **View** ➔ **Toolbars** ➔ **Borders and Shading**. Ở đây chỉ trình bày cách kẻ viền và tô nền cho bảng.
+
+{% include image.html url="tb.png" class="img" %}
+</div>
 
 **<u>Vẽ bảng – Định dạng đường viền, vẽ thêm các đường viền – Chia tách các ô</u>**
 
@@ -93,8 +96,8 @@ Bước 2: Nhấn nút **Shading Color** và chọn màu cần tô – Có thể
 Tuy không phải là phần mềm chuyên tính toán và sắp xếp dữ liệu, tuy nhiên Word cũng cung cấp sẵn cho người dùng một số công cụ cơ bản để thực hiện tính toán và sắp xếp dữ liệu trong bảng.
 
 ### a. Sắp xếp
-
-{% include image.html url="sort.png" class="float-right" %}
+<div>
+{% include image.html url="sort.png" class="img" %}
 
 <u>Bước 1:</u> Xác định cột hoặc bảng chứa cột cần sắp xếp.
 
@@ -102,7 +105,7 @@ Tuy không phải là phần mềm chuyên tính toán và sắp xếp dữ li�
 
 <u>Bước 3:</u> Thiết lập các thông số để sắp xếp:
 
-<u>Mục **Sort by:**</u> Lựa chọn các thông số thiết lập
+<u>Mục <b>Sort by:</b></u> Lựa chọn các thông số thiết lập
 
 - **Sort by**: Cột cần sắp xếp.
 - **Type**: Kiểu dữ liệu của các ô:
@@ -113,18 +116,18 @@ Tuy không phải là phần mềm chuyên tính toán và sắp xếp dữ li�
 - **Ascending**: Sắp xếp tăng dần.
 - **Descending**: Sắp xếp giảm dần.
 
-<u>Mục **Then by:**</u> Sắp xếp theo một cột khác nữa – Các lựa chọn sắp xếp giống như ở mục **Sort by**
+<u>Mục <b>Then by</b></u>: Sắp xếp theo một cột khác nữa – Các lựa chọn sắp xếp giống như ở mục **Sort by**
 
-<u>Mục **My list has**:</u> Lựa chọn khoản dữ liệu cần sắp xếp, có hai trường hợp:
+<u>Mục <b>My list has</b></u>: Lựa chọn khoản dữ liệu cần sắp xếp, có hai trường hợp:
 
 - **Header row**: Bảng có dòng tiêu đề – Chỉ sắp xếp từ dòng thứ 2 trở đi.
 - **No header row**: Bảng không có dòng tiêu đề – Sắp xếp toàn bộ.
-
+</div>
 <u>Bước 4:</u> Nhấn nút **OK**.
-
+<div>
 Có thể thiết lập thêm các thông số sắp xếp nâng cao bằng cách nhấn nút **Options** trong hộp thoại **Sort** để mở hộp thoại **Sort Options**. Chúng ta có thể thiết lập thêm các thông số:
 
-{% include image.html url="so.png" class="float-right" %}
+{% include image.html url="so.png" class="img" %}
 
 - **Separate fields at**: Lựa chọn dấu ngăn cách các giá trị:
     + **Tabs**: Dấu Tab.
@@ -135,6 +138,7 @@ Có thể thiết lập thêm các thông số sắp xếp nâng cao bằng các
     + **Case sensitive**: Phân biệt chữ hoa – thường.
 - **Sorting language**: Lựa chọn ngôn ngữ dùng để sắp xếp
 
+</div>
 ### b. Tính toán
 
 |     |**A**|**B**|**C**|**D**|
@@ -142,7 +146,7 @@ Có thể thiết lập thêm các thông số sắp xếp nâng cao bằng các
 |**1**|  A1 | B1  | C1  | D1  |
 |**2**|  A2 | B2  | C2  | D2  |
 |**3**|  A3 | B3  | C3  | D3  |
-{: .table .table-bordered .table-responsive }
+{: .table .table-bordered .table-responsive .img}
 
 Số lượng các hàm tính toán của **Word** không nhiều tuy nhiên cũng khá đủ cho các tính toán đơn giản. Các ô trong bảng có thể được tham chiếu theo nguyên tắc đánh địa chỉ theo hàng và cột tương tự như ở các phần mềm chuyên tính toán trên bảng như **Excel**:
 
@@ -157,8 +161,8 @@ Ví dụ: **A1:B4**, **C4:D5**.
 - Các từ khóa **Above**, **Below**, **Right**, **Left** lần lượt chỉ ra các vùng ô phía trên, phía dưới, phía phải và phía trái của ô hiện thời.
 
 Các bước thực hiện tính toán như sau:
-
-{% include image.html url="f.png" class="float-right" %}
+<div>
+{% include image.html url="f.png" class="img" %}
 
 <u>Bước 1:</u> Đặt trỏ văn bản tại vị trí muốn chèn công thức.
 
@@ -172,8 +176,12 @@ Các bước thực hiện tính toán như sau:
 - **Paste bookmark**: Dán thẻ đánh dấu.
 
 <u>Bước 4:</u> Nhấn nút **OK**.
+</div>
+<div class = "note primary">
+##### Cập nhật số liệu
 
-**<u>Lưu ý:</u>** Sau khi đã chèn các hàm số tính toán trong bảng, khi cần tính lại các hàm số này nhấn chuột tại các giá trị và nhấn nút **F9** hoặc nhấn phải chuột và chọn **Update Field**.
+Sau khi đã chèn các hàm số tính toán trong bảng, khi cần tính lại các hàm số này nhấn chuột tại các giá trị và nhấn nút **F9** hoặc nhấn phải chuột và chọn **Update Field**.
+</div>
 
 <u>Các hàm thông dụng và cách dùng:</u>
 

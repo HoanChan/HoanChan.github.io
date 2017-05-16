@@ -2,7 +2,7 @@
 title: Giới thiệu
 permalink: /it/word2003/
 redirect_from: /it/word2003/index.html
-breadcrumb: Word
+breadcrumb: Word 2003
 ---
 
 **Microsoft Word**, còn được biết đến với tên khác là **WinWord**, là một chương trình soạn thảo văn bản khá phổ biển hiện nay của công ty phần mềm nổi tiếng Microsoft. Nó cho phép người dùng làm việc với văn bản thô (text), các hiệu ứng như phông chữ, màu sắc, cùng với hình ảnh đồ họa (Graphics) và nhiều hiệu ứng đa phương tiện (Multimedia) khác như âm thanh, video khiến cho việc soạn thảo văn bản được thuận tiện hơn. Ngoài ra cũng có các công cụ như kiểm tra chính tả, ngữ pháp của nhiều ngôn ngữ khác nhau để hỗ trợ người sử dụng.
@@ -29,4 +29,4 @@ Các phiên bản của Word thường lưu tên tập tin với đuôi là .doc
 Tiếng Việt đơn giản bằng Word 2003**
 {: .text-center }
 
-{% include image.html url="logo.png" class="float-mid" %}
+{% include image.html url="logo.png" class="img-m" %}
