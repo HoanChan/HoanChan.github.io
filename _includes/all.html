@@ -12,7 +12,7 @@
       {% assign p = include.posts | where:"url", item_url | first %}
       {% unless item_url == page.url %}
 
-<span class="post-category">
+<span class="post-category" markdown="1">
   <span class="label">
     {{ p.title }}
   </span>

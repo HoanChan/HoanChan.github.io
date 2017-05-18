@@ -209,3 +209,25 @@ blockquote {
 
     }
 }
+// cái này cho mấy cái page tổng hợp
+.post-category {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 6px 10px 8px;
+    color: #fff;
+    background-color: #9e2812;
+    @include linearGradient(#9e2812, #6f0d0d);
+    @include border-radius(0 5px 5px 0);
+    @include box-shadow(0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.2), inset 0 -1px 0 rgba(0,0,0,.3));
+    
+    h5, .label {
+        float: left;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+        font-size: 1rem; 
+        font-style: italic;
+    }
+}
