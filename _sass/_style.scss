@@ -25,6 +25,15 @@ html, body {
     color: $brand-primary;
 }
 
+.drop-2{
+    color: darken($brand-success, 10%);
+    float: left;
+    font-size: 3rem;
+    line-height: 2rem;
+    padding-top: .6rem;
+    padding-right: 5px;
+}
+
 dl, ol, ul {
     margin-top: .1rem;
     margin-bottom: .1rem;
