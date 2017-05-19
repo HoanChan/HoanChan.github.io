@@ -16,14 +16,14 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 **HC-MIX** được tích hợp sẵn vào [Word](/word) cho nên khi nào cần thì có mặt sẵn sàng rồi, không phải mở phần mềm riêng nào cả! **HC-MIX** có các tính năng chính sau đây:
 - Tự động nhận diện các câu hỏi.
 - Hệ thống kiểm tra câu hỏi đơn giản, dễ sử dụng.
-- Hỗ trợ trộn đề trắc nghiệm đơn giản.
 - Hỗ trợ trộn đề trắc nghiệm theo nhóm.
 - Hỗ trợ trộn đề kiểm tra vừa có trắc nghiệm vừa có tự luận.
-- Hỗ trợ tạo các bộ đề mà các câu hỏi trên mỗi đề là khác nhau.
+- Hỗ trợ tạo câu con dùng để thay thế nhau trên các đề, giúp biên soạn các đề kiểm tra có câu hỏi hoàn toàn khác nhau, chỉ tương đương về mức độ khó.
 - Hỗ trợ đánh số trang, ghi mã đề tự động.
+- Cho phép lựa chọn và điều chỉnh mã đề linh hoạt.
 - Hỗ trợ in phiếu bài làm, in phiếu chấm bài thuận tiện.
-- Không giới hạn số lượng đề.
-- Không giới hạn số lượng câu hỏi.
+- Hỗ trợ xuất đáp án nhanh chóng.
+- Hỗ trợ xuất số liệu và sự liên hệ giữa các đề với nhau.
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>

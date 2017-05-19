@@ -22,7 +22,7 @@ Bài trắc nghiệm có cấu trúc gồm nhiều nhóm, mỗi nhóm có thể 
   <h5>Lưu ý</h5>
   Trong nội dung nhóm có thể chèn thêm một số thành phần sinh tự động khác ví dụ như mã đề, phiếu trả lời trắc nghiệm hay danh sách các câu hỏi trong nhóm. Đánh dấu chỗ muốn chèn bằng các thẻ thay thế như sau:
 
-  * Mã đề: `[<Mã đề>]`{: .sh_syntax }
-  * Phiếu trắc nghiệm: `[<Phiếu trắc nghiệm>]`{: .sh_syntax }
-  * Danh sách các câu hỏi trong nhóm: `[<Danh sách câu hỏi>]`
+  * Mã đề: `[<Mã đề>]`{: .sh_syntax }.
+  * Phiếu trắc nghiệm: `[<Phiếu trắc nghiệm>]`{: .sh_syntax }.
+  * Danh sách các câu hỏi trong nhóm: `[<Danh sách câu hỏi>]`{: .sh_syntax }.
 </div>

@@ -6,11 +6,11 @@
   posts:
   - url: 
   - url: installation
+  - url: soft
   - url: question
   - url: group
   - url: headerfooter
   - url: advanced
-  - url: soft
   - url: changelog
 
 - title: VietNamKey
