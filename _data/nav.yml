@@ -29,16 +29,16 @@
     url: "/projects/qtype"
     icon: fa fa-keyboard-o
 
-- text: Tin học
-  url: "/it/"
+- text: Văn phòng
+  url: "/office/"
   icon: fa fa-cogs
   child:
   - text: Word 2003
-    url: "/it/word2003/"
+    url: "/office/word2003/"
     icon: fa fa-file-word-o
   - text: Word 2016
-    url: "/it/word/"
+    url: "/office/word/"
     icon: fa fa-file-word-o
   - text: Powerpoint
-    url: "/it/powerpoint/"
+    url: "/office/powerpoint/"
     icon: fa fa-file-powerpoint-o

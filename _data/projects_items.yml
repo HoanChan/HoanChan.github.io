@@ -1,5 +1,5 @@
 - title: SortViewer
-  image: sortviewer.png
+  image: sortviewer/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Phầm mềm mô phỏng các thuật toán sắp xếp, chạy trên nền Web, viết bằng HTML, Javascript và CSS.
   links:
@@ -13,7 +13,7 @@
       text: Xem!
       class: btn btn-secondary
 - title: HC-Mix
-  image: hc-mix.png
+  image: hc-mix/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Add-in của Word được viết bằng C# hỗ trợ nhận dạng và trộn đề trắc nghiệm chuyên nghiệp.
   links:
@@ -24,7 +24,7 @@
       text: Xem ngay!
       class: btn btn-secondary
 - title: VietNamKey
-  image: vietnamkey.png
+  image: vietnamkey/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Bộ gõ tiếng Việt được viết bằng C#, hỗ trợ Unicode và Telex, đơn giản nhưng rất hiệu quả.
   links:
@@ -35,7 +35,7 @@
       text: Xem ngay!
       class: btn btn-secondary
 - title: HC-Slider
-  image: hc-slider.png
+  image: hc-slider/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Add-in của jQuery dùng để thiết kế side show ảnh trên web, viết bằng HTML, Javascript và CSS.
   links:
@@ -49,7 +49,7 @@
       text: Xem!
       class: btn btn-secondary
 - title: qType
-  image: qtype.png
+  image: qtype/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Phần mềm hướng dẫn và hỗ trợ học gõ văn bản bằng 10 ngón tay, viết bằng Pascal cơ bản.
   links:

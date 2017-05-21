@@ -16,10 +16,10 @@ help_url: https://github.com/HoanChan/HoanChan.github.io
 defaults:
   -
     scope:
-      path: "_it"
-      type: "it"
+      path: "_office"
+      type: "office"
     values:
-      layout: "it"
+      layout: "office"
   -
     scope:
       path: "_dev"
@@ -34,7 +34,7 @@ defaults:
       layout: "projects"
 
 collections:
-  it:
+  office:
     permalink: /:collection/:path/
     output: true
   dev:
@@ -69,5 +69,5 @@ exclude:
   - .gitignore
   - README.md
   # - _dev
-  # - _it
+  # - _office
   # - _projects

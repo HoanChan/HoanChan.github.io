@@ -1,7 +1,7 @@
 ---
 title: Giới thiệu
-permalink: /it/word2003/
-redirect_from: /it/word2003/index.html
+permalink: /office/word2003/
+redirect_from: /office/word2003/index.html
 breadcrumb: Word 2003
 ---
 

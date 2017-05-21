@@ -1,5 +1,5 @@
 - title: Lập trình
-  image: dev.png
+  image: dev/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Chia sẻ các kiến thức, kĩ năng về lập trình từ cơ bản đến nâng cao.
   links:
@@ -7,18 +7,18 @@
       text: Xem ngay!
       class: btn btn-primary
 - title: Sản phẩm
-  image: projects.png
+  image: projects/logo.png
   style: "height: 150px; margin-top: 1rem;"
   content: Một số sản phẩm nổi bật được lập trình từ C#, Pascal, Javascript ...
   links:
     - url: /projects/
       text: Thử ngay!
       class: btn btn-primary
-- title: Kiến thức
-  image: knowledge.png
+- title: Văn phòng
+  image: office/logo.png
   style: "height: 150px; margin-top: 1rem;"
-  content: Cung cấp các kiến thức đơn giản và cơ bản về chương trình tin học THPT.
+  content: Giới thiệu và hướng dẫn sử dụng các phần mềm văn phòng thông dụng.
   links:
-    - url: /it/
+    - url: /office/
       text: Học ngay!
       class: btn btn-primary

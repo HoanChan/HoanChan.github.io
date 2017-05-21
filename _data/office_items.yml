@@ -3,7 +3,7 @@
   style: "height: 150px; margin-top: 1rem;"
   content: Tổng hợp kiến thức về cách sử dụng Microsoft Word 2003 phiên bản tiếng Anh.
   links:
-    - url: /it/word2003
+    - url: /office/word2003
       text: Xem ngay!
       class: btn btn-primary
 - title: Word 2016
@@ -11,7 +11,7 @@
   style: "height: 150px; margin-top: 1rem;"
   content: Tổng hợp kiến thức về cách sử dụng Microsoft Word 2016 phiên bản tiếng Việt.
   links:
-    - url: /it/word
+    - url: /office/word
       text: Thử ngay!
       class: btn btn-primary
 - title: Powerpoint 2016
@@ -19,6 +19,6 @@
   style: "height: 150px; margin-top: 1rem;"
   content: Tổng hợp kiến thức về cách sử dụng Microsoft Powerpoint 2016 phiên bản tiếng Việt.
   links:
-    - url: /it/powerpoint
+    - url: /office/powerpoint
       text: Thử ngay!
       class: btn btn-primary
