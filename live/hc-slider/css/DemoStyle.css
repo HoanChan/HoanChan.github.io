@@ -1,51 +1,44 @@
-﻿
-#transitiongallery section.container {
+﻿#transitiongallery section.container {
     width: 1050px;
     margin: auto;
 }
-
-    #transitiongallery section.container div#slidercontainer {
-        position: relative;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -o-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -khtml-border-radius: 3px;
-        border-radius: 3px;
-        -moz-box-sizing: content-box;
-        -webkit-box-sizing: content-box;
-        -ms-box-sizing: content-box;
-        box-sizing: content-box;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 8px rgba(0, 0, 0, 0.9) inset;
-    }
-
-        #transitiongallery section.container div#slidercontainer div#transitions {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 250px;
-            font-size: 0.85em;
-        }
-
-            #transitiongallery section.container div#slidercontainer div#transitions div h3 {
-                font-size: 1.2em;
-                text-align: left;
-                color: #ff6a00;
-                font-weight: bold;
-                margin: 0px;
-                padding: 5px;
-            }
-
-            #transitiongallery section.container div#slidercontainer div#transitions div a {
-                width: 100%;
-            }
-
-            #transitiongallery section.container div#slidercontainer div#transitions ul {
-                margin-bottom: 0.7em;
-            }
-
-                #transitiongallery section.container div#slidercontainer div#transitions ul li {
-                    width: 150px;
-                }
+#transitiongallery section.container div#slidercontainer {
+    position: relative;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 8px rgba(0, 0, 0, 0.9) inset;
+}
+#transitiongallery section.container div#slidercontainer div#transitions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    font-size: 0.85em;
+}
+#transitiongallery section.container div#slidercontainer div#transitions div h3 {
+    font-size: 1.2em;
+    text-align: left;
+    color: #ff6a00;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px;
+}
+#transitiongallery section.container div#slidercontainer div#transitions div a {
+    width: 100%;
+}
+#transitiongallery section.container div#slidercontainer div#transitions ul {
+    margin-bottom: 0.7em;
+}
+#transitiongallery section.container div#slidercontainer div#transitions ul li {
+    width: 150px;
+}

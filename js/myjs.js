@@ -10,7 +10,7 @@
         } else {
             // upscroll code
             $('.navbar').addClass('fixed-top bg-nav').removeClass('bg-inverse');
-            $('body').css("padding-top", $('.navbar').height()+ "px");
+            $('body').css("padding-top", $('.navbar').outerHeight()+ "px");
         }
         lastScrollTop = st;
     });
@@ -31,16 +31,16 @@
                 img.removeClass('img-m');
                 img.addClass('img-r');
                 other.css('margin-right', (img.outerWidth() + 10) + "px");
-                var ph = 0;
+                var paragraphsHeight = 0;
                 other.each(function(index, cel) {
-                    ph = ph + $(cel).outerHeight();
+                    paragraphsHeight = paragraphsHeight + $(cel).outerHeight();
                 });
-                var eh = img.outerHeight();
-                div.height(10 + (ph > eh ? ph : eh));
-                if (eh < ph)
-                    img.css("top", (ph - eh) / 2 + "px");
+                var elementHeight = img.outerHeight();
+                div.height(10 + (paragraphsHeight > elementHeight ? paragraphsHeight : elementHeight));
+                if (elementHeight < paragraphsHeight)
+                    img.css("top", (paragraphsHeight - elementHeight) / 2 + "px");
                 else
-                    other.first().css("padding-top", (eh - ph) / 2 + "px");
+                    other.first().css("padding-top", (elementHeight - paragraphsHeight) / 2 + "px");
             }
         });
     }
