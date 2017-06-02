@@ -8,16 +8,16 @@ Một câu hỏi bao gồm 2 bộ phận: nội dung câu hỏi và 4 câu trả
 
 ```
 <Phần nhận diện câu hỏi> <Nội dung câu hỏi>
-<Phần nhận diện câu trả lời> <Nội dung câu trả lời>
-<Phần nhận diện câu trả lời> <Nội dung câu trả lời>
-<Phần nhận diện câu trả lời> <Nội dung câu trả lời>
-<Phần nhận diện câu trả lời> <Nội dung câu trả lời>
+<Phần nhận diện câu A> <Nội dung câu A>
+<Phần nhận diện câu B> <Nội dung câu B>
+<Phần nhận diện câu C> <Nội dung câu C>
+<Phần nhận diện câu D> <Nội dung câu D>
 ```
 {: .sh_syntax }
 
 ## Viết phần câu hỏi
 
-Có 2 cách viết `<phần nhận diện câu hỏi>`  như sau:
+Có 2 cách viết `<phần nhận diện câu hỏi>`{: .sh_syntax }  như sau:
 
 ```
 <Bài hoặc Câu> <Số thứ tự> <Dấu hoặc khoảng trống>
@@ -33,16 +33,20 @@ VD: `Bài 1:`, `Câu 05.`, `CÂU 2`, `bài 0005`
 
 VD:  `002)`, `004.`, `5:`
 
+`<Nội dung câu hỏi>`{: .sh_syntax } có thể được viết trên nhiều dòng. Nếu câu hỏi không có nội dung. nó sẽ bị bỏ qua.
+
 ## Viết các câu trả lời
 
-`<Phần nhận diện>` được viết như sau:
+`<Phần nhận diện>`{: .sh_syntax } được viết như sau:
 
 ```
 <A hoặc B hoặc C hoặc D> <Dấu>
 ```
 {: .sh_syntax }
 
-VD: `A.`, `B:`, `c`
+VD: `A.`, `B:`, `c)`
+
+Nếu câu hỏi không có đủ 4 câu trả lời, nó sẽ bị bỏ qua. Nếu câu hỏi có nhiều hơn 4 câu trả lời thì câu trả lời từ thứ 5 trở đi sẽ bị bỏ qua.
 
 <div class="note">
 ##### Với các quy ước sau:

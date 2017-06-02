@@ -15,7 +15,7 @@ title: Sử dụng phần mềm
     + **Xử lý đề MC-MIX**: Chuyển đề gốc của MC-MIX sang dạng bình thường để phần mềm có thể nhận diện.
 - Mục **Xử lý đề**:
     + **Nhận diện các câu hỏi**: Tiến hành nhận diện tất cả các thành phần trong đề kiểm tra. Có gì bất thường thì chương trình sẽ thông báo bằng các bình luận tương ứng.
-    + **Trộn và in đề kiểm tra**: Mở hộp thoại trộn đề để người dùng có thể:
+    + **Trộn và in đề kiểm tra**: Mở hộp thoại trộn đề để người dùng có thể trộn đề và thiết lập các thông số cũng như in ấn đề.
     + **In phiếu bài làm**: In thủ công phiếu bài làm, số câu trả lời tuỳ ý.
 - Mục **Thông tin**:
     + **Thông tin trợ giúp**: Mở trang Web để hướng dẫn và giải thích tất cả chức năng của chương trình.
@@ -47,10 +47,11 @@ Sau khi nhấn nút **Trộn và in đề kiểm tra** thì chương trình ti�
 {% include image.html url="main.png" class="img-m" %}
 
 - **Số lượng đề**: Thiết lập số lượng đề mong muốn được trộn.
-- **Trộn đề**: Phân bố các câu con, hoán vị các câu hỏi, hoán vị các câu trả lời (trừ câu cố định) để tạo các đề kiểm tra khác nhau, đảm bảo tỉ lệ A, B, C, D là 25% mỗi loại. Hạn chế tối đa hiện tượng có 3 câu liên tiếp có đáp án đúng như nhau (3 hay 4 câu A liên tiếp chẳng hạn) trong cùng 1 nhóm.
+- **Trộn đề**: Phân bố các câu con, hoán vị các câu hỏi, hoán vị các câu trả lời (trừ câu cố định) để tạo các đề kiểm tra khác nhau, đảm bảo tỉ lệ `A`, `B`, `C`, `D` là 25% mỗi loại. Phần mềm cũng sẽ cố gắn hạn chế hiện tượng có 3 câu liên tiếp có đáp án đúng như nhau (3 hay 4 câu `A` liên tiếp chẳng hạn) trong cùng 1 nhóm.
 - Mục **Thiếp lập chung**:
     + **In số trang**: Các đề sẽ được đánh số trang. Nếu là in đề theo mẫu đầu đề và chân trang thì số trang sẽ được đánh và chỗ `[<Số trang>]`{: .sh_syntax}.
     + **In kèm mã đề**: Lựa chọn này chỉ chọn được khi **In số trang** được chọn. Khi in số trang, phần mềm sẽ in kèm luôn mã đề vào bên cạnh nó. Ví dụ như: `Đề 104 - Trang 2/4`
+    + **Mẫu đầu đề**: Đầu trang và chân trang sẽ được lấy mẫu từ văn bản hiện tại.
     + **Hỗ trợ in 2 cột**: Các câu trắc nghiệm sẽ được in theo 2 cột, giúp tiết kiệm giấy tối đa.
     + **Đáp án tô đen**: Nếu được chọn, chương trình sẽ in đáp án theo dạng tô đen để dễ đục lỗ và chấm. Khi không chọn, đáp án sẽ được in ra dạng bình thường. Ví dụ: `Câu 1 - A, Câu 2 - C ...`
     + **Giảm mực in**: Lựa chọn này chỉ chọn được khi **Đáp án tô đen** được chọn. Thay in tô đen thui luôn thì nó chỉ tô vừa đẹp để thấy thôi. giảm đáng kể lượng mực in.

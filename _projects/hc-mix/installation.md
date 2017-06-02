@@ -12,20 +12,37 @@ title: Cài đặt
 **HC–MIX**{: .cl-hl} cần những thứ sau đây để chạy được:
 - [MS Office 2007 trở lên](https://products.office.com/vi-vn/compare-microsoft-office-products)
 - [Windows XP (x86) Service Pack 3 trở lên](https://www.microsoft.com/en-us/software-download)
-- [Microsoft .NET Framework 4 Client Profile](https://www.microsoft.com/en-us/download/details.aspx?id=24872)
+- [Microsoft .NET Framework 4](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
 - [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
 
-## Cài đặt hoặc nâng cấp
+## Cài đặt
+{: #install}
 
-Đảm bảo hệ thống phải được cài đầy đủ theo như các [yêu cầu ở trên](#required).
+Nếu không am hiểu về máy tính thì các bạn đơn giản thực hiện các bước cài đặt như sau:
+- Tải và cài đặt các thư viện:
+    + Tải và cài đặt **Microsoft .NET Framework 4** [tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=17718) hoặc [đây](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
+    + Tải và cài đặt [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
+- Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
+    1. Giải nén
+    2. Chạy file **trust.reg**{: .cl-hl} hoặc **trust64.reg**{: .cl-hl} (chạy 2 cái luôn cũng được).
+    3. Chạy file `Setup.exe` và nhấn `Install`!
 
-Nhớ là buộc phải có [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217) và [Microsoft .NET Framework 4 Client Profile](https://www.microsoft.com/en-us/download/details.aspx?id=24872) nha! Nhớ tải và cài trước khi cài **HC-MIX**{: .cl-hl}.
+# Nâng cấp
+{: #update}
 
-Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
-
-Sau đó chạy file `Setup.exe` và nhấn `Install` là xong!
+Việc nâng cấp sẽ diễn ra ngon lành nếu bạn thực hiện đúng các thao tác sau:
+1. Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
+2. Giải nén vào đúng thư mục đã giải nén khi cài đặt **HC-MIX**{: .cl-hl} lần đầu tiên.
+3. Chạy file `Setup.exe` và nhấn `Install`!
 
 ## Một số lỗi thường gặp
+{: #error}
+
+<div class="note info">
+##### Không giản nén được
+
+File nén của phần mềm có phần mở rộng là `7z`. Nếu bạn không giải nén được thì tải và cài đặt [7zip](http://www.7-zip.org/download.html) để xử lý nó nhé!
+</div>
 
 <div class="note danger">
 ##### Lỗi không nâng cấp được (Đã cài phiên bản cũ)

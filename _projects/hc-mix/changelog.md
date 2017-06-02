@@ -16,7 +16,7 @@ title: Lịch sử
 ##### 09/05/2017 - 1.0.0.5
 {: .post-category}
 - Thay tính năng xoá khoảng cách bằng tính năng chuyển đánh số đầu dòng sang văn bản thuần. 
-- Thay link [download](/download/hc-mix.zip) và kiểm tra [phiên bản](/download/hc-mix.xml).
+- Thay link [download](/download/hc-mix.7z) và kiểm tra [phiên bản](/download/hc-mix.xml).
 
 ##### 22/03/2017 - 1.0.0.4
 {: .post-category}

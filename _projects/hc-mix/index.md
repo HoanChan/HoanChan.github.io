@@ -9,13 +9,13 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 
 ## **HC-MIX** là cái gì thế?
 
-**HC-MIX** là tên một Add-in của [Word](/word) được mình lập trình bằng [C#](/dev/csharp) từ năm 2016 đến nay ({{ site.time | date: '%Y' }}). Đây là một Add-in hỗ trợ cho các thầy cô giáo biên soạn các bộ đề trắc nghiệm một cách dễ dàng và thuận tiện hơn.
+**HC-MIX** là tên một Add-in của [Word](/word) được mình lập trình bằng [C#](/dev/csharp) từ năm 2016. Đây là một Add-in hỗ trợ cho các thầy cô giáo biên soạn các bộ đề trắc nghiệm một cách dễ dàng và thuận tiện nhất.
 
 ## **HC-MIX** có gì đặc biệt?
 
 **HC-MIX** được tích hợp sẵn vào [Word](/word) cho nên khi nào cần thì có mặt sẵn sàng rồi, không phải mở phần mềm riêng nào cả! **HC-MIX** có các tính năng chính sau đây:
-- Tự động nhận diện các câu hỏi.
-- Hệ thống kiểm tra câu hỏi đơn giản, dễ sử dụng.
+- Nhận diện câu hỏi một cách đơn giản linh hoạt và thông minh.
+- Hệ thống kiểm tra câu hỏi đơn giản, trực quan, dễ sử dụng.
 - Hỗ trợ trộn đề trắc nghiệm theo nhóm.
 - Hỗ trợ trộn đề kiểm tra vừa có trắc nghiệm vừa có tự luận.
 - Hỗ trợ tạo câu con dùng để thay thế nhau trên các đề, giúp biên soạn các đề kiểm tra có câu hỏi hoàn toàn khác nhau, chỉ tương đương về mức độ khó.
@@ -29,4 +29,5 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>
 </div>
 
-## [Tải về](/download/hc-mix.zip)
+[Tải về](/download/hc-mix.7z){: .btn .btn-success }
+{: .text-center .lead .mt-4}
