@@ -2,6 +2,13 @@
 title: Lịch sử
 ---
 
+##### 18/06/2017 - 1.2.0.0 - Cập nhật lớn
+{: .post-category}
+- Sửa lỗi đánh số trang sai khi bắt đầu thừ 0 thay vì 1
+- Sử dụng Style cho câu hỏi và câu trả lời - Hỗ trợ định dạng lại cực nhanh chóng
+- Bổ sung thêm tính năng nhóm con. Chi tiết xem [tại đây](/projects/hc-mix/group)
+- Người dùng sẽ bắt buộc nâng cấp khi có phiên bản mới nếu muốn tiếp tục sử dụng chương trình.
+
 ##### 17/05/2017 - 1.1.0.0 - Cập nhật lớn
 {: .post-category}
 - Hỗ trợ tạo mã đề tuỳ chỉnh, tạo nhanh chóng, đơn giản, hiệu quả, trực quan theo ý muốn.

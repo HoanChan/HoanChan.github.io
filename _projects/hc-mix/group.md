@@ -18,6 +18,12 @@ Bài trắc nghiệm có cấu trúc gồm nhiều nhóm, mỗi nhóm có thể 
 Nếu nhóm chỉ chứa nội dung văn bản, không có câu trắc nghiệm nào thì gạch chân chữ <u>Nhóm</u>.
 </div>
 
+<div class="note">
+##### Áp dụng đối với nhóm con
+
+Nhóm con được hiểu là nhóm nằm trong 1 nhóm. Thay vì cố định trên đề như nhóm bình thường, Nhóm con sẽ được trộn với các câu hỏi. (Sử dụng trong trường hợp có một chủ đề nào đó, có các câu hỏi cho chủ đề đó) Chỉ cần in nghiêng chữ _Nhóm_ để xác định 1 nhóm con.
+</div>
+
 <div class="note info">
 ##### Lưu ý
 
