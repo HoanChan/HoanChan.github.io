@@ -2,6 +2,13 @@
 title: Lịch sử
 ---
 
+##### 22/06/2017 - 1.2.0.1
+{: .post-category}
+- Không sử dụng Style cho đề toán vì gây sai định dạng công thức
+- Sửa lỗi sai font ở câu hỏi đầu tiên
+- Chân trang và phần tô câu hỏi sẽ có font chữ giống như định dạng câu hỏi
+- Sửa lại tên cho 2 Style dùng để định dạng câu hỏi và câu trả lời
+
 ##### 18/06/2017 - 1.2.0.0 - Cập nhật lớn
 {: .post-category}
 - Sửa lỗi đánh số trang sai khi bắt đầu thừ 0 thay vì 1
