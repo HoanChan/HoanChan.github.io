@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 27/06/2017 - 1.2.0.2
+{: .post-category}
+- Sửa lỗi nhận diện thiếu nhóm không có câu hỏi nếu không khai báo nhóm
+- Sửa lỗi xuất kết quả số liệu tổng hợp bị sai
+- Thêm màu có bảng xuất kết quả số liệu tổng hợp
 
 ##### 22/06/2017 - 1.2.0.1
 {: .post-category}
