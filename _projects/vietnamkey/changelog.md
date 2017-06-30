@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 1.1.1.2 - 30/06/2017
+{: .post-category}
+- Sửa lại cách lưu trữ thiết lập, tăng tốc độ khởi động và thoát, đồng thời giảm thiểu lỗi
+- Sửa lại cách thoát của chương trình, tránh lỗi
+
 ##### 1.1.1.1 - 22/04/2017
 {: .post-category}
   - Tiếp tục sửa lỗi ngắt liên lạc với bàn phím và làm đơ máy Windows 7
