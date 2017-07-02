@@ -1,6 +1,13 @@
 ---
 title: Lịch sử
 ---
+
+##### 1.1.1.3 - 02/07/2017
+{: .post-category}
+- Tách khôi phục mặc định của gõ tắt và thiết lập ra làm 2
+- Sửa lỗi chữ ngoáo không gõ được
+- Bổ sung phụ âm hiếm **uy**
+
 ##### 1.1.1.2 - 30/06/2017
 {: .post-category}
 - Sửa lại cách lưu trữ thiết lập, tăng tốc độ khởi động và thoát, đồng thời giảm thiểu lỗi
