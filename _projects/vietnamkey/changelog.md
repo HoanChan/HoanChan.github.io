@@ -2,6 +2,13 @@
 title: Lịch sử
 ---
 
+##### 1.2.0.0 - 03/07/2017
+{: .post-category}
+- Sửa lỗi không phục hồi dấu nếu ký tự mới được thêm vào làm hỏng nguyên âm hiện tại (gõ chữ **asean** không được)
+- Bổ sung **ya** và danh sách nguyên âm (vậy mới gõ được chữ **giặt gỵa** trong tiếng Huế)
+- Hoàn thiện lại phần xác định vị trí bỏ dấu, tối ưu lại tốc độ ở phần này
+- Sửa lỗi bỏ dấu cho nguyên âm **oo**
+
 ##### 1.1.1.3 - 02/07/2017
 {: .post-category}
 - Tách khôi phục mặc định của gõ tắt và thiết lập ra làm 2
