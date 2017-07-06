@@ -2,6 +2,11 @@
 title: Lịch sử
 ---
 
+##### 1.3.0.0 - 06/07/2017
+{: .post-category}
+- Loại bỏ phục hồi từ sai và chọn mức độ kiểm tra chính tả, giảm thiểu lỗi cho chương trình
+- Sửa lỗi sai khi gõ Ư bằng UW và gõ thêm W lần nữa
+
 ##### 1.2.0.0 - 03/07/2017
 {: .post-category}
 - Sửa lỗi không phục hồi dấu nếu ký tự mới được thêm vào làm hỏng nguyên âm hiện tại (gõ chữ **asean** không được)
