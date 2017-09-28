@@ -141,16 +141,16 @@ Có thể thiết lập thêm các thông số sắp xếp nâng cao bằng các
 </div>
 ### b. Tính toán
 
+Số lượng các hàm tính toán của **Word** không nhiều tuy nhiên cũng khá đủ cho các tính toán đơn giản. Các ô trong bảng có thể được tham chiếu theo nguyên tắc đánh địa chỉ theo hàng và cột tương tự như ở các phần mềm chuyên tính toán trên bảng như **Excel**:
+
+- Cột đánh số **A**, **B**, … và hàng đánh số **1**, **2**, ...
+
 |     |**A**|**B**|**C**|**D**|
 |-----|-----|-----|-----|-----|
 |**1**|  A1 | B1  | C1  | D1  |
 |**2**|  A2 | B2  | C2  | D2  |
 |**3**|  A3 | B3  | C3  | D3  |
 {: .table .table-bordered .table-responsive .img}
-
-Số lượng các hàm tính toán của **Word** không nhiều tuy nhiên cũng khá đủ cho các tính toán đơn giản. Các ô trong bảng có thể được tham chiếu theo nguyên tắc đánh địa chỉ theo hàng và cột tương tự như ở các phần mềm chuyên tính toán trên bảng như **Excel**:
-
-- Cột đánh số **A**, **B**, … và hàng đánh số **1**, **2**, ...
 
 Ví dụ **B3** chỉ ra ô tại hàng **3** và cột **2**.
 

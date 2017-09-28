@@ -11,7 +11,10 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YqRSaYvWhOY" allowfullscreen></iframe>
 </div>
 
-[Tải về](/download/hc-mix.7z){: .btn .btn-success }
+[Tải về phần mềm](/download/hc-mix.7z){: .btn .btn-success }
+{: .text-center .lead .m-4}
+
+[Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
 {: .text-center .lead .m-4}
 
 <div class="embed-responsive embed-responsive-16by9">
