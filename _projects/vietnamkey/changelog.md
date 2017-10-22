@@ -1,6 +1,9 @@
 ---
 title: Lịch sử
 ---
+##### 22/10/2017 - 1.2.0.3
+{: .post-category}
+- Sửa lại link Server bị lỗi.
 
 ##### 1.3.0.0 - 06/07/2017
 {: .post-category}

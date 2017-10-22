@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 22/10/2017 - 1.2.0.3
+{: .post-category}
+- Hiển thị thông báo cho người dùng biết không có Internet nên bị khoá chức năng.
+- Bỏ luôn Style vì gây lỗi khi in, Chức năng này sẽ trở lại sớm nhất có thể.
+
 ##### 27/06/2017 - 1.2.0.2
 {: .post-category}
 - Sửa lỗi nhận diện thiếu nhóm không có câu hỏi nếu không khai báo nhóm

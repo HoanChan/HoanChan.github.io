@@ -72,7 +72,7 @@ Nguyên nhân là lần trước bạn chạy bộ cài ở 1 thư mục. Giờ 
 
 Khi phát triển, phần mềm sử dụng **ClickOnce**{: .cl-hl} để cài đặt. Khi cài đặt, **Troubleshooting Office Solution**{: .cl-hl} **Security**{: .cl-hl} tiến hành kiểm tra thông tin đăng ký trong tập tin **manifest**{: .cl-hl}. Nếu không mở được tập tin này nó sẽ báo lỗi như trường hợp của bạn. 
 
-➔ Chạy file **trust.reg**{: .cl-hl} hoặc **trust64.reg**{: .cl-hl} (chạy 2 cái luôn cho chắc cũng được) trong thư mục cài đặt rồi chạy lại file cài đặt để khắc phục.
+➔ Chạy 2 file **trust.reg**{: .cl-hl} và **trust64.reg**{: .cl-hl} trong thư mục cài đặt rồi chạy lại file cài đặt để khắc phục.
  </div>
 
 <div class="note danger">
@@ -82,7 +82,7 @@ Khi phát triển, phần mềm sử dụng **ClickOnce**{: .cl-hl} để cài �
 
 Trình cài đặt **HC-MIX**{: .cl-hl} tiến hành kiểm tra thông tin đăng ký trong tập tin **VSTOInstaller.exe.Config**{: .cl-hl}. Nếu có vấn đề với tập tin này nó sẽ báo lỗi như trường hợp của bạn.
 
-➔ Vào thư mục **C:\Program Files\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl}, nếu không có thư mục này thì vào **C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl} tìm đến file **VSTOInstaller.exe.Config**{: .cl-hl} thì đổi tên nó thành **VSTOInstaller.exe.Config.old**{: .cl-hl} (thêm đuôi **.old**{: .cl-hl} vào cuối).
+➔ Vào thư mục **C:\Program Files\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl}, nếu không có thư mục này thì vào **C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl} tìm đến file **VSTOInstaller.exe.Config**{: .cl-hl} thì đổi tên nó thành **VSTOInstaller.exe.Config.old**{: .cl-hl} (thêm đuôi **.old**{: .cl-hl} vào cuối). Sau đó chạy lại trình cài đặt **HC-MIX**{: .cl-hl}.
 
 ➔ Trong một vài trường hợp, lỗi này xuất hiện khi không chạy trình cài đặt **HC-MIX**{: .cl-hl} ở quyền Administrator. Click chuột phải vào file cài đặt và chọn **"Run as Administrator"**{: .cl-hl} thay vì chạy trực tiếp nó.
  </div>
