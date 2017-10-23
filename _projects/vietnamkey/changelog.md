@@ -1,7 +1,15 @@
 ---
 title: Lịch sử
 ---
-##### 22/10/2017 - 1.2.0.3
+
+##### 1.3.0.2 - 23/10/2017
+{: .post-category}
+- Hỗ trợ lại bộ gõ TelexEx (không gõ Ư = W) VNI và VIQR
+- Sửa lỗi delay khi chuyển chế độ gõ về V bằng chuột
+- Bổ sung phím tắt Ctrl + Shift để chuyển chế độ gõ
+- Thay đổi icon cho đẹp với Windows 10
+
+##### 1.3.0.1 - 22/10/2017
 {: .post-category}
 - Sửa lại link Server bị lỗi.
 
