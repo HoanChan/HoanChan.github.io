@@ -15,7 +15,6 @@ Tuy không phải lập trình ra để so với "ông già" **Unikey**, tuy nhi
 
 ## Tính năng:
 ---------
-- Mã nguồn mở - C#
 - Giao diện thân thiện dễ sử dụng
 - Hỗ trợ Unicode, các bản mã còn lại lạc hậu rồi nên thôi
 - Hỗ trợ kiểu gõ Telex, TelexEx (Không có gõ W ra chữ Ư nữa), VNI, VIQR
