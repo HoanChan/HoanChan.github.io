@@ -18,9 +18,10 @@ Tuy không phải lập trình ra để so với "ông già" **Unikey**, tuy nhi
 - Giao diện thân thiện dễ sử dụng
 - Hỗ trợ Unicode, các bản mã còn lại lạc hậu rồi nên thôi
 - Hỗ trợ kiểu gõ Telex, TelexEx (Không có gõ W ra chữ Ư nữa), VNI, VIQR
-- Hỗ trợ tốc ký
+- Hỗ trợ tốc ký, nhập xuất danh sách tốc ký
 - Hỗ trợ bỏ dấu kiểu cũ, mới
 - Hỗ trợ bỏ dấu tự do như Chuongw -> Chương, Bưng -> gõ thêm o thành Bương
+- Hỗ trợ xoá dấu nâng cao: Được -> Nhấn Z -> Đươc -> nhấn Z -> duoc -> Nhấn Z -> duocz
 - Hỗ trợ cập nhật tự động
 - Hỗ trợ chuyển mã tiếng Việt (chưa làm việc với clipboard Word)
 - Tự động sửa lại vị trí dấu khi thay đổi nguyên âm

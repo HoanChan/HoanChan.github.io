@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 1.3.0.3 - 25/10/2017
+{: .post-category}
+- Hỗ trợ nhập xuất danh sách tốc ký
+- Hỗ trợ xoá dấu nâng cao: Được -> Nhấn Z -> Đươc -> nhấn Z -> duoc -> Nhấn Z -> duocz
+- Tự động mở ChangeLog sau khi cập nhật
 
 ##### 1.3.0.2 - 23/10/2017
 {: .post-category}
