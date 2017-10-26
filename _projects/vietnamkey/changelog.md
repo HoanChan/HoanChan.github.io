@@ -1,6 +1,12 @@
 ---
 title: Lịch sử
 ---
+##### 1.3.0.4 - 26/10/2017
+{: .post-category}
+- Xoá bớt icon trong chương trình (icon chính và icon Sytemtray) do bị nhận nhầm là Trojan >"<
+- Vẫn còn ảnh trong chương trình bị DrWeb nhận nhầm Trojan.DownLoader25.47864, thôi kệ luôn
+- Ai dùng Bitdefender, Avast, AVG sẽ hết bị báo Trojan =='
+
 ##### 1.3.0.3 - 25/10/2017
 {: .post-category}
 - Hỗ trợ nhập xuất danh sách tốc ký
