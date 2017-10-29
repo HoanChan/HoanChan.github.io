@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 1.3.0.5 - 29/10/2017
+{: .post-category}
+- Xoá gần như tất cả Icon, Image vì bị nhận nhầm là virus
+- Chương trình hơi xấu
+
 ##### 1.3.0.4 - 26/10/2017
 {: .post-category}
 - Xoá bớt icon trong chương trình (icon chính và icon Sytemtray) do bị nhận nhầm là Trojan >"<
