@@ -1,6 +1,19 @@
 ---
 title: Lịch sử
 ---
+##### 01/11/2017 - 1.2.0.4
+{: .post-category}
+- Xoá nút cập nhật! Vì đã tự cập nhật lúc khởi động!
+- Ẩn nút xuất CSDL (Tính năng này sẽ quay trở lại để phục vụ xuất CSDL dùng trong thi trắc nghiệm qua LAN)
+- Thêm các nút chèn mã dành sẵn như `[<Phiếu trắc nghiệm>]` `[<Mã đề>]` `[<Số Trang>]` `[<Danh sách câu hỏi>]`
+- Tự mở hướng dẫn cập nhật khi có phiên bản mới
+- Sửa lỗi in bảng tô trắc nghiệm bị méo, bị đứng
+- Sửa khả năng nhận diện với các câu `A`, `B`, `C`, `D` nằm cùng dòng thì phải cách nhau ít nhất 1 dấu `Tab` hoặc 2 dấu `cách trắng`.
+- Nếu không nhận diện được gì thì ẩn Panel kết quả đi
+- Sửa lỗi không thay thế [<Danh sách câu hỏi>] khi chèn danh sách câu hỏi
+- Xoá bớt 1 dấu xuống dòng khi in bảng tô trắc nghiệm
+- Cập nhật đề mẫu cho rõ ràng hơn -> [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
+
 ##### 22/10/2017 - 1.2.0.3
 {: .post-category}
 - Hiển thị thông báo cho người dùng biết không có Internet nên bị khoá chức năng.

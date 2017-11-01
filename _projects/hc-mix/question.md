@@ -62,7 +62,7 @@ Nếu câu hỏi không có đủ 4 câu trả lời, nó sẽ bị bỏ qua. N�
 <div class="note info">
 ##### Lưu ý
 
-Nội dung câu hỏi có thể được soạn trên nhiều dòng, tuy nhiên nội dung câu trả lời bắt buộc phải trên 1 dòng. Nhiều câu trả lời cùng soạn trên 1 dòng cũng được, không sao cả.
+Nội dung câu hỏi có thể được soạn trên nhiều dòng, tuy nhiên nội dung câu trả lời bắt buộc phải trên 1 dòng. Nhiều câu trả lời cùng soạn trên 1 dòng cũng được, không sao cả. Đối với các câu trả lời để trên cùng 1 dòng thì các câu trả lời đó phải cách nhau ít nhất là 1 dấu `Tab` hoặc từ 2 dấu `cách trắng` trở lên.
 
 Đối với đáp án:
 - Để chỉ ra đán án đúng thì gạch chân kí tự `A`, `B`, `C` hoặc `D` ở `<Phần nhận diện>`{: .sh_syntax}.
