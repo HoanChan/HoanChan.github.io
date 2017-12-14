@@ -1,6 +1,22 @@
 ---
 title: Lịch sử
 ---
+
+##### 14/12/2017 - 1.2.0.5
+{: .post-category}
+- Khi cập nhật, chương trình sẽ cho bạn biết cần giải nén bộ cài đặt vào đâu
+- Sửa một lỗi làm cho chức năng sửa dấu câu hoạt động không đúng
+- Bổ sung thêm tính năng chú thích -> Chi tiết xem [tại đây](/projects/hc-mix/comment)
+- Sửa mặc định tạo mã đề bắt đầu từ `132` thay vì `123`
+- Tìm và thay thế mã đề nay có thể tìm được trong Textbox hay trong Shapes
+- Chương trình sẽ thông báo khi số câu con lớn hơn số đề, số câu con dư ra sẽ không bao giờ được in
+- Sửa một lỗi khiến cho việc nhận diện nội dung câu con trên nhiều dòng không hoạt động
+- Đảm bảo định dạng bảng tô câu hỏi trên toàn văn bản được thống nhất, không bị sai cỡ nữa
+- Sửa một lỗi khiến cho việc tạo mã đề không phủ tới được số lớn nhất trong dãy
+- Sửa lỗi không thay thế [<Danh sách câu hỏi>] khi chèn danh sách câu hỏi
+- Xoá bớt 1 dấu xuống dòng khi in bảng tô trắc nghiệm
+- Sửa một lỗi khiến cho các ô tô trắc nghiệm bị méo
+
 ##### 01/11/2017 - 1.2.0.4
 {: .post-category}
 - Xoá nút cập nhật! Vì đã tự cập nhật lúc khởi động!

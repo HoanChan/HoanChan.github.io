@@ -8,9 +8,11 @@
   - url: installation
   - url: soft
   - url: question
+  - url: child
   - url: group
+  - url: comment
   - url: headerfooter
-  - url: advanced
+  - url: tips
   - url: changelog
 
 - title: VietNamKey
