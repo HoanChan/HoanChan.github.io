@@ -2,6 +2,10 @@
 title: Lịch sử
 ---
 
+##### 17/12/2017 - 1.2.0.6
+{: .post-category}
+- Sửa một lỗi khiến cho việc in phiếu tô trắc nghiệm bị sai số lượng câu khi nhận dạng đề có chú thích
+
 ##### 14/12/2017 - 1.2.0.5
 {: .post-category}
 - Khi cập nhật, chương trình sẽ cho bạn biết cần giải nén bộ cài đặt vào đâu
