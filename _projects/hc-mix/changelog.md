@@ -8,7 +8,6 @@ title: Lịch sử
 
 ##### 14/12/2017 - 1.2.0.5
 {: .post-category}
-- Khi cập nhật, chương trình sẽ cho bạn biết cần giải nén bộ cài đặt vào đâu
 - Sửa một lỗi làm cho chức năng sửa dấu câu hoạt động không đúng
 - Bổ sung thêm tính năng chú thích -> Chi tiết xem [tại đây](/projects/hc-mix/comment)
 - Sửa mặc định tạo mã đề bắt đầu từ `132` thay vì `123`
