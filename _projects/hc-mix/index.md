@@ -23,7 +23,8 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 
 ## Các tính năng chính:
 
-- Đề kiểm tra được tạo, chỉnh sửa, nhận diện, xử lý ngay trên Word. 
+- Đề kiểm tra được tạo, chỉnh sửa, nhận diện, xử lý ngay trên Word.
+- Hỗ trợ nhận diện và xử lý đề tiếng Anh.
 - Hỗ trợ in đề trên 2 cột để tiết kiệm giấy.
 - Hỗ trợ xuất đáp án dạng tô đen hỗ trợ cho giáo viên chấm bài. 
 - Hỗ trợ nhiều tính năng cho quá trình biên soạn đề.

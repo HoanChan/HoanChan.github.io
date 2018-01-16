@@ -2,6 +2,23 @@
 title: Lịch sử
 ---
 
+##### 16/01/2018 - 1.3.0.0 - Cập nhật lớn
+{: .post-category}
+- Thêm mã thay thế `[<Tổng số trang>]` dùng trong nội dung nhóm
+- Thêm khả năng sửa tên câu hỏi (Giờ thì câu hay bài hay chỉ là số cũng được), số bắt đầu đánh số (không bắt đầu từ 1 nữa)
+- Hỗ trợ nhận diện câu trả lời nằm cùng dòng với câu hỏi
+- Xử lý in ấn với câu hỏi không có phần dẫn! các câu trả lời nằm trên 1 dòng
+- Bổ sung mã thay thế `[<?>]` thể hiện mối liên hệ giữa phần dẫn của nhóm với tên câu hỏi trong nhóm, các câu hỏi trong nhóm này sẽ không được thay đổi vị trí khi trộn đề
+- Sửa lỗi bị xuống dòng, tạo dòng trống khi in nhóm
+- Thụt lề của đáp án giờ được tính bằng cách quy đổi cỡ font của câu hỏi chứ không cố định như trước
+- Thêm nút để chèn tổng số trang và tham chiếu
+- Sửa tên nút phiếu tô trắc nghiệm thành phiếu tô
+- Không dùng comment để hiển thị lỗi mà đưa lỗi nhận diện trên 1 danh sách để dễ theo dõi
+- Sửa một chút thông báo kết quả nhận diện
+- Sửa lại 1 chút chỗ lệnh chỉ hiện câu hỏi cho chính xác vì trước đây nó không bung nhóm con
+- Chỉnh sửa chức năng xử lý đề MCMIX cho chính xác, nay đã có thể nhận diện và thay thế nhóm, câu hỏi, thứ tự cần thay thế trong nội dung nhóm câu hỏi
+- Sửa một lỗi không bung được cây nhận diện khi có chú thích
+
 ##### 17/12/2017 - 1.2.0.6
 {: .post-category}
 - Sửa một lỗi khiến cho việc in phiếu tô trắc nghiệm bị sai số lượng câu khi nhận dạng đề có chú thích
