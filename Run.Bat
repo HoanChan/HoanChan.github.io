@@ -1,1 +1,1 @@
-e:\Ruby\bin\jekyll s
+d:\Ruby\bin\jekyll s
