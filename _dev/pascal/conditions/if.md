@@ -27,7 +27,7 @@ Begin
     a := 10;  
     If a < 20 Then { Nếu a bé hơn 20 thì thông báo: }
         Writeln('a be hon 20 ' );
-    Writeln('gia tri cua a là: ', a);
+    Writeln('gia tri cua a la: ', a);
 End.
 ```
 {: .sh_pascal }

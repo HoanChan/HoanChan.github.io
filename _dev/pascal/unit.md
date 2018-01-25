@@ -24,7 +24,9 @@ Uses <Tên unit>;
 2. Xây dựng unit
 
 a. Bước 1
+
 Tạo ra một tập tin Pascal có đuôi .PAS và có cấu trúc như trình bày dưới đây, lưu ý là tên của unit phải trùng với tên tập tin. Dạng mẫu của một Unit (tên tệp là MyUnit.pas):
+
 ```
 Unit MyUnit ;
 Interface
@@ -59,12 +61,17 @@ khai báo trong phần Interface, các chương trình con này sẽ không th�
 được bởi người dùng Unit.}
  
 BEGIN
+
 {Phần chứa các câu lệnh sẽ được thực thi ngay trước khi câu lệnh đầu tiên của
 chương trình gọi Unit này được thực hiện. Phần này không bắt buộc phải có, tuy
 nhiên trong trường hợp đó vẫn phải giữ lại từ khóa "END." dưới đây.}
+
 END.
+
 b. Bước 2
+
 Unit không được thiết kế để chạy mà để biên dịch đặt lên đĩa nên ta không thể nhấn CTRL+F9 mà làm theo trình tự sau:
+
 – Chọn menu Compile (Alt + C).
 – Tiếp tục chọn Destination để chuyển thành Disk. Lưu ý: Destination Disk là tạo unit lên đĩa, Memory là tạo unit lên bộ nhớ RAM.
 – Chọn lại menu Complie và chọn tiếp chức năng Complie (Alt + F9). Lúc này trên đĩa xuất hiện tập tin là tên của unit ta tạo với phần mở rộng là TPU. Kể từ đây, ta có thể sử dụng unit này bằng cách gọi nó trong câu lệnh USES như đã nói trên.
@@ -119,6 +126,7 @@ END.
 {: .sh_pascal }
 
 ### Một số hàm và thủ tục hay dùng trong Unit CRT
+
 – ClrScr: Thủ tục xoá màn hình.
 – GotoXY(x, y: Byte): Dời con trỏ tới vị trí cột x, dòng y trên màn hình. Thông thường, màn hình trong TextMode(Co80) có 25 dòng (từ dòng 1 đến dòng 25) và 80 cột (cột 1 đến cột 80). Vậy toạ độ góc trên trái của màn hình là (1, 1), toạ độ góc dưới phải là (80, 25) .
 – Delay(ms: Word): Thủ tục trì hoãn chương trình trong ms mili-giây.
@@ -128,22 +136,26 @@ END.
 – Readkey: đọc phím từ bộ đệm bàn phím.
 – TextBackGround(color: Byte): Thủ tục chọn màu nền. Ta có thể đặt màu nền cho toàn màn hình bằng cách đặt lệnh này vừa trước lệnh ClrScr.
 – TextColor(color: Byte): Thủ tục chọn màu cho chữ.
+
 Dưới đây là danh sách các hằng màu mà Pascal định sẵn.
-• Black = 0 Đen.
-• Blue = 1 Xanh dương.
-• Green = 2 Xanh lục.
-• Cyan = 3 Xanh trứng sáo.
-• Red = 4 Đỏ.
-• Magenta = 5 Tím cánh sen.
-• Brown = 6 Nâu.
-• LightGray = 7 Xám sáng.
-• DarkGray = 8 Xám tối.
-• LightBlue = 9 Xanh dương sáng.
-• LightGreen = 10 Xanh lục sáng.
-• LightCyan = 11 Xanh trứng sáo sáng.
-• LightRed = 12 Đỏ sáng.
-• LightMagenta = 13 Tím cánh sen sáng.
-• Yellow = 14 Vàng.
-• White = 15 Trắng.
+
+- Black = 0 Đen.
+- Blue = 1 Xanh dương.
+- Green = 2 Xanh lục.
+- Cyan = 3 Xanh trứng sáo.
+- Red = 4 Đỏ.
+- Magenta = 5 Tím cánh sen.
+- Brown = 6 Nâu.
+- LightGray = 7 Xám sáng.
+- DarkGray = 8 Xám tối.
+- LightBlue = 9 Xanh dương sáng.
+- LightGreen = 10 Xanh lục sáng.
+- LightCyan = 11 Xanh trứng sáo sáng.
+- LightRed = 12 Đỏ sáng.
+- LightMagenta = 13 Tím cánh sen sáng.
+- Yellow = 14 Vàng.
+- White = 15 Trắng.
+
 (8 hằng trị đầu tiên từ Black đến LightGray áp dụng cho cả màu chữ lẫn màu nền. Các hằng trị còn lại chỉ áp dụng cho màu chữ).
+
 Color + blink: chữ nhấp nháy.

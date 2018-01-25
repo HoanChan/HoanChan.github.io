@@ -7,7 +7,7 @@ Chúng ta đã biết cấu trúc cơ bản của chương trình pascal, các k
 ## Biến - Variables
 {: #var}
 
-Một khai báo biến được bắt đầu bởi từ khóa var, theo sau là danh sách các biến như sau:
+Một khai báo biến được bắt đầu bởi từ khóa **Var**{: .cl-hl }, theo sau là danh sách các biến như sau:
 
 ```
 Var <Danh sách biến> : <Kiểu dữ liệu>;

@@ -104,5 +104,5 @@ end.
 
 Khi đoạn code trên được biên dịch và thực thi, nó in ra kết quả như sau:
 
-> You really did not study right!  
+> Better try again 
 > Your grade is F
