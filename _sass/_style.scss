@@ -100,6 +100,12 @@ body {
         transition: transform .3s cubic-bezier(0.22, 0.61, 0.36, 1);
         #mainNav{
             background-color: rgba($brand-inverse, 0.8) !important;
+            @include tablet {
+                background-color: rgba(0,0,0,0) !important;
+            }
+            @include desktop {
+                background-color: rgba(0,0,0,0) !important;
+            }
         }
     }
 }
