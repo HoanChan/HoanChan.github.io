@@ -52,7 +52,7 @@ function CreateHTML(data, divID) {
             phone += showText(
                 `<div class="info">
                     <i class="material-icons">phone</i>
-                    <a href="callto:{0}" class="phone">{0}</a>
+                    <a href="tel:{0}" class="phone">{0}</a>
                 </div>`, aphone);
         });
         var email = "";
@@ -79,13 +79,22 @@ function LoadData() {
     $('#' + divID).html(html);
 }
 
+function executeAsync(func) {
+    setTimeout(func, 0);
+}
+
 $(document).ready(function() {
-    LoadData('BGH', 'BGH');
-    LoadData('Toan', 'Toan');
-    LoadData('Ly-CN', 'Ly', 'CN');
-    LoadData('Hoa', 'Hoa');
-    LoadData('Sinh-Tin', 'Sinh', 'Tin');
-    LoadData('Van', 'Van');
-    LoadData('Su-Dia-CD', 'Su', 'Dia', 'CD')
-    LoadData('TD-QP', 'TD');
+    executeAsync(LoadData('BGH', 'BGH'));
+    executeAsync(LoadData('Toan', 'Toan'));
+    executeAsync(LoadData('Ly-CN', 'Ly', 'CN'));
+    executeAsync(LoadData('Hoa', 'Hoa'));
+    executeAsync(LoadData('Sinh-Tin', 'Sinh', 'Tin'));
+    executeAsync(LoadData('Van', 'Van'));
+    executeAsync(LoadData('Anh', 'Anh'));
+    executeAsync(LoadData('Su-Dia-CD', 'Su', 'Dia', 'CD'));
+    executeAsync(LoadData('TD-QP', 'TD-QP'));
+    // var data = getJson('assets/data/TCV2.json');
+    // data.sort(function (a, b) {
+    //     return a.B.localeCompare(b.B);
+    // });
 });
