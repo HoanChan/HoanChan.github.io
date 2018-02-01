@@ -1,0 +1,51 @@
+
+.profile{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.info>*{
+    vertical-align: middle;
+    padding: 5px;
+}
+.call{
+    font-size: 1em;
+}
+.name{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0f7e8c;
+}
+
+.birthday{
+    font-size: 1.4em;
+    color: #000;
+}
+
+.phone:link, .phone:visited{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #4caf50;
+}
+.email:link, .email:visited{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #4caf50;
+}
+
+.wizard-card .picture {
+    width: 165px;
+    height: 165px;
+}
+
+.made-with-mk:hover, .made-with-mk:active, .made-with-mk:focus {
+  width: 250px;
+}
+.made-with-mk .brand {
+  top: 2px;
+}

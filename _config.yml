@@ -68,6 +68,8 @@ gems:
 exclude:
   - .gitignore
   - README.md
-  # - _dev
-  # - _office
-  # - _projects
+  #- _dev
+  #- _office
+  #- _projects
+  #- TCV
+
