@@ -2,6 +2,11 @@
 title: Lịch sử
 ---
 
+##### 01/02/2018 - 1.3.0.1
+{: .post-category}
+- Sửa lỗi không kết nối được với máy chủ! Do máy chủ Github thay đổi chính sách bảo mật.
+- Tách phần xử lý dữ liệu ra thư viện riêng.
+
 ##### 16/01/2018 - 1.3.0.0 - Cập nhật lớn
 {: .post-category}
 - Thêm mã thay thế `[<Tổng số trang>]` dùng trong nội dung nhóm
