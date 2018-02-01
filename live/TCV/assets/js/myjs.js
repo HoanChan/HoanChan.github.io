@@ -35,11 +35,12 @@ function getText(url) {
 }
 
 function getImage(divID, image) {
-    var http = new XMLHttpRequest();
     var image_url = 'assets/img/' + divID + '/' + image;
-    http.open('HEAD', image_url, false);
-    http.send();
-    return http.status != 404 ? image_url : 'assets/img/default-avatar.png';
+    return image_url;
+    // var http = new XMLHttpRequest();
+    // http.open('HEAD', image_url, false);
+    // http.send();
+    // return http.status != 404 ? image_url : 'assets/img/default-avatar.png';
 }
 
 function CreateHTML(data, divID) {
@@ -79,20 +80,17 @@ function LoadData() {
     $('#' + divID).html(html);
 }
 
-function executeAsync(func) {
-    setTimeout(func, 0);
-}
 
 $(document).ready(function() {
-    executeAsync(LoadData('BGH', 'BGH'));
-    executeAsync(LoadData('Toan', 'Toan'));
-    executeAsync(LoadData('Ly-CN', 'Ly', 'CN'));
-    executeAsync(LoadData('Hoa', 'Hoa'));
-    executeAsync(LoadData('Sinh-Tin', 'Sinh', 'Tin'));
-    executeAsync(LoadData('Van', 'Van'));
-    executeAsync(LoadData('Anh', 'Anh'));
-    executeAsync(LoadData('Su-Dia-CD', 'Su', 'Dia', 'CD'));
-    executeAsync(LoadData('TD-QP', 'TD-QP'));
+    LoadData('BGH', 'BGH');
+    LoadData('Toan', 'Toan');
+    LoadData('Ly-CN', 'Ly', 'CN');
+    LoadData('Hoa', 'Hoa');
+    LoadData('Sinh-Tin', 'Sinh', 'Tin');
+    LoadData('Van', 'Van');
+    LoadData('Anh', 'Anh');
+    LoadData('Su-Dia-CD', 'Su', 'Dia', 'CD');
+    LoadData('TD-QP', 'TD-QP');
     // var data = getJson('assets/data/TCV2.json');
     // data.sort(function (a, b) {
     //     return a.B.localeCompare(b.B);
