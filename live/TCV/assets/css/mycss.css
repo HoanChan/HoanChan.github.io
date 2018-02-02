@@ -14,12 +14,13 @@ hr {
     padding: 5px;
 }
 .call{
-    font-size: 1em;
+    font-size: 1.3em;
 }
 .name{
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #0f7e8c;
+    font-family: unset;
 }
 
 .birthday{
@@ -33,19 +34,29 @@ hr {
     color: #4caf50;
 }
 .email:link, .email:visited{
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: none;
     color: #4caf50;
+    font-family: serif;
 }
 
 .wizard-card .picture {
     width: 165px;
     height: 165px;
+    border-color: #2ca8ff;
+}
+
+.wizard-card .picture:hover {
+  border-color: #9c27b0;
 }
 
 .made-with-mk:hover, .made-with-mk:active, .made-with-mk:focus {
-  width: 250px;
+  width: 190px;
 }
 .made-with-mk .brand {
   top: 2px;
+}
+
+.info-text {
+    font-size: 1.7em;
 }

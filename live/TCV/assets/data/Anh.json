@@ -1,5 +1,5 @@
 {
-  "Text": "Các thầy cô giảng dạy bộ môn Tiếng Anh",
+  "Text": "Các thầy cô giảng dạy môn Tiếng Anh",
   "Data": [
     {
         "Call": "Cô giáo",
@@ -75,11 +75,19 @@
     },
     {
         "Call": "Cô giáo",
-        "Name": "Lê Thị Thanh Loan",
-        "Birthday": "06/12/1976",
-        "Phone": [""],
-        "Email": ["lttloan.c3tcvan@khanhhoa.edu.vn"],
-        "Image": "lttloan.jpg"
+        "Name": "Lê Võ Ngọc Lý",
+        "Birthday": "03/11/1988",
+        "Phone": ["0935498767"],
+        "Email": ["lvnly.c3tcvan@khanhhoa.edu.vn"],
+        "Image": "lvnly.jpg"
+    },
+    {
+        "Call": "Cô giáo",
+        "Name": "Nguyễn Phương Huyền",
+        "Birthday": "10/06/1985",
+        "Phone": ["0935866607"],
+        "Email": ["nphuyen.c3tcvan@khanhhoa.edu.vn"],
+        "Image": "nphuyen.jpg"
     }
   ]
 }
