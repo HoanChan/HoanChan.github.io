@@ -34,10 +34,9 @@ hr {
     color: #4caf50;
 }
 .email:link, .email:visited{
-    font-size: 1.1em;
+    font-size: 1em;
     text-decoration: none;
     color: #4caf50;
-    font-family: serif;
 }
 
 .wizard-card .picture {
