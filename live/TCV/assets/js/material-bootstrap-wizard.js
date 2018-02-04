@@ -45,13 +45,7 @@ $(document).ready(function(){
        },
 
         onTabClick : function(tab, navigation, index){
-            var $valid = $('.wizard-card form').valid();
-
-            if(!$valid){
-                return false;
-            } else{
-                return true;
-            }
+            return true;
         },
 
         onTabShow: function(tab, navigation, index) {

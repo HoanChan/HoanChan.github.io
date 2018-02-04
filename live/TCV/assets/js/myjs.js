@@ -72,13 +72,16 @@ function CreateHTML(data, divID) {
 function LoadData() {
     var args = arguments;
     var divID = args[0];
-    var html = '';
-    for (var key = 1; key < args.length; key++) {
-        var data = getJson('assets/data/' + args[key] + '.json');
-        html += CreateHTML(data, args[key]);
-    }
-    $('#' + divID).html(html);
+    setTimeout(function() {
+        var html = '';
+        for (var key = 1; key < args.length; key++) {
+            var data = getJson('assets/data/' + args[key] + '.json');
+            html += CreateHTML(data, args[key]);
+        }
+        $('#' + divID).removeClass("loader").html(html);
+    }, 100);
 }
+
 
 
 $(document).ready(function() {
