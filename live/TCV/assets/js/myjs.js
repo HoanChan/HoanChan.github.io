@@ -98,4 +98,19 @@ $(document).ready(function() {
     // data.sort(function (a, b) {
     //     return a.B.localeCompare(b.B);
     // });
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('.scrollToTop').fadeIn(1000);
+        } else {
+            $('.scrollToTop').fadeOut(1000);
+        }
+    });
+    $('.scrollToTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
 });
