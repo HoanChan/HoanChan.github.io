@@ -34,8 +34,10 @@ function getText(url) {
     return text;
 }
 
+var HCGitUrlRaw = 'https://raw.githubusercontent.com/HoanChan/HoanChan.github.io/master/live/TCV/';
+
 function getImage(divID, image) {
-    var image_url = 'assets/img/' + divID + '/' + image;
+    var image_url = HCGitUrlRaw + 'assets/img/' + divID + '/' + image;
     return image_url;
     // var http = new XMLHttpRequest();
     // http.open('HEAD', image_url, false);
@@ -75,7 +77,7 @@ function LoadData() {
     setTimeout(function() {
         var html = '';
         for (var key = 1; key < args.length; key++) {
-            var data = getJson('assets/data/' + args[key] + '.json');
+            var data = getJson(HCGitUrlRaw + 'assets/data/' + args[key] + '.json');
             html += CreateHTML(data, args[key]);
         }
         $('#' + divID).removeClass("loader").html(html);
