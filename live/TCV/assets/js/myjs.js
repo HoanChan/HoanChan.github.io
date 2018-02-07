@@ -80,7 +80,13 @@ function LoadData() {
             var data = getJson(HCGitUrlRaw + 'assets/data/' + args[key] + '.json');
             html += CreateHTML(data, args[key]);
         }
-        $('#' + divID).removeClass("loader").html(html);
+        $('#' + divID).removeClass("loader").html(html)
+            .on("click", "#image", function() {
+                var url = $(this).attr('src');
+                $('#myModal').on('show.bs.modal', function() {
+                    $('.showimage').attr('src', url);
+                });
+            });
     }, 100);
 }
 
