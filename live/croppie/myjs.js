@@ -24,12 +24,23 @@ $(document).ready(function() {
             height: 290,
             type: 'circle'
         },
-        enableExif: false
+        showZoomer: true,
+        enableExif: false,
+        enableOrientation: true
     });
 
+    $("#rotateLeft").click(function() {
+        $uploadCrop.croppie('rotate', parseInt($(this).data('rotate')));
+    });
+
+    $("#rotateRight").click(function() {
+        $uploadCrop.croppie('rotate', parseInt($(this).data('rotate')));
+    });
+    
     $('#upload').on('change', function() {
         readFile(this);
     });
+
     $('.upload-result').on('click', function(ev) {
         $uploadCrop.croppie('result', {
             type: 'canvas',
