@@ -55,7 +55,7 @@ fb_appid: 1792974517689740
 
 logo: /img/logo-2x.png
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
@@ -68,8 +68,8 @@ gems:
 exclude:
   - .gitignore
   - README.md
-  #- _dev
-  #- _office
+  # - _dev
+  # - _office
   #- _projects
-  #- TCV
+  # - TCV
 

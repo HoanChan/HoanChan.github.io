@@ -6,21 +6,35 @@ title: Sử dụng phần mềm
 
 {% include image.html url="ribon.png" class="img-m" %}
 
+
+- Mục **Chèn thành phần**: Đây là các các mẫu văn bản để nhận diện các thành phần trong đề kiểm tra.
+    + **Nhóm nội dung**: Mẫu phần nhận diện của [nhóm chỉ chứa nội dung văn bản](/projects/hc-mix/group#contentGroup).
+    + **Nhóm câu hỏi**: Mẫu phần nhận diện của [nhóm bình thường](/projects/hc-mix/group), chứa các câu hỏi trắc nghiệm.
+    + **Nhóm con**: Mẫu phần nhận diện của [nhóm con](/projects/hc-mix/group#childGroup).
+    + **Câu hỏi**: Mẫu phần nhận diện của một [câu hỏi](/projects/hc-mix/question) hoàn chỉnh.
+    + **Câu con**: Mẫu phần nhận diện của một [câu hỏi](/projects/hc-mix/question) có chứa [câu con](/projects/hc-mix/child).
+    + **Chú thích**: Mẫu phần nhận diện của một [chú thích](/projects/hc-mix/comment).
+- Mục **Chèn mã đại diện**: Đây là các các mẫu [mã đại diện](/projects/hc-mix/group#code) dùng trong nội dung nhóm để thay thế trong lúc xuất đề kiểm tra.
+    + **Phiếu tô**: Mã đại diện của phiếu tô trắc nghiệm.
+    + **DS câu hỏi**: Mã đại diện của danh sách câu hỏi có trong nhóm.
+    + **Mã đề**: Mã đại diện của mã đề.
+    + **Tham chiếu**: Mã đại diện của tham chiếu giữa nội dung nhóm và câu hỏi trong nhóm.
+    + **Số trang**: Mã đại diện của nơi đánh số trang và ghi mã đề (ở chân trang).
+    + **Tổng số trang**: Mã đại diện của tổng số trang.
 - Mục **Tối ưu định dạng**: Đây là các tiện ích kèm theo để định dạng đề gốc tốt nhất có thể.
     + **Dấu câu**: Chỉnh sửa các dấu câu , . ? : ; ! phù hợp với quy ước soạn thảo văn bản.
-    + **Cắt tỉa**: Nhiều dấu tab thành 1, nhiều dấu cách thành 1. Các dấu cách, dấu tab đầu và cuối đoạn sẽ bị xoá.
-    + **Viết hoa**: Các chữ cái đầu câu và các chữ cái phía sau dấu chấm, chấm hỏi, chấm than sẽ được viết hoa.
     + **Xử lý đánh số**: Biến đánh số tự động thành văn bản bình thường để có thể gạch chân hay in nghiêng được.
+    + **Cắt tỉa**: Nhiều dấu tab thành 1, nhiều dấu cách thành 1. Các dấu cách, dấu tab đầu và cuối đoạn sẽ bị xoá.
     + **Xoá bình luận**: Xoá tất cả các bình luận (có thể được tạo ra bởi chương trình khi nhận diện câu hỏi).
+    + **Viết hoa**: Các chữ cái đầu câu và các chữ cái phía sau dấu chấm, chấm hỏi, chấm than sẽ được viết hoa.
     + **Xử lý đề MC-MIX**: Chuyển đề gốc của MC-MIX sang dạng bình thường để phần mềm có thể nhận diện.
 - Mục **Xử lý đề**:
     + **Nhận diện các câu hỏi**: Tiến hành nhận diện tất cả các thành phần trong đề kiểm tra. Có gì bất thường thì chương trình sẽ thông báo bằng các bình luận tương ứng.
     + **Trộn và in đề kiểm tra**: Mở hộp thoại trộn đề để người dùng có thể trộn đề và thiết lập các thông số cũng như in ấn đề.
     + **In phiếu bài làm**: In thủ công phiếu bài làm, số câu trả lời tuỳ ý.
 - Mục **Thông tin**:
-    + **Thông tin trợ giúp**: Mở trang Web để hướng dẫn và giải thích tất cả chức năng của chương trình.
-    + **Thông tin chương trình**: Xem thông tin về tác giả và phiên bản.
-    + **Kiểm tra cập nhật**: Kiểm tra có phiên bản mới chưa.
+    + **Thông tin trợ giúp**: Mở trang web để hướng dẫn và giải thích tất cả chức năng của chương trình.
+    + **Hỗ trợ kỹ thuật**: Mở trang web để người dùng gởi phản hồi về lỗi hay tính năng của chương trình.
 
 ## Kết quả nhận diện đề
 
@@ -32,13 +46,15 @@ Bạn có thể kiểm tra từng nhóm, từng câu, từng đáp án bằng c�
 
 Sau đây là danh sách quy ước về các kí hiệu thể hiện trong kết quả nhận diện:
 
-- <span>{% include image.html url="Group.png" %}</span>: Nhóm.
+- <span>{% include image.html url="Group.png" %}</span>: Nhóm câu hỏi.
+- <span>{% include image.html url="ContentGroup.png" %}</span>: Nhóm nội dung.
+- <span>{% include image.html url="ChildGroup.png" %}</span>: Nhóm con.
 - <span>{% include image.html url="Question.png" %}</span>: Câu hỏi.
 - <span>{% include image.html url="Child.png" %}</span>: Câu con.
 - <span>{% include image.html url="Answer.png" %}</span>: Câu trả lời.
-- <span>{% include image.html url="Correct.png" %}</span>: Câu đáp án đúng.
+- <span>{% include image.html url="Correct.png" %}</span>: Câu trả lời đúng.
 - <span>{% include image.html url="Fixed.png" %}</span>: Câu trả lời cố định.
-- <span>{% include image.html url="CorrectFixed.png" %}</span>: Vừa là câu trả lời cố định vừa là đáp án đúng.
+- <span>{% include image.html url="CorrectFixed.png" %}</span>: Câu trả lời cố định và đúng.
 
 ## Thiết lập trộn đề
 

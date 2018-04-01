@@ -1,5 +1,5 @@
 ---
-title: Ghi chú
+title: Ghi chú - Soạn theo ma trận
 ---
 
 Hiện tại các đề trắc nghiệm được biên soạn dựa theo ma trận đề cho nên lúc biên soạn thường được soạn theo các chủ đề và được chia thành các mức độ: nhận biết, thông hiểu, vận dụng thấp, vận dụng cao. Mọi người thường sẽ ghi chú câu trắc nghiệm đó thuộc chủ đề nào, mức độ nào. Các ghi chú này chỉ có ở đề gốc và sẽ ẩn đi ở các đề đã trộn.

@@ -19,12 +19,12 @@ title: Cài đặt
 {: #install}
 
 Các bạn đơn giản thực hiện các bước cài đặt như sau:
-- Tải và cài đặt các thư viện:
-    + Tải và cài đặt **Microsoft .NET Framework 4** [tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=17718) hoặc [đây](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
-    + Tải và cài đặt [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
+- Tải và cài đặt các thư viện (phải cài đủ thư viện mới cài **HC-MIX**{: .cl-hl} được):
+    1. Tải và cài đặt **Microsoft .NET Framework 4** [tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=17718) hoặc [đây](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
+    2. Tải và cài đặt [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
 - Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
-    1. Giải nén
-    2. Chạy file **trust.reg**{: .cl-hl} hoặc **trust64.reg**{: .cl-hl} (chạy 2 cái luôn cũng được).
+    1. Giải nén (Hãy ghi nhớ thư mục bạn đã giải nén HC-MIX vì cần cho việc nâng cấp)
+    2. Chạy file **trust.reg**{: .cl-hl} và **trust64.reg**{: .cl-hl}.
     3. Chạy file `Setup.exe` và nhấn `Install`!
 
 # Nâng cấp
@@ -82,7 +82,9 @@ Khi phát triển, phần mềm sử dụng **ClickOnce**{: .cl-hl} để cài �
 
 Trình cài đặt **HC-MIX**{: .cl-hl} tiến hành kiểm tra thông tin đăng ký trong tập tin **VSTOInstaller.exe.Config**{: .cl-hl}. Nếu có vấn đề với tập tin này nó sẽ báo lỗi như trường hợp của bạn.
 
-➔ Vào thư mục **C:\Program Files\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl}, nếu không có thư mục này thì vào **C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl} tìm đến file **VSTOInstaller.exe.Config**{: .cl-hl} thì đổi tên nó thành **VSTOInstaller.exe.Config.old**{: .cl-hl} (thêm đuôi **.old**{: .cl-hl} vào cuối). Sau đó chạy lại trình cài đặt **HC-MIX**{: .cl-hl}.
-
 ➔ Trong một vài trường hợp, lỗi này xuất hiện khi không chạy trình cài đặt **HC-MIX**{: .cl-hl} ở quyền Administrator. Click chuột phải vào file cài đặt và chọn **"Run as Administrator"**{: .cl-hl} thay vì chạy trực tiếp nó.
+
+Nếu vẫn lỗi thì thực hiện như sau:
+
+➔ Vào thư mục **C:\Program Files\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl}, nếu không có thư mục này thì vào **C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl} tìm đến file **VSTOInstaller.exe.Config**{: .cl-hl} thì đổi tên nó thành **VSTOInstaller.exe.Config.old**{: .cl-hl} (thêm đuôi **.old**{: .cl-hl} vào cuối). Sau đó chạy lại trình cài đặt **HC-MIX**{: .cl-hl}.
  </div>

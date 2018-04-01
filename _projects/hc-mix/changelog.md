@@ -2,6 +2,34 @@
 title: Lịch sử
 ---
 
+##### 27/03/2018 - 1.4.0.0 - Cập nhật lớn
+{: .post-category}
+- Bổ sung Link dự phòng cho file thông tin cập nhật, tránh cập nhật bị lỗi.
+- Sửa lỗi in bị dư 1 dòng trống.
+- Chấp nhận câu hỏi không có câu trả lời khi nhận diện câu hỏi (đề tiếng Anh)! Các câu này sẽ được gắn thuộc tính để chỉ đáp án đúng riêng! ➔ Hoàn thiện việc hỗ trợ biên soạn đề tiếng Anh.
+- Với câu hỏi có hơn 4 câu trả lời, chỉ nhận 4 câu trả lời cuối, các câu trước cho vào nội dung câu hỏi!
+- Khi nhận diện câu trả lời, nếu có dòng văn bản sau câu trả lời thì câu trả lời đó và dòng văn bản sẽ được đưa vào nội dung câu hỏi.
+- Không thông báo có ngắt dòng thủ công nữa.
+- Giờ đây nhận diện câu trả lời cần 1 hoặc nhiều dấu cách trắng hoặc Tab sau `A.`, `B.`, `C.`, `D.` để hạn chế tình trạng nhận sai, nhận nhầm không cần thiết!
+- Loại bỏ  thông tin chương trình vì đã có trên web.
+- Thông tin cập nhật nay sẽ không hiện trên hộp thoại thông báo nữa để tránh làm phiền người dùng! Khi nào cần sử dụng sẽ thấy được thông báo cập nhật cùng nút kết nối máy chủ để cập nhật!
+- Sửa lỗi không hiển thị cây kết quả nhận diện.
+- Bổ sung các nút lệnh để chèn mẫu nhóm, nhóm nội dung, nhóm con, câu hỏi, câu con, chú thích
+- Xử lý đề MC-MIX ở phần câu hỏi gán mã đáp án `[<o A="D">]`
+- Nếu câu hỏi không được gạch chân câu trả lời thì chương trình sẽ tự đi tìm câu nào có định dạng màu sắc hoặc in đậm khác biệt so với 3 câu còn lại làm câu trả lời đúng.
+- Sửa 1 lỗi khiến việc nhận diện câu con cho các câu hỏi không có nội dung không thực hiện được.
+- Nội dung câu hỏi nay có thể thêm các thành phần như `Câu 3.` hay `5.` vào mà không bị hiểu nhầm là câu hỏi tiếp theo.
+- Thay đổi 1 chút icon nhóm, nhóm con, nhóm có nội dung và cách quản lý icon của cây kết quả.
+- Hỗ trợ chỉnh sửa đáp án các câu hỏi ngay từ cây kết quả thông qua menu chuột phải. Người dùng không cần phải chạy nhận diện lại khi sửa đáp án của các câu hỏi nữa.
+- Sửa lỗi bị treo, bị dừng khi đang in đáp án.
+- Giờ đây nếu in đáp án ra nhiều file thì sẽ được lưu tự động và thư mục chỉ định.
+- Sửa một lỗi khiến việc in số trang bị sai khi người dùng chọn đề gốc có trang đầu hoặc trang chẵn, trang lẻ được đánh số trang khác nhau ➔ chương trình sẽ tự chỉnh lại.
+- Sử dụng chức năng Undo của Word hiệu quả cho các chức năng cơ bản của HC-MIX.
+- Thêm tính năng phản hồi cho phép người dùng yêu cầu thêm tính năng hoặc báo lỗi về cho lập trình viên.
+- Hoàn thiện và bổ sung đề mẫu các môn học ➔ [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
+- Sửa lỗi không nhận diện các câu hỏi nằm ngay sau bảng.
+
+
 ##### 01/02/2018 - 1.3.0.1
 {: .post-category}
 - Sửa lỗi không kết nối được với máy chủ! Do máy chủ Github thay đổi chính sách bảo mật.
@@ -53,7 +81,7 @@ title: Lịch sử
 - Nếu không nhận diện được gì thì ẩn Panel kết quả đi
 - Sửa lỗi không thay thế [<Danh sách câu hỏi>] khi chèn danh sách câu hỏi
 - Xoá bớt 1 dấu xuống dòng khi in bảng tô trắc nghiệm
-- Cập nhật đề mẫu cho rõ ràng hơn -> [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
+- Cập nhật đề mẫu cho rõ ràng hơn ➔ [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
 
 ##### 22/10/2017 - 1.2.0.3
 {: .post-category}
