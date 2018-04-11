@@ -7,18 +7,25 @@ breadcrumb: HC-MIX
 
 Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử dụng **HC-MIX**
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="container">
+<div class="row">
+<div class="col-sm"><div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YqRSaYvWhOY" allowfullscreen></iframe>
+</div></div>
+<div class="col-sm"><div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>
+</div></div>
 </div>
-
+<div class="row">
+<div class="col-sm">
 [Tải về phần mềm](/download/hc-mix.7z){: .btn .btn-success }
 {: .text-center .lead .m-4}
-
+</div>
+<div class="col-sm">
 [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
 {: .text-center .lead .m-4}
-
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="//www.youtube.com/embed/ukmHSUJFsG8" allowfullscreen></iframe>
+</div>
+</div>
 </div>
 
 ## Các tính năng chính:

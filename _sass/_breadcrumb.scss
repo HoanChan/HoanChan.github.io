@@ -47,7 +47,7 @@ $b-size: 30px;
         }
         &:last-child {
             @include border-radius(0 4px 4px 0);
-            width: 100%;
+            // width: 100%;
             margin-right: 0px;
             &:after {
                 border: none;
