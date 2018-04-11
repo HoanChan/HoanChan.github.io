@@ -1,8 +1,10 @@
 ---
 title: Lịch sử
 ---
+##### 11/04/2018 - 1.4.0.1
+- Sửa lỗi nhận diện không được khi có bảng trong đề
 
-##### 27/03/2018 - 1.4.0.0 - Cập nhật lớn
+##### 01/04/2018 - 1.4.0.0 - Cập nhật lớn
 {: .post-category}
 - Bổ sung Link dự phòng cho file thông tin cập nhật, tránh cập nhật bị lỗi.
 - Sửa lỗi in bị dư 1 dòng trống.
@@ -28,7 +30,6 @@ title: Lịch sử
 - Thêm tính năng phản hồi cho phép người dùng yêu cầu thêm tính năng hoặc báo lỗi về cho lập trình viên.
 - Hoàn thiện và bổ sung đề mẫu các môn học ➔ [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
 - Sửa lỗi không nhận diện các câu hỏi nằm ngay sau bảng.
-
 
 ##### 01/02/2018 - 1.3.0.1
 {: .post-category}
