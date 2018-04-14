@@ -66,6 +66,7 @@ plugins:
   # - jekyll-minifier
   
 exclude:
+  - vendor
   - .gitignore
   - README.md
   # - _dev
