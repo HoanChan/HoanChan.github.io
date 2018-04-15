@@ -71,6 +71,10 @@ exclude:
   - README.md
   # - _dev
   # - _office
-  #- _projects
+  # - _projects
   # - TCV
+  # - _includes
+  # - _layouts
+  # - _data
+  # - _sass
 

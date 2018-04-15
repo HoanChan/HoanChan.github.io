@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mermaid.min.css">
+</head>
+<body>
+  <h1 class="text-primary text-center">Quá trình kết nối</h1>
+  <div class="mermaid text-center">
+  sequenceDiagram
+    participant N as Người dùng
+    participant C as Máy con
+    participant S as Máy chủ
+    participant U as Giao diện
+    N->>C: Mở link tới máy chủ
+    C->>S: Gởi yêu cầu kết nối
+    Note over C, S: Gởi yêu cầu Get đến /
+    S->>+U: Thêm vào danh sách
+    Note right of U: Máy con sẽ được thêm vào danh sách các máy đã kết nối
+    U-->>-S: Đã hiển thị xong
+    S-->>C: Gởi trả trang web
+    Note over S, C: Hiển thị view Test
+    C-->>N: Hiển thị trang web
+  </div>
+  
+  <h1 class="text-primary text-center">Quá trình đăng nhập</h1>
+  <div class="mermaid text-center">
+  sequenceDiagram
+    participant N as Người dùng
+    participant C as Máy con
+    participant S as Máy chủ
+    participant U as Giao diện
+    N->>C: Nhấn nút Bắt đầu
+    Note over N, C: Nhập tên, lớp, SBD
+    C->>S: Gởi yêu cầu kết nối
+    Note over C, S: Gởi yêu cầu Post đến /begin
+    alt Bắt đầu rồi
+      S-->>C: Trả về "ok"
+      C-->>N: Bắt đầu làm bài
+    else Chưa bắt đầu
+      S-->>+C: Trả về "waitting"
+      loop Mỗi 1 giây
+        C->>-S: Đã bắt đầu chưa?
+        alt Bắt đầu rồi
+          S-->>C: Trả về "ok"
+          C-->>N: Bắt đầu làm bài
+        else Chưa bắt đầu
+          S-->>C: Trả về "waitting"
+          C-->>N: Hiển thị trạng thái chờ
+        end
+      end
+    end
+    S-->>C: Xác nhận kết nối
+    C-->>N: Hiển thị trang web
+  </div>
+
+  <h1 class="text-primary text-center">Quá trình làm bài</h1>
+  <div class="mermaid text-center">
+  sequenceDiagram
+    participant N as Người dùng
+    participant C as Máy con
+    participant S as Máy chủ
+    participant U as Giao diện
+    N->>C: Chọn 1 đáp án
+    C->>S: Gởi toàn bộ lựa chọn
+    Note over C, S: Gởi yêu cầu Post đến /update
+    S->>U: Cập nhật dữ liệu làm bài 
+    U-->>S: OK
+    S-->>C: Xác nhận cập nhật
+  </div>
+
+  <h1 class="text-primary text-center">Quá trình kết thúc</h1>
+  <div class="mermaid text-center">
+  sequenceDiagram
+    participant N as Người dùng
+    participant C as Máy con
+    participant S as Máy chủ
+    participant U as Giao diện
+    N->>C: Hết giờ làm bài
+    C->>S: Gởi yêu cầu xem điểm
+    alt Cho xem điểm
+      S-->>C: Trả về "ok"
+      C-->>N: Cho xem điểm
+      Note over C, N: Có đáp án thì cho xem luôn
+    else Không cho xem điểm
+      S-->>C: Trả về "false"
+      C-->>N: Hiển thị thông báo
+    end
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
