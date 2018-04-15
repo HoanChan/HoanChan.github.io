@@ -1,6 +1,9 @@
 ---
 title: Lịch sử
 ---
+##### 15/04/2018 - 1.4.0.2
+- Sửa lỗi Word 2007 không tương thích với các chức năng mới
+
 ##### 11/04/2018 - 1.4.0.1
 - Sửa lỗi nhận diện không được khi có bảng trong đề
 
