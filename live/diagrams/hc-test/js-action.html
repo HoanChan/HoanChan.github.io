@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mermaid.min.css">
+</head>
+<body>
+  <h1 class="text-primary text-center">Quá trình đăng nhập</h1>
+  <div class="mermaid text-center">
+    graph LR
+      A[Điền thông tin] -->B(Nhấn nút<br>Bắt đầu)
+      B-->F{Gởi thông tin<br>đến /begin}
+      F-->G(OK)
+      F-->H(Waitting)
+      G-->I1(Hiện câu hỏi)
+      I1-->I2(Bắt đầu<br>tính giờ)
+      I2-->I3(Đổi tên nút<br>Bắt đầu -> Cập nhật)
+      H-->J1(Hiện thông<br>báo chờ)
+      J1-->J2{Gởi thông tin<br>lên /checkBegin}
+      J2-->L(OK)
+      L-->I1
+      J2-->K(Waitting)
+      K-->J2
+  </div>
+  <h1 class="text-primary text-center">Quá trình chọn đáp án</h1>
+  <div class="mermaid text-center">
+    graph LR
+      A[Chọn đáp án] -->B(Chọn radio)
+      B-->C(gọi submit form)
+      C-->D{Gởi thông tin<br>đến /update}
+      D-->E((OK))
+      D-->F((False))
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

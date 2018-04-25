@@ -1,6 +1,9 @@
 ---
 title: Lịch sử
 ---
+##### 25/04/2018 - 1.4.0.3
+- Viết thêm mã để có thể trộn đề và in ấn với đề Anh Văn (Hôm bữa quên mất :p)
+
 ##### 15/04/2018 - 1.4.0.2
 - Sửa lỗi Word 2007 không tương thích với các chức năng mới
 
