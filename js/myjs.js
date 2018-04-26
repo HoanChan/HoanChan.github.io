@@ -50,6 +50,15 @@
         $("a[href='#']").click(function(e) {
             e.preventDefault();
         });
+        //Disable cut copy paste
+        $('#main-content').bind('cut copy paste', function (e) {
+            e.preventDefault();
+        });
+       
+        //Disable mouse right click
+        $("#main-content").on("contextmenu",function(e){
+            return false;
+        });
     });
 
     $(window).on('resize', function() {
