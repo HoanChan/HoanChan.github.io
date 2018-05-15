@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 1.4.0.0 - 15/05/2018
+{: .post-category}
+- Sửa lỗi bị mất khả năng gõ tiếng Việt dù chương trình vẫn chạy
+- Sử dụng Icon đẹp như xưa, đứa nào nhận nhầm virus kệ nó
+
 ##### 1.3.0.5 - 29/10/2017
 {: .post-category}
 - Xoá gần như tất cả Icon, Image vì bị nhận nhầm là virus
