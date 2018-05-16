@@ -1,6 +1,13 @@
 ---
 title: Lịch sử
 ---
+##### 1.4.0.1 - 16/05/2018
+{: .post-category}
+- Sửa lại bộ xử lý khi gõ phụ âm đầu là `gi`
+- Điều chỉnh lại Icon chính
+- Không yêu cầu quyền Admin khi chạy nữa
+- Thay đổi Server thành [https://hoanchan.netlify.com](https://hoanchan.netlify.com)
+
 ##### 1.4.0.0 - 15/05/2018
 {: .post-category}
 - Sửa lỗi bị mất khả năng gõ tiếng Việt dù chương trình vẫn chạy
