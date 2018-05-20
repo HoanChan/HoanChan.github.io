@@ -1,7 +1,9 @@
 {
     "Version": "1.4.0.3",
     "ZipUrls": [
-        "http://hoanchan.github.io/download/hc-mix.7z"
+        "http://hoanchan.github.io/download/hc-mix.7z",
+        "http://hoanchan.netlify.com/download/hc-mix.7z",
+        "https://raw.githubusercontent.com/HoanChan/HoanChan.github.io/master/download/tmp/updater.json"
     ],
     "InfoUrls": [
         "http://hoanchan.github.io/projects/hc-mix/changelog"
