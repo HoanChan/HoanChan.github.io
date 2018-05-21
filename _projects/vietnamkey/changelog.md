@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 1.5.0.0 - 21/05/2018
+{: .post-category}
+- Thay đổi cách thức cập nhật của Vietnamkey
+- Thêm link dự phòng cho quá trình cập nhật
+
 ##### 1.4.0.1 - 16/05/2018
 {: .post-category}
 - Sửa lại bộ xử lý khi gõ phụ âm đầu là `gi`
