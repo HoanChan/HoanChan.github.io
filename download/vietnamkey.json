@@ -1,0 +1,11 @@
+{
+    "Version": "1.5.0.0",
+    "ZipUrls": [
+        "http://hoanchan.github.io/download/vietnamkey.7z",
+        "http://hoanchan.netlify.com/download/vietnamkey.7z",
+        "https://raw.githubusercontent.com/HoanChan/HoanChan.github.io/master/download/vietnamkey.7z"
+    ],
+    "InfoUrls": [
+        "http://hoanchan.github.io/projects/vietnamkey/changelog"
+    ]	
+}
