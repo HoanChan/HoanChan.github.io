@@ -1,5 +1,6 @@
 ---
 title: Cài đặt
+description: Hướng dẫn cài đặt từng bước HC-MIX
 ---
 
 [HC–MIX](/projects/hc-mix/) là một trình bổ trợ (Add-In) của [MS-Word](/word/) vì thế nên việc cài đặt và nâng cấp hơi khác so với một phần mềm chạy độc lập.

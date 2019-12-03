@@ -1,5 +1,6 @@
 ---
 title: Sử dụng phần mềm
+description: Hướng dẫn các tính năng cơ bản của phẩn mềm
 ---
 
 ## Các lệnh chính của phần mềm

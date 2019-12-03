@@ -1,5 +1,6 @@
 ---
 title: Đầu đề và chân trang
+description: Hướng dẫn thiết lập đầu đề và chân trang
 ---
 
 Chương trình hỗ trợ tự động tạo đầu đề và chân trang theo mẫu có sẵn do người dùng tự tạo hoặc tự tạo chân trang theo mẫu của chương trình, làm theo cách nào thì chọn trong hộp thoại in đề.

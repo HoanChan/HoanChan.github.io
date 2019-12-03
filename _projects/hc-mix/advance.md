@@ -1,5 +1,6 @@
 ---
 title: Nâng cao - Đề Anh văn
+description: Hướng dẫn biên soạn đề với nhiều dạng câu hỏi
 ---
 
 ## Biên soạn các dạng câu hỏi, nhóm nâng cao
@@ -7,6 +8,7 @@ title: Nâng cao - Đề Anh văn
 Việc biên soạn đề kiểm tra môn Anh văn luôn là một vấn đề không hề đơn giản. HC-MIX nay đã hỗ trợ đầy đủ các dạng câu hỏi trong đề Anh văn như sau:
 
 - Chia câu hỏi thành các phần: Dùng chức năng [gom nhóm](/projects/hc-mix/group)
+- Không trộn câu hỏi trong 1 nhóm được chỉ định (như trong phần writting).
 - Các câu hỏi bình thường: Soạn như các đề bình thường
 - Các câu hỏi không có phần nhận diện đáp án: Đây là các câu hỏi chỉ có phần nội dung, phần đáp án sẽ được thiết lập riêng.
 

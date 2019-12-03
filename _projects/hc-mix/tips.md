@@ -1,5 +1,6 @@
 ---
 title: Hỏi - đáp
+description: Hướng dẫn các trường hợp bị lỗi của chương trình
 ---
 
 ##### Tôi không cài đặt được HC-MIX, nó bị báo lỗi!

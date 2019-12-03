@@ -1,5 +1,6 @@
 ---
-title: Gom nhóm - Chia phần
+title: Gom nhóm
+description: Hướng dẫn chia phần cho đề kiểm tra
 ---
 
 Chương trình hỗ trợ nhận diện và tạo đề kiểm tra có các thành phần khác không phải là các câu hỏi ví dụ như `phần tô đáp án`, `phần ghi tên bài kiểm tra`, `ghi số báo danh`, `tên học sinh hoặc phần tự luận`. 

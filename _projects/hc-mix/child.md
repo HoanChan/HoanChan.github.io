@@ -1,5 +1,6 @@
 ---
-title: Câu con - Đề khác nội dung
+title: Câu con
+description: Hướng dẫn tạo đề có nội dung khác nhau
 ---
 
 Hiện tại một số đề trắc nghiệm ngoài hoán vị các câu hỏi và câu trả lời ra còn yêu cầu tạo nên những bộ đề mà các câu hỏi trong đề không giống nhau về nội dung nữa (Ví dụ như đề thi đại học có tới 80% câu hỏi là khác nhau). 
