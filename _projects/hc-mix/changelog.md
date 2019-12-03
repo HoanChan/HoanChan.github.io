@@ -1,13 +1,28 @@
 ---
 title: Lịch sử
 ---
+##### 25/04/2018 - 1.5.0.0
+{: .post-category}
+- Giờ đây chương trình đã có thể cập nhật tự động bằng 1 nút bấm duy nhất
+- Bổ sung các máy chủ mới để phục vụ quá trình cập nhật tự động
+- Ngắt dòng thủ công, ngắt đoạn, ngắt trang, ngắt mục, ngắt cột, ngắt phần ... đều được tính là xuống dòng ➔ Nhận diện các thành phần chính xác hơn
+- Sửa lỗi không nhận diện câu hỏi / câu trả lời ngay sau bảng
+- Câu hỏi / câu trả lời in ra giờ đây sẽ được áp dụng thêm cách căn lề của câu đầu tiên (trước đây chỉ gồm font, cỡ chữ, giãn cách, giãn dòng) - Cảm ơn Thầy Nguyễn Hữu Khương về góp ý này!
+- Không cho trộn đề nếu chưa xử lý được hết lỗi trong đề
+- Hỗ trợ nhóm cố định câu hỏi (Như phần writting của môn tiếng Anh) - Cảm ơn thầy Nguyễn Đình Phi về góp ý này!
+- Hỗ trợ 6 dạng câu hỏi trắc nghiệm: 1 lựa chọn, nhiều lựa chọn, đúng sai, sắp xếp, ghép nối và văn bản
+- Hỗ trợ phần giải thích cho từng câu hỏi (phần giải thích này chỉ được in ở đề gốc)
+- Phần chèn mã đề và số trang ở chân trang sẽ sử dụng mã giống như phần nhóm chứ không dùng cách chèn riêng nữa (Để chủ động cho người dùng thích in mã hay không)
 ##### 25/04/2018 - 1.4.0.3
+{: .post-category}
 - Viết thêm mã để có thể trộn đề và in ấn với đề Anh Văn (Hôm bữa quên mất :p)
 
 ##### 15/04/2018 - 1.4.0.2
+{: .post-category}
 - Sửa lỗi Word 2007 không tương thích với các chức năng mới
 
 ##### 11/04/2018 - 1.4.0.1
+{: .post-category}
 - Sửa lỗi nhận diện không được khi có bảng trong đề
 
 ##### 01/04/2018 - 1.4.0.0 - Cập nhật lớn
