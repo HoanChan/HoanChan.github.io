@@ -12,7 +12,7 @@
                 "jekyll",
                 "serve"
             ],
-            "group": "build", 
+            "group": "build",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
@@ -20,7 +20,8 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": true
-            }
-        },
+            },
+            "problemMatcher": []
+        }
     ]
 }
