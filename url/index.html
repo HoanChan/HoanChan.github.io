@@ -1,0 +1,23 @@
+<html>
+<header>
+
+</header>
+
+<body>
+  <script>
+    var Data = [
+      { Name: "TKB-GV", Url: 'http://nhapdiem.vn/m/tkb/TraCuu_GV.aspx?IDTruong=00101d3c-0000-0000-0000-000000000000&TKBID=51&frame=1' },
+    ];
+    function getUrlVars() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        vars[key] = value;
+      });
+      return vars;
+    }
+    var link = getUrlVars()["url"];
+    window.location.replace(link);
+  </script>
+</body>
+
+</html>
