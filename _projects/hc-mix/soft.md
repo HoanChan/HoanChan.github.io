@@ -82,5 +82,5 @@ Sau khi nhấn nút **Trộn và in đề kiểm tra** thì chương trình ti�
     + **In đề chuẩn**: In đề chưa trộn câu hỏi, dùng để kiểm tra lại trước khi trộn và in đề hàng loạt.
     + **In đề này**: In đề đang xem.
     + **In tất cả**: In tất cả các đề đã được trộn.
-    + **Xuất số liệu**: Xuất các đáp án ra dạng bảng để copy ra Excel phục vụ cho chấm tự động cũng như số liệu về mối tương qua của các câu giữa các đề (Ví dụ như câu 3 ở đề 001 là câu 7 ở đề 002 ...).
+    + **Xuất số liệu**: Xuất các đáp án ra Excel phục vụ cho chấm tự động cũng như số liệu về mối tương quann của các câu giữa các đề (Ví dụ như câu 3 ở đề 001 là câu 7 ở đề 002 ...).
     + **Xuất đáp án**: Xuất đáp án của tất cả các đề đã trộn.

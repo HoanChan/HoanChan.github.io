@@ -1,18 +1,49 @@
 ---
 title: Lịch sử
 ---
-##### 25/04/2018 - 1.5.0.0
+##### 20/02/2019 - 1.5.0.0 - Tái cấu trúc toàn bộ
 {: .post-category}
+- Hoàn thiện chỉnh sửa câu trả lời thông qua TreeView
+- Bổ sung GoogleTracker để thống kê các hoạt động của người dùng
+- Viết lại hướng dẫn cho phiên bản mới
+- Đưa toàn bộ gói cập nhật lớp lên máy chủ
+
+##### 11/11/2019
+
+- Hoàn thiện hỗ trợ hiển thị cho màn hình độ phân giải cao HiDPI
+- Hỗ trợ xuất thẳng số liệu ra Excel
+
+##### 17/05/2019
+
+- Hỗ trợ xuất đề ra Powerpoint (chỉ hỗ trợ văn bản)
+- Điều chỉnh lỗi không sử dụng được chức năng câu con
+
+##### 03/01/2019
+
+- Các chú thích giờ đây hiển thị như 1 nhóm và có thể phân cấp.
+- Có thể điều chỉnh màu sắc cho các thành phần in ấn
+- Việc in đề có thể tạm dừng, thoát nửa chừng một cách hợp lý
+
+##### 10/11/2018
+
+- Hỗ trợ xem trước khi in
+- Các thiết lập trên hộp thoại in sẽ được lưu cho lần sau
+- Khi in hàng loạt sẽ kèm theo in dữ liệu
+- Hỗ trợ công thức của MathType và công thức của Word đầy đủ
+
+##### 25/04/2018
+
 - Giờ đây chương trình đã có thể cập nhật tự động bằng 1 nút bấm duy nhất
 - Bổ sung các máy chủ mới để phục vụ quá trình cập nhật tự động
 - Ngắt dòng thủ công, ngắt đoạn, ngắt trang, ngắt mục, ngắt cột, ngắt phần ... đều được tính là xuống dòng ➔ Nhận diện các thành phần chính xác hơn
 - Sửa lỗi không nhận diện câu hỏi / câu trả lời ngay sau bảng
-- Câu hỏi / câu trả lời in ra giờ đây sẽ được áp dụng thêm cách căn lề của câu đầu tiên (trước đây chỉ gồm font, cỡ chữ, giãn cách, giãn dòng) - Cảm ơn Thầy Nguyễn Hữu Khương về góp ý này!
+- Câu hỏi / câu trả lời in ra giờ đây sẽ được áp dụng thêm cách căn lề của câu đầu tiên (trước đây chỉ gồm font, cỡ chữ, giãn cách, giãn dòng)
 - Không cho trộn đề nếu chưa xử lý được hết lỗi trong đề
-- Hỗ trợ nhóm cố định câu hỏi (Như phần writting của môn tiếng Anh) - Cảm ơn thầy Nguyễn Đình Phi về góp ý này!
+- Hỗ trợ nhóm cố định câu hỏi (Như phần writting của môn tiếng Anh)
 - Hỗ trợ 6 dạng câu hỏi trắc nghiệm: 1 lựa chọn, nhiều lựa chọn, đúng sai, sắp xếp, ghép nối và văn bản
 - Hỗ trợ phần giải thích cho từng câu hỏi (phần giải thích này chỉ được in ở đề gốc)
 - Phần chèn mã đề và số trang ở chân trang sẽ sử dụng mã giống như phần nhóm chứ không dùng cách chèn riêng nữa (Để chủ động cho người dùng thích in mã hay không)
+
 ##### 25/04/2018 - 1.4.0.3
 {: .post-category}
 - Viết thêm mã để có thể trộn đề và in ấn với đề Anh Văn (Hôm bữa quên mất :p)

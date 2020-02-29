@@ -53,3 +53,4 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 - Hỗ trợ xuất đáp án nhanh chóng.
 - Hỗ trợ xuất số liệu và sự liên hệ giữa các đề với nhau.
 - Hỗ trợ tính năng nhóm con để trộn chung nhóm với câu hỏi hỗ trợ gom nhóm nhỏ các câu hỏi có liên quan với nhau.
+- Hỗ trợ nhiều dạng câu hỏi:

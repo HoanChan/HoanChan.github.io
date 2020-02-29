@@ -23,6 +23,22 @@ Một câu hỏi bao gồm các bộ phận sau đây:
 <Phần giải thích>
 ```
 {: .sh_syntax }
+## Cú pháp câu hỏi kết nối:
+
+```
+<Phần nhận diện câu hỏi> <Nội dung câu hỏi>
+<Phần nhận diện câu 1> <Nội dung câu 1>
+<Phần nhận diện câu 2> <Nội dung câu 2>
+..........................
+<Phần nhận diện câu n> <Nội dung câu n>
+<Phần nhận diện câu A> <Nội dung câu A>
+<Phần nhận diện câu B> <Nội dung câu B>
+..........................
+<Phần nhận diện câu Z> <Nội dung câu Z>
+<Phần thuộc tính>
+<Phần giải thích>
+```
+{: .sh_syntax }
 
 ## Viết phần câu hỏi
 
@@ -56,6 +72,15 @@ VD:  `002)`, `004.`, `5:`
 VD: `A.`, `B:`, `c)`
 
 Nếu câu hỏi không có đủ 4 câu trả lời, nó sẽ bị bỏ qua.
+
+Riêng đối với câu hỏi kết nối thì phần nhận diện cho câu trả lời còn nhận diện các câu trả lời có cú pháp như sau:
+
+```
+<Một số> <Dấu>
+```
+{: .sh_syntax }
+
+VD: `1.`, `2:`, `3)`
 
 <div class="note">
 ##### Với các quy ước sau:
@@ -109,5 +134,57 @@ _a_. Động vật có vú
 b. Động vật không xương sống  
 C) Động vật biến nhiệt  
 *D*: Cả A, B, C đều đúng
+
+Câu 1: Con vật nào sau đây có cánh?
+A. Bò.
+B. Ngựa.
+C. Dơi.
+D. Gấu. 
+[<Ans=C>]
+Giải thích: Chỉ có mình Dơi là bay được thôi nhé
+
+Câu 1: Trái đất hình tròn đúng hay sai?
+[<Ans=Sai>]
+Giải thích: Trái Đất là hình cầu hơi méo méo chứ không phải tròn
+
+Câu 1: Con nào giống với con mèo nhất?
+[<Ans=Mèo con>]
+Giải thích: Câu này đố mẹo tý thôi
+
+Câu 1: Cá có khả năng nào sau đây?
+A. Bơi.
+B. Đi.
+C. Bay.
+D. Ngồi. 
+[<Ans=C  ,   A>]
+Giải thích: Ngoài bơi ra thì 1 vài loài biết bay nữa như cá Chym chẳng hạn 😊
+
+Câu 1: Loài động vật nào dưới đây thuộc họ chim?
+A. Rùa.
+B. Dơi.
+C. Quạ.
+D. Công. 
+E. Bướm.
+F. Gà. 
+[<Ans=C  ,   D>]
+[<Ans=   F>]
+Giải thích: Bướm nó cũng có cánh nhưng mà là côn trùng nha
+
+Câu 1: Hãy sắp xếp các con vật sau theo thứ tự từ bé đến lớn?
+A. Voi.
+B. Ngựa.
+C. Gà.
+D. Chó. 
+E. Mèo. 
+F. Bướm. 
+[<Ans=F-c-e-d-b-a>]
+
+Câu 1: Hãy ghép nối các đặc điểm với con vật tương ứng mang đặc điểm đó?
+1. Có 2 chân.	A. Người.
+2. Có 4 chân.	B. Chim.
+3. Máu nóng.	C. Ngựa.
+4. Máu lạnh.	D. Cá sấu.
+[<Ans=1-A,1-B,2-C,2-D,3-a,3-b,3-c,4-d>]
+
 ```
 {: .sh_hc-mix }
