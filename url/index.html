@@ -343,7 +343,9 @@
     var link = Data.filter(st => st.Name == name)[0];
     if (link) {
       document.getElementById("Link").innerHTML = link.Url;
-      setTimeout(function () { window.location.replace(link.Url); }, 3000);
+      // setTimeout(function () { 
+      window.location.replace(link.Url);
+      // }, 3000);
     }
     else document.getElementById("Link").innerHTML = "Không tìm thấy địa chỉ này, xin kiểm tra lại";
   </script>
