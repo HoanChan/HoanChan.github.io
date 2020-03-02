@@ -2,29 +2,29 @@
 layout: default
 title: Links kiểm tra
 script: |
-<script>
-  $(document).ready(function () {
-    var iframeContainer = $("#iframeContainer");
-    var links = $("#linksContainer");
-    var iframe = $("#iframe");
-    $("#linksContainer a").click(function (e) {
-      e.preventDefault();
-      links.addClass("d-none");
-      iframeContainer.removeClass("d-none");
-      var oldSrc = iframe.attr("src");
-      var newSrc = oldSrc.replace(/id\=.+\&/gm, "id=" + $(this).attr("href") + "&");
-      iframe.attr("src", newSrc);
-      window.history.pushState('forward', null, './');
-    });
-
-    if (window.history && window.history.pushState) {
-      $(window).on('popstate', function () { //back button clicked
-        iframeContainer.addClass("d-none");
-        links.removeClass("d-none");
+  <script>
+    $(document).ready(function () {
+      var iframeContainer = $("#iframeContainer");
+      var links = $("#linksContainer");
+      var iframe = $("#iframe");
+      $("#linksContainer a").click(function (e) {
+        e.preventDefault();
+        links.addClass("d-none");
+        iframeContainer.removeClass("d-none");
+        var oldSrc = iframe.attr("src");
+        var newSrc = oldSrc.replace(/id\=.+\&/gm, "id=" + $(this).attr("href") + "&");
+        iframe.attr("src", newSrc);
+        window.history.pushState('forward', null, './');
       });
-    }
-  });
-</script>
+
+      if (window.history && window.history.pushState) {
+        $(window).on('popstate', function () { //back button clicked
+          iframeContainer.addClass("d-none");
+          links.removeClass("d-none");
+        });
+      }
+    });
+  </script>
 ---
 <div id="iframeContainer" class="container-fluid d-none" markdown="0">
   <div class="row">
