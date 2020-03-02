@@ -262,3 +262,9 @@ blockquote {
         font-style: italic;
     }
 }
+.fill-height{
+    height: calc(100vh - 158px); // 158 là trừ cho cái footer
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
