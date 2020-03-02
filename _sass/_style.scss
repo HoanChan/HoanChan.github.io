@@ -276,3 +276,12 @@ blockquote {
         font-style: italic;
     }
 }
+// Cái này cho trang làm bài kiểm tra của HS
+#iframeContainer{
+    #iframe{
+        border: none;
+        max-width:100%;
+        max-height:100vh;
+        height: calc(100vh - #{$footer-height + $nav-height});
+    }
+}
