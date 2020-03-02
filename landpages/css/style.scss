@@ -1,0 +1,56 @@
+---
+---
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Sotare - Software Landing Page Bootstrap 4 Template.
+    Template URI: http://devitems.com/preview/sotare
+    Description: Sotare - Software Landing Page.
+    Author: devitems
+    Author URI: http://devitems.com/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    =========================================
+	
+    01. Theme default CSS
+        - Common Classes
+        - Section Padding
+    02. Element 
+        - Section Title Css
+    03. Mobile Menu Css
+    04. Header Css
+	    - Main Menu Css
+    05. Hero Css
+    06. About Area Css
+    07. Feature Area Css
+    08. Slider Screenshort Css
+    09. Priceing Area Css
+    10. Subscribe Area Css
+    11. Faequently Css
+    12. Testimonial Area Css
+    13. Team  Area Css
+    14. Contact Area Css
+    15. Footer Area Css
+    16. Coming Soon Css
+    
+-----------------------------------------------------------------------------------*/
+
+@import 'landpages/variabls';
+@import 'landpages/mixin';
+@import 'landpages/common';
+@import 'landpages/element';
+@import 'landpages/navigation';
+@import 'landpages/header';
+@import 'landpages/slider';
+@import 'landpages/about';
+@import 'landpages/feature';
+@import 'landpages/screenshort';
+@import 'landpages/price-package';
+@import 'landpages/subscribe';
+@import 'landpages/testimonial';
+@import 'landpages/team-section';
+@import 'landpages/contact';
+@import 'landpages/footer';
+@import 'landpages/coming-soon';
