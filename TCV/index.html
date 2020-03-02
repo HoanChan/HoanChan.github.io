@@ -2,29 +2,29 @@
 layout: default
 title: Links kiểm tra
 script: |
-  <script>
-    $(document).ready(function () {
-      var iframeContainer = $("#iframeContainer");
-      var links = $("#linksContainer");
-      var iframe = $("#iframe");
-      $("#linksContainer a").click(function (e) {
-        e.preventDefault();
-        links.addClass("d-none");
-        iframeContainer.removeClass("d-none");
-        var oldSrc = iframe.attr("src");
-        var newSrc = oldSrc.replace(/id\=.+\&/gm, "id=" + $(this).attr("href") + "&");
-        iframe.attr("src", newSrc);
-        window.history.pushState('forward', null, './');
-      });
-
-      if (window.history && window.history.pushState) {
-        $(window).on('popstate', function () { //back button clicked
-          iframeContainer.addClass("d-none");
-          links.removeClass("d-none");
-        });
-      }
+<script>
+  $(document).ready(function () {
+    var iframeContainer = $("#iframeContainer");
+    var links = $("#linksContainer");
+    var iframe = $("#iframe");
+    $("#linksContainer a").click(function (e) {
+      e.preventDefault();
+      links.addClass("d-none");
+      iframeContainer.removeClass("d-none");
+      var oldSrc = iframe.attr("src");
+      var newSrc = oldSrc.replace(/id\=.+\&/gm, "id=" + $(this).attr("href") + "&");
+      iframe.attr("src", newSrc);
+      window.history.pushState('forward', null, './');
     });
-  </script>
+
+    if (window.history && window.history.pushState) {
+      $(window).on('popstate', function () { //back button clicked
+        iframeContainer.addClass("d-none");
+        links.removeClass("d-none");
+      });
+    }
+  });
+</script>
 ---
 <div id="iframeContainer" class="container-fluid d-none" markdown="0">
   <div class="row">
@@ -115,7 +115,7 @@ script: |
             <a href="DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__qbIFuFUMjNFRUpQOUpYWUlLWDAxWEtHT1pBVTJaTy4u"
               class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-success">
               Kiểm tra 15 phút lần 3 - FOR
-              <span class="badge badge-success badge-pill">23/02</span>
+              <span class="badge badge-success badge-pill">08/03</span>
             </a>
           </div>
           <!--Ends List -->
@@ -125,7 +125,7 @@ script: |
             <a href="DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__qbIFuFURUNHVlFHVTdOTFk3VTk2UFBTWklLNjg4Sy4u"
               class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-primary">
               Kiểm tra 15 phút lần 4 - LOOP + ARRAY
-              <span class="badge badge-primary badge-pill">23/02</span>
+              <span class="badge badge-primary badge-pill">08/03</span>
             </a>
             <a href="DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__qbIFuFUN1NHV1AyUk1MWFRDNEpWM0pBVFRMREJMRi4u"
               class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-danger">
