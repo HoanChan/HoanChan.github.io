@@ -7,5 +7,9 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "html.format.wrapLineLength": 180
+  "html.format.wrapLineLength": 180,
+  "files.associations": {
+    "*.html": "jekyll",
+    "*.md": "jekyll"
+  }
 }
