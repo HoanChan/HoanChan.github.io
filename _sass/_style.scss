@@ -1,3 +1,9 @@
+
+$nav-trans: 0.7;
+$nav-height: 50px;
+$footer-height: 80px;
+$footer-margin-top: 10px;
+$footer-padding-top: 10px;
 html, body {
     font-family: "Palatino Linotype", "Times New Roman", sans-serif;
     font-size: 14px;
@@ -39,11 +45,10 @@ dl, ol, ul {
     margin-bottom: .1rem;
 }
 
-$footer-height: 108px;
 .page-wrap {
     min-height: 100%;
     /* equal to footer height */
-    margin-bottom: -$footer-height;
+    margin-bottom: (0 - $footer-margin-top - $footer-height);
 }
 .page-wrap:after {
     content: "";
@@ -54,6 +59,17 @@ $footer-height: 108px;
     height: $footer-height; 
 }
 
+.fill-height{
+    height: calc(100vh - #{$footer-height + $footer-margin-top + $nav-height});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    height: $footer-height;
+    margin-top: $footer-margin-top;
+}
 //Selection
 
 ::selection{ /* Safari and Opera */ 
@@ -67,8 +83,6 @@ $footer-height: 108px;
 }
 
 // Cho navbar
-$nav-trans: 0.7;
-$nav-height: 50px;
 body {
     .navbar { // khi đã cuộn lên trên cùng
         height: $nav-height;
@@ -261,10 +275,4 @@ blockquote {
         font-size: 1rem; 
         font-style: italic;
     }
-}
-.fill-height{
-    height: calc(100vh - 158px); // 158 là trừ cho cái footer
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
