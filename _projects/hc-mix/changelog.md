@@ -1,7 +1,7 @@
 ---
 title: Lịch sử
 ---
-##### 20/02/2019 - 1.5.0.0 - Tái cấu trúc toàn bộ
+##### 10/03/2019 - 1.5.0.0 - Tái cấu trúc toàn bộ
 {: .post-category}
 - Hoàn thiện chỉnh sửa câu trả lời thông qua TreeView
 - Bổ sung GoogleTracker để thống kê các hoạt động của người dùng
@@ -15,7 +15,6 @@ title: Lịch sử
 
 ##### 17/05/2019
 
-- Hỗ trợ xuất đề ra Powerpoint (chỉ hỗ trợ văn bản)
 - Điều chỉnh lỗi không sử dụng được chức năng câu con
 
 ##### 03/01/2019
