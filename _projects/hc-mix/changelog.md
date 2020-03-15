@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+##### 15/03/2019 - 1.5.1.0
+{: .post-category}
+- Sửa lỗi hiển thị phần xem trước đề
+- Hỗ trợ xuất đề gốc theo 3 dạng Việt Nam, Tiếng Anh, ViettelStudy
+
 ##### 10/03/2019 - 1.5.0.0 - Tái cấu trúc toàn bộ
 {: .post-category}
 - Hoàn thiện chỉnh sửa câu trả lời thông qua TreeView

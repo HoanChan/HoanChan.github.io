@@ -31,7 +31,8 @@ Các bạn đơn giản thực hiện các bước cài đặt như sau:
 # Nâng cấp
 {: #update}
 
-Việc nâng cấp sẽ diễn ra ngon lành nếu bạn thực hiện đúng các thao tác sau:
+Hiện nay phần mềm đã hỗ trợ tự động nâng cấp chỉ với 1 nút bấm, tuy nhiên vì một nguyên nhân nào đó mà trình nâng cấp không thể chạy được thì bạn có thể thực hiện như sau để nâng cấp thủ công:
+
 1. Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
 2. Giải nén vào đúng thư mục đã giải nén khi cài đặt **HC-MIX**{: .cl-hl} lần đầu tiên.
 3. Chạy file `Setup.exe` và nhấn `Install`!
