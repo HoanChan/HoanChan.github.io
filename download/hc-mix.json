@@ -1,11 +1,12 @@
 {
-    "Version": "1.5.1.0",
+    "Version": "1.5.2.0",
     "ZipUrls": [
         "http://hoanchan.github.io/download/hc-mix.7z",
         "http://hoanchan.netlify.com/download/hc-mix.7z",
         "https://raw.githubusercontent.com/HoanChan/HoanChan.github.io/master/download/hc-mix.7z"
     ],
     "InfoUrls": [
-        "http://hoanchan.github.io/projects/hc-mix/changelog"
+        "http://hoanchan.github.io/projects/hc-mix/changelog",
+        "https://www.facebook.com/HC-Softs-110431103910339"
     ]
 }

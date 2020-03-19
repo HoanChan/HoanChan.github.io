@@ -1,6 +1,14 @@
 ---
 title: Lịch sử
 ---
+
+##### 19/03/2019 - 1.5.2.0
+{: .post-category}
+- Sửa lỗi hiển thị trên màn hình độ phân giải khác nhau
+- Hỗ trợ xuất đề gốc MCMIX
+- Sửa lỗi xuất đề ViettelStudy
+- Phản hồi sẽ được dẫn đến fanpage của chương trình
+
 ##### 15/03/2019 - 1.5.1.0
 {: .post-category}
 - Sửa lỗi hiển thị phần xem trước đề

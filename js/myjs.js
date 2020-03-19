@@ -1,7 +1,7 @@
-(function($) {
+(function ($) {
 
     var lastScrollTop = 0;
-    $(window).scroll(function(event) {
+    $(window).scroll(function (event) {
         var st = $(this).scrollTop();
         if (st > lastScrollTop || st == 0) {
             // downscroll code
@@ -10,14 +10,14 @@
         } else {
             // upscroll code
             $('.navbar').addClass('fixed-top bg-nav').removeClass('bg-inverse');
-            $('body').css("padding-top", $('.navbar').outerHeight()+ "px");
+            $('body').css("padding-top", $('.navbar').outerHeight() + "px");
         }
         lastScrollTop = st;
     });
 
     function imgUpdate() {
         var main = $('#main-content');
-        main.find('div .img').each(function(index, el) {
+        main.find('div .img').each(function (index, el) {
             var img = $(el);
             var other = img.parent().siblings();
             var div = img.parent().parent();
@@ -32,7 +32,7 @@
                 img.addClass('img-r');
                 other.css('margin-right', (img.outerWidth() + 10) + "px");
                 var paragraphsHeight = 0;
-                other.each(function(index, cel) {
+                other.each(function (index, cel) {
                     paragraphsHeight = paragraphsHeight + $(cel).outerHeight();
                 });
                 var elementHeight = img.outerHeight();
@@ -45,23 +45,23 @@
         });
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         imgUpdate();
-        $("a[href='#']").click(function(e) {
+        $("a[href='#']").click(function (e) {
             e.preventDefault();
         });
-        //Disable cut copy paste
-        $('#main-content').bind('cut copy paste', function (e) {
-            e.preventDefault();
-        });
-       
-        //Disable mouse right click
-        $("#main-content").on("contextmenu",function(e){
-            return false;
-        });
+        // //Disable cut copy paste
+        // $('#main-content').bind('cut copy paste', function (e) {
+        //     e.preventDefault();
+        // });
+
+        // //Disable mouse right click
+        // $("#main-content").on("contextmenu",function(e){
+        //     return false;
+        // });
     });
 
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         imgUpdate();
     });
 })(jQuery); // End of use strict
