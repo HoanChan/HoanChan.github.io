@@ -4,24 +4,23 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Serve",
             "type": "shell",
-            "command": "bundle",
-            "args": [
-                "exec",
-                "jekyll",
-                "serve"
-            ],
-            "group": "build",
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "shared",
-                "showReuseMessage": true,
-                "clear": true
+            "command": "bundle exec jekyll serve --livereload",
+            "group": {
+                "kind": "test",
+                "isDefault": true
             },
-            "problemMatcher": []
+            "isBackground": true,
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "bundle exec jekyll build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
         }
     ]
 }

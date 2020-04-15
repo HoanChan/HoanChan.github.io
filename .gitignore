@@ -7,3 +7,4 @@ test/
 test.md
 test2.md
 GemFile.lock
+.jekyll-cache
