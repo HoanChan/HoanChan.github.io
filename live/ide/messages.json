@@ -1,0 +1,16 @@
+{
+    "duration": "90s",
+    "messages": [
+        "<strong>HC-IDE Viết và test code nhanh chóng, đơn giản, hiệu quả</strong> - Xem thêm các thông tin về lập trình tại <a href=\"https://HoanChan.GitHub.io\">Website của Hoàn Chân</a>.",
+        "<strong>HC-IDE Viết và test code nhanh chóng, đơn giản, hiệu quả</strong> - Xem thêm các thông tin về lập trình tại <a href=\"https://HoanChan.GitHub.io\">Website của Hoàn Chân</a>.",
+        "<strong>HC-IDE Viết và test code nhanh chóng, đơn giản, hiệu quả</strong> - Xem thêm các thông tin về lập trình tại <a href=\"https://HoanChan.GitHub.io\">Website của Hoàn Chân</a>.",
+        "<strong>HC-IDE Viết và test code nhanh chóng, đơn giản, hiệu quả</strong> - Xem thêm các thông tin về lập trình tại <a href=\"https://HoanChan.GitHub.io\">Website của Hoàn Chân</a>.",
+        "<strong>HC-IDE Viết và test code nhanh chóng, đơn giản, hiệu quả</strong> - Xem thêm các thông tin về lập trình tại <a href=\"https://HoanChan.GitHub.io\">Website của Hoàn Chân</a>."
+    ],
+    "old-messages": [
+        "Support Judge0 on <a href=\"https://www.patreon.com/hermanzdosilovic\">Patreon</a> or via <a href=\"https://paypal.me/hermanzdosilovic\">PayPal</a>. Your monthly or one-time donation will help pay server costs and will improve future development and maintenance. Thank you! ♥",
+        "Star Judge0 IDE on <a href=\"https://github.com/judge0/ide\">GitHub</a>.",
+        "Judge0 IDE is powered by <a href=\"https://api.judge0.com\">Judge0 API</a> - free, robust and scalable open-source online code execution system.",
+        "Judge0 API uses <a href=\"https://github.com/ioi/isolate\">isolate</a> to sandbox compilation and execution."
+    ]
+}
