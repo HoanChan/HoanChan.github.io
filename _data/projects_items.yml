@@ -23,6 +23,14 @@
     - url: /projects/hc-mix
       text: Xem ngay!
       class: btn btn-secondary
+- title: HC-IDE
+  image: hc-ide/logo.png
+  style: "height: 150px; margin-top: 1rem;"
+  content: Soạn thảo và chạy thử mã nguồn Online, hỗ trợ nhiều ngôn ngữ như Pascal, C, Java, Python, Ruby, ...
+  links:
+    - url: /live/ide
+      text: Xem ngay!
+      class: btn btn-secondary
 - title: VietNamKey
   image: vietnamkey/logo.png
   style: "height: 150px; margin-top: 1rem;"
