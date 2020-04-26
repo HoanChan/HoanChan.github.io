@@ -8,7 +8,16 @@ function ShareUrl() {
 }
 
 function showMess(title, content) {
-  $("#Mess-modal #title").html(title);
-  $("#Mess-modal .content").html(content);
-  $("#Mess-modal").modal("show");
+  $("#mess-modal #title").html(title);
+  $("#mess-modal .content").html(content);
+  $("#mess-modal").modal("show");
+}
+
+function changeThemeMode() {
+  if (themeMode == "vs") {
+    document.getElementById('_theme').href = "https://golden-layout.com/assets/css/goldenlayout-light-theme.css";
+  } else {
+    document.getElementById('_theme').href = "https://golden-layout.com/files/latest/css/goldenlayout-dark-theme.css";
+  }
+  monaco.editor.setTheme(themeMode);
 }

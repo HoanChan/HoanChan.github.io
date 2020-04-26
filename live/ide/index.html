@@ -7,25 +7,22 @@
   <!-- Use lastest version of Internet Explorer -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="UTF-8">
-
   <meta name="description" content="Free and open-source online code editor that allows you to write and execute code from a rich set of languages.">
   <meta name="keywords" content="online editor, online code editor, online ide, online compiler, online interpreter, run code online, learn programming online,
             online debugger, programming in browser, online code runner, online code execution, debug online, debug C code online, debug C++ code online,
             programming online, snippet, snippets, code snippet, code snippets, pastebin, execute code, programming in browser, run c online, run C++ online,
             run java online, run python online, run ruby online, run c# online, run rust online, run pascal online, run basic online">
   <meta name="author" content="Lê Hoàn Chân">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta property="og:title" content="HC IDE - Online code editor">
-  <meta property="og:description" content="Online code editor that allows you to write and execute code from a rich set of languages.">
+  <meta property="og:description" content="Code IDE for Pascal, C, Java, Python, Ruby, Basic, and more.">
   <meta property="og:image" content="https://raw.githubusercontent.com/HoanChan/HoanChan.github.io/master/live/ide/images/background.png">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://golden-layout.com/files/latest/js/goldenlayout.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/golden-layout/1.5.9/goldenlayout.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/golden-layout/1.5.9/css/goldenlayout-base.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/golden-layout/1.5.9/css/goldenlayout-dark-theme.css" />
+  <link type="text/css" rel="stylesheet" href="https://golden-layout.com/files/latest/css/goldenlayout-base.css" />
+  <link id="_theme" type="text/css" rel="stylesheet" href="https://golden-layout.com/files/latest/css/goldenlayout-dark-theme.css" />
 
   <script>
     var require = {
@@ -39,15 +36,10 @@
   <script src="https://unpkg.com/monaco-editor/min/vs/loader.js"></script>
   <script src="https://unpkg.com/monaco-editor@0.18.1/min/vs/editor/editor.main.nls.js"></script>
   <script src="https://unpkg.com/monaco-editor@0.18.1/min/vs/editor/editor.main.js"></script>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-
   <script type="text/javascript" src="third_party/download.js"></script>
-
-  <!-- <script type="text/javascript" src="js/ide.js"></script> -->
   <script type="text/javascript" src="js/compiler.js"></script>
   <script type="text/javascript" src="js/layout.js"></script>
   <script type="text/javascript" src="js/sources.js"></script>
@@ -137,7 +129,7 @@
     </div>
     <div class="right menu">
       <div id="about" class="link item" onclick="$('#info-modal').modal('show')"><i class="info circle icon"></i> Thông tin</div>
-      <a id="api-url" class="link item" target="_blank" href="https://api.judge0.com"><i class="server icon"></i> API</a>
+      <!-- <a id="api-url" class="link item" target="_blank" href="..."><i class="server icon"></i> API</a> -->
       <div class="ui dropdown item site-links">
         More
         <i class="dropdown icon"></i>
@@ -216,6 +208,27 @@
             </div>
           </div>
         </div>
+        <div class="inline fields">
+          <label>Chế độ giao diện</label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="theme-mode" value="vs">
+              <label>Nền sáng</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="theme-mode" value="vs-dark" checked="checked">
+              <label>Nền tối</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="theme-mode" value="hc-black">
+              <label>Độ tương phản cao</label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -275,13 +288,11 @@
   </div>
   <!-- End Dialog -->
   <div id="site-footer">
-    <!-- <span id="donate-line">
-      <a class="item" target="_blank" href="https://www.patreon.com/..."><i class="patreon icon" style="color: #f06553;"></i> Become a Patron</a>
-      ·
-      <a class="item" target="_blank" href="https://paypal.me/..."><i class="paypal icon" style="color: #00457c;"></i></i> Donate with PayPal</a>
-    </span> -->
+    <span id="donate-line">
+      <a class="item" target="_blank" href="https://paypal.me/HoanChan"><i class="paypal icon" style="color: #00457c;"></i></i> Donate with PayPal</a>
+    </span>
     <div id="editor-status-line"></div>
-    <!-- <span>© 2020 <a href="...">....</a>· Source code available on <a href="https://github.com/....">GitHub</a></span> -->
+    <span>© 2020 - Hoàn Chân</span>
     <span id="status-line"></span>
   </div>
 </body>

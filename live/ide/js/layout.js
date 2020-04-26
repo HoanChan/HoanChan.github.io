@@ -2,6 +2,7 @@
 
 var editorMode = localStorageGetItem("editorMode") || "normal";
 var editorModeObject = null;
+var themeMode = localStorageGetItem("themeMode") || "vs-dark";
 
 var MonacoVim;
 var MonacoEmacs;
@@ -139,6 +140,19 @@ $(document).ready(function () {
     sourceEditor.focus();
   });
 
+  $(`input[name="theme-mode"][value="${themeMode}"]`).prop("checked", true);
+  $("input[name=\"theme-mode\"]").on("change", function (e) {
+    $('#site-settings').modal('hide');
+
+    themeMode = e.target.value;
+    localStorageSetItem("themeMode", themeMode);
+
+    resizeEditor(sourceEditor.getLayoutInfo());
+    changeThemeMode();
+
+    sourceEditor.focus();
+  });
+
   $statusLine = $("#status-line");
 
   $("body").keydown(function (e) {
@@ -196,7 +210,7 @@ $(document).ready(function () {
     layout.registerComponent("source", function (container, state) {
       sourceEditor = monaco.editor.create(container.getElement()[0], {
         automaticLayout: true,
-        theme: "vs-dark",
+        theme: themeMode,
         scrollBeyondLastLine: true,
         readOnly: state.readOnly,
         language: "cpp",
@@ -219,7 +233,7 @@ $(document).ready(function () {
     layout.registerComponent("stdin", function (container, state) {
       stdinEditor = monaco.editor.create(container.getElement()[0], {
         automaticLayout: true,
-        theme: "vs-dark",
+        theme: themeMode,
         scrollBeyondLastLine: false,
         readOnly: state.readOnly,
         language: "plaintext",
@@ -232,7 +246,7 @@ $(document).ready(function () {
     layout.registerComponent("stdout", function (container, state) {
       stdoutEditor = monaco.editor.create(container.getElement()[0], {
         automaticLayout: true,
-        theme: "vs-dark",
+        theme: themeMode,
         scrollBeyondLastLine: false,
         readOnly: state.readOnly,
         language: "plaintext",
@@ -252,7 +266,7 @@ $(document).ready(function () {
     layout.registerComponent("stderr", function (container, state) {
       stderrEditor = monaco.editor.create(container.getElement()[0], {
         automaticLayout: true,
-        theme: "vs-dark",
+        theme: themeMode,
         scrollBeyondLastLine: false,
         readOnly: state.readOnly,
         language: "plaintext",
@@ -272,7 +286,7 @@ $(document).ready(function () {
     layout.registerComponent("compile output", function (container, state) {
       compileOutputEditor = monaco.editor.create(container.getElement()[0], {
         automaticLayout: true,
-        theme: "vs-dark",
+        theme: themeMode,
         scrollBeyondLastLine: false,
         readOnly: state.readOnly,
         language: "plaintext",
@@ -292,7 +306,7 @@ $(document).ready(function () {
     layout.registerComponent("sandbox message", function (container, state) {
       sandboxMessageEditor = monaco.editor.create(container.getElement()[0], {
         automaticLayout: true,
-        theme: "vs-dark",
+        theme: themeMode,
         scrollBeyondLastLine: false,
         readOnly: state.readOnly,
         language: "plaintext",
