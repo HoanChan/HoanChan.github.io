@@ -75,7 +75,7 @@
           <a class="item" target="_blank" href="/"><i class="file code icon"></i> Tạo mới</a>
           <div class="item" onclick="save()"><i class="save icon"></i> Lưu (Ctrl + S)</div>
           <div class="item" onclick="downloadSource()"><i class="download icon"></i> Tải về</div>
-          <!-- <div class="item"><i class="share icon"></i> Share</div> -->
+          <div class="item" onclick="ShareUrl()"><i class="share icon"></i> Chia sẻ</div>
           <div id="insert-template-btn" class="item"><i class="file code outline icon"></i>Chèn code mẫu</div>
         </div>
       </div>
@@ -136,40 +136,20 @@
       </div>
     </div>
     <div class="right menu">
-      <a id="about" class="link item" target="_blank" href="https://judge0.com/about"><i class="info circle icon"></i> Thông tin</a>
+      <div id="about" class="link item" onclick="$('#info-modal').modal('show')"><i class="info circle icon"></i> Thông tin</div>
       <a id="api-url" class="link item" target="_blank" href="https://api.judge0.com"><i class="server icon"></i> API</a>
       <div class="ui dropdown item site-links">
         More
         <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" target="_blank" href="https://www.patreon.com/hermanzdosilovic"><i class="patreon icon"></i>
-            Become a Patron</a>
-          <a class="item" target="_blank" href="https://paypal.me/hermanzdosilovic"><i class="paypal icon"></i>
-            Donate with PayPal</a>
+          <a class="item" target="_blank" href="https://paypal.me/HoanChan"><i class="paypal icon"></i> Donate with PayPal</a>
           <div class="divider"></div>
-          <a class="item" target="_blank" href="https://github.com/judge0/ide"><i class="github icon"></i>
-            View source
-            code on Github</a>
-          <a class="item" target="_blank" href="https://github.com/judge0/ide/issues/new"><i class="exclamation circle icon"></i> Report an issue</a>
+          <a class="item" target="_blank" href="https://hoanchan.github.io/"><i class="github icon"></i> View source code on Github</a>
+          <a class="item" target="_blank" href="https://github.com/HoanChan/HoanChan.github.io/issues/new"><i class="exclamation circle icon"></i> Report an issue</a>
           <div class="divider"></div>
-          <a class="item" target="_blank" href="https://judge0.com/#subscribe"><i class="envelope icon"></i>
-            Subscribe
-            to Judge0 news</a>
-          <a class="item" target="_blank" href="https://discord.gg/6dvxeA8"><i class="discord icon"></i> Join a Discord server</a>
+          <a class="item" target="_blank" href="mailto:Le.Hoan.Chan@gmail.com"><i class="paper plane icon"></i> Contact the author</a>
           <div class="divider"></div>
-          <a class="item" target="_blank" href="mailto:hermanz.dosilovic@gmail.com"><i class="paper plane icon"></i>
-            Contact the author</a>
-          <a class="item" target="_blank" href="https://hermanz.dosilovic.com"><i class="user icon"></i> About
-            the
-            author</a>
-          <div class="divider"></div>
-          <a class="item" target="_blank" href="https://www.reddit.com/submit?url=https%3A%2F%2Fide.judge0.com&title=Judge0%20IDE"
-            style="background-color: #ff4500 !important; color: white !important;"><i class="reddit icon"></i> Share
-            on Reddit</a>
-          <a class="item" target="_blank" href="https://twitter.com/intent/tweet?text=Judge0%20IDE&url=https%3A%2F%2Fide.judge0.com&via=hermanzvonimir"
-            style="background-color: #1da1f2 !important; color: white !important;"><i class="twitter icon"></i>
-            Share on Twitter</a>
-          <a class="item" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fide.judge0.com"
+          <a class="item" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoanchan.github.io%2Flive%2Fide"
             style="background-color: #1877f2 !important; color: white !important;"><i class="facebook icon"></i>
             Share on Facebook</a>
         </div>
@@ -178,10 +158,24 @@
   </div>
 
   <div id="site-content"></div>
-
+  <!-- Dialog -->
   <div id="site-modal" class="ui modal">
     <div class="header">
       <i class="close icon"></i>
+      <span id="title"></span>
+    </div>
+    <div class="scrolling content"></div>
+    <div class="actions">
+      <div class="ui small labeled icon cancel button">
+        <i class="remove icon"></i>
+        Close (ESC)
+      </div>
+    </div>
+  </div>
+
+  <div id="mess-modal" class="ui modal">
+    <div class="header">
+      <i class="bell outline icon"></i>
       <span id="title"></span>
     </div>
     <div class="scrolling content"></div>
@@ -225,15 +219,69 @@
       </div>
     </div>
   </div>
-
+  <div id="info-modal" class="ui modal">
+    <div class="header">
+      <i class="bell outline icon"></i>
+      <span id="title">Hướng dẫn cơ bản</span>
+    </div>
+    <div class="scrolling content">
+      <h2>Việc nhập xuất dữ liệu</h2>
+      <ol>
+        <li>Nhập dữ liệu qua STD Input <ul>
+            <li>Dữ liệu được nhập thông qua các lệnh hỗ trợ đọc dữ liệu từ bàn phím do người dùng nhập như:<ul>
+                <li><code>Read</code>, <code>ReadLn</code> của Pascal</li>
+                <li><code>gets</code>, <code>scanf</code> của C</li>
+                <li><code>cint &gt;&gt; ...</code> của C++</li>
+                <li><code>input</code>, <code>sys.stdin</code> của Python</li>
+                <li><code>System.Console.ReadLine()</code>, <code>System.Console.Read()</code> và <code>System.Console.ReadKey()</code> của C# </li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>Khi chạy chương trình các dữ liệu đầu vào sẽ được gởi thông qua STD Input vì thế bạn cần nhập dữ liệu nào vào chương trình thì chỉ cần viết nó ở cửa sổ SDT
+              Input.
+              Mỗi dữ
+              liệu xuống dòng tương ứng với 1 dòng dữ liệu người dùng nhập và nhấn Enter. </li>
+          </ul>
+        </li>
+        <li>Xuất dữ liệu qua STD Output<ul>
+            <li>Dữ liệu được xuất thông qua các lệnh hỗ trợ ghi dữ liệu ra màn hình như:<ul>
+                <li><code>Write</code>, <code>WriteLn</code> của Pascal</li>
+                <li><code>Puts</code>, <code>printf</code> của C</li>
+                <li><code>cout &lt;&lt; ...</code> của C++</li>
+                <li><code>print</code> của Python</li>
+                <li><code>System.Console.Write()</code>, <code>System.Console.WriteLine()</code> của C#</li>
+              </ul>
+            </li>
+            <li>Dữ liệu được xuất ra khi chạy chương trình sẽ được hiển thị ở cửa sổ STD Output</li>
+          </ul>
+        </li>
+        <li>Xuất lỗi qua STD Error<ul>
+            <li>Dữ liệu lỗi được xuất thông qua các lệnh hỗ trợ xuất lỗi như:<ul>
+                <li><code>Writeln(StdErr , ...);</code> của Pascal</li>
+                <li><code>cerr &lt;&lt; ...</code> , <code>clog &lt;&lt; ...</code>của C++ </li>
+              </ul>
+            </li>
+            <li>Dữ liệu lỗi được hiển thị ở cửa sổ STD Error khi chạy chương trình </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="actions">
+      <div class="ui small labeled icon cancel button">
+        <i class="remove icon"></i>
+        Close (ESC)
+      </div>
+    </div>
+  </div>
+  <!-- End Dialog -->
   <div id="site-footer">
     <!-- <span id="donate-line">
-      <a class="item" target="_blank" href="https://www.patreon.com/hermanzdosilovic"><i class="patreon icon" style="color: #f06553;"></i> Become a Patron</a>
+      <a class="item" target="_blank" href="https://www.patreon.com/..."><i class="patreon icon" style="color: #f06553;"></i> Become a Patron</a>
       ·
-      <a class="item" target="_blank" href="https://paypal.me/hermanzdosilovic"><i class="paypal icon" style="color: #00457c;"></i></i> Donate with PayPal</a>
+      <a class="item" target="_blank" href="https://paypal.me/..."><i class="paypal icon" style="color: #00457c;"></i></i> Donate with PayPal</a>
     </span> -->
     <div id="editor-status-line"></div>
-    <!-- <span>© 2020 <a href="https://judge0.com">Judge0</a> · Powered by <a href="https://api.judge0.com">Judge0 API</a> · Source code available on <a href="https://github.com/judge0/ide">GitHub</a></span> -->
+    <!-- <span>© 2020 <a href="...">....</a>· Source code available on <a href="https://github.com/....">GitHub</a></span> -->
     <span id="status-line"></span>
   </div>
 </body>

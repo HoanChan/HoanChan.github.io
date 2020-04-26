@@ -1,4 +1,30 @@
 
+function changeEditorLanguage() {
+    monaco.editor.setModelLanguage(sourceEditor.getModel(), $selectLanguage.find(":selected").attr("mode"));
+    currentLanguageId = parseInt($selectLanguage.val());
+    $(".lm_title")[0].innerText = fileNames[currentLanguageId];
+    apiUrl = resolveApiUrl($selectLanguage.val());
+    showApiUrl();
+}
+
+function insertTemplate() {
+    currentLanguageId = parseInt($selectLanguage.val());
+    sourceEditor.setValue(sources[currentLanguageId]);
+    changeEditorLanguage();
+}
+
+function loadRandomLanguage() {
+    // var values = [];
+    // for (var i = 0; i < $selectLanguage[0].options.length; ++i) {
+    //     values.push($selectLanguage[0].options[i].value);
+    // }
+    // $selectLanguage.dropdown("set selected", values[Math.floor(Math.random() * $selectLanguage[0].length)]);
+    $selectLanguage.dropdown("set selected", 67); //Pascal
+    apiUrl = resolveApiUrl($selectLanguage.val());
+    showApiUrl();
+    insertTemplate();
+}
+
 
 // Template Sources
 var assemblySource = "\
