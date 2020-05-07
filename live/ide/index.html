@@ -38,7 +38,7 @@
     <div id="site-header" class="header item">
       <a href="">
         <img id="site-icon" src="./images/icon.png">
-        <h2 class="mobile hidden">HC-IDE</h2>
+        <h2 class="portrait mobile hidden">HC-IDE</h2>
       </a>
     </div>
     <div class="left menu">
@@ -52,17 +52,17 @@
           <div id="insert-template-btn" class="item"><i class="file code outline icon"></i>Chèn code mẫu</div>
         </div>
       </div>
-      <div class="link item" onclick="$('#site-settings').modal('show')"><i class="cog icon"></i> <span class="mobile hidden">Cài đặt</span></div>
+      <div class="link item" onclick="$('#site-settings').modal('show')"><i class="cog icon"></i> <span class="portrait mobile hidden">Cài đặt</span></div>
 
       <div id="navigation-message" class="item borderless">
         <span class="navigation-message-text"></span>
       </div>
     </div>
     <div class="right menu">
-      <div id="about" class="link item" onclick="$('#info-modal').modal('show')"><i class="info circle icon"></i> <span class="mobile hidden">Thông tin</span></div>
+      <div id="about" class="link item" onclick="$('#info-modal').modal('show')"><i class="info circle icon"></i> <span class="portrait mobile hidden">Thông tin</span></div>
       <!-- <a id="api-url" class="link item" target="_blank" href="..."><i class="server icon"></i> API</a> -->
       <div class="ui dropdown item site-links">
-        <span class="mobile hidden">More</span>
+        <span>More</span>
         <i class="dropdown icon"></i>
         <div class="menu">
           <a class="item" target="_blank" href="https://paypal.me/HoanChan"><i class="paypal icon"></i> Donate with PayPal</a>
@@ -203,25 +203,23 @@
     </div>
     <div class="content">
       <div class="ui form">
-        <div class="inline fields">
-          <label>Chế độ giao diện</label>
-          <div class="field">
-            <div class="ui radio checkbox">
-              <input type="radio" name="theme-mode" value="vs">
-              <label>Nền sáng</label>
-            </div>
+        <h5 class="ui header">Chế độ giao diện</h5>
+        <div class="field">
+          <div class="ui toggle checkbox">
+            <input type="radio" name="theme-mode" value="vs">
+            <label>Nền <b>sáng</b></label>
           </div>
-          <div class="field">
-            <div class="ui radio checkbox">
-              <input type="radio" name="theme-mode" value="vs-dark" checked="checked">
-              <label>Nền tối</label>
-            </div>
+        </div>
+        <div class="field">
+          <div class="ui toggle checkbox">
+            <input type="radio" name="theme-mode" value="vs-dark" checked="checked">
+            <label>Nền <b>tối</b></label>
           </div>
-          <div class="field">
-            <div class="ui radio checkbox">
-              <input type="radio" name="theme-mode" value="hc-black">
-              <label>Độ tương phản cao</label>
-            </div>
+        </div>
+        <div class="field">
+          <div class="ui toggle checkbox">
+            <input type="radio" name="theme-mode" value="hc-black">
+            <label>Nền <b>tối, tương phản cao</b></label>
           </div>
         </div>
       </div>
