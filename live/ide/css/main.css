@@ -18,7 +18,7 @@ body {
 
 
 #content {
-  height : calc(100vh - 45px - 19px);
+  height : calc(100vh - 38px - 19px);
   margin : 0px;
   padding: 0px;
 }
@@ -33,6 +33,7 @@ body {
   height : calc(100% - 2.5em - 2.4em);
 }
 
+#input,
 #output,
 #compile,
 #error,
@@ -50,8 +51,7 @@ body {
   padding: 0px;
 }
 
-#content>#right>#input,
-#content>#right>#result {
+#content>#right>.row {
   height: 50%;
   margin: 0px;
 }
@@ -109,7 +109,7 @@ body {
   margin       : 0;
   background   : #1e1e1e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  height       : 45px;
+  height       : 38px;
 }
 
 #navigation-message {

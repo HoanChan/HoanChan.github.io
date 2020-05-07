@@ -29,9 +29,8 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/utilities.css">
-  <script src="js/events.js"></script>
-  <script src="js/sources.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
 </head>
 
 <body>
@@ -47,7 +46,7 @@
         File <i class="dropdown icon"></i>
         <div class="menu">
           <a class="item" target="_blank" href="https://HoanChan.github.io/live/ide"><i class="file code icon"></i> Tạo mới</a>
-          <div class="item" onclick="save()"><i class="save icon"></i> Lưu (Ctrl + S)</div>
+          <div class="item" onclick="Compiler.save()"><i class="save icon"></i> Lưu (Ctrl + S)</div>
           <div class="item" onclick="downloadSource()"><i class="download icon"></i> Tải về</div>
           <div class="item" onclick="ShareUrl()"><i class="share icon"></i> Chia sẻ</div>
           <div id="insert-template-btn" class="item"><i class="file code outline icon"></i>Chèn code mẫu</div>
@@ -131,7 +130,7 @@
         </div>
         <div id="codeEditor" class="ui attached segment"> </div>
         <div class="ui bottom attached mini menu">
-          <div class="item borderless p-1">
+          <div class="item borderless p-1 ui">
             <div class="ui input">
               <input id="command-line-arguments" type="text" placeholder="Cmd args"></input>
             </div>
@@ -147,7 +146,11 @@
       </div>
     </div>
     <div id="right" class="six wide computer eight wide tablet sixteen wide mobile column grey">
-      <div id="input" class="row">
+      <div class="row">
+        <div class="ui tabular mini menu m-0">
+          <a class="active item" data-tab="ouput"> Input <span id="stdin-dot" class="dot" hidden></span> </a>
+        </div>
+        <div id="input" data-tab="input" class="ui active tab p-0 m-0"> </div>
       </div>
       <div id="result" class="row">
         <div class="ui tabular mini menu m-0">
@@ -232,7 +235,7 @@
     <div class="scrolling content">
       <h2>Việc nhập xuất dữ liệu</h2>
       <ol>
-        <li>Nhập dữ liệu qua STD Input <ul>
+        <li>Nhập dữ liệu qua Input <ul>
             <li>Dữ liệu được nhập thông qua các lệnh hỗ trợ đọc dữ liệu từ bàn phím do người dùng nhập như:<ul>
                 <li><code>Read</code>, <code>ReadLn</code> của Pascal</li>
                 <li><code>gets</code>, <code>scanf</code> của C</li>
@@ -242,13 +245,13 @@
                 <li>...</li>
               </ul>
             </li>
-            <li>Khi chạy chương trình các dữ liệu đầu vào sẽ được gởi thông qua STD Input vì thế bạn cần nhập dữ liệu nào vào chương trình thì chỉ cần viết nó ở cửa sổ SDT
+            <li>Khi chạy chương trình các dữ liệu đầu vào sẽ được gởi thông qua Input vì thế bạn cần nhập dữ liệu nào vào chương trình thì chỉ cần viết nó ở cửa sổ SDT
               Input.
               Mỗi dữ
               liệu xuống dòng tương ứng với 1 dòng dữ liệu người dùng nhập và nhấn Enter. </li>
           </ul>
         </li>
-        <li>Xuất dữ liệu qua STD Output<ul>
+        <li>Xuất dữ liệu qua Output<ul>
             <li>Dữ liệu được xuất thông qua các lệnh hỗ trợ ghi dữ liệu ra màn hình như:<ul>
                 <li><code>Write</code>, <code>WriteLn</code> của Pascal</li>
                 <li><code>Puts</code>, <code>printf</code> của C</li>
@@ -257,16 +260,16 @@
                 <li><code>System.Console.Write()</code>, <code>System.Console.WriteLine()</code> của C#</li>
               </ul>
             </li>
-            <li>Dữ liệu được xuất ra khi chạy chương trình sẽ được hiển thị ở cửa sổ STD Output</li>
+            <li>Dữ liệu được xuất ra khi chạy chương trình sẽ được hiển thị ở cửa sổ Output</li>
           </ul>
         </li>
-        <li>Xuất lỗi qua STD Error<ul>
+        <li>Xuất lỗi qua Error<ul>
             <li>Dữ liệu lỗi được xuất thông qua các lệnh hỗ trợ xuất lỗi như:<ul>
                 <li><code>Writeln(StdErr , ...);</code> của Pascal</li>
                 <li><code>cerr &lt;&lt; ...</code> , <code>clog &lt;&lt; ...</code>của C++ </li>
               </ul>
             </li>
-            <li>Dữ liệu lỗi được hiển thị ở cửa sổ STD Error khi chạy chương trình </li>
+            <li>Dữ liệu lỗi được hiển thị ở cửa sổ Error khi chạy chương trình </li>
           </ul>
         </li>
       </ol>
