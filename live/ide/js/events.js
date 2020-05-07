@@ -196,7 +196,7 @@
     $("input[name=\"theme-mode\"]").on("change", function (e) {
       $('#site-settings').modal('hide');
       themeMode = e.target.value;
-      localStorageSetItem("themeMode", themeMode);
+      Compiler.localStorageSetItem("themeMode", themeMode);
       monaco.editor.setTheme(themeMode);
       sourceEditor.focus();
     });
