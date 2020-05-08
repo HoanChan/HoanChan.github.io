@@ -3,10 +3,7 @@
   var $selectLanguage;
   var $compilerOptions;
   var $commandLineArguments;
-  var $insertTemplateBtn;
   var $runBtn;
-  var $navigationMessage;
-  var $about;
   var $statusLine;
   var Compiler = new window.Compiler();
   var themeMode = Compiler.localStorageGetItem("themeMode") || "vs-dark";
@@ -128,6 +125,7 @@
       $(this).closest(".message").transition("fade");
     });
     // =================================== //
+    loadMessages();
     $statusLine = $("#status-line");
     $compilerOptions = $("#compiler-options");
     $commandLineArguments = $("#command-line-arguments");
@@ -140,6 +138,12 @@
         Compiler.changeEditorLanguage();
       }
     });
+    $("#insert-template-btn").click(function (e) {
+      if (isEditorDirty && confirm("Bạn có chắc sẽ làm điều này không? Toàn bộ mã nguồn hiện tại sẽ bị thay thế.")) {
+        Compiler.insertTemplate();
+      }
+    });
+
     function showDot(dotID) {
       var dot = document.getElementById(dotID);
       if (!dot.parentElement.classList.contains("active")) {
@@ -267,4 +271,43 @@
     $("#mess-modal .content").html(content);
     $("#mess-modal").modal("show");
   }
+
+  var messagesData = "";
+  function showMessages() {
+    var $navigationMessage = $("#navigation-message span");
+    var $about = $("#about");
+    $navigationMessage.html("");
+    $navigationMessage.parent().width(0);
+    var width = $about.offset().left - parseFloat($about.css("padding-left")) - $navigationMessage.parent().offset().left - parseFloat($navigationMessage.parent().css("padding-left"));
+    if (width < 100 || messagesData === undefined) { return; }
+    var messages = messagesData["messages"];
+    $navigationMessage.css("animation-duration", messagesData["duration"]);
+    $navigationMessage.parent().width(width - 5);
+    var combinedMessage = "";
+    for (var i = 0; i < messages.length; ++i) {
+      combinedMessage += `${messages[i]}`;
+      if (i != messages.length - 1) {
+        combinedMessage += "&nbsp".repeat(Math.min(200, messages[i].length));
+      }
+    }
+    $navigationMessage.html(combinedMessage);
+  }
+
+  function loadMessages() {
+    $.ajax({
+      url: `https://hoanchan.github.io/live/ide/messages.json?${Date.now()}`,
+      type: "GET",
+      headers: {
+        "Accept": "application/json"
+      },
+      success: function (data, textStatus, jqXHR) {
+        messagesData = data;
+        showMessages();
+      }
+    });
+  }
+
+  $(window).resize(function () {
+    showMessages();
+  });
 })(window.jQuery);
