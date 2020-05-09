@@ -45,7 +45,7 @@ window.Compiler = function () {
   me.setLang = function (value) { };
   me.setArgs = function (value) { };
   me.setOpts = function (value) { };
-  me.setStatus = function (value) { };
+  me.setStatus = function (value, time, memory) { };
 
   me.getSource = function () { return "" };
   me.getInput = function () { return "" };
@@ -232,10 +232,7 @@ window.Compiler = function () {
     var stderr = decode(data.stderr);
     var compile_output = decode(data.compile_output);
     var sandbox_message = decode(data.message);
-    var time = (data.time === null ? "-" : data.time + "s");
-    var memory = (data.memory === null ? "-" : data.memory + "KB");
-
-    me.setStatus(`${status.description}, ${time}, ${memory}`);
+    me.setStatus(status.description, data.time * 1000, data.memory);
     me.setOutput(stdout);
     me.setError(stderr);
     me.setCompile(compile_output);

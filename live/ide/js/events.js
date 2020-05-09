@@ -157,7 +157,7 @@
     Compiler.setError = function (value) { stderrEditor.setValue(value); if (value != "") showDot("stderr-dot"); };
     Compiler.setCompile = function (value) { compileOutputEditor.setValue(value); if (value != "") showDot("compile-output-dot"); };
     Compiler.setSanbox = function (value) { sandboxMessageEditor.setValue(value); if (value != "") showDot("sandbox-message-dot"); };
-    Compiler.setStatus = function (status) { $statusLine.html(status); };
+    Compiler.setStatus = function (value, time, memory) { $statusLine.html(value); };
     Compiler.setLang = function (value) { $selectLanguage.dropdown("set selected", value); };
     Compiler.setOpts = function (value) { $compilerOptions.val(value); };
     Compiler.setArgs = function (value) { $commandLineArguments.val(value); };
