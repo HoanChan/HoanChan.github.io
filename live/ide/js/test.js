@@ -102,7 +102,7 @@
                 <div class="item">
                   <div class="ui styled accordion">
                     <div class="title"><i class="dropdown icon"></i>Thông báo biên dịch</div>
-                    <div class="content active">${TestReults[index] ? TestReults[index].Compile.replace(/\n/g, "<br />") : 0}</div>
+                    <div class="content">${TestReults[index] ? TestReults[index].Compile.replace(/\n/g, "<br />") : 0}</div>
                     <div class="title"><i class="dropdown icon"></i>Thông báo lỗi</div>
                     <div class="content">${TestReults[index] ? TestReults[index].Error.replace(/\n/g, "<br />") : 0}</div>
                   </div>                
