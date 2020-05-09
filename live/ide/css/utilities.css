@@ -1,3 +1,60 @@
+.c-blue     { color: #007bff !important;}
+.c-indigo   { color: #6610f2 !important;}
+.c-purple   { color: #6f42c1 !important;}
+.c-pink     { color: #e83e8c !important;}
+.c-red      { color: #dc3545 !important;}
+.c-orange   { color: #fd7e14 !important;}
+.c-yellow   { color: #ffc107 !important;}
+.c-green    { color: #28a745 !important;}
+.c-teal     { color: #20c997 !important;}
+.c-cyan     { color: #17a2b8 !important;}
+.c-white    { color: #fff !important;}
+.c-gray     { color: #6c757d !important;}
+.c-gray-dark{ color: #343a40 !important;}
+.c-primary  { color: #007bff !important;}
+.c-secondary{ color: #6c757d !important;}
+.c-success  { color: #28a745 !important;}
+.c-info     { color: #17a2b8 !important;}
+.c-warning  { color: #ffc107 !important;}
+.c-danger   { color: #dc3545 !important;}
+.c-light    { color: #f8f9fa !important;}
+.c-dark     { color: #343a40 !important;}
+
+.bg-blue     { background: #007bff !important;}
+.bg-indigo   { background: #6610f2 !important;}
+.bg-purple   { background: #6f42c1 !important;}
+.bg-pink     { background: #e83e8c !important;}
+.bg-red      { background: #dc3545 !important;}
+.bg-orange   { background: #fd7e14 !important;}
+.bg-yellow   { background: #ffc107 !important;}
+.bg-green    { background: #28a745 !important;}
+.bg-teal     { background: #20c997 !important;}
+.bg-cyan     { background: #17a2b8 !important;}
+.bg-white    { background: #fff !important;}
+.bg-gray     { background: #6c757d !important;}
+.bg-gray-dark{ background: #343a40 !important;}
+.bg-primary  { background: #007bff !important;}
+.bg-secondary{ background: #6c757d !important;}
+.bg-success  { background: #28a745 !important;}
+.bg-info     { background: #17a2b8 !important;}
+.bg-warning  { background: #ffc107 !important;}
+.bg-danger   { background: #dc3545 !important;}
+.bg-light    { background: #f8f9fa !important;}
+.bg-dark     { background: #343a40 !important;}
+.scroll-x {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
 /* Mobile */
 @media only screen and (max-width: 420px) {
 
