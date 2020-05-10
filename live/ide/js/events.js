@@ -144,8 +144,8 @@
     $runBtn = $("#btnRun").click(function (e) { Compiler.run(); stdoutEditor.focus(); document.getElementById("output").scrollIntoView(); });
     $selectLanguage = $("#select-language").change(function (e) { Compiler.changeEditorLanguage(); });
 
-    $("#btnOpenTest").click(async function (e) {
-      let file = await selectFile("*.asm, *.sh, *.bas, *.c, *.c, *.c, *.cs, *.cpp, *.cpp, *.cpp, *.lisp, *.d, *.exs, *.erl, *.out, *.f90, *.go, *.hs, *.java, *.js, *.lua, *.nim, *.ml, *.m, *.pas, *.php, *.txt, *.pro, *.py, *.py, *.rb, *.rs, *.ts, *.v", false);
+    $("#btnOpen").click(async function (e) {
+      let file = await selectFile(".asm, .sh, .bas, .c, .c, .c, .cs, .cpp, .cpp, .cpp, .lisp, .d, .exs, .erl, .out, .f90, .go, .hs, .java, .js, .lua, .nim, .ml, .m, .pas, .php, .txt, .pro, .py, .py, .rb, .rs, .ts, .v", false);
       let reader = new FileReader();
       reader.onload = function () { sourceEditor.setValue(reader.result); };
       reader.readAsText(file);
