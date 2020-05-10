@@ -104,14 +104,25 @@
       Compiler.loadRandomLanguage();
     }
     sourceEditor.focus();
-    sourceEditor.getModel().onDidChangeContent(function (e) {
-      Compiler.onChangeContent(sourceEditor.getValue(), parseInt($selectLanguage.val()));
-    });
+    sourceEditor.getModel().onDidChangeContent(function (e) { Compiler.onChangeContent(parseInt($selectLanguage.val())); });
   });
 
-  function downloadSource() {
-    var value = parseInt($selectLanguage.val());
-    download(sourceEditor.getValue(), fileNames[value], "text/plain");
+  function selectFile(contentType, multiple) {
+    return new Promise(resolve => {
+      let input = document.createElement('input');
+      input.type = 'file';
+      input.multiple = multiple;
+      input.accept = contentType;
+      input.onchange = _ => {
+        let files = Array.from(input.files);
+        if (multiple)
+          resolve(files);
+        else
+          resolve(files[0]);
+        input.remove();
+      };
+      input.click();
+    });
   }
   //========================================================================================================================================//
   $(document).ready(function () {
@@ -130,16 +141,36 @@
     $compilerOptions = $("#compiler-options");
     $commandLineArguments = $("#command-line-arguments");
     $commandLineArguments.attr("size", $commandLineArguments.attr("placeholder").length);
-    $runBtn = $("#run-btn").click(function (e) { Compiler.run(); stdoutEditor.focus(); document.getElementById("output").scrollIntoView(); });
-    $selectLanguage = $("#select-language").change(function (e) {
-      if (!Compiler.isEditorDirty) {
-        Compiler.insertTemplate();
-      } else {
-        Compiler.changeEditorLanguage();
-      }
+    $runBtn = $("#btnRun").click(function (e) { Compiler.run(); stdoutEditor.focus(); document.getElementById("output").scrollIntoView(); });
+    $selectLanguage = $("#select-language").change(function (e) { Compiler.changeEditorLanguage(); });
+
+    $("#btnOpenTest").click(async function (e) {
+      let file = await selectFile("*.asm, *.sh, *.bas, *.c, *.c, *.c, *.cs, *.cpp, *.cpp, *.cpp, *.lisp, *.d, *.exs, *.erl, *.out, *.f90, *.go, *.hs, *.java, *.js, *.lua, *.nim, *.ml, *.m, *.pas, *.php, *.txt, *.pro, *.py, *.py, *.rb, *.rs, *.ts, *.v", false);
+      let reader = new FileReader();
+      reader.onload = function () { sourceEditor.setValue(reader.result); };
+      reader.readAsText(file);
     });
-    $("#insert-template-btn").click(function (e) {
-      if (isEditorDirty && confirm("Bạn có chắc sẽ làm điều này không? Toàn bộ mã nguồn hiện tại sẽ bị thay thế.")) {
+
+    $("#btnSave").click(function (e) {
+      Compiler.save()
+    });
+
+    $("#btnDownload").click(function (e) {
+      var value = parseInt($selectLanguage.val());
+      download(sourceEditor.getValue(), $(".lm_title")[0].innerText, "text/plain");
+    });
+
+    $("#btnShare").click(function (e) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(window.location.href).select();
+      document.execCommand("copy");
+      $temp.remove();
+      showMess("Thông báo", "Địa chỉ trang web đã được copy vào ClipBoard, hãy dán vào nơi khác để chia sẻ cho mọi người");
+    });
+
+    $("#btnInsertCode").click(function (e) {
+      if (confirm("Bạn có chắc sẽ làm điều này không? Toàn bộ mã nguồn hiện tại sẽ bị thay thế.")) {
         Compiler.insertTemplate();
       }
     });

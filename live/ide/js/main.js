@@ -2,10 +2,7 @@ window.Compiler = function () {
   var me = this;
   // #region ==== Global Func ==== //
   me.getIdFromURI = function () { return location.search.substr(1).trim(); }
-  me.onChangeContent = function (sourceValue, langID) {
-    me.currentLanguageId = langID;
-    isEditorDirty = sourceValue != sources[me.currentLanguageId];
-  }
+  me.onChangeContent = function (langID) { me.currentLanguageId = langID; }
   me.localStorageSetItem = function (key, value) {
     try {
       localStorage.setItem(key, value);
@@ -28,7 +25,6 @@ window.Compiler = function () {
   var check_timeout = 200;
   // #endregion
   // #region ==== Global Var ==== //
-  me.isEditorDirty = false;
   me.currentLanguageId = 67; //Pascal
   // #endregion
   // #region ==== Update UI Func ==== //
@@ -154,7 +150,7 @@ window.Compiler = function () {
   }
 
   me.loadSavedSource = function () {
-    snippet_id = getIdFromURI();
+    snippet_id = me.getIdFromURI();
 
     if (snippet_id.length == 36) {
       $.ajax({
@@ -173,7 +169,7 @@ window.Compiler = function () {
           var time = (data.time === null ? "-" : data.time + "s");
           var memory = (data.memory === null ? "-" : data.memory + "KB");
           me.setStatus(`${data.status.description}, ${time}, ${memory}`);
-          changeEditorLanguage();
+          me.changeEditorLanguage();
         },
         error: handleRunError
       });
@@ -192,7 +188,7 @@ window.Compiler = function () {
           me.setCompile(decode(data["compile_output"]));
           me.setSanbox(decode(data["sandbox_message"]));
           me.setStatus(decode(data["status_line"]));
-          changeEditorLanguage();
+          me.changeEditorLanguage();
         },
         error: function (jqXHR, textStatus, errorThrown) {
           me.showError("Not Found", "Code not found!");
@@ -269,7 +265,7 @@ window.Compiler = function () {
   // #endregion
   // #region ==== Source Template ==== //
 
-  changeEditorLanguage = function () {
+  me.changeEditorLanguage = function () {
     me.setSourceLanguage();
     currentLanguageId = parseInt(me.getLang());
     me.setSourceFileName(fileNames[currentLanguageId]);
@@ -279,7 +275,7 @@ window.Compiler = function () {
   me.insertTemplate = function () {
     currentLanguageId = parseInt(me.getLang());
     me.setSource(sources[currentLanguageId]);
-    changeEditorLanguage();
+    me.changeEditorLanguage();
   }
 
   me.loadRandomLanguage = function () {

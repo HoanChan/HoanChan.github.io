@@ -48,10 +48,11 @@
         File <i class="dropdown icon"></i>
         <div class="menu">
           <a class="item" target="_blank" href="https://HoanChan.github.io/live/ide"><i class="file code icon"></i> Tạo mới</a>
-          <div class="item" onclick="Compiler.save()"><i class="save icon"></i> Lưu (Ctrl + S)</div>
-          <div class="item" onclick="downloadSource()"><i class="download icon"></i> Tải về</div>
-          <div class="item" onclick="ShareUrl()"><i class="share icon"></i> Chia sẻ</div>
-          <div id="insert-template-btn" class="item"><i class="file code outline icon"></i>Chèn code mẫu</div>
+          <div id="btnOpenTest" class="item btn-file"><i class="code icon"></i> Mở (Ctrl + O)</div>
+          <div id="btnSave" class="item"><i class="save icon"></i> Lưu (Ctrl + S)</div>
+          <div id="btnDownload" class="item"><i class="download icon"></i> Tải về</div>
+          <div id="btnShare" class="item"><i class="share icon"></i> Chia sẻ</div>
+          <div id="btnInsertCode" class="item"><i class="file code outline icon"></i>Chèn code mẫu</div>
         </div>
       </div>
       <div class="link item" onclick="$('#site-settings').modal('show')"><i class="cog icon"></i> <span class="portrait mobile hidden">Cài đặt</span></div>
@@ -142,7 +143,7 @@
             <span id="status-line"></span>
           </div>
           <div class="item borderless right p-1">
-            <button id="run-btn" class="ui primary labeled icon button"><i class="play icon"></i>Chạy (F9)</button>
+            <button id="btnRun" class="ui primary labeled icon button"><i class="play icon"></i>Chạy (F9)</button>
           </div>
         </div>
       </div>
