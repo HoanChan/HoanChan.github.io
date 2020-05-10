@@ -46,7 +46,7 @@
     }
     sourceEditor.focus();
     sourceEditor.getModel().onDidChangeContent(function (e) {
-      Compiler.onChangeContent(sourceEditor.getValue(), parseInt($selectLanguage.val()));
+      Compiler.onChangeContent(parseInt($selectLanguage.val()));
     });
   });
   var TestReults = [];
@@ -57,45 +57,45 @@
                 <div class="item">
                   <div class="right floated content">
                     <a class="header">Thời gian thực hiện</a>
-                    <div class="text-right description">${TestReults[index] ? TestReults[index].Time / 1000 : 0} s</div>
+                    <div class="text-right description">${TestReults[index] ? TestReults[index].Time / 1000 : ""} s</div>
                   </div>
                   <i class="large middle aligned clock outline icon"></i>
                   <div class="content">
                     <a class="header">Giới hạn thời gian</a>
-                    <div class="description">${Problem.TimeLimit / 1000} s</div>
+                    <div class="description">${Problem ? Problem.TimeLimit / 1000 : ""} s</div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="right floated content">
                     <a class="header">Bộ nhớ sử dụng</a>
-                    <div class="text-right description">${TestReults[index] ? TestReults[index].Memory : 0} KB</div>
+                    <div class="text-right description">${TestReults[index] ? TestReults[index].Memory : ""} KB</div>
                   </div>
                   <i class="large middle aligned microchip icon"></i>
                   <div class="content">
                     <a class="header">Giới hạn bộ nhớ</a>
-                    <div class="description">${Problem.MemoryLimit} KB</div>
+                    <div class="description">${Problem ? Problem.MemoryLimit : ""} KB</div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="right floated content">
                     <a class="header">Input</a>
-                    <div class="text-right description">${TestReults[index] ? TestReults[index].Input : 0}</div>
+                    <div class="text-right description">${TestReults[index] ? TestReults[index].Input : ""}</div>
                   </div>
                   <i class="large middle aligned keyboard icon"></i>
                   <div class="content">
                     <a class="header">Input</a>
-                    <div class="description">${Problem.Tests[index].Input}</div>
+                    <div class="description">${Problem ? Problem.Tests[index].Input : ""}</div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="right floated content">
                     <a class="header">Output thực tế</a>
-                    <div class="text-right description">${TestReults[index] ? TestReults[index].Output : 0}</div>
+                    <div class="text-right description">${TestReults[index] ? TestReults[index].Output : ""}</div>
                   </div>
                   <i class="large middle aligned desktop icon"></i>
                   <div class="content">
                     <a class="header">Output</a>
-                    <div class="description">${Problem.Tests[index].Output}</div>
+                    <div class="description">${Problem ? Problem.Tests[index].Output : ""}</div>
                   </div>
                 </div>
                 <div class="item">
@@ -197,8 +197,20 @@
     $(".message .close").on("click", function () {
       $(this).closest(".message").transition("fade");
     });
+    $("#testInfo").html(CreateTestData(0));
+    $('.ui.accordion').accordion();
+    $('#testList .item').on('click', function () {
+      $('#testList .item').removeClass('active');
+      $(this).addClass('active');
+    });
     // =================================== //
     loadMessages();
+    $("#btnOpen").click(async function (e) {
+      let file = await selectFile(".asm, .sh, .bas, .c, .c, .c, .cs, .cpp, .cpp, .cpp, .lisp, .d, .exs, .erl, .out, .f90, .go, .hs, .java, .js, .lua, .nim, .ml, .m, .pas, .php, .txt, .pro, .py, .py, .rb, .rs, .ts, .v", false);
+      let reader = new FileReader();
+      reader.onload = function () { sourceEditor.setValue(reader.result); };
+      reader.readAsText(file);
+    });
     $("#btnOpenTest").click(async function (e) {
       let file = await selectFile(".json", false);
       CreateTests(file);
@@ -208,7 +220,7 @@
     });
     $("#btnDownload").click(function (e) {
       var value = parseInt($selectLanguage.val());
-      download(sourceEditor.getValue(), fileNames[value], "text/plain");
+      download(sourceEditor.getValue(), $(".lm_title")[0].innerText, "text/plain");
     });
     $("#btnShare").click(function (e) {
       var $temp = $("<input>");
@@ -219,7 +231,7 @@
       showMess("Thông báo", "Địa chỉ trang web đã được copy vào ClipBoard, hãy dán vào nơi khác để chia sẻ cho mọi người");
     });
     $("#btnInsertCode").click(function (e) {
-      if (isEditorDirty && confirm("Bạn có chắc sẽ làm điều này không? Toàn bộ mã nguồn hiện tại sẽ bị thay thế.")) {
+      if (confirm("Bạn có chắc sẽ làm điều này không? Toàn bộ mã nguồn hiện tại sẽ bị thay thế.")) {
         Compiler.insertTemplate();
       }
     });
@@ -229,11 +241,7 @@
       CreateResults();
     });
     $selectLanguage = $("#select-language").change(function (e) {
-      if (!Compiler.isEditorDirty) {
-        Compiler.insertTemplate();
-      } else {
-        Compiler.changeEditorLanguage();
-      }
+      Compiler.changeEditorLanguage();
     });
 
     Compiler.setSource = function (value) { sourceEditor.setValue(value); };
