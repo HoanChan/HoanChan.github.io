@@ -1,7 +1,6 @@
 /// <reference path="main.js" />
 (function ($) {
   var $selectLanguage;
-  var $runBtn;
   var Compiler = new window.Compiler();
   var themeMode = Compiler.localStorageGetItem("themeMode") || "vs-dark";
   var fontSize = 14;
@@ -152,13 +151,16 @@
     });
   }
   function CreateResults() {
+    $("#btnRun").addClass("loading");
     let tests = Problem.Tests;
     TestReults = Array(tests.length);
+    var Counter = 0;
     for (let index = 0; index < tests.length; index++) {
       let testCompiler = new window.Compiler();
       let result = {};
       testCompiler.setSource = function (value) { sourceEditor.setValue(value); };
-      testCompiler.setInput = function (value) { result.Input = value; };
+      // testCompiler.setInput = function (value) { result.Input = value; };
+      result.Input = tests[index].Input;
       testCompiler.setOutput = function (value) { result.Output = value; };
       testCompiler.setError = function (value) { result.Error = value; };
       testCompiler.setCompile = function (value) { result.Compile = value; };
@@ -174,7 +176,12 @@
         testCompiler = null;
         let correct = TestReults[index] && (TestReults[index].Output == Problem.Tests[index].Output);
         let label = correct ? '<div class="ui teal left pointing label">Đúng</div>' : '<div class="ui red left pointing label">Sai</div>';
-        $("#testList").children().eq(index).html(`${tests[index].Name} ${label}`);
+        $("#testList").children().eq(index).html(`${tests[index].Name} ${label}`).removeClass("active");
+        Counter++;
+        if (Counter == tests.length) {
+          $("#btnRun").removeClass("loading");
+          $("#testList .item:first-child").click();
+        }
       };
       testCompiler.run();
     }
@@ -217,7 +224,10 @@
       }
     });
 
-    $runBtn = $("#run-btn").click(function (e) { CreateResults(); });
+    $("#btnRun").click(function (e) {
+      if ($("#btnRun").hasClass("loading")) return;
+      CreateResults();
+    });
     $selectLanguage = $("#select-language").change(function (e) {
       if (!Compiler.isEditorDirty) {
         Compiler.insertTemplate();
@@ -234,11 +244,6 @@
 
     Compiler.setSourceLanguage = function () { monaco.editor.setModelLanguage(sourceEditor.getModel(), $selectLanguage.find(":selected").attr("mode")); };
     Compiler.setSourceFileName = function (fileName) { $(".lm_title")[0].innerText = fileName; };
-
-    Compiler.showLoading = function () { $runBtn.addClass("loading"); };
-    Compiler.hideLoading = function () { $runBtn.removeClass("loading") };
-    Compiler.afterRun = function () { };
-    Compiler.beforeRun = function () { };
 
     Compiler.showError = function (title, content) {
       $("#site-modal #title").html(title);
