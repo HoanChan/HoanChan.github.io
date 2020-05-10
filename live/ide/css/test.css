@@ -45,18 +45,8 @@ body {
   padding: 0px;
 }
 
-#right {
-  background: grey;
+#right ,#left {
   height    : 100%;
-  padding   : 0px;
-
-}
-
-#left {
-  background: white;
-  overflow  : scroll;
-  height    : 100%;
-  padding   : 0px;
 }
 
 #editor {
@@ -89,12 +79,7 @@ body {
     height: auto !important;
   }
 
-  #left,
-  #input,
-  #output,
-  #compile,
-  #error,
-  #sandbox {
+  #left, #editor, #result {
     height: 400px !important;
   }
 

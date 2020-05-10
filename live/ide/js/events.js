@@ -260,23 +260,30 @@
 
       if (keyCode == 113 || (event.ctrlKey && keyCode == 83)) { // F2 || Ctrl + S
         e.preventDefault();
-        Compiler.save();
+        $("#btnSave").click();
         return;
       }
 
-      if (event.ctrlKey && keyCode == 107) { // Ctrl + +
+      if (event.ctrlKey && (keyCode == 107 || keyCode == 187)) { // Ctrl + +
         e.preventDefault();
         fontSize += 1;
         editorsUpdateFontSize(fontSize);
         return;
       }
 
-      if (event.ctrlKey && keyCode == 109) { // Ctrl + -
+      if (event.ctrlKey && (keyCode == 109 || keyCode == 189)) { // Ctrl + -
         e.preventDefault();
         fontSize -= 1;
         editorsUpdateFontSize(fontSize);
         return;
       }
+
+      if (event.ctrlKey && keyCode == 79) { // Ctrl + O
+        e.preventDefault();
+        $("#btnOpen").click();
+        return;
+      }
+
     });
 
   });

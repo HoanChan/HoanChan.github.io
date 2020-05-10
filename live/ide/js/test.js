@@ -1,5 +1,7 @@
 /// <reference path="main.js" />
 (function ($) {
+  //#region Editor
+
   var $selectLanguage;
   var Compiler = new window.Compiler();
   var themeMode = Compiler.localStorageGetItem("themeMode") || "vs-dark";
@@ -49,6 +51,8 @@
       Compiler.onChangeContent(parseInt($selectLanguage.val()));
     });
   });
+  //#endregion
+  //#region Tests
   var TestReults = [];
   var Problem;
   function CreateTestData(index) {
@@ -99,7 +103,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <div class="ui styled accordion">
+                  <div class="ui styled accordion w-100">
                     <div class="title"><i class="dropdown icon"></i>Thông báo biên dịch</div>
                     <div class="content">${TestReults[index] ? TestReults[index].Compile.replace(/\n/g, "<br />") : 0}</div>
                     <div class="title"><i class="dropdown icon"></i>Thông báo lỗi</div>
@@ -112,22 +116,32 @@
   function CreateTests(file) {
     let reader = new FileReader();
     reader.onload = function () {
-      let data = JSON.parse(reader.result);
+      var data = JSON.parse(reader.result);
       console.log(data);
-      Problem = data[0];
-      $("#left").html("<h2>" + Problem.Name + "</h2>" + "<div>" + Problem.Content + "</div>");
-      let tests = Problem.Tests;
-      $("#testList").html("");
-      for (let index = 0; index < tests.length; index++) {
-        let test = $(`<a class="teal item">${tests[index].Name}</a>`)
-          .on('click', function () {
-            $('#testList .item').removeClass('active');
-            $(this).addClass('active');
-            $("#testInfo").html(CreateTestData(index));
-            $('.ui.accordion').accordion();
-          });
-        $("#testList").append(test);
-        if (index == 0) test.click();
+      $("#left").html("");
+      let menu = $(`<div class="ui top attached tabular mini menu"></div>`).appendTo("#left");
+      let content = $(`<div class="ui bottom attached segment"></div>`).appendTo("#left");
+      for (let index = 0; index < data.length; index++) {
+        let item = $(`<a class="${index == 0 ? "active " : ""}item"></a`).html(data[index].Name).on('click', function () {
+          Problem = data[index];
+          menu.children(".item").removeClass('active');
+          $(this).addClass('active');
+          content.html("<h2>" + Problem.Name + "</h2>" + "<div>" + Problem.Content + "</div>");
+          let tests = Problem.Tests;
+          $("#testList").html("");
+          for (let i = 0; i < tests.length; i++) {
+            let test = $(`<a class="teal item">${tests[i].Name}</a>`)
+              .on('click', function () {
+                $('#testList .item').removeClass('active');
+                $(this).addClass('active');
+                $("#testInfo").html(CreateTestData(i));
+                $('.ui.accordion').accordion();
+              });
+            $("#testList").append(test);
+            if (i == 0) test.click();
+          }
+        }).appendTo(menu);
+        if (index == 0) item.click();
       }
     };
     reader.readAsText(file);
@@ -186,9 +200,12 @@
       testCompiler.run();
     }
   }
+  //#endregion
+  //#region events
   //========================================================================================================================================//
   $(document).ready(function () {
     console.log("Hey, HC-IDE is open-sourced. Have fun!");
+
     $('.tabular.menu .item').tab();
     $("select.dropdown").dropdown();
     $(".ui.dropdown").dropdown();
@@ -258,6 +275,7 @@
       $("#site-modal .content").html(content);
       $("#site-modal").modal("show");
     }
+
     // ================================== //
     $(`input[name="theme-mode"][value="${themeMode}"]`).prop("checked", true);
     $("input[name=\"theme-mode\"]").on("change", function (e) {
@@ -272,7 +290,7 @@
       var keyCode = e.keyCode || e.which;
       if (keyCode == 120) { // F9
         e.preventDefault();
-        Compiler.run();
+        $("#btnRun").click();
         return;
       }
 
@@ -292,23 +310,30 @@
 
       if (keyCode == 113 || (event.ctrlKey && keyCode == 83)) { // F2 || Ctrl + S
         e.preventDefault();
-        Compiler.save();
+        $("#btnSave").click();
         return;
       }
 
-      if (event.ctrlKey && keyCode == 107) { // Ctrl + +
+      if (event.ctrlKey && (keyCode == 107 || keyCode == 187)) { // Ctrl + +
         e.preventDefault();
         fontSize += 1;
         editorsUpdateFontSize(fontSize);
         return;
       }
 
-      if (event.ctrlKey && keyCode == 109) { // Ctrl + -
+      if (event.ctrlKey && (keyCode == 109 || keyCode == 189)) { // Ctrl + -
         e.preventDefault();
         fontSize -= 1;
         editorsUpdateFontSize(fontSize);
         return;
       }
+
+      if (event.ctrlKey && keyCode == 79) { // Ctrl + O
+        e.preventDefault();
+        $("#btnOpen").click();
+        return;
+      }
+
     });
 
   });
@@ -361,4 +386,5 @@
   $(window).resize(function () {
     showMessages();
   });
+  //#endregion
 })(window.jQuery);
