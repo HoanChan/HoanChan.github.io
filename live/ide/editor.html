@@ -30,8 +30,9 @@
   <script type="text/javascript" src="third_party/download.js"></script>
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/testeditor.css">
+  <link rel="stylesheet" href="css/editor.css">
   <script type="text/javascript" src="js/resizable.js"></script>
+  <script type="text/javascript" src="js/editor.js"></script>
 </head>
 
 <body>
@@ -86,24 +87,11 @@
     <div class="column p-1">
       <div class="ui equal width grid p-0 m-0 h-100">
         <div class="row py-1">
-          <div class="column pl-0 pr-1 h-100">
-            <div class="ui segment scroll-y h-100">
-              <div class="ui violet segment">Problem 1 <i class="minus icon"></i></div>
-              <div class="ui violet segment">Problem 2 <i class="minus icon"></i></div>
-              <div class="ui violet segment">Problem 3 <i class="minus icon"></i></div>
-              <div class="ui violet segment">Problem 4 <i class="minus icon"></i></div>
-              <button class="fluid ui basic button"><i class="plus icon"></i></button>
-            </div>
+          <div id="ProblemList" class="column p-1 h-100 scroll-y ui form">
+            <button id="btnAddProblem" class="fluid ui basic button"><i class="plus icon"></i></button>
           </div>
-          <div class="column pl-1 pr-0 h-100">
-            <div class="ui segment scroll-y h-100">
-              <div class="ui red segment">Test 1 <i class="minus icon"></i></div>
-              <div class="ui red segment">Test 2 <i class="minus icon"></i></div>
-              <div class="ui red segment">Test 3 <i class="minus icon"></i></div>
-              <div class="ui red segment">Test 4 <i class="minus icon"></i></div>
-              <div class="ui red segment">Test 5 <i class="minus icon"></i></div>
-              <button class="fluid ui basic button"><i class="plus icon"></i></button>
-            </div>
+          <div id="TestList" class="column p-1 h-100 scroll-y ui form">
+            <button id="btnAddTest" class="fluid ui basic button"><i class="plus icon"></i></button>
           </div>
         </div>
         <div class="resizable row"></div>
@@ -114,20 +102,20 @@
                 <label>Name</label>
                 <div class="ui right action input">
                   <input type="text" placeholder="Test name">
-                  <div class="ui teal button"> <i class="sort numeric down icon"></i> Change Name </div>
+                  <div id="btnChangeName" class="ui teal button"> <i class="sort numeric down icon"></i> Change Name </div>
                 </div>
               </div>
               <div class="field">
                 <label>Time limit in miliseconds</label>
                 <div class="ui corner labeled input">
-                  <input type="text" placeholder="Time limit">
+                  <input id="txtTimeLimit" type="text" placeholder="Time limit">
                   <div class="ui corner label"> <i class="asterisk icon"></i> </div>
                 </div>
               </div>
               <div class="field">
                 <label>Memory limit in Kilobyte</label>
                 <div class="ui corner labeled input">
-                  <input type="text" placeholder="Memory limit">
+                  <input id="txtMemoryLimit" type="text" placeholder="Memory limit">
                   <div class="ui corner label"> <i class="asterisk icon"></i> </div>
                 </div>
               </div>
@@ -141,7 +129,7 @@
       <div class="ui equal width grid p-0 m-0 h-100">
         <div class="row py-1">
           <div class="ui segment h-100 w-100 p-1">
-            <iframe class="w-100 h-100" src="../../../ckeditor/index.html" frameborder="0"></iframe>
+            <iframe id="txtContent" class="w-100 h-100" src="../../../ckeditor/index.html" frameborder="0"></iframe>
           </div>
         </div>
         <div class="resizable row"></div>
@@ -151,11 +139,11 @@
               <div class="ui form">
                 <div class="field">
                   <label>Input</label>
-                  <textarea></textarea>
+                  <textarea id="txtInput"></textarea>
                 </div>
                 <div class="field">
                   <label>Output</label>
-                  <textarea></textarea>
+                  <textarea id="txtOutput"></textarea>
                 </div>
               </div>
             </div>
