@@ -1,0 +1,20 @@
+.segment .minus.icon{
+    position: absolute;
+    right: 1em;
+}
+
+.resizable.column{
+    width: 4px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    background: grey;    
+    cursor: e-resize;
+}
+
+.resizable.row{
+    height: 4px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    background: grey;    
+    cursor: n-resize;
+}
