@@ -7,11 +7,59 @@ body {
   overflow  : hidden;
 }
 
+body {
+  background             : url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+}
+
+
 
 #content {
   height : calc(100vh - 38px - 19px);
   margin : 0px;
   padding: 0px;
+}
+
+.ui.padded.grid {
+  height: 100%;
+}
+
+#codeEditor {
+  margin : 0px;
+  padding: 0px;
+  height : calc(100% - 2.5em - 2.4em);
+}
+
+#input,
+#output,
+#compile,
+#error,
+#sandbox {
+  height: calc(100% - 32px);
+}
+
+#result .column {
+  padding: 0px;
+}
+
+#left,
+#right {
+  height : 100%;
+  padding: 0px;
+}
+
+#content>#right>.row {
+  height: 50%;
+  margin: 0px;
+}
+
+#content>#right>#result>.grid {
+  height: 100%;
+  width : 100%;
+  margin: 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -22,18 +70,33 @@ body {
     overflow: scroll;
   }
 
-  #content{
+  #content,
+  #right,
+  #result {
     height: auto !important;
   }
 
+  #left,
+  #input,
+  #output,
+  #compile,
+  #error,
+  #sandbox {
+    height: 400px !important;
+  }
 
   #site-footer {
     position: relative !important;
   }
+
+  #compiler-options,
+  #command-line-arguments {
+    width: 80px;
+  }
 }
 
 #nav {
-  height: 38px;
+  height: 40px;
 }
 
 #footer {
@@ -106,7 +169,7 @@ body {
 }
 
 #site-content {
-  height: calc(100% - 38px - 19px);
+  height: calc(100% - 45px - 19px);
 }
 
 #site-modal .header {
@@ -117,11 +180,30 @@ body {
   color: #28b1db;
 }
 
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background: #FFD700;
+  }
+}
+
+.dot {
+  background   : #0E6EB8;
+  position     : absolute;
+  border-radius: 50px;
+  width        : 5px;
+  height       : 5px;
+  right        : 7.5px;
+  top          : 7.5px;
+}
+
 #site-footer {
   font-family: "Droid Sans Mono", monospace, monospace, "Droid Sans Fallback";
   font-size  : 11px;
   height     : 19px;
-  background   : #1e1e1e;
   color      : white;
 }
 
