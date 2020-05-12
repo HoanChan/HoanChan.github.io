@@ -105,6 +105,14 @@
     }
     sourceEditor.focus();
     sourceEditor.getModel().onDidChangeContent(function (e) { Compiler.onChangeContent(parseInt($selectLanguage.val())); });
+    window.MonacoResize = function () {
+      sourceEditor.layout();
+      stdinEditor.layout();
+      stdoutEditor.layout();
+      compileOutputEditor.layout();
+      stderrEditor.layout();
+      sandboxMessageEditor.layout();
+    };
   });
 
   function selectFile(contentType, multiple) {

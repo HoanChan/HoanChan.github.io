@@ -29,10 +29,13 @@
   <script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js"></script>
   <script type="text/javascript" src="third_party/download.js"></script>
 
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/resizable.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/code.css">
+  <script src="js/resizable.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/events.js"></script>
+  <script src="js/code.js"></script>
 </head>
 
 <body>
@@ -83,78 +86,78 @@
     </div>
   </div>
   <div id="content" class="ui grid">
-    <div id="left" class="ten wide computer eight wide tablet sixteen wide mobile column">
-      <div class="ui padded grid">
-        <div class="ui top attached mini menu">
-          <div class="item borderless p-1">
-            <select id="select-language" class="ui compact selection dropdown">
-              <option value="45" mode="UNKNOWN">Assembly (NASM 2.14.02)</option> <!-- Unknown mode. Help needed. -->
-              <option value="46" mode="shell">Bash (5.0.0)</option>
-              <option value="47" mode="UNKNOWN">Basic (FBC 1.07.1)</option> <!-- Unknown mode. Help needed. -->
-              <option value="48" mode="c">C (GCC 7.4.0)</option>
-              <option value="49" mode="c">C (GCC 8.3.0)</option>
-              <option value="50" mode="c">C (GCC 9.2.0)</option>
-              <option value="51" mode="csharp">C# (Mono 6.6.0.161)</option>
-              <option value="52" mode="cpp">C++ (GCC 7.4.0)</option>
-              <option value="53" mode="cpp">C++ (GCC 8.3.0)</option>
-              <option value="54" mode="cpp">C++ (GCC 9.2.0)</option>
-              <option value="55" mode="UNKNOWN">Common Lisp (SBCL 2.0.0)</option> <!-- Unknown mode. Help needed. -->
-              <option value="56" mode="UNKNOWN">D (DMD 2.089.1)</option> <!-- Unknown mode. Help needed. -->
-              <option value="57" mode="UNKNOWN">Elixir (1.9.4)</option> <!-- Unknown mode. Help needed. -->
-              <option value="58" mode="UNKNOWN">Erlang (OTP 22.2)</option> <!-- Unknown mode. Help needed. -->
-              <option value="44" mode="plaintext">Executable</option>
-              <option value="59" mode="UNKNOWN">Fortran (GFortran 9.2.0)</option> <!-- Unknown mode. Help needed. -->
-              <option value="60" mode="go">Go (1.13.5)</option>
-              <option value="61" mode="UNKNOWN">Haskell (GHC 8.8.1)</option> <!-- Unknown mode. Help needed. -->
-              <option value="62" mode="java">Java (OpenJDK 13.0.1)</option>
-              <option value="63" mode="javascript">JavaScript (Node.js 12.14.0)</option>
-              <option value="64" mode="lua">Lua (5.3.5)</option>
-              <option value="1000" mode="python">Nim (stable)</option> <!-- Replacement mode. Help needed. -->
-              <option value="65" mode="UNKNOWN">OCaml (4.09.0)</option> <!-- Unknown mode. Help needed. -->
-              <option value="66" mode="UNKNOWN">Octave (5.1.0)</option> <!-- Unknown mode. Help needed. -->
-              <option value="67" mode="pascal">Pascal (FPC 3.0.4)</option>
-              <option value="68" mode="php">PHP (7.4.1)</option>
-              <option value="43" mode="plaintext">Plain Text</option>
-              <option value="69" mode="UNKNOWN">Prolog (GNU Prolog 1.4.5)</option> <!-- Unknown mode. Help needed. -->
-              <option value="70" mode="python">Python (2.7.17)</option>
-              <option value="71" mode="python">Python (3.8.1)</option>
-              <option value="72" mode="ruby">Ruby (2.7.0)</option>
-              <option value="73" mode="rust">Rust (1.40.0)</option>
-              <option value="74" mode="rust">TypeScript (3.7.4)</option>
-              <option value="1001" mode="rust">V (latest)</option> <!-- Replacement mode. Help needed. -->
-            </select>
-          </div>
-          <div class="item borderless p-1 lm_title"></div>
-          <div class="item borderless right p-1">
-            <div class="ui input">
-              <input id="compiler-options" type="text" placeholder="Cmp opts"></input>
-            </div>
-          </div>
+    <div id="left" class="column">
+      <div class="ui top attached mini menu">
+        <div class="item borderless p-1">
+          <select id="select-language" class="ui compact selection dropdown">
+            <option value="45" mode="UNKNOWN">Assembly (NASM 2.14.02)</option> <!-- Unknown mode. Help needed. -->
+            <option value="46" mode="shell">Bash (5.0.0)</option>
+            <option value="47" mode="UNKNOWN">Basic (FBC 1.07.1)</option> <!-- Unknown mode. Help needed. -->
+            <option value="48" mode="c">C (GCC 7.4.0)</option>
+            <option value="49" mode="c">C (GCC 8.3.0)</option>
+            <option value="50" mode="c">C (GCC 9.2.0)</option>
+            <option value="51" mode="csharp">C# (Mono 6.6.0.161)</option>
+            <option value="52" mode="cpp">C++ (GCC 7.4.0)</option>
+            <option value="53" mode="cpp">C++ (GCC 8.3.0)</option>
+            <option value="54" mode="cpp">C++ (GCC 9.2.0)</option>
+            <option value="55" mode="UNKNOWN">Common Lisp (SBCL 2.0.0)</option> <!-- Unknown mode. Help needed. -->
+            <option value="56" mode="UNKNOWN">D (DMD 2.089.1)</option> <!-- Unknown mode. Help needed. -->
+            <option value="57" mode="UNKNOWN">Elixir (1.9.4)</option> <!-- Unknown mode. Help needed. -->
+            <option value="58" mode="UNKNOWN">Erlang (OTP 22.2)</option> <!-- Unknown mode. Help needed. -->
+            <option value="44" mode="plaintext">Executable</option>
+            <option value="59" mode="UNKNOWN">Fortran (GFortran 9.2.0)</option> <!-- Unknown mode. Help needed. -->
+            <option value="60" mode="go">Go (1.13.5)</option>
+            <option value="61" mode="UNKNOWN">Haskell (GHC 8.8.1)</option> <!-- Unknown mode. Help needed. -->
+            <option value="62" mode="java">Java (OpenJDK 13.0.1)</option>
+            <option value="63" mode="javascript">JavaScript (Node.js 12.14.0)</option>
+            <option value="64" mode="lua">Lua (5.3.5)</option>
+            <option value="1000" mode="python">Nim (stable)</option> <!-- Replacement mode. Help needed. -->
+            <option value="65" mode="UNKNOWN">OCaml (4.09.0)</option> <!-- Unknown mode. Help needed. -->
+            <option value="66" mode="UNKNOWN">Octave (5.1.0)</option> <!-- Unknown mode. Help needed. -->
+            <option value="67" mode="pascal">Pascal (FPC 3.0.4)</option>
+            <option value="68" mode="php">PHP (7.4.1)</option>
+            <option value="43" mode="plaintext">Plain Text</option>
+            <option value="69" mode="UNKNOWN">Prolog (GNU Prolog 1.4.5)</option> <!-- Unknown mode. Help needed. -->
+            <option value="70" mode="python">Python (2.7.17)</option>
+            <option value="71" mode="python">Python (3.8.1)</option>
+            <option value="72" mode="ruby">Ruby (2.7.0)</option>
+            <option value="73" mode="rust">Rust (1.40.0)</option>
+            <option value="74" mode="rust">TypeScript (3.7.4)</option>
+            <option value="1001" mode="rust">V (latest)</option> <!-- Replacement mode. Help needed. -->
+          </select>
         </div>
-        <div id="codeEditor" class="ui attached segment"> </div>
-        <div class="ui bottom attached mini menu">
-          <div class="item borderless p-1 ui">
-            <div class="ui input">
-              <input id="command-line-arguments" type="text" placeholder="Cmd args"></input>
-            </div>
-          </div>
-          <div class="item borderless p-1">
-            <span id="editor-status-line"></span>
-            <span id="status-line"></span>
-          </div>
-          <div class="item borderless right p-1">
-            <button id="btnRun" class="ui primary labeled icon button"><i class="play icon"></i>Chạy (F9)</button>
+        <div class="item borderless p-1 lm_title"></div>
+        <div class="item borderless right p-1">
+          <div class="ui input">
+            <input id="compiler-options" type="text" placeholder="Cmp opts"></input>
           </div>
         </div>
       </div>
+      <div id="codeEditor" class="ui attached segment"> </div>
+      <div class="ui bottom attached mini menu">
+        <div class="item borderless p-1 ui">
+          <div class="ui input">
+            <input id="command-line-arguments" type="text" placeholder="Cmd args"></input>
+          </div>
+        </div>
+        <div class="item borderless p-1">
+          <span id="editor-status-line"></span>
+          <span id="status-line"></span>
+        </div>
+        <div class="item borderless right p-1">
+          <button id="btnRun" class="ui primary labeled icon button"><i class="play icon"></i>Chạy (F9)</button>
+        </div>
+      </div>
     </div>
-    <div id="right" class="six wide computer eight wide tablet sixteen wide mobile column grey">
+    <div class="resizable column"></div>
+    <div id="right" class="column">
       <div class="row">
         <div class="ui tabular mini menu m-0">
           <a class="active item" data-tab="input"> Input <span id="stdin-dot" class="dot" hidden></span> </a>
         </div>
         <div id="input" data-tab="input" class="ui active tab p-0 m-0"> </div>
-      </div>
+      </div>      
+    <div class="resizable row"></div>
       <div id="result" class="row">
         <div class="ui tabular mini menu m-0">
           <a class="active item" data-tab="ouput"> Output <span id="stdout-dot" class="dot" hidden></span> </a>

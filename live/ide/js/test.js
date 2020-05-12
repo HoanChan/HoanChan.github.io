@@ -40,6 +40,9 @@
       readOnly: false,
       theme: themeMode,
     });
+    window.MonacoResize = function () {
+      sourceEditor.layout();
+    };
 
     if (Compiler.getIdFromURI()) {
       Compiler.loadSavedSource();

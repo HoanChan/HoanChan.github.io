@@ -29,8 +29,11 @@
   <script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js"></script>
   <script type="text/javascript" src="third_party/download.js"></script>
 
-  <link rel="stylesheet" href="css/test.css">
   <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/resizable.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/test.css">
+  <script src="js/resizable.js"></script>
   <script src="js/main.js"></script>
   <script src="js/test.js"></script>
 </head>
@@ -84,7 +87,7 @@
     </div>
   </div>
   <div id="content" class="ui grid">
-    <div id="left" class="six wide computer eight wide tablet sixteen wide mobile column scroll-y bg-white">
+    <div id="left" class="column scroll-y bg-white">
       <div class="ui fluid placeholder white">
         <div class="image header">
           <div class="line"></div>
@@ -207,7 +210,8 @@
         </div>
       </div>
     </div>
-    <div id="right" class="ten wide computer eight wide tablet sixteen wide mobile column bg-grey p-0">
+    <div class="resizable column" data-size="30"></div>
+    <div id="right" class="column bg-grey p-0">
       <div id="editor" class="row">
         <div class="ui top attached mini menu">
           <div class="item borderless p-1">
@@ -257,6 +261,7 @@
           </div>
         </div>
       </div>
+      <div class="resizable row" data-size="60"></div>
       <div id="result" class="row">
         <div class="ui divided grid h-100">
           <div class="row h-100 pb-0 px-2">
@@ -274,6 +279,7 @@
                 <a class="teal item">Test 10</a>
               </div>
             </div>
+            <div class="resizable column" data-size="30"></div>
             <div class="column h-100 scroll-y">
               <div id="testInfo" class="ui segment">
                 1
