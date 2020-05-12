@@ -2,6 +2,11 @@
 title: Lịch sử
 ---
 
+##### 12/05/2019 - 1.5.3.0
+{: .post-category}
+- Sửa lỗi nhận dạng và in câu hỏi không có phần đáp án
+- Sửa lỗi không in được khi người dùng thiết lập text Spacing < 0.7
+
 ##### 19/03/2019 - 1.5.2.0
 {: .post-category}
 - Sửa lỗi hiển thị trên màn hình độ phân giải khác nhau
