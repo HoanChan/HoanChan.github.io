@@ -73,7 +73,7 @@
         el.next().css("height", "calc(" + botHeight + "% - " + resizableSize / 2 + "px)");
       }
     }
-    if (MonacoResize) MonacoResize();
+    if (typeof MonacoResize != 'undefined' && MonacoResize) MonacoResize();
 
   }
   function FixMinMax(element) {
@@ -127,7 +127,7 @@
           }
           FixMinMax(el.prev());
           FixMinMax(el.next());
-          if (MonacoResize) MonacoResize();
+          if (typeof MonacoResize != 'undefined' && MonacoResize) MonacoResize();
         };
       }
     }
