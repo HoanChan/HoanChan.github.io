@@ -1,6 +1,9 @@
 ---
 title: Lịch sử
 ---
+##### 13/05/2019 - 1.5.4.0
+{: .post-category}
+- Sửa lỗi trộn đề với câu hỏi chỉ có phần dẫn và đáp án
 
 ##### 12/05/2019 - 1.5.3.0
 {: .post-category}

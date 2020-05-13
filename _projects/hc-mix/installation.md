@@ -23,7 +23,7 @@ Các bạn đơn giản thực hiện các bước cài đặt như sau:
 - Tải và cài đặt các thư viện (phải cài đủ thư viện mới cài **HC-MIX**{: .cl-hl} được):
     1. Tải và cài đặt **Microsoft .NET Framework 4** [tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=17718) hoặc [đây](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
     2. Tải và cài đặt [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
-- Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
+- Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [Bản cài Offline](/download/hc-mix.7z) hoặc [Bản cài Online](/download/hc-mix-OL.7z) hoặc [Bản cài trực tiếp - để cập nhật](/download/hc-mix/setup.exe)
     1. Giải nén (Hãy ghi nhớ thư mục bạn đã giải nén HC-MIX vì cần cho việc nâng cấp)
     2. Chạy file **trust.reg**{: .cl-hl} và **trust64.reg**{: .cl-hl}.
     3. Chạy file `Setup.exe` và nhấn `Install`!
