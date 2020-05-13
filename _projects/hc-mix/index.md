@@ -22,7 +22,7 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
-[Bản cài online]](/download/hc-mix-OL.7z){: .btn .btn-primary }
+[Bản cài online](/download/hc-mix-OL.7z){: .btn .btn-primary }
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
