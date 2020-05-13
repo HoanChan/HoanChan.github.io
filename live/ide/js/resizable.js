@@ -47,8 +47,8 @@
   }
   function MinMax(element, vertical) {
     let size = 8;
-    let max = getData($(element), "max", 100, "%");
-    let min = getData($(element), "min", 0, "%");
+    let max = getData($(element), "max", 70, "%");
+    let min = getData($(element), "min", 30, "%");
     let el = $(element);
     let rect = el.parent()[0].getBoundingClientRect(); // lấy thông tin parent tính cả padding và border
     if (vertical) {
@@ -93,8 +93,8 @@
     resizableH.each(function (index) { dragElement(this, false); });
     HideResize();
     function dragElement(element, vertical) {
-      let max = getData($(element), "max", 100, "%");
-      let min = getData($(element), "min", 0, "%");
+      let max = getData($(element), "max", 70, "%");
+      let min = getData($(element), "min", 30, "%");
       element.onmousedown = function (e) {
         e = e || window.event;
         e.preventDefault();
