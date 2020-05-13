@@ -26,7 +26,7 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
-[Bản cài trực tiếp - cập nhật](/download/hc-mix/settup.exe){: .btn .btn-dangerdanger }
+[Bản cài trực tiếp - cập nhật](/download/hc-mix/settup.exe){: .btn .btn-danger }
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
