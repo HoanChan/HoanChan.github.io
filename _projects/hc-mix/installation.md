@@ -23,8 +23,8 @@ Các bạn đơn giản thực hiện các bước cài đặt như sau:
 - Tải và cài đặt các thư viện (phải cài đủ thư viện mới cài **HC-MIX**{: .cl-hl} được):
     1. Tải và cài đặt **Microsoft .NET Framework 4** [tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=17718) hoặc [đây](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
     2. Tải và cài đặt [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
-- Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [Bản cài Offline](/download/hc-mix.7z) hoặc [Bản cài Online](/download/hc-mix-OL.7z) hoặc [Bản cài trực tiếp - để cập nhật](/download/hc-mix/setup.exe)
-    1. Giải nén (Hãy ghi nhớ thư mục bạn đã giải nén HC-MIX vì cần cho việc nâng cấp)
+- Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [Bản cài đã nén](/download/hc-mix.7z) hoặc [Bản cài trực tiếp](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe)
+    1. Giải nén (dành cho bài cài đã nén - có chứa 2 file .reg bên dưới)
     2. Chạy file **trust.reg**{: .cl-hl} và **trust64.reg**{: .cl-hl}.
     3. Chạy file `Setup.exe` và nhấn `Install`!
 
@@ -33,9 +33,9 @@ Các bạn đơn giản thực hiện các bước cài đặt như sau:
 
 Hiện nay phần mềm đã hỗ trợ tự động nâng cấp chỉ với 1 nút bấm, tuy nhiên vì một nguyên nhân nào đó mà trình nâng cấp không thể chạy được thì bạn có thể thực hiện như sau để nâng cấp thủ công:
 
-1. Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
-2. Giải nén vào đúng thư mục đã giải nén khi cài đặt **HC-MIX**{: .cl-hl} lần đầu tiên.
-3. Chạy file `Setup.exe` và nhấn `Install`!
+1. Xóa HC-MIX đang có
+2. Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
+3. Giải nén và cchạy file `Setup.exe` và nhấn `Install`!
 
 ## Một số lỗi thường gặp
 {: #error}
@@ -51,7 +51,7 @@ File nén của phần mềm có phần mở rộng là `7z`. Nếu bạn không
 
 {% include image.html url="error-update.png" class="img-m" %}
 
-Nguyên nhân là lần trước bạn chạy bộ cài ở 1 thư mục. Giờ bạn chạy bộ cài ở 1 thư mục khác nên nó báo lỗi. Chỉ cần chép bộ cài vào đúng thư mục lần trước. Còn lỡ mà quên chỗ nào thì đơn giản là vào `Control Panel` ➔ `Programs and Features` và gỡ **HC–MIX**{: .cl-hl} ra sau đó cài đặt bản nâng cấp bình thường.
+Đơn giản là vào `Control Panel` ➔ `Programs and Features` và gỡ **HC–MIX**{: .cl-hl} ra sau đó cài đặt bản nâng cấp bình thường.
 </div>
 
 <div class="note danger">

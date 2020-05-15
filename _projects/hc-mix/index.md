@@ -18,15 +18,10 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 </div>
 <div class="row">
 <div class="col-sm">
-[Bản cài Offline](/download/hc-mix.7z){: .btn .btn-success }
+[Bản cài đã nén](/download/hc-mix.7z){: .btn .btn-success }
 {: .text-center .lead .m-4}
 </div>
-<div class="col-sm">
-[Bản cài online]](/download/hc-mix-OL.7z){: .btn .btn-primary }
-{: .text-center .lead .m-4}
-</div>
-<div class="col-sm">
-[Bản cài trực tiếp - cập nhật](/download/hc-mix/settup.exe){: .btn .btn-dangerdanger }
+[Bản cài trực tiếp](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe){: .btn .btn-dangerdanger }
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
