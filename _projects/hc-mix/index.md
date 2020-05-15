@@ -21,7 +21,8 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 [Bản cài đã nén](/download/hc-mix.7z){: .btn .btn-success }
 {: .text-center .lead .m-4}
 </div>
-[Bản cài trực tiếp](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe){: .btn .btn-dangerdanger }
+<div class="col-sm">
+[Bản cài trực tiếp](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe){: .btn .btn-danger }
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
