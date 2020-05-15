@@ -1,8 +1,9 @@
 "use strict";
 (function ($) {
-  let Data = {};
+  let Data = [];
   let SelectedProblemIndex = -1;
   let SelectedTestIndex = -1;
+  //#region CKeditor 
   let textEditor;
 
   function GetContent() {
@@ -10,13 +11,14 @@
   }
 
   function SetContent(htmlContent) {
-    textEditor.setData(htmlContent.replace(/>[\n\t ]+</g, "><"));
+    textEditor.setData((htmlContent ?? "").replace(/>[\n\t ]+</g, "><"));
   }
 
   function GetText() {
     return textEditor.editable().getText();
   }
-
+  //#endregion
+  //#region Func 
   function selectFile(contentType, multiple) {
     return new Promise(resolve => {
       let input = document.createElement('input');
@@ -35,13 +37,20 @@
     });
   }
 
-  function AddProblem(name, index) {
+  function AddProblem(name, index, isNew) {
     let field = $(`<div class="field"></div>`).insertBefore($('#btnAddProblem'));
     let inputGroup = $(`<div class="ui right mini action input w-100"></div>`).appendTo(field);;
     let input = $(`<input type="text" value="${name}">`).appendTo(inputGroup);
     let deleteButton = $(`<button class="ui right teal icon button"><i class="minus icon"></i></button>`).appendTo(inputGroup);
+    if (isNew) {
+      Data.push({
+        Name: name,
+        TimeLimit: 3000,
+        MemoryLimit: 2500,
+        Tests: []
+      });
+    }
     $(input).change(function (e) {
-      e.preventDefault();
       Data[SelectedProblemIndex].Name = input.val();
     });
 
@@ -53,7 +62,7 @@
       $('#btnAddTest').parent().find(".field").remove();
       for (let i = 0; i < Data[index].Tests.length; i++) {
         let element = Data[index].Tests[i];
-        let test = AddTest(element.Name, i);
+        let test = AddTest(element.Name, i, false);
         if (i == 0) test.click();
       }
       $('#ProblemList').find('.icon.button').removeClass('red').addClass('teal');
@@ -61,21 +70,25 @@
     });
 
     $(deleteButton).click(function (e) {
-      e.preventDefault();
       var thisIndex = Array.prototype.indexOf.call(field[0].parentNode.children, field[0]);
       Data.splice(thisIndex, 1);
       $(field).remove();
     });
     return input;
   }
-  function AddTest(name, index) {
+  function AddTest(name, index, isNew) {
     let field = $(`<div class="field"></div>`).insertBefore($('#btnAddTest'));
-    let inputGroup = $(`<div class="ui right mini action input w-100"></div>`).appendTo(field);;
+    let inputGroup = $(`<div class="ui right mini action input w-100"></div>`).appendTo(field);
     let input = $(`<input type="text" value="${name}">`).appendTo(inputGroup);
     let deleteButton = $(`<button class="ui right teal icon button"><i class="minus icon"></i></button>`).appendTo(inputGroup);
-
+    if (isNew) {
+      Data[SelectedProblemIndex].Tests.push({
+        Name: name,
+        Input: "",
+        Output: ""
+      });
+    }
     $(input).change(function (e) {
-      e.preventDefault();
       Data[SelectedProblemIndex].Tests[index].Name = input.val();
     }).click(function (e) {
       SelectedTestIndex = index;
@@ -87,7 +100,6 @@
     });
 
     $(deleteButton).click(function (e) {
-      e.preventDefault();
       var thisIndex = Array.prototype.indexOf.call(field[0].parentNode.children, field[0]);
       Data[SelectedProblemIndex].Tests.splice(thisIndex, 1);
       $(field).remove();
@@ -99,6 +111,8 @@
     $("#site-modal .content").html(content);
     $("#site-modal").modal("show");
   }
+  //#endregion
+  //#region Events
   $(document).ready(function () {
     $('.tabular.menu .item').tab();
     $("select.dropdown").dropdown();
@@ -116,40 +130,43 @@
         $('#btnAddProblem').parent().find(".field").remove();
         for (let index = 0; index < Data.length; index++) {
           let element = Data[index];
-          let pro = AddProblem(element.Name, index);
+          let pro = AddProblem(element.Name, index, false);
           if (index == 0) pro.click();
         }
       };
       reader.readAsText(file);
     });
+
+    $('#btnSave').click(function (e) {
+      download(JSON.stringify(Data), "data.json", "text/plain");
+    });
+
     $('#btnAddProblem').click(function (e) {
-      e.preventDefault();
-      AddProblem('Problem', $(this).parent().children().length - 1).click();
+      AddProblem('Problem', $(this).parent().children().length - 1, true).click();
     });
 
     $('#btnAddTest').click(function (e) {
-      e.preventDefault();
-      AddTest('Test', $(this).parent().children().length - 1).click();
+      if (!Data.length || Data.length == 0) return
+      AddTest('Test', $(this).parent().children().length - 1, true).click();
     });
 
     $('#txtInput').change(function (e) {
-      e.preventDefault();
       Data[SelectedProblemIndex].Tests[SelectedTestIndex].Input = $(this).val();
     });
+
     $('#txtOutput').change(function (e) {
-      e.preventDefault();
       Data[SelectedProblemIndex].Tests[SelectedTestIndex].Output = $(this).val();
     });
+
     $('#txtTimeLimit').change(function (e) {
-      e.preventDefault();
       Data[SelectedProblemIndex].TimeLimit = $(this).val();
     });
+
     $('#txtMemoryLimit').change(function (e) {
-      e.preventDefault();
       Data[SelectedProblemIndex].MemoryLimit = $(this).val();
     });
+
     $('#btnRename').click(function (e) {
-      e.preventDefault();
       let str = $('#txtRename').val();
       if (str == "") {
         $('#lblRenameError').html(`<ul class="list"><li>Nhập tên vào đã chứ</li></ul>`).show();
@@ -161,16 +178,14 @@
         Data[SelectedProblemIndex].Tests[index].Name = name;
         $('#TestList input:nth-child(' + index + ')').val(name);
       }
-
     });
     textEditor = $('#txtEdit').ckeditor(function () { }, options).editor;
     textEditor.on('change', function () {
-      //$("#txtHTML").html(GetContent()).click(); // Gọi sự kiện Click, Chỉ cần bắt được sự kiện Click của txtHTML là được
-
       Data[SelectedProblemIndex].Content = GetContent();
     });
     window.MonacoResize = function () {
       textEditor.resize("100%", $("#editorContainer").height());
     };
+    //#endregion
   });
 })(window.jQuery);
