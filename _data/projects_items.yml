@@ -28,7 +28,7 @@
   style: "height: 150px; margin-top: 1rem;"
   content: Soạn thảo và chạy thử mã nguồn Online, hỗ trợ nhiều ngôn ngữ như Pascal, C, Java, Python, Ruby, ...
   links:
-    - url: /live/ide
+    - url: /ide
       text: Xem ngay!
       class: btn btn-secondary
 - title: VietNamKey
