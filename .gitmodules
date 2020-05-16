@@ -1,0 +1,8 @@
+[submodule "live/ide"]
+	path = live/ide
+	url = https://github.com/HoanChan/ide.git
+	branch = master
+[submodule "ide"]
+	path = ide
+	url = https://github.com/HoanChan/ide.git
+	branch = master
