@@ -26,7 +26,11 @@ Chào mừng đến với cổng thông tin hướng dẫn cài đặt và sử 
 {: .text-center .lead .m-4}
 </div>
 <div class="col-sm">
-[Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-info }
+[Tải về đề mẫu](https://github.com/HoanChan/HC-MIX/raw/master/DeMau.zip){: .btn .btn-primary }
+{: .text-center .lead .m-4}
+</div>
+<div class="col-sm">
+[Xem đề mẫu](https://github.com/HoanChan/HC-MIX/tree/master/DeMau){: .btn .btn-info }
 {: .text-center .lead .m-4}
 </div>
 </div>
