@@ -3,6 +3,7 @@
     <head>
         {% include i_meta.html %}
         {% include i_css.html  main = true %}
+        {{ page.css }}
     </head>
     <body>
         <div class="page-wrap">
@@ -13,5 +14,6 @@
         {% include i_js.html  main = true %}
         {% include anchor_links.html %}
         {% include analytics.html %}
+        {{ page.script }}
     </body>
 </html>
