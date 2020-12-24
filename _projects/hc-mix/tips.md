@@ -18,7 +18,14 @@ Có thể **HC-MIX**{: .cl-hl} đã bị tắt bởi 1 nguyên nhân nào đó! 
 - **Bước 3:** Tìm xem có **HC-MIX**{: .cl-hl} trong danh sách không. Nếu có thì thực hiện các bước ở dưới, nếu không thì **HC-MIX**{: .cl-hl} chưa được cài đặt hoặc đã bị gỡ bỏ rồi, bạn chỉ cần cài lại là được.
 - **Bước 4:** Chọn `COM Add-ins` (Bổ trợ COM) ở mục `Manage` (Quản lý) ➔ nhấn nút `Go...` (Đến...).
 - **Bước 5:** Chọn đặt dấu check ở mục **HC-MIX**{: .cl-hl} trong danh sách bổ trợ ➔ Nhấn Ok.
-- **Bước 6:** Tắt Word và mở lại xem thử **HC-MIX**{: .cl-hl} có chạy chưa. Nếu vẫn chưa chạy thì bạn nên vào `Control Panel` gỡ cài đặt **HC-MIX**{: .cl-hl} rồi cài lại.
+- **Bước 6:** Tắt Word và mở lại xem thử **HC-MIX**{: .cl-hl} có chạy chưa.
+
+Nếu vẫn không được thì thực hiện các bước sau:
+
+- **Bước 1:** Mở Microsoft Word ➔ Vào menu `File` (Tệp) ➔ Nhấn vào nút `Options` (Tuỳ chọn) ➔ Chọn mục `Add-Ins` (Phần bổ trợ) ở bên trái.
+- **Bước 2:** Chọn `Disable Add-ins` (Bổ trợ bị vô hiện hóa) ở mục `Manage` (Quản lý) ➔ nhấn nút `Go...` (Đến...).
+- **Bước 3:** Bỏ chọn dấu check ở mục **HC-MIX**{: .cl-hl} trong danh sách bổ trợ bị vô hiệu hóa ➔ Nhấn Ok.
+- **Bước 4:** Tắt Word và mở lại xem thử **HC-MIX**{: .cl-hl} có chạy chưa. Nếu vẫn chưa chạy thì bạn nên vào `Control Panel` gỡ cài đặt **HC-MIX**{: .cl-hl} rồi cài lại.
 
 ##### Nội dung câu hỏi của tôi bị nhận dạng không đúng ý!
 {: .post-category}
