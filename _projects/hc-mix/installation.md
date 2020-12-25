@@ -19,32 +19,44 @@ description: Hướng dẫn cài đặt từng bước HC-MIX
 ## Cài đặt
 {: #install}
 
-Các bạn đơn giản thực hiện các bước cài đặt như sau:
-- Tải và cài đặt các thư viện (phải cài đủ thư viện mới cài **HC-MIX**{: .cl-hl} được):
-    1. Tải và cài đặt **Microsoft .NET Framework 4** [tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=17718) hoặc [đây](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
-    2. Tải và cài đặt [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
-- Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [Bản cài đã nén](/download/hc-mix.7z) hoặc [Bản cài trực tiếp](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe)
-    1. Giải nén (dành cho bài cài đã nén - có chứa 2 file .reg bên dưới)
-    2. Chạy file **trust.reg**{: .cl-hl} và **trust64.reg**{: .cl-hl}.
-    3. Chạy file `Setup.exe` và nhấn `Install`!
+### **Bước 1:** Tải về và cài đặt bộ thư viện **Microsoft .NET Framework 4**
+
+[Bản cài Offline](https://www.microsoft.com/en-us/download/details.aspx?id=17718){: .btn .btn-info .btn-sm} 
+hoặc 
+[Bản cài Online](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: .btn .btn-primary .btn-sm}
+{: .text-center .lead .m-1}
+
+Nếu bạn đã chắc chắn máy mình có cài đặt bộ thư viện **Microsoft .NET Framework 4** rồi thì bỏ qua bước này nhé.
+### **Bước 2:** Tải về file **Trust.reg** và chạy nó
+
+[Tải về file Trust.Reg](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/trust.reg){: .btn .btn-success .btn-sm}
+{: .text-center .lead .m-1}
+
+Click phải và nút trên, chọn **Lưu liên kết thành...** (Save link as ...) để tải về.
+
+### **Bước 3:** Tải về file **Setup.exe** và chạy nó:
+
+[Tải về file Setup.exe](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe){: .btn .btn-danger .btn-sm}
+{: .text-center .lead .m-1}
+
+### **Bước 4:** Mở Microsoft Word lên 
+
+Bạn sẽ thấy thêm 1 Tab là **HC–MIX** như vậy là quá trình cài đặt đã thành công rồi đấy. Bạn có thể tham khảo đề mẫu để biết cách soạn đề nhé.
+
+[Xem đề mẫu](https://github.com/HoanChan/HC-MIX/tree/master/DeMau){: .btn .btn-info .btn-sm} hoặc [Tải về đề mẫu](https://github.com/HoanChan/HC-MIX/raw/master/DeMau.zip){: .btn .btn-primary .btn-sm}
+{: .text-center .lead .m-1}
+
 
 # Nâng cấp
 {: #update}
 
-Hiện nay phần mềm đã hỗ trợ tự động nâng cấp chỉ với 1 nút bấm, tuy nhiên vì một nguyên nhân nào đó mà trình nâng cấp không thể chạy được thì bạn có thể thực hiện như sau để nâng cấp thủ công:
+Hiện nay phần mềm đã hỗ trợ tự động nâng cấp, tuy nhiên vì một nguyên nhân nào đó mà trình nâng cấp không thể chạy được thì bạn có thể thực hiện như sau để nâng cấp thủ công:
 
 1. Xóa HC-MIX đang có
-2. Tải về phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](/download/hc-mix.7z)
-3. Giải nén và cchạy file `Setup.exe` và nhấn `Install`!
+2. Tải về và cài đặt phiên bản mới nhất của **HC-MIX**{: .cl-hl}: [tại đây](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/setup.exe)
 
 ## Một số lỗi thường gặp
 {: #error}
-
-<div class="note info">
-##### Không giản nén được
-
-File nén của phần mềm có phần mở rộng là `7z`. Nếu bạn không giải nén được thì tải và cài đặt [7zip](http://www.7-zip.org/download.html) để xử lý nó nhé!
-</div>
 
 <div class="note danger">
 ##### Lỗi không nâng cấp được (Đã cài phiên bản cũ)
@@ -74,7 +86,7 @@ File nén của phần mềm có phần mở rộng là `7z`. Nếu bạn không
 
 Khi phát triển, phần mềm sử dụng **ClickOnce**{: .cl-hl} để cài đặt. Khi cài đặt, **Troubleshooting Office Solution**{: .cl-hl} **Security**{: .cl-hl} tiến hành kiểm tra thông tin đăng ký trong tập tin **manifest**{: .cl-hl}. Nếu không mở được tập tin này nó sẽ báo lỗi như trường hợp của bạn. 
 
-➔ Chạy 2 file **trust.reg**{: .cl-hl} và **trust64.reg**{: .cl-hl} trong thư mục cài đặt rồi chạy lại file cài đặt để khắc phục.
+➔ Chạy tải và chạy file **trust.reg**{: .cl-hl} ở bước 2 hướng dẫn cài đặt rồi chạy lại file cài đặt để khắc phục.
  </div>
 
 <div class="note danger">
