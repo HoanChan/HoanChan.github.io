@@ -74,29 +74,29 @@ title: Lịch sử
 - Đưa toàn bộ gói cập nhật lớp lên máy chủ
 
 ##### 11/11/2019
-
+{: .post-category}
 - Hoàn thiện hỗ trợ hiển thị cho màn hình độ phân giải cao HiDPI
 - Hỗ trợ xuất thẳng số liệu ra Excel
 
 ##### 17/05/2019
-
+{: .post-category}
 - Điều chỉnh lỗi không sử dụng được chức năng câu con
 
 ##### 03/01/2019
-
+{: .post-category}
 - Các chú thích giờ đây hiển thị như 1 nhóm và có thể phân cấp.
 - Có thể điều chỉnh màu sắc cho các thành phần in ấn
 - Việc in đề có thể tạm dừng, thoát nửa chừng một cách hợp lý
 
 ##### 10/11/2018
-
+{: .post-category}
 - Hỗ trợ xem trước khi in
 - Các thiết lập trên hộp thoại in sẽ được lưu cho lần sau
 - Khi in hàng loạt sẽ kèm theo in dữ liệu
 - Hỗ trợ công thức của MathType và công thức của Word đầy đủ
 
 ##### 25/04/2018
-
+{: .post-category}
 - Giờ đây chương trình đã có thể cập nhật tự động bằng 1 nút bấm duy nhất
 - Bổ sung các máy chủ mới để phục vụ quá trình cập nhật tự động
 - Ngắt dòng thủ công, ngắt đoạn, ngắt trang, ngắt mục, ngắt cột, ngắt phần ... đều được tính là xuống dòng ➔ Nhận diện các thành phần chính xác hơn
