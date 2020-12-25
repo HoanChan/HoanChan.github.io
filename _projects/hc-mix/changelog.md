@@ -1,28 +1,72 @@
 ---
 title: Lịch sử
 ---
-##### 13/05/2019 - 1.5.4.0
+##### 21/12/2020 - 1.8.0.0
+{: .post-category}
+- Sửa lỗi in bị mất đáp án tô đen, bị đứng khi bấm tạm dừng, hiển thị tiến trình in đáp án chính xác
+- Sửa lỗi in mã đề phiếu tô bị sai
+
+##### 18/11/2020 - 1.7.0.0
+{: .post-category}
+- Bẫy lỗi toàn bộ chương trình, tự động lưu hoặc bật hộp thoại lưu trước khi in
+- Sửa lỗi nút in phiếu làm bài bị lỗi
+- Điều chỉnh việc dừng in chính xác hơn, không còn chờ in đáp án hay nội dung nhóm nữa
+- Thông báo lỗi khi trang in bị định dạng sai, không thiết lập trang được
+
+##### 06/06/2020 - 1.6.0.0
+{: .post-category}
+- Sửa lỗi FolderBrowser không chịu hiện làm Word treo
+
+##### 04/06/2020 - 1.5.9.0
+{: .post-category}
+- Hỗ trợ in đề gốc dạng MS Form
+
+##### 31/05/2020 - 1.5.8.0
+{: .post-category}
+- Sửa lỗi trộn đề với nhóm không có câu lựa chọn
+
+##### 30/05/2020 - 1.5.7.0
+{: .post-category}
+- Sửa lỗi trộn đề với câu không có các lựa chọn
+
+##### 30/05/2020 - 1.5.6.0
+{: .post-category}
+- Sửa lỗi nhận diện nhầm câu hỏi không có phần dẫn và câu hỏi của dạng câu kết nối
+  
+##### 29/05/2020 - 1.5.5.0
+{: .post-category}
+- Sửa lỗi khi đáp án được đặt ở dòng đầu tiên mà không có câu hỏi.
+- Chuyển việc in ấn kết quả lên Form
+- Sửa lỗi in bảng chấm điểm
+       
+##### 29/05/2020 - 1.5.5.0
+{: .post-category}
+- Sửa lỗi khi đáp án được đặt ở dòng đầu tiên mà không có câu hỏi.
+- Chuyển việc in ấn kết quả lên Form
+- Sửa lỗi in bảng chấm điểm
+ 
+##### 13/05/2010 - 1.5.4.0
 {: .post-category}
 - Sửa lỗi trộn đề với câu hỏi chỉ có phần dẫn và đáp án
 
-##### 12/05/2019 - 1.5.3.0
+##### 12/05/2020 - 1.5.3.0
 {: .post-category}
 - Sửa lỗi nhận dạng và in câu hỏi không có phần đáp án
 - Sửa lỗi không in được khi người dùng thiết lập text Spacing < 0.7
 
-##### 19/03/2019 - 1.5.2.0
+##### 19/03/2020 - 1.5.2.0
 {: .post-category}
 - Sửa lỗi hiển thị trên màn hình độ phân giải khác nhau
 - Hỗ trợ xuất đề gốc MCMIX
 - Sửa lỗi xuất đề ViettelStudy
 - Phản hồi sẽ được dẫn đến fanpage của chương trình
 
-##### 15/03/2019 - 1.5.1.0
+##### 15/03/2020 - 1.5.1.0
 {: .post-category}
 - Sửa lỗi hiển thị phần xem trước đề
 - Hỗ trợ xuất đề gốc theo 3 dạng Việt Nam, Tiếng Anh, ViettelStudy
 
-##### 10/03/2019 - 1.5.0.0 - Tái cấu trúc toàn bộ
+##### 10/03/2020 - 1.5.0.0 - Tái cấu trúc toàn bộ
 {: .post-category}
 - Hoàn thiện chỉnh sửa câu trả lời thông qua TreeView
 - Bổ sung GoogleTracker để thống kê các hoạt động của người dùng
