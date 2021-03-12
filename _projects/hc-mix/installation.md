@@ -102,3 +102,22 @@ Nếu vẫn lỗi thì thực hiện như sau:
 
 ➔ Vào thư mục **C:\Program Files\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl}, nếu không có thư mục này thì vào **C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\10.0**{: .cl-hl} tìm đến file **VSTOInstaller.exe.Config**{: .cl-hl} thì đổi tên nó thành **VSTOInstaller.exe.Config.old**{: .cl-hl} (thêm đuôi **.old**{: .cl-hl} vào cuối). Sau đó chạy lại trình cài đặt **HC-MIX**{: .cl-hl}.
  </div>
+
+ <div class="note danger">
+##### Lỗi không tải được file cài đặt
+
+{% include image.html url="error-SSL-TLS.png" class="img-m" %}
+
+Trình cài đặt **HC-MIX**{: .cl-hl} sẽ tải các file cần thiết từ máy chủ của Microsoft về để cài đặt, nếu nó không tải được thi nó sẽ báo lỗi như trường hợp của bạn.
+
+➔ Lỗi này xuất hiện là do Windows của bạn không được cập nhật (Các bản Windows được bung Ghost bởi các tiệm sửa máy tính và không có bản quyền) vì thế chứng chỉ bảo mật SSL/TLS không đúng nên không tải file được. Cách khắc phục đơn giản là tải toàn bộ **HC-MIX**{: .cl-hl} về để cài offline.
+
+Thực hiện như sau:
+
+➔ Vào trang web chứa bộ cài trực tuyến của **HC-MIX**{: .cl-hl} [Tại đây](https://github.com/HoanChan/HC-MIX) sau đó tải về toàn bộ bằng cách nhấn vào **Code**{: .cl-hl} rồi chọn **Download Zip**{: .cl-hl}, sau đó giải nén và chạy lại trình cài đặt **HC-MIX**{: .cl-hl} ở trong thư mục vừa giải nén được.
+
+{% include image.html url="download.png" class="img-m" %}
+
+**Lưu ý:** Việc cài đặt Office chỉ là giải pháp tình thế. Khi chương trình có phiên bản mới thì bạn lại phải làm lại bước tải file về và giải nén đúng thư mục lần trước đã giải nén để tiến hành cập nhật bằng cách chạy lại trình cài đặt **HC-MIX**{: .cl-hl}. Lời khuyên là hãy cập nhật Windows để tận hưởng bộ cài Online và tính năng cập nhật tự động.
+
+ </div>
