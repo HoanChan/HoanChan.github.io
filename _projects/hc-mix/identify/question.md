@@ -11,6 +11,15 @@ Một câu hỏi bao gồm các bộ phận sau đây:
 
 Để chương trình nhận diện được thì cần soạn câu hỏi theo đúng cú pháp
 
+## Cú pháp câu hỏi đúng sai, câu tự luận hoặc câu gạch chân:
+
+```
+<Phần nhận diện câu hỏi> <Nội dung câu hỏi>
+<Phần thuộc tính>
+<Phần giải thích>
+```
+{: .sh_syntax }
+
 ## Cú pháp câu hỏi 1 lựa chọn, nhiều lựa chọn hoặc sắp xếp:
 
 ```

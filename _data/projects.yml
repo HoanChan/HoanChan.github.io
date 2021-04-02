@@ -7,12 +7,17 @@
   - url: 
   - url: installation
   - url: soft
-  - url: question
-  - url: child
-  - url: group
-  - url: comment
-  - url: headerfooter
-  - url: advance
+  - url: identify
+    posts:
+    - url: 
+    - url: child
+    - url: comment
+    - url: group
+    - url: headerfooter
+    - url: question
+  - url: mix
+  - url: print
+  - url: result
   - url: tips
   - url: changelog
 

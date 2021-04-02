@@ -1,6 +1,11 @@
 ---
 title: Lịch sử
 ---
+
+##### 17/01/2021 - 1.9.0.0
+{: .post-category}
+- Sửa lỗi không kết nối được với máy chủ.
+
 ##### 21/12/2020 - 1.8.0.0
 {: .post-category}
 - Sửa lỗi in bị mất đáp án tô đen, bị đứng khi bấm tạm dừng, hiển thị tiến trình in đáp án chính xác
