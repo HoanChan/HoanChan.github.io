@@ -2,6 +2,16 @@
 title: Lịch sử
 ---
 
+##### 05/04/2021 - 2.0.0.0
+{: .post-category}
+- Thêm tính năng chuyển toàn bộ bảng thành văn bản để nhận diện được các đề nằm bên trong bảng.
+- Cho phép in các đề được trộn dưới dạng đề gốc
+- Tự động lưu đề trước khi in ấn
+- Sửa lỗi in nội dung câu con bị sai
+- Sửa lỗi không nhận diện được câu hỏi không có nội dung phần dẫn
+- Sửa lại giao diện menu cho gọn hơn
+- Sửa lỗi in câu hỏi kết nối bị bắt đầu từ B chứ không phải A
+
 ##### 17/01/2021 - 1.9.0.0
 {: .post-category}
 - Sửa lỗi không kết nối được với máy chủ.
