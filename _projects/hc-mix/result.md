@@ -9,7 +9,7 @@ Chương trình hỗ trợ đa dạng các kiểu xuất đáp án dựa theo c�
 
 Đáp án dạng tô đen - Chấm bài bằng tay
 
-{% include image.html url="bold".png" class="img-m" %}
+{% include image.html url="bold.png" class="img-m" %}
 
 Đáp án dạng tô đen tiết kiệm mực:
 
