@@ -1,1 +1,1 @@
-{% capture url %}/assets{{ page.url | replace: ".html" ""}}/{{ include.url }}{% endcapture %}<img class = "img-fluid {{ include.class }}" style = "{{ include.style }}" src="{{ url }}" alt="{{ include.alt }}">
+{% capture url %}/assets{{ page.url | replace: ".html" ""}}{{ include.url }}{% endcapture %}<img class = "img-fluid {{ include.class }}" style = "{{ include.style }}" src="{{ url }}" alt="{{ include.alt }}">
