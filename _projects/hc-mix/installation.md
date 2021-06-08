@@ -114,10 +114,22 @@ Trình cài đặt **HC-MIX**{: .cl-hl} sẽ tải các file cần thiết từ 
 
 Thực hiện như sau:
 
-➔ Vào trang web chứa bộ cài trực tuyến của **HC-MIX**{: .cl-hl} [Tại đây](https://github.com/HoanChan/HC-MIX) sau đó tải về toàn bộ bằng cách nhấn vào **Code**{: .cl-hl} rồi chọn **Download Zip**{: .cl-hl}, sau đó giải nén và chạy lại trình cài đặt **HC-MIX**{: .cl-hl} ở trong thư mục vừa giải nén được.
+➔ Đảm bảo rằng 2 thứ sau đã được cài đặt:
+
+- [Microsoft .NET Framework 4](https://www.microsoft.com/en-us/download/details.aspx?id=17851)
+- [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217)
+
+➔ Tải về file **Trust.reg** và chạy nó
+
+[Tải về file Trust.Reg](https://raw.githubusercontent.com/HoanChan/HC-MIX/master/trust.reg){: .btn .btn-success .btn-sm}
+{: .text-center .lead .m-1}
+
+Click phải và nút trên, chọn **Lưu liên kết thành...** (Save link as ...) để tải về.
+
+➔ Vào trang web chứa bộ cài trực tuyến của **HC-MIX**{: .cl-hl} [Tại đây](https://github.com/HoanChan/HC-MIX) sau đó tải về toàn bộ bằng cách nhấn vào **Code**{: .cl-hl} rồi chọn **Download Zip**{: .cl-hl}, sau đó giải nén và chạy lại trình cài đặt **HC-MIX**{: .cl-hl} ở trong thư mục vừa giải nén được bằng cách chạy file **HC-MIX.vsto**{: .cl-hl}.
 
 {% include image.html url="download.png" class="img-m" %}
 
-**Lưu ý:** Việc cài đặt Office chỉ là giải pháp tình thế. Khi chương trình có phiên bản mới thì bạn lại phải làm lại bước tải file về và giải nén đúng thư mục lần trước đã giải nén để tiến hành cập nhật bằng cách chạy lại trình cài đặt **HC-MIX**{: .cl-hl}. Lời khuyên là hãy cập nhật Windows để tận hưởng bộ cài Online và tính năng cập nhật tự động.
+**Lưu ý:** Việc cài đặt Office chỉ là giải pháp tình thế. Khi chương trình có phiên bản mới thì bạn lại phải làm lại bước tải file về và giải nén đúng thư mục lần trước đã giải nén để tiến hành cập nhật bằng cách chạy lại trình cài đặt **HC-MIX**{: .cl-hl} (hoặc gỡ bản cũ ra để cài bản mới). Lời khuyên là hãy cập nhật Windows để tận hưởng bộ cài Online và tính năng cập nhật tự động.
 
  </div>
