@@ -1,6 +1,24 @@
 ---
-title: Lịch sử
+title: Lịch sử + Định hướng tương lai
 ---
+<div class="note primary">
+##### Các tính năng hướng tới trong tương lai
+
+- Tự động nhận diện khi sửa văn bản, không cần nhận diện lại
+- Thêm chức năng nhập đề: 4 người soạn đề theo ma trận -> trộn lại thành 1 đề gồm các câu con tương ứng
+- Cho phép nhập đáp án dưới dạng văn bản, bảng sau khi nhận diện câu hỏi (Dùng cho việc copy đáp án từ nguồn mạng mà không có phần gạch chân chỉ có phần danh sách đáp án)
+- Cho phép thiết lập số câu trong nhóm được chia bởi comment sẽ được chọn để in đề (Tạo được ngân hàng câu hỏi theo ma trận
+- Bổ sung thêm các phiếu tô trắc nghiệm
+- Tái cấu trúc hoạt động theo OpenXML để tăng tốc độ xử lý x10000
+
+</div>
+
+<div class="note success">
+##### Các tính năng đang được xây dựng
+
+- Chuyển đề sang PowerPoint (Đang xử lý công thức và ảnh)
+
+</div>
 
 ##### 05/04/2021 - 2.0.0.0
 {: .post-category}
