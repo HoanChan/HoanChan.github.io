@@ -9,13 +9,13 @@ description: Hướng dẫn các tính năng cơ bản của phẩn mềm
 
 
 - Mục **Chèn thành phần**: Đây là các các mẫu văn bản để nhận diện các thành phần trong đề kiểm tra.
-    + **Nhóm nội dung**: Mẫu phần nhận diện của [nhóm chỉ chứa nội dung văn bản](/projects/hc-mix/group#contentGroup).
-    + **Nhóm câu hỏi**: Mẫu phần nhận diện của [nhóm bình thường](/projects/hc-mix/group), chứa các câu hỏi trắc nghiệm.
-    + **Nhóm con**: Mẫu phần nhận diện của [nhóm con](/projects/hc-mix/group#childGroup).
-    + **Câu hỏi**: Mẫu phần nhận diện của một [câu hỏi](/projects/hc-mix/question) hoàn chỉnh.
-    + **Câu con**: Mẫu phần nhận diện của một [câu hỏi](/projects/hc-mix/question) có chứa [câu con](/projects/hc-mix/child).
-    + **Chú thích**: Mẫu phần nhận diện của một [chú thích](/projects/hc-mix/comment).
-- Mục **Chèn mã đại diện**: Đây là các các mẫu [mã đại diện](/projects/hc-mix/group#code) dùng trong nội dung nhóm để thay thế trong lúc xuất đề kiểm tra.
+    + **Nhóm nội dung**: Mẫu phần nhận diện của [nhóm chỉ chứa nội dung văn bản](/projects/hc-mix/identify/group#contentGroup).
+    + **Nhóm câu hỏi**: Mẫu phần nhận diện của [nhóm bình thường](/projects/hc-mix/identify/group), chứa các câu hỏi trắc nghiệm.
+    + **Nhóm con**: Mẫu phần nhận diện của [nhóm con](/projects/hc-mix/identify/group#childGroup).
+    + **Câu hỏi**: Mẫu phần nhận diện của một [câu hỏi](/projects/hc-mix/identify/question) hoàn chỉnh.
+    + **Câu con**: Mẫu phần nhận diện của một [câu hỏi](/projects/hc-mix/identify/question) có chứa [câu con](/projects/hc-mix/identify/child).
+    + **Chú thích**: Mẫu phần nhận diện của một [chú thích](/projects/hc-mix/identify/comment).
+- Mục **Chèn mã đại diện**: Đây là các các mẫu [mã đại diện](/projects/hc-mix/identify/group#code) dùng trong nội dung nhóm để thay thế trong lúc xuất đề kiểm tra.
     + **Phiếu tô**: Mã đại diện của phiếu tô trắc nghiệm.
     + **DS câu hỏi**: Mã đại diện của danh sách câu hỏi có trong nhóm.
     + **Mã đề**: Mã đại diện của mã đề.
