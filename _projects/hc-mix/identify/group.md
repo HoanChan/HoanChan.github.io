@@ -13,23 +13,47 @@ Bài trắc nghiệm có cấu trúc gồm nhiều nhóm, mỗi nhóm có thể 
 
     VD: `NHÓM 1.`, `nhóm 03:`, `Nhóm 2`
 
-<div class="note" id="contentGroup">
-##### Áp dụng đối với phần không có trắc nghiệm
+Cấu trúc hoàn chỉnh của một nhóm như sau:
+```
+<Phần nhận diện của nhóm>
+[<Nội dung văn bản của nhóm>]
+[<Danh sách các câu hỏi trong nhóm>]
+```
+{: .sh_syntax }
 
-Nếu nhóm chỉ chứa nội dung văn bản, không có câu trắc nghiệm nào thì gạch chân chữ <u>Nhóm</u>.
+Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
+
+<div class="note" id="group">
+##### <span>{% include image.html url="Group.png" %}</span>: Nhóm câu hỏi
+
+- Là nơi chứa các câu hỏi.
+- Các câu hỏi trong nhóm này sẽ được xáo vị trí và đáp án khi trộn đề.
+- Vị trí của nhóm không đổi khi tiến hành trộn đề.
+
 </div>
 
-<div class="note" id="childGroup">>
-##### Áp dụng đối với nhóm con
+<div class="note" id="contentGroup">
+##### <span>{% include image.html url="ContentGroup.png" %}</span>: Nhóm nội dung
 
-Nhóm con được hiểu là nhóm nằm trong 1 nhóm. Thay vì cố định trên đề như nhóm bình thường, Nhóm con sẽ được trộn với các câu hỏi. 
+- Chữ <u>Nhóm</u> được gạch chân.
+- Là nơi chứa các phần văn bản trong đề như tiêu đề, tên mã đề hay phiếu tô trắc nghiệm.
+- Các văn bản ở trong nhóm này sẽ không được nhận dạng như câu hỏi đề trộn đề.
+- Có thể được chèn một số thành phần tự động khi in đề như Mã đề, Phiếu tô trắc nghiệm, Danh sách câu hỏi.
+- Vị trí của nhóm không đổi khi tiến hành trộn đề.
 
-Ví dụ như cho một bảng dữ liệu và có 3 4 câu hỏi cho bảng dữ liệu đó thì ta cần nhóm con để các câu hỏi này luôn được đi kèm bảng dữ liệu
+</div>
 
- Chỉ cần in nghiêng chữ _Nhóm_ để xác định 1 nhóm con.
+<div class="note" id="childGroup">
+##### <span>{% include image.html url="ChildGroup.png" %}</span>: Nhóm nội dung
 
- Cách soạn 1 đề có sử dụng nhóm con hoàn chỉnh xin mời xem đề mẫu ➔ [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
- 
+- Chữ _Nhóm_ được in nghiêng.
+- Là nhóm nằm trong một [**Nhóm câu hỏi**](#group), có vai trò như 1 câu hỏi và sẽ được xáo vị trí khi trộn đề như câu hỏi.
+- Các câu hỏi trong nhóm con sẽ được xáo trong nội bộ nhóm con.
+
+    Ví dụ như cho một bảng dữ liệu và có 3 4 câu hỏi cho bảng dữ liệu đó thì ta cần nhóm con để các câu hỏi này luôn được đi kèm sau bảng dữ liệu.
+
+Cách soạn 1 đề có sử dụng nhóm con hoàn chỉnh xin mời xem đề mẫu ➔ [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
+
 </div>
 
 <div class="note info" id="code">
