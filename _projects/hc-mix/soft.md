@@ -47,9 +47,11 @@ Bạn có thể kiểm tra từng nhóm, từng câu, từng đáp án bằng c�
 
 Sau đây là danh sách quy ước về các kí hiệu thể hiện trong kết quả nhận diện:
 
-- <span>{% include image.html url="Group.png" %}</span>: Nhóm câu hỏi.
-- <span>{% include image.html url="ContentGroup.png" %}</span>: Nhóm nội dung.
-- <span>{% include image.html url="ChildGroup.png" %}</span>: Nhóm con.
+- <span>{% include image.html url="../identify/group/Group.png" %}</span>: Nhóm câu hỏi.
+- <span>{% include image.html url="../identify/group/ContentGroup.png" %}</span>: Nhóm nội dung.
+- <span>{% include image.html url="../identify/group/ChildGroup.png" %}</span>: Nhóm con.
+- <span>{% include image.html url="../identify/group/FixedGroup.png" %}</span>: Nhóm cố định.
+- <span>{% include image.html url="../identify/group/FixedChildGroup.png" %}</span>: Nhóm con cố định.
 - <span>{% include image.html url="Question.png" %}</span>: Câu hỏi.
 - <span>{% include image.html url="Child.png" %}</span>: Câu con.
 - <span>{% include image.html url="Answer.png" %}</span>: Câu trả lời.

@@ -32,6 +32,15 @@ Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
 
 </div>
 
+<div class="note" id="fixedGroup">
+##### <span>{% include image.html url="FixedGroup.png" %}</span>: Nhóm cố định
+
+- Giống như nhóm câu hỏi
+- Vị trí các câu hỏi trong nhóm sẽ được cố định không thay đổi.
+- Thứ tự các đáp án trong các câu hỏi sẽ được xáo.
+
+</div>
+
 <div class="note" id="contentGroup">
 ##### <span>{% include image.html url="ContentGroup.png" %}</span>: Nhóm nội dung
 
@@ -44,7 +53,7 @@ Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
 </div>
 
 <div class="note" id="childGroup">
-##### <span>{% include image.html url="ChildGroup.png" %}</span>: Nhóm nội dung
+##### <span>{% include image.html url="ChildGroup.png" %}</span>: Nhóm con
 
 - Chữ _Nhóm_ được in nghiêng.
 - Là nhóm nằm trong một [**Nhóm câu hỏi**](#group), có vai trò như 1 câu hỏi và sẽ được xáo vị trí khi trộn đề như câu hỏi.
@@ -53,6 +62,15 @@ Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
     Ví dụ như cho một bảng dữ liệu và có 3 4 câu hỏi cho bảng dữ liệu đó thì ta cần nhóm con để các câu hỏi này luôn được đi kèm sau bảng dữ liệu.
 
 Cách soạn 1 đề có sử dụng nhóm con hoàn chỉnh xin mời xem đề mẫu ➔ [Tải về đề mẫu](/download/hc-mix_demau.7z){: .btn .btn-primary }
+
+</div>
+
+<div class="note" id="fixedChildGroup">
+##### <span>{% include image.html url="FixedChildGroup.png" %}</span>: Nhóm con cố định
+
+- Giống như nhóm con
+- Vị trí các câu hỏi trong nhóm sẽ được cố định không thay đổi.
+- Thứ tự các đáp án trong các câu hỏi sẽ được xáo.
 
 </div>
 
