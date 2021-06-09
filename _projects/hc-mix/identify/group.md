@@ -24,7 +24,7 @@ Cấu trúc hoàn chỉnh của một nhóm như sau:
 Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
 
 <div class="note" id="group">
-##### <span>{% include image.html url="Group.png" %}</span>: Nhóm câu hỏi
+##### <span>{% include image.html url="Group.png" %}</span> Nhóm câu hỏi
 
 - Là nơi chứa các câu hỏi.
 - Các câu hỏi trong nhóm này sẽ được xáo vị trí và đáp án khi trộn đề.
@@ -33,16 +33,17 @@ Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
 </div>
 
 <div class="note" id="fixedGroup">
-##### <span>{% include image.html url="FixedGroup.png" %}</span>: Nhóm cố định
+##### <span>{% include image.html url="FixedGroup.png" %}</span> Nhóm cố định
 
 - Giống như nhóm câu hỏi
+- Chữ <span style="text-decoration-line: underline; text-decoration-style: double;">Nhóm</span> được gạch chân đôi (nếu không tự định dạng được thì dùng thanh công cụ để chèn phần nhận diện vào).
 - Vị trí các câu hỏi trong nhóm sẽ được cố định không thay đổi.
 - Thứ tự các đáp án trong các câu hỏi sẽ được xáo.
 
 </div>
 
-<div class="note" id="contentGroup">
-##### <span>{% include image.html url="ContentGroup.png" %}</span>: Nhóm nội dung
+<div class="note success" id="contentGroup">
+##### <span>{% include image.html url="ContentGroup.png" %}</span> Nhóm nội dung
 
 - Chữ <u>Nhóm</u> được gạch chân.
 - Là nơi chứa các phần văn bản trong đề như tiêu đề, tên mã đề hay phiếu tô trắc nghiệm.
@@ -52,8 +53,8 @@ Có nhiều loại nhóm phục vụ cho nhiều nhu cầu soạn thảo đề:
 
 </div>
 
-<div class="note" id="childGroup">
-##### <span>{% include image.html url="ChildGroup.png" %}</span>: Nhóm con
+<div class="note danger" id="childGroup">
+##### <span>{% include image.html url="ChildGroup.png" %}</span> Nhóm con
 
 - Chữ _Nhóm_ được in nghiêng.
 - Là nhóm nằm trong một [**Nhóm câu hỏi**](#group), có vai trò như 1 câu hỏi và sẽ được xáo vị trí khi trộn đề như câu hỏi.
@@ -65,10 +66,11 @@ Cách soạn 1 đề có sử dụng nhóm con hoàn chỉnh xin mời xem đề
 
 </div>
 
-<div class="note" id="fixedChildGroup">
-##### <span>{% include image.html url="FixedChildGroup.png" %}</span>: Nhóm con cố định
+<div class="note danger" id="fixedChildGroup">
+##### <span>{% include image.html url="FixedChildGroup.png" %}</span> Nhóm con cố định
 
 - Giống như nhóm con
+- Chữ <span style="text-decoration-line: underline; text-decoration-style: double;"><i>Nhóm</i></span> được in nghiêng và gạch chân đôi (nếu không tự định dạng được thì dùng thanh công cụ để chèn phần nhận diện vào)
 - Vị trí các câu hỏi trong nhóm sẽ được cố định không thay đổi.
 - Thứ tự các đáp án trong các câu hỏi sẽ được xáo.
 
