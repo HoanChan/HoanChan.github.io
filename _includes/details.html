@@ -1,0 +1,4 @@
+<details class = "{{ include.class }}" id = "{{ include.id }}">
+<summary markdown=0>{{ summary | markdownify | remove: '<p>' | remove: '</p>' }}</summary>
+{{ details | markdownify }}
+</details>
