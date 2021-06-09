@@ -33,6 +33,7 @@ Ví dụ như: Đề 104 - Trang 2/4
 
 #### Cách thiết lập mã đề
 - Mục Thiết lập mã đề: Danh sách mã đề có thể được nhập bằng tay hoặc được sinh tự động như sau:
+
 Mã đề = Tiền tố + (Bắt đầu + (Thứ tự đề - 1) * Giãn) + Hậu tối
 
 {% include image.html url="ids.png" class="img-m" %}
